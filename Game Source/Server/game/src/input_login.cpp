@@ -764,7 +764,7 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 	if (ch->IsGM() == true)
 	{
 		ch->ChatPacket(CHAT_TYPE_COMMAND, "ConsoleEnable");
-		ch->ChatPacket(CHAT_TYPE_COMMAND, "GameMaster %s", "https://your-panel-url.com/");
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "GameMaster %s", "https://www.google.com/");
 	}
 
 	ch->ChangeGold(0, false);
