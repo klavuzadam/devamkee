@@ -1,0 +1,33 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: change_empire.quest & item_change_sex.quest
+Kategori: Eşya - Karakter Değişimleri
+
+AÇIKLAMA:
+Oyuncuların krallıklarını veya cinsiyetlerini değiştirmelerini sağlayan sistemlerdir.
+
+FONKSİYONLAR:
+- Krallık Değişimi (71054): 500.000 Yang maliyeti vardır. Oyuncu evli, bir loncaya üye veya party (grup) içinde olmamalıdır. Bekleme süresi 4 gündür.
+- Cinsiyet Değişimi (71048): Oyuncu evli veya nişanlı olmamalıdır. Bekleme süresi 3 gündür.
+
+-------------------
+
+Dosya Adı: ring_warp.quest
+Kategori: Eşya - Işınlanma Yüzüğü
+
+AÇIKLAMA:
+Oyuncuların haritalar arası hızlı seyahat etmesini sağlayan kapsamlı bir ışınlanma arayüzüdür.
+
+FONKSİYONLAR:
+- Harita Listesi: Köyler, Vadi, Çöl, Sohan Dağı, Tapınak, Örümcek Zindanı, Doyum Paper, Devler Diyarı ve Ormanlar.
+- Seviye Sınırı: Her harita için minimum seviye kontrolü yapılır (Örn: Kızıl Orman için 70. seviye).
+- Farm Kilidi: Belirli yüzüklerde (40004) farm bölgelerine ışınlandıktan sonra 1 saatlik bekleme süresi devreye girer.
+- Güvenlik Kontrolleri: Ölü olan, zindanda olan veya lonca savaşındaki oyuncuların ışınlanması engellenir.
+
+-------------------
+
+Dosya Adı: reset_scroll.quest & reset_status.quest
+Kategori: Eşya - Sıfırlama Kağıtları
+
+AÇIKLAMA:
+Becerilerin (Skill) veya Statü puanlarının sıfırlanmasını sağlayan eşya tabanlı sistemlerdir.

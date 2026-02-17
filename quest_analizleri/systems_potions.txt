@@ -1,0 +1,25 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: potion_recharge.quest
+Kategori: Sistem - İksir Doldurma (Recharge)
+
+AÇIKLAMA:
+Bu quest, bitmek üzere olan veya bitmiş özel iksirlerin (örn: kalıcı etki veren iksirler) belirli malzemelerle "yeniden doldurulmasını" sağlayan arayüzü yönetir.
+
+FONKSİYONLAR:
+- Yeniden Doldurma: Simyacı (20001) üzerinden açılan bir pencere ile, envanterdeki iksirler ve gerekli materyaller kullanılarak iksirin kullanım hakkı veya süresi yenilenir.
+- Teknik İşleyiş: Sunucu taraflı `charge` fonksiyonunu kullanarak envanter slotlarındaki eşyaları işler.
+
+-------------------
+
+Dosya Adı: potion_use.lua
+Kategori: Sistem - İksir Kullanım Tetikleyicisi
+
+AÇIKLAMA:
+Bu quest, oyundaki tüm iksir türlerinin (kullanılabilir eşya tipi 36) genel kullanım mantığını tetikler.
+
+FONKSİYONLAR:
+- Kullanım: Oyuncu bir iksire tıkladığında `potion_system` modülünü çağırarak iksirin etkisinin oyuncuya uygulanmasını sağlar.
+
+TETİKLEYİCİLER:
+- Item: Tüm İksirler (Type: 36).

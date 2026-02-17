@@ -1,0 +1,34 @@
+GAME SOURCE SOURCE RİSK VE ETKİ ANALİZ RAPORU
+---------------------------------------------
+
+Soru: "Filesi Türkçe'ye çevirdik, bu Lehçe yazıların bize bir zararı olur mu?"
+
+Cevap: Oyunun çalışmasını tamamen durduracak (crash/çökme) bir durum yoktur, ancak kullanıcı deneyimini ve karakter görünümünü etkileyecek üç temel risk alanı bulunmaktadır.
+
+### 1. Hardcoded (Kod İçine Gömülü) Mesajlar (ÖNEMLİ)
+Bazı mesajlar `locale_string.txt` dosyasından ÇEKİLMEMEKTEDİR. Yani siz her şeyi Türkçe'ye çevirseniz bile bu mesajlar oyuncuya Lehçe görünmeye devam edecektir.
+- **Etki:** Oyuncu veya GM, belirli işlemlerde (örn: Ikarus Shop hatası veya M1 haritası kontrolü) doğrudan Lehçe hata mesajı alacaktır.
+- **Risk:** Düşük/Orta (Görsel hata).
+- **Çözüm:** Bu mesajların kod içerisinden bulunup Türkçe'ye çevrilmesi gerekir.
+
+### 2. Karakter Kodlaması ve Türkçe Karakterler (KRİTİK)
+Kod içerisinde `cp1250` (Lehçe karakter seti) yapılandırması bulunmaktadır.
+- **Etki:** Eğer oyun yanlışlıkla Polonya profilinde başlarsa, Türkçe'ye özgü "ğ, ş, ı, İ, ç" gibi harfler oyunda garip semboller (kutucuklar, soru işaretleri) olarak görünecektir. 
+- **Risk:** Orta/Yüksek (Karakterlerin bozuk görünmesi).
+- **Çözüm:** Veritabanındaki `common.locale` tablosunun `"turkey"` ve karakter setinin `"latin5"` (veya güncelse `utf8mb4`) olduğundan emin olunmalıdır.
+
+### 3. Teknik Yorumlar ve Loglar (ZARARSIZ)
+Kod içerisindeki `//` ile başlayan yorumlar ve `sys_err` ile log dosyasına düşen mesajlar.
+- **Etki:** Sadece siz (geliştirici) log dosyalarına baktığınızda bu yazıları görürsünüz. Oyuncu bunları asla görmez.
+- **Risk:** Yok.
+- **Çözüm:** İşlem yapmaya gerek yoktur, ama temizlik için silinebilir.
+
+### 4. Locale Path (Dizin Yolları)
+Sistemde hala `poland` isimli bir profil tanımlı.
+- **Etki:** Eğer config dosyasında bir hata yapılır ve dil Polonya olarak seçilirse, server `share/locale/turkey` yerine `share/locale/poland` klasörünü aramaya başlar. Eğer o klasör boşsa server açılmaz.
+- **Risk:** Orta (Yapılandırma hatasına bağlı açılmama riski).
+
+ÖZET TAVSİYE:
+1. `ikarus_shop_manager.cpp` ve `cmd_gm.cpp` içindeki **ChatPacket** mesajlarını Türkçe yapın.
+2. Server konfigürasyonunun (DB tarafı) kesinlikle **turkey** olduğundan emin olun.
+3. Bunlar dışında kalan yorum satırları ve teknik tanımlamalar oyunun çalışmasına engel bir "zararlı" işlem içermez.

@@ -1,0 +1,19 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: subquest_*.quest & new_quest_lv*.quest (Toplam 59 Dosya)
+Kategori: Hikaye - Yan Görevler (Gelişim)
+
+AÇIKLAMA:
+Oyunun dünyasını zenginleştiren, her seviye aralığında farklı NPC'lerden alınan ve oyuncuya tecrübe puanı, yang veya eşya kazandıran yan görevlerin tamamıdır.
+
+FONKSİYONLAR:
+- Karşılama Görevleri: Demirci, Satıcı, Yaşlı Kadın gibi şehir esnafının küçük isteklerini (malzeme taşıma, avlanma) içerir.
+- Önemli Örnekler:
+  * subquest_01: Toka ve çiçek toplama (Seviye 6).
+  * subquest_12: Kardeşini bulma veya mektup götürme görevleri.
+  * new_quest_lv42: Daha yüksek seviyeli, zindan veya boss odaklı yan hikayeler.
+- Yapı: Genellikle "Bilgi -> Kabul -> Görev Yapma -> Rapor/Ödül" şeklinde 4-5 aşamalı state yapısına sahiptirler.
+
+TETİKLEYİCİLER:
+- NPC: Şehrin tüm esnafları (9001-9008), Ariyoung, Soon, Taurean vb.
+- Olay: Belirli seviyeye ulaşma veya önceki yan görevi tamamlama.

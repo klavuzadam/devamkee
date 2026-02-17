@@ -1,0 +1,53 @@
+LEHÇE (POLONCA) QUEST İÇERİKLERİ VE İŞLEVLERİ DETAYLI RAPOR
+----------------------------------------------------------
+
+Bu rapor, quest dosyaları içerisinde gameforge/translate sistemine bağlı olmayan, doğrudan Lehçe (Polonca) olarak yazılmış metinleri ve bu kod bloklarının ne işe yaradığını açıklar.
+
+### 1. AKTİF SİSTEM QUESTLERİ (Hala Kullanımda Olanlar)
+
+#### A. Yetki ve Komut Sistemi (`cmd.quest`)
+- **Metin:** `Nie masz uprawnien do korzystania z tej komendy.`
+- **Anlamı:** "Bu komutu kullanmak için yetkiniz yok."
+- **İşlev:** GM komutlarını (örneğin `/kick`) çalıştırmaya çalışan normal oyunculara veya düşük rütbeli yetkililere gelen hata mesajıdır. Yetki kontrol mekanizmasının (GM Rank) bir parçasıdır.
+
+#### B. Sunucu Yönetim Paneli (`systems/beta_server.quest`)
+- **Metin 1:** `%d poziom` (Anlamı: %d seviye)
+- **Metin 2:** `Otrzymales SM automatycznie na konto.` (Anlamı: SM otomatik olarak hesabınıza tanımlandı.)
+- **İşlev:** Sunucu test/yönetim panelinde karakter seviyesini ayarlarken kullanılan menü öğelerini oluşturur ve test amaçlı Ejderha Parası (SM) yüklemelerinde oyuncuyu bilgilendirir.
+
+#### C. Av Görevleri Sistemi (`systems/hunting.quest`)
+- **Metin:** `nie ma foty %d`
+- **Anlamı:** "Fotoğraf/Görsel yok: %d"
+- **İşlev:** Av görevleri penceresi açıldığında, kesilmesi gereken yaratığın resmi sistemde (img tablosunda) bulunamazsa, syschat üzerinden basılan bir geliştirici (debug) mesajıdır.
+
+#### D. At Geliştirme Sistemi (`systems/horse/pony_levelup.quest`)
+- **Metin:** `MENU WYBORU TYLKO NA TESTOWYM TRYBIE (INACZEJ LOSOWO)`
+- **Anlamı:** "Seçim menüsü sadece test modunda aktiftir (normalde rastgeledir)."
+- **İşlev:** At seviye atlatırken normalde başarı/başarısızlık oranı rastgeledir. Test sunucularında geliştiricilerin sonucu manuel seçebilmesi için eklenen bir kontrol mesajıdır.
+
+---
+
+### 2. ARŞİV / KULLANILMAYAN QUESTLER (`_unused`)
+
+Bu dosyalar genellikle eski Polonya yerelleştirmelerinden kalma dosyalardır.
+
+#### A. Biyolog Görevleri (`_unused/xxx_collect_quest_lv85.quest` ve `lv90.quest`)
+- **İşlev:** 85 (Kırmızı Hayalet Ağaç Dalı) ve 90 (Liderin Notları) seviye biyolog görevlerinin yedekleridir. İçerikleri tamamen biyolog diyalogları, eşya toplama aşamaları ve kalıcı stat ödüllerinin Lehçe tanımlarını içerir.
+
+#### B. Razador Görev Serisi (`_unused/main_quest_flame_lv100-105.quest`)
+- **İşlev:** Seviye 100 ile 105 arasındaki ana görevlerdir. Kırmızı Ejderha Kalesi (Razador) zindanının hikayesini anlatır. Mühürlerin açılması, Razador'un odasına giriş şartları ve Razador'u yenme üzerine kurulu bir senaryodur.
+
+#### C. Örümcek Barones Tests (`_unused/spider_dungeon_3floor_boss.quest`)
+- **İşlev:** Örümcek Zindanı Barones odasındaki yumurtaların kesilmesi ve bu yumurtaların Barones'in defansını/hızını nasıl etkilediğini test eden eski kod parçalarıdır.
+
+#### D. Genel Test Mesajları (`_unused/dev/test_target.quest`)
+- **Metin:** `Nie powinno ciebie tu byc!`
+- **Anlamı:** "Burada olmaman gerekiyor!"
+- **İşlev:** Belirli bir bölgeye giriş engellerini test etmek için kullanılan basit bir uyarı/kick mesajıdır.
+
+#### E. Rice Cake & Tiger Event (`_unused/xxx_rice_cake_tiger.quest`)
+- **Metin:** `nie wieder blicken!!!` (Aslında Almanca "Bir daha görünme" mesajıdır, Polonya sunucusunda yanlışlıkla kalmış olabilir.)
+- **İşlev:** Octavio'nun pirinç keki (Rice Cake) etkinliği ile ilgili diyalogları içerir.
+
+ÖZET:
+Aktif sistemlerdeki Lehçe kısımlar genellikle **hata mesajları** veya **admin bilgilendirmeleri** gibi "arka planda" kalan cümlelerdir. Arşivdekiler ise bir zamanlar Polonya sunucusunda **ana görev ve zindan kurgusu** olarak kullanılmış tam içerikli dosyalardır.

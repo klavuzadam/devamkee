@@ -1,0 +1,39 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: crafting.lua
+Kategori: Sistem - Genel Üretim (Crafting) Yönetimi
+
+AÇIKLAMA:
+Bu quest, oyunun ana üretim (crafting) motorunu yönetir. Farklı uzmanlık alanlarındaki NPC'ler aracılığıyla yeni eşyalar üretilmesini sağlar.
+
+FONKSİYONLAR:
+- Çoklu NPC Desteği: 
+    * Simyacı (20001): Büyülü cevherler ve taşlar.
+    * Octavio (20008): Yemek pişirme ve aşçılık.
+    * Demirci (20016): Genel eşya üretimi.
+    * Yaşlı Kadın (20041): Özel set/etkinlik eşyaları.
+    * Köy Gardiyanları (11001-11005): Ok ve mühimmat üretimi.
+- Dinamik Tarifler: Arayüz üzerinden gelen üretim komutlarını (`create`) işler ve gerekli malzemeleri kontrol ederek eşyayı üretir.
+
+TETİKLEYİCİLER:
+- NPC: İlgili tüm üretim NPC'leri.
+
+-------------------
+
+Dosya Adı: herbalism.lua
+Kategori: Sistem - Bitkicilik ve İksir Yönetimi
+
+AÇIKLAMA:
+Bu quest, doğadan bitki toplama ve bu bitkilerden gelişmiş iksirler üretme süreçlerini içeren "Bitkicilik" sistemini yönetir.
+
+FONKSİYONLAR:
+- Bitki Toplama: Haritalardaki bitki nesnelerine (20602-20644) "Bitkicilik Bıçağı" ile tıklayarak toplama yapılır.
+- Bıçak Geliştirme: Başarılı toplama işlemi bıçağın puanını artırır ve bıçak daha yüksek seviyelere geliştirilebilir.
+- Reçete Öğrenme: Özel reçete kitapları okunarak yeni iksir türlerinin üretimi öğrenilebilir.
+- İksir Süresi Uzatma: Huahn-So (20022) NPC'si üzerinden, belirli bir miktar Yang ve "Bitki Tozu" (30360) karşılığında bazı iksirlerin kullanım süreleri %50 veya %100 artırılabilir.
+- Baek-Go Etkileşimi: Üretim ve özel bitkicilik marketi için Baek-Go (20018) kullanılır.
+
+TETİKLEYİCİLER:
+- NPC: Baek-Go (20018), Huahn-So (20022).
+- Item: Bitkicilik Bıçakları (29201-29210), Bitki Tozu.
+- Kaynak: Doğadaki bitkiler.

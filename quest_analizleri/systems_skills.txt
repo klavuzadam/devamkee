@@ -1,0 +1,41 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: skill_group.quest
+Kategori: Sistem - Beceri Grubu Seçimi
+
+AÇIKLAMA:
+Bu quest, oyuncuların 5. seviyeye ulaştıklarında sınıflarına özel beceri grubunu (örn: Bedensel/Zihinsel Savaşçı) seçmelerini yönetir.
+
+FONKSİYONLAR:
+- Beceri Hocaları: Her sınıfın iki farklı öğretmeni vardır. Oyuncu bu öğretmenlere giderek istediği yolu seçer.
+- Gruba Atama: Seçim yapıldığında oyuncunun beceri grubu kalıcı olarak belirlenir ve o gruba ait temel beceriler açılır.
+
+-------------------
+
+Dosya Adı: skill_reset2.quest
+Kategori: Sistem - Beceri Sıfırlama
+
+AÇIKLAMA:
+Bu quest, oyuncuların yanlış seçtikleri veya değiştirmek istedikleri beceri gruplarını sıfırlamalarını sağlar.
+
+FONKSİYONLAR:
+- Yaşlı Kadın Yardımı: Sadece 30. seviye ve altındaki oyuncular Yaşlı Kadın NPC'si (9006) üzerinden becerilerini sıfırlayabilir.
+- Maliyet: Seviyeye bağlı olarak artan bir Yang ücreti alınır (5000 + seviye * 1000).
+- Kısıtlama: 30. seviyeden sonra Yaşlı Kadın üzerinden sıfırlama yapılamaz (ancak nesne market eşyalarıyla mümkün olabilir).
+
+-------------------
+
+Dosya Adı: training_grandmaster_skill.quest
+Kategori: Sistem - Grandmaster ve Perfect Beceri Eğitimi
+
+AÇIKLAMA:
+Bu quest, G1 seviyesine ulaşmış becerilerin Ruh Taşı kullanılarak P (Perfect) seviyesine yükseltilme sürecini yönetir.
+
+FONKSİYONLAR:
+- Ruh Taşı Eğitimi: G1-P arası yükseltme için "Ruh Taşı" (50513) gereklidir.
+- Derece Puanı Tüketimi: Her deneme oyuncunun derece (alignment) puanını tüketir. Derece ne kadar yüksekse başarı şansı o kadar artar; derece negatifse tüketim iki katına çıkar.
+- Güvenlik: Puan tüketimi öncesinde oyuncudan onay alınır ve "EĞİTİM" yazarak onaylaması istenir.
+- Bekleme Süresi: Her başarılı veya başarısız denemeden sonra 12 saat bekleme süresi uygulanır.
+
+TETİKLEYİCİLER:
+- Item: Ruh Taşı (50513).

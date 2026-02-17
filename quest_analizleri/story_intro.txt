@@ -1,0 +1,39 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: find_squareguard.quest & find_senior_soldier.quest
+Kategori: Hikaye - Başlangıç ve Tanıtım
+
+AÇIKLAMA:
+Yeni başlayan oyuncuların (Seviye 5-10) oyun dünyasındaki temel mercileri ve eğitmenlerini tanımasını sağlayan görevlerdir.
+
+FONKSİYONLAR:
+- Gardiyanı Bul: Oyuncuyu Şehir Gardiyanı'na yönlendirir, iksir satıcısından eşya aldırarak temel ticaret mekaniğini öğretir. Ödül olarak takı ve başlangıç ekipmanı verir.
+- Eğitmeni Bul: Oyuncuyu kendi sınıfının (Savaşçı, Sura vb.) kıdemli eğitmenine yönlendirir. Karşılığında kısa süreli ama güçlü özellik bonusları (HP, Kritik, Güç vb.) sağlar.
+
+-------------------
+
+Dosya Adı: find_brother_article.quest
+Kategori: Hikaye - Mirine'nin Kardeşi
+
+AÇIKLAMA:
+23-26. seviyeler arası açılan, dramatik bir hikayeye sahip olan Mirine'nin kayıp kardeşi görevini yönetir.
+
+FONKSİYONLAR:
+- Görev: Mirine (20006) için Siyah Orklardan (402) kardeşinin kolyesini düşürmek.
+- Onarım: Kolye bulunduktan sonra Demirci'ye götürülerek hikaye ilerletilir.
+
+-------------------
+
+Dosya Adı: patrol_townaround.quest
+Kategori: Hikaye - Şehir Devriyesi
+
+AÇIKLAMA:
+Tüm imparatorluklar (Shinsoo, Chunjo, Jinno) için geçerli olan, şehrin etrafındaki güvenliği kontrol etme görevlerini içerir.
+
+FONKSİYONLAR:
+- Devriye Sistemi: Oyuncunun harita üzerindeki 5 farklı stratejik noktaya (koordinata) sırayla gitmesi istenir.
+- Aşamalı İlerleme: Her noktaya ulaşıldığında bir sonraki hedef belirlenir. Tüm noktalar gezildiğinde görev tamamlanır ve ödül verilir.
+
+TETİKLEYİCİLER:
+- NPC: Mirine, Gardiyan, Eğitmenler.
+- Olay: Seviye atlama (Levelup), Belirli koordinata ulaşma (Arrive).

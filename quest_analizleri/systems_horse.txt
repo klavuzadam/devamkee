@@ -1,0 +1,36 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: pony_buy.quest & horse_levelup.quest
+Kategori: Sistem - At Edinme ve Geliştirme
+
+AÇIKLAMA:
+Bu questler, oyuncunun ilk atını almasını ve onu Askeri At seviyesine kadar (Seviye 21) yükseltmesini sağlayan görevler zincirini yönetir.
+
+FONKSİYONLAR:
+- Başlangıç (Pony): 25. seviyede 1 adet "At Madalyonu" ile başvuru yapılır. 30 dakika içinde 20 adet Lanetli Alp Kurdu kesilmesi istenir. Başarılı olunursa 100.000 Yang karşılığında "At Resmi" (50051) verilir.
+- Geliştirme (Levels 11-20): Atı Zırhlı ve Askeri At yapmak için günlük antrenmanlar yapılır. Her seviye için farklı canavarlar (Maymunlar, Çöl canavarları vb.) belirlenen adetlerde kesilmelidir.
+- Test Koşulları: Antrenman sırasında attan inilmemelidir. Başarı şansı %50'dir (her başarısızlıkta şans artar). Antrenmanlar arası 21 saat bekleme süresi vardır.
+
+TETİKLEYİCİLER:
+- NPC: Seyis (20349).
+- Item: At Madalyonu (50050), At Resmi (50051), Zırhlı At Kitabı (50052), Askeri At Kitabı (50053).
+
+-------------------
+
+Dosya Adı: horse_summon.quest & horse_menu.quest
+Kategori: Sistem - At Çağırma ve Yönetimi
+
+AÇIKLAMA:
+Bu questler, atın çağrılma mekaniğini ve at üzerindeki etkileşim menülerini yönetir.
+
+FONKSİYONLAR:
+- At Çağırma: "At Çağırma" becerisi seviyesine göre %10 ile %100 arasında başarı şansı ile at çağrılır. Çağırma işlemi SP tüketir.
+- At Menüsü: Atın üzerine tıklandığında açılan menüdür.
+    * Besleme: Atın seviyesine göre Saman, Havuç veya Kırmızı Elma ile besleme yapılır.
+    * Durum: Atın can ve enerji yüzdesini gösterir.
+    * İsim Değiştirme: "At Şekeri" (71110) kullanılarak ata özel isim verilebilir.
+- Kayıp Eşya: At kitabını kaybeden oyuncular Seyis'ten belirli bir Yang karşılığında yenisini alabilirler.
+
+TETİKLEYİCİLER:
+- Beceriler: At Çağırma (Skill 131).
+- Item: At Şekeri (71110), At Yemleri.

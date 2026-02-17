@@ -1,0 +1,44 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: friendly_monkey.quest
+Kategori: NPC - Dost Maymun
+
+AÇIKLAMA:
+Bu quest, oyuncuların "Dost Maymun" NPC'si ile etkileşime girerek özel bir markete erişmelerini sağlar.
+
+FONKSİYONLAR:
+- Etkileşim Şartı: Oyuncunun envanterinde "Maymun Yumurtası" (50736) bulunmalıdır.
+- Özel Market: Yumurta teslim edildiğinde maymun oyuncu için özel bir eşya marketi açar.
+
+-------------------
+
+Dosya Adı: ghost_story.quest
+Kategori: NPC - Hayalet Hikayeleri
+
+AÇIKLAMA:
+Map 2 haritasında bulunan Sura ve Savaşçı ruhlarının (30121, 30122) hüzünlü hikayelerini anlatan bir atmosfer görevidir.
+
+FONKSİYONLAR:
+- Anlatı: Oyuncular bu ruhlarla konuşarak geçmişteki büyük savaşlar, ihanetler ve krallıkların düşüşü hakkında derinlemesine bilgi edinebilirler. Bu görev genelde ödül yerine oyun dünyasının hikayesini zenginleştirmek için kullanılır.
+
+-------------------
+
+Dosya Adı: goto_empire_castle.quest
+Kategori: NPC - İmparatorluk Kaleleri
+
+AÇIKLAMA:
+Oyuncuların kendi krallıklarına ait özel kale haritalarına gitmelerini sağlayan ışınlanma sistemidir.
+
+FONKSİYONLAR:
+- Işınlanma: Her krallığın kendi ışınlayıcı NPC'si (20097-20099) bulunur. Sadece kendi krallığınızın kalesine gitmenize izin verilir.
+
+-------------------
+
+Dosya Adı: npc_talk.quest
+Kategori: NPC - Genel Sohbetler
+
+AÇIKLAMA:
+Şehirdeki pek çok NPC'nin (Soon, Aranyo, Mirine vb.) oyuncu tıkladığında söylediği genel sohbet metinlerini içerir.
+
+FONKSİYONLAR:
+- Atmosferik Diyaloglar: NPC'lerin kişiliklerine uygun kısa bilgiler veya dedikodular paylaşmasını sağlar.

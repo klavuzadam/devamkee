@@ -1,0 +1,31 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: guild_create.quest & guild_manage.quest
+Kategori: Sistem - Lonca Kurma ve Yönetimi
+
+AÇIKLAMA:
+Bu questler, oyuncuların grup kurmalarını (lonca), bu grupları yönetmelerini ve kurumsal binalar inşa etmelerini sağlayan sistemi yönetir.
+
+FONKSİYONLAR:
+- Lonca Diploması: Lonca kurmak için gerekli olan "Lonca Diploması" (70101) eşyası, Ork Reisi (691) canavarı grupça kesilerek elde edilebilir.
+- Kurulum Şartları: 40. seviyeye ulaşmış ve 200.000 Yang parası olan her oyuncu Köy Gardiyanı üzerinden lonca kurabilir.
+- Ayrılma ve Dağıtma: Loncadan ayrılan veya loncasını dağıtan bir oyuncunun tekrar yeni bir loncaya girmesi veya kurması için (sunucu ayarlarına göre) 1 gün beklemesi gerekir.
+- Gardiyan Menüsü: Lonca üyeleri için ayrılma, lonca başkanları için dağıtma seçenekleri sunar.
+
+-------------------
+
+Dosya Adı: guild_war_join.quest
+Kategori: Sistem - Lonca Savaşları
+
+AÇIKLAMA:
+Lonca savaşlarını duyuran ve oyuncuların bu savaşlara katılımını sağlayan sistemdir.
+
+FONKSİYONLAR:
+- Savaş Duyurusu: Lonca savaşı başladığında, lonca üyelerinin ekranında bir katılım butonu/mektubu belirir.
+- Katılım: Oyuncular bu butona tıklayarak savaş haritasına ışınlanabilirler. Savaş haritasına giriş yaparken ata binmek yasaktır.
+- Geri Dönüş: Savaş bittiğinde veya oyuncu ayrıldığında eski koordinatlarına geri ışınlanır.
+
+TETİKLEYİCİLER:
+- NPC: Köy Gardiyanı.
+- Item: Lonca Diploması (70101).
+- Olay: Lonca savaşı ilanı.

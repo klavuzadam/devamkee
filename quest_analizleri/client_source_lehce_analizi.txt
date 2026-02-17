@@ -1,0 +1,36 @@
+CLIENT SOURCE LEHÇE (POLONCA) ANALİZ RAPORU
+--------------------------------------------
+
+Client source (C++ kodları) üzerinde yapılan incelemede, sistemlerin büyük oranla Türkçe'ye (tr) migrate edildiği ancak bazı özel sistemlerde ve görsel tanımlamalarda Lehçe kalıntıların bulunduğu tespit edilmiştir.
+
+### 1. Ikarus Offline Shop Sistemi (Ikarus Çevrimdışı Pazar)
+Bu sistem, client tarafında en belirgin Lehçe kalıntıya sahip olan yapıdır.
+- **Dosya:** `UserInterface/PythonIkarusShop.cpp`
+- **Kalıntı:** `CPythonMiniMap::instance().CreateTarget(..., "Sklep", x, y);`
+- **İşlev:** Minimap üzerinde oyuncunun kendi pazarını veya aranan bir pazarı işaretlerken çıkan "Pazar" yazısı kod içerisinde hardcoded olarak **"Sklep"** (Lehçe Pazar/Dükkan) olarak kalmıştır.
+
+### 2. Discord RPC (Discord Durum Bildirimi)
+Oyuncunun Discord profilinde oyun durumunu gösteren sistemde sınıflar Lehçe olarak tanımlanmıştır.
+- **Dosya:** `UserInterface/Discord.h`
+- **Kalıntılar:**
+  - `Wojownik` (Savaşçı)
+  - `Szaman` (Şaman)
+  - `Lykan` (Lycan)
+  - `Ninja` ve `Sura` (Uluslararası olsa da bu blokta yer alıyor)
+- **İşlev:** Discord'da oyuncunun hangi karakter sınıfıyla oynadığını gösteren metinlerdir.
+
+### 3. Dil ve Yerelleştirme Mantığı (Migration)
+Source içerisinde Lehçe'den Türkçe'ye geçiş yapıldığına dair teknik izler bulunmaktadır.
+- **Dosya:** `UserInterface/PythonSystem.cpp` ve `UserInterface/Locale.cpp`
+- **Bulgu:** Eskiden `"pl"` olarak ayarlı olan varsayılan dil ve yol tanımlamaları `"tr"` olarak güncellenmiş. Ayrıca `UserInterface/migrate_cpp.py` adında bir script, C++ dosyalarındaki "pl" ifadelerini "tr" ile değiştirmek için kullanılmış.
+- **Durum:** Şu an client varsayılan olarak Türkçe (tr) locale dosyalarını arayacak şekilde yapılandırılmıştır.
+
+### 4. Kaynak Dosyaları (Resource Files)
+- **Dosya:** `UserInterface/UserInterface.rc`
+- **Bulgu:** Windows kaynak dosyasında Lehçe özel karakterleri (diakritik) içeren tanımlamalar bulunmaktadır. Bu durum, exe özelliklerinde veya bazı Windows tabanlı pencerelerde Lehçe ifadelerin (örn. "Opcje", "Wyjście") bulunabileceğini gösterir.
+
+### 5. Genel Sistem Kodları
+`PythonCharacterManager.cpp`, `InstanceBase.cpp` ve `PythonNetworkStream.cpp` gibi temel dosyalarda Lehçe'ye özgü özel bir *mekanik* sisteme rastlanmamıştır. Sistemler global Metin2 standartlarında veya yaygın kullanılan (Ikarus gibi) eklentilerdir.
+
+ÖZET:
+Client tarafındaki Lehçe kalıntılar, oyunun işleyişini bozmayan **sadece görsel/metinsel** (Discord durumu ve minimap pazar simgesi gibi) unsurlardır. Ana sistem kodları global standarttadır.

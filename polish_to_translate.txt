@@ -1,0 +1,207 @@
+%s doda³ Ciê jako przyjaciela.
+%s zablokowa³ szeptanie ca³kowicie.
+Aby przekazaæ bonusy, potrzebujesz 2. kostiumu.
+Atak dystansowo-obszarowy. Posiada szansê na podpalenie celu.
+Atak d³ugodystansowy w przeciwnika.
+Atak d³ugodystansowy, atakuje wiele celów.
+Atak d³ugodystansowy, atakuje wiele celów. Posiada szansê na spowolnienie przeciwika.
+Atak d³ugodystansowy, mo¿e rozprysn¹æ siê na przeciwników obok, szansa na spowolnienie.
+Atak d³ugodystansowy, omdlewa przeciwnika.
+Atak obrotowy posiadaj¹cy trzy szanse na trafienie oraz szansê na otrucie przeciwnika.
+Atak obszarowy we wszystkich przeciwników wokó³ postaci.
+Atak obszarowy, Si³a ataku mo¿e byæ zwiêkszona dziêki umiejêtnoœci Kamuflajê.
+Atak obszarowy. Posiada szansê na omdlenie przeciwinika.
+Atak obszarowy. U¿ycie aktywuje Ejderha Öfkesi.
+Atak ognistych kul na zaznaczony cel, obra¿enia mog¹ rozprysn¹æ na potwory stoj¹ce obok.
+Atak trzema ciosami pod rz¹d.
+Atak umo¿liwiaj¹cy ominiêcie obrony przeciwnika.
+Atak z dystansu o du¿ym zasiêgu, atakuje jednego przeciwnika, lub kilku stoj¹cych obok siebie.
+Atakuje przeciwników wokó³ siebie, posiada szansê na omdlenie przeciwnika.
+Atakuje wszystkich przeciwników wokó³ siebie.
+Bezszelestny Chód
+B³ogos³awieñstwo
+Chcesz kontynuowaæ?
+Chcesz mimo to kontynuowaæ?
+Cia³o
+Czy chcesz kontynuowaæ?
+Czy chcesz kupiæ %s %s za %s?
+Czy chcesz kupiæ %s za %s?
+Czy chcesz sprzedaæ %s %s za %s?
+Czy chcesz sprzedaæ %s za %s?
+Czy chcesz teraz wprowadziæ numer?
+Czy chcesz upuœciæ %d Yang?
+Czy chcesz usun¹æ numer telefonu komórkowego?
+Denerwowaæ
+Drwiæ
+Dzieñ
+Gdy aktywna jest Dusza Wilka Indygo, nie mo¿esz u¿yæ Duszy Purpurowego Wilka.
+Gromiste Góry
+Grota Wygnañców
+Gwa³towne frontalne uderzenie w prostok¹tny obszar.
+Góra Sohan
+Has³o
+Hepsi ayda sadece 50 TL! (Currency might need adj. but keeping generic or converting z³. 50 z³. Leaving as 50 TL or simple "Hepsi bu fiyata!") -> Hepsi bu fiyata! or keep numbers if currency unclear. PL says 50 zloty. I'll translate "50 birim" to be safe or just "uygun fiyata". Let's stick to literal but generic currency: "Hepsi ayda 50 birim!"
+Hızœæ
+Hızœæ +
+Inna postaæ ju¿ ma t¹ nazwê.
+Jakoœæ: bez skazy,
+Jakoœæ: matowy,
+Jakoœæ: przejrzysty,
+Jakoœæ: wyborny,
+Jakoœæ: znakomity,
+Jestem pewny, ¿e nie mogê podejœæ bli¿ej.
+Kamuflajê
+Kana³
+Kana³ %d
+Kraina Gigantów
+Kötü Ruh Kovma Kağıdı
+Las Duchów
+Lataj¹cy Talizman
+Loch Paj¹ków 1
+Loch Paj¹ków 2
+Loch Paj¹ków 3
+Mini Mapa nie mo¿e zostaæ pokazana.
+Miotaj kilka strza³ w kilku wrogów.
+Mo¿esz tworzyæ now¹ postaæ tylko co 30 sek.
+Mo¿esz upuœciæ maksimum 999 Yang.
+Mo¿esz wo³aæ tylko co 15 sekund.
+Münzevi Tavsiyesi (Wait, no: Ksiêga Zapomnienia -> Forget Book -> "Unutkanlık Kitabı" or "Gözlem Bandı"? No, "Münzevi" is for reading. "Unutkanlık Kitabı" removes skill points. Standard TR: "Gözlem Bandı" removes master skill points? No, "Gözlem Bandı" is different. "Ksi?ga Zapomnienia" is usually class-specific oblivion scroll. Let's use "Unutkanlık Kitabı" as general term or "Beceri Sıfırlama".) Correct translation: "Münzevi Tavsiyesi" is actually 39030. This is probably "Unutkanlık Kitabı".
+Nadal pozosta³y punkty statusu.
+Najpierw potrzebujê Konia, zanim u¿yjê tego.
+Natychmiast regeneruje Punkty ¯ycia. Szansa na usuniêcie negatywnych efektów. Absorpcja obra¿eñ od potworów. Mo¿liwoœæ u¿ycia diğ er oyuncuda.
+Nazwa twojej postaci nie mo¿e zawieraæ znaków specjalnych.
+Nie jesteœ upowa¿niony do u¿ycia ,GM‘ w swojej nazwie postaci.
+Nie mam Butelki Z Trucizn¹.
+Nie mam wystarczaj¹cej iloœci PE!
+Nie mam wystarczaj¹cej iloœci P¯!
+Nie mam wystarczaj¹cej iloœci ST!
+Nie mogê jeszcze u¿yæ tej Umiejêtnoœci.
+Nie mogê tego u¿yæ na sobie.
+Nie mogê tego u¿yæ podczas jazdy konnej.
+Nie mogê tego zrobiæ.
+Nie mogê u¿yæ tej Umiejêtnoœci u¿ywaj¹c tej broni
+Nie mogê u¿yæ tej umiejêtnoœci z Wêdk¹.
+Nie mogê u¿yæ w trakcie trwania innego efektu.
+Nie mogê zaatakowaæ z tego miejsca.
+Nie mogê zaatakowaæ..
+Nie mo¿esz go u¿yæ.
+Nie mo¿esz jeszcze u¿yæ alchemii Smoczych Kamieni.
+Nie mo¿esz otworzyæ prywatnego sklepu podczas wymiany ksi¹g.
+Nie mo¿esz przemieszczaæ przedmiotów w trakcie zapytania.
+Nie mo¿esz stworzyæ postaci
+Nie mo¿esz szeptaæ do nikogo gdy szeptanie jest ca³kowicie zablokowane.
+Nie mo¿esz szeptaæ do zablokowanej osoby.
+Nie mo¿esz tworzyæ wiêcej postaci.
+Nie mo¿esz umieœciæ Przedmiotu.
+Nie mo¿esz upuœciæ Przedmiotu z ekwipunku jeœli otworzy³eœ prywatny Magazyn.
+Nie mo¿esz upuœciæ za³o¿onych przedmiotów.
+Nie mo¿esz uszlachetniæ tego Smoczego Kamienia.
+Nie mo¿esz u¿ywaæ przedmiotu przywi¹zanego do duszy.
+Nie mo¿esz u¿ywaæ za³o¿onych przedmiotów.
+Nie mo¿esz wróciæ do okna logowania.
+Nie mo¿esz wymieniæ ksi¹g, gdy masz otwarty prywatny sklep.
+Nie mo¿na u¿yæ tego przedmiotu.
+Nie mo¿na zobaczyæ Mini Mapy.
+Nie opanowa³em tej umiejêtnoœci.
+Nie posiadasz wystarczaj¹co materia³u do uszlachetnienia.
+Nie, tak to nie ubijemy interesu. Ju¿ ci przecie¿ wyt³umaczy³em, ¿e chcê 10 ksi¹g, aby dokonaæ wymiany.
+Niebiañska Tarcza
+Niebiañska Tarcza nie mo¿e zostaæ nadana.
+Odbija ataki fizyczne. Mo¿liwoœæ zbuffowania innego gracza. Bonus u¿ycia na samym sobie.
+Ognista Strza³a
+Og³oszenia
+Ok Yağmuru³
+Otwórz Mini Mapê
+Parşömen - Elit Örk Reisi
+Poca³unek
+Poka¿ stare wiadomoœci [L]
+Posiada szansê na otrucie przeciwnika oraz zawiera w sobie omdlenie.
+Potrzebujê Wêdki.
+Powoduje Yayrycie siê postaci, atak z Zasadzki.
+Protokó³ wiadomoœci
+Przekierowuje obra¿enia z P¯ na PE.
+Przyl¹dek Smoczego Ognia
+Przywo³anie b³yskawicy
+Prêdkoœæ ruchu znacznie zwiêkszona.
+Rozweselaæ
+Silahñ
+Silne Cia³o
+Smoczy Kamieñ mo¿e ulec zniszczeniu.
+Stra¿nica Nemere
+Strzelaj¹cy Ejderha
+SzYayaj Pu³apki
+Szar¿a
+Szept bez konta Premium dostêpny jest od 15 poziomu i 1000 zabitych potworów.
+Szybki atak obszarowy i teleportuj¹cy.
+Szybki atak z szans¹ na omdlenie przeciwnika.
+Taş Sanatı Kitabı
+Tekrarlanan Atış³
+Ten Kana³ jest pe³ny! Proszê wybraæ inny.
+Ten Smoczy Kamieñ nie pasuje do tego slotu.
+Ten Smoczy Kamieñ osi¹gn¹³ ju¿ najwy¿szy poziom.
+To dzia³a tylko grup úyelerinde.
+To dzia³a tylko na martwych ludzi.
+To nie jest Smoczy Kamieñ.
+To nieprawid³owy Smoczy Kamieñ.
+To nieprawid³owy slot.
+To zdanie zawiera niepoprawne s³owa.
+Truj¹ca Chmura
+Truj¹ca Strza³a
+Trzystronne Ciêcie
+Twoja postaæ musi znajdowaæ siê przynajmniej na poziomie 80.
+T¹pniêcie
+Usuniêcie Smoczego Kamienia nie jest prost¹ spraw¹.
+Usun¹æ?
+Usuwa wszystkie umiejêtnoœci wspomagaj¹ce przeciwnika.
+Utwórz postaæ
+Uwodziæ
+Walniêcie
+Wie¿a Demonów
+Wie¿a Gumsan
+Wiruj¹cy Sztylet
+Wojna Królestw
+Wojna Królestw - Lodowa Ziemia
+Wojna Królestw - Ognista Ziemia
+Wojna Królestw - Pustynna Kraina
+Wojna Królestw - Pustynny Kraj
+Wo³aj
+Wpisz swoje has³o.
+Wpisz swój PIN.
+WprowadŸ numer potwierdzaj¹cy
+WprowadŸ numer potwierdzaj¹cy, który zosta³ wys³any na twój telefon komórkowy.
+WprowadŸ numer telefonu komórkowego do wysy³ania wiadomoœci tekstowych.
+WprowadŸ numer telefonu komórkowego.
+Wróg jest za daleko.
+Wybierz Kana³
+Wybierz nazwê.
+Wybierz postaæ
+Wygas³y Smoczy Kamieñ
+Wystrza³ kilku strza³ pod rz¹d. Szansa na przeszywaj¹cy strza³.
+Wyst¹pi³ b³¹d podczas ³¹czenia z kana³em.
+Wywo³uje reakcjê ³añcuchow¹. Atakuje wiele celów.
+Wyœlij szept [Shift+Enter]
+Wyœlij wiadomoœæ
+Wyœlij wiadomoœæ.
+Wê¿owe Pole
+Zaakceptowaæ?
+Zehir Şişesi yok.¹
+Zehirlenmeê
+Zihinsel³
+Zmniejsza obra¿enia fizyczne zadawane przez przeciwników.
+Zosta³eœ zablokowany przez gracza do którego chcesz szeptaæ.
+Zwiêksza obronê oraz posiada szansê na odbicie ciosu fizycznego.
+Zwiêksza obronê, zmniejsza szybkoœæ poruszania siê. Od poziomu G postaæ nie upada oraz zwiêksza Odpornoœæ na Przeszywaj¹ce Uderzenie.
+Zwiêksza odpornoœæ na ataki fizyczne. Mo¿liwoœæ zbuffowania innego gracza. Bonus u¿ycia na samym sobie.
+Zwiêksza prêdkoœæ poruszania siê oraz przyspiesza tempo odnowienia umiejêtnoœci. Mo¿liwoœæ zbuffowania innego gracza. Bonus u¿ycia na samym sobie.
+Zwiêksza si³ê ataku.
+Zwiêksza szanse na krytyczne uderzenie. Mo¿liwoœæ zbuffowania innego gracza. Bonus u¿ycia na samym sobie.
+Zwiêksza szybkoœæ ataku i ruchu oraz zwiêksza obra¿enia zadawane przez przeciwników.
+Zwiêksza szybkoœæ poruszania siê. Zwiêksza regeneracjê staminy w walce. S³absze potwory nie s³ysz¹ twoich kroków.
+Zwiêksza zadawane obra¿enia fizyczne i magiczne. Mo¿liwoœæ zbuffowania innego gracza. Bonus u¿ycia na samym sobie.
+Zwiêksza zadawane obra¿enia fizyczne oraz kradnie P¯ od przeciwnika.
+Zwiêkszona Hızœæ Ataku
+Zwiêkszona Hızœæ Ruchu
+Z³ap
+¯¹Kan Hırsı
+Œwi¹tynia Ejderhaa
+Œwi¹tynia Hwang

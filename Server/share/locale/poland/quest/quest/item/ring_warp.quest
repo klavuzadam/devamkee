@@ -1,0 +1,122 @@
+quest tpring begin
+	state start begin
+	
+		function zone(index,value)
+		
+			bolgeler = {
+				-- [index]     = { mapindex,"mapname", minlv, maxlv, warpx, warpy, altmenu, altmenu2},
+				[1]     = { 1, "Köyler ", 1, 99, 469300, 964200, 1, 6},
+				[2]     = { 64, "Seuryong Vadisi ", 30, 99, 402100, 673900, 0, 0},
+				[3]     = { 63, "Yongbi Çölü ", 40, 99, 217800, 627200, 0, 0},
+				[4]     = { 61, "Sohan Dağı ", 50, 99, 434200, 290600, 0, 0},
+				[5]     = { 65, "Tapınak ", 50, 99, 553600, 143600, 0, 0},
+				[6]     = { 104, "Örümcek Zindanı ", 45, 99, 59800, 497300, 7, 8},
+				[7]     = { 62, "Doyum Paper ", 60, 99, 599400, 756300, 0, 0},
+				[8]     = { 70, "Devler Diyarı ", 65, 99, 840600, 755400, 0, 0},
+				[9]     = { 67, "Hayalet Orman ", 65, 99, 294200, 38900, 0, 0},
+				[10]    = { 68, "Kızıl Orman ", 70, 99, 1120100, 70500, 0, 0},
+			}
+			if value == 99 then
+				return tonumber(table.getn(bolgeler))
+			end
+			return bolgeler[index][value]
+		end
+	
+		function altmenu(index,value)
+		
+			altbolgeler = {
+				-- [index]     = { mapindex,"mapname", minlv, maxlv, warpx, warpy},
+				[1]     = { 1, "Kırmızı 1.Köy ", 1, 99, 469300, 964200},
+				[2]     = { 3, "Kırmızı 2.Köy ", 1, 99, 360800, 877600},
+				[3]     = { 21, "Sarı 1.Köy ", 1, 99, 55700, 157900},
+				[4]     = { 23, "Sarı 2.Köy ", 1, 99, 138500, 234900},
+				[5]     = { 41, "Mavi 1.Köy ", 1, 99, 969600, 278400},
+				[6]     = { 43, "Mavi 2.Köy ", 1, 99, 873100,242600},
+				[7]     = { 104, "1. Kat Başı ", 1, 99, 59800, 497300},
+				[8]     = { 71, "2. Kat Başı ", 1, 99, 704000, 463300},
+			}
+			if value == 99 then
+				return tonumber(table.getn(altbolgeler))
+			end
+			return altbolgeler[index][value]
+		end
+
+		when login begin
+			local level = pc.get_level()
+			local idx = pc.get_map_index()
+			
+			local kac = tonumber(tpring.zone(1,99))
+			for i=1,kac do
+				if idx == tpring.zone(i,1) then
+					if level < tpring.zone(i,3) or level > tpring.zone(i,4) then
+						syschat("Seviyen buraya giriş için uygun değil.")
+						warp_to_village()
+						return
+					end
+				end
+			end
+		end
+	
+		when 40004.use begin
+			say_title("Işınlanma Yüzüğü : ")
+			say("")
+			local tablo = {}
+			local kac = tonumber(tpring.zone(1,99))
+			for i=1,kac do
+				table.insert(tablo,tpring.zone(i,2))
+			end
+			table.insert(tablo,"Vazgeç ")
+			
+			local mapler = select_table(tablo)
+			if mapler == table.getn(tablo) then
+				return
+			end
+			
+			local m_index = tpring.zone(mapler,1)
+			local m_isim = tpring.zone(mapler,2)
+			local m_lv = tpring.zone(mapler,3)
+			local m_lv2 = tpring.zone(mapler,4)
+			local m_x = tpring.zone(mapler,5)
+			local m_y = tpring.zone(mapler,6)
+			local m_alt = tpring.zone(mapler,7)
+			local m_alt2 = tpring.zone(mapler,8)
+			
+			if m_alt > 0 then
+				local tablo_alt = {}
+				for i=m_alt, m_alt2 do
+					table.insert(tablo_alt,tpring.altmenu(i,2))
+				end
+				table.insert(tablo_alt,"Vazgeç ")
+				
+				local mapler2 = select_table(tablo_alt)
+				if mapler2 == table.getn(tablo_alt) then
+					return
+				end
+				
+				local secim = m_alt + mapler2 - 1
+				local m_isim2 = tpring.altmenu(secim,2)
+				m_x = tpring.altmenu(secim,5)
+				m_y = tpring.altmenu(secim,6)
+				m_isim = m_isim2
+			end
+
+			say_title("Işınlanma Yüzüğü :")
+			say("")
+			if m_lv > pc.get_level() or m_lv2 < pc.get_level() then
+				say("Seviyen bu bölgeye giriş için uygun değil.")
+				say("Gereken Seviye: "..m_lv)
+				return
+			end
+
+			if not pc.can_warp() then
+				say("Aktif ekranlar varken veya ticaret yaptıktan ")
+				say("hemen sonra ışınlanamazsın.")
+				return
+			end
+
+			say(m_isim.." bölgesine ışınlanıyorsun.")
+			wait()
+			pc.warp(m_x, m_y)
+		end	 
+	end
+end

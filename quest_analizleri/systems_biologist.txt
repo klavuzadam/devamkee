@@ -1,0 +1,21 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: collect_quest_lv*.quest & collect_herb_lv*.quest
+Kategori: Sistem - Biyolog Araştırmaları (Seviye 4-94)
+
+AÇIKLAMA:
+Biyolog Chaegirab ve öğrencisi Baek-Go için yapılan, karakterin kalıcı özelliklerini (Hız, Savunma, Saldırı Değeri vb.) artıran en kritik görev serisidir.
+
+FONKSİYONLAR:
+- Seviye 4-25 (Bitkiler): Temel bitki toplama görevleri.
+- Seviye 30 (Ork Dişi): 10 adet Ork Dişi toplanır. Kalıcı +10 Hareket Hızı verir.
+- Seviye 40 (Lanet Kitabı): 15 adet Lanet Kitabı. Kalıcı +5 Saldırı Hızı verir.
+- Seviye 50 (Hatıra): 15 adet Şeytan Hatırası. Kalıcı +60 Savunma verir.
+- Seviye 60 (Buz Topu): 20 adet Buz Topu. Kalıcı +50 Saldırı Değeri verir.
+- Seviye 70 (Zelkova Dalı): 25 adet Zelkova Dalı. Kalıcı +10 Hareket Hızı ve %10 Hasar Azaltma verir.
+- Seviye 80 (Tugyis Tabelası): 30 adet Tugyis Tabelası. Kalıcı +6 Saldırı Hızı ve %10 Saldırı Değeri verir.
+- Seviye 85-90-94 (Efsanevi Nesneler): Kırmızı Hayalet Ağaç Dalları, Liderin Notları ve Kemaldar Mücevherleri ile yüksek oranda Yarı İnsan hasarı veya HP bonusları sağlar.
+
+TETİKLEYİCİLER:
+- NPC: Biyolog Chaegirab (20084), Baek-Go (20018).
+- Mekanik: Günlük teslimat sınırı (cooldown) ve başarılı/başarısız olma ihtimali.

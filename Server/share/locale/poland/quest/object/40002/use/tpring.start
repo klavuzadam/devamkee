@@ -1,0 +1,116 @@
+local vnum = item . get_vnum ( ) 
+if pc . is_dead ( ) then 
+syschat ( "Oluylen isinlanma yuzugunu kullanamazsin." ) 
+return 
+end 
+if pc . in_dungeon ( ) then 
+syschat ( "Zindandayken isinlanma yuzugunu kullanamazsin." ) 
+return 
+end 
+local current_map = pc . get_map_index ( ) 
+if current_map == 113 then 
+syschat ( "OX yarismasindayken isinlanamazsin." ) 
+return 
+elseif current_map == 81 then 
+syschat ( "Dugun salonundayken isinlanamazsin." ) 
+return 
+elseif current_map == 71 then 
+syschat ( "Orumcek Zindani 2. kattayken isinlanamazsin." ) 
+return 
+elseif pc . get_war_map ( ) ~= 0 then 
+syschat ( "Lonca savasindayken isinlanamazsin." ) 
+return 
+end 
+if not pc . can_warp ( ) then 
+syschat ( "Ticaret veya pazar sonrasi hemen isinlanamazsin." ) 
+return 
+end 
+local qf_name = "tp_cd_" .. vnum 
+local next_time = pc . getqf ( qf_name ) 
+if get_time ( ) < next_time then 
+syschat ( "Bu yuzugu henuz kullanamazsin. Kalan sure: " .. ( next_time - get_time ( ) ) .. " sn." ) 
+return 
+end 
+local loop_active = true 
+while loop_active begin 
+local main_tablo = { "Koyler" , "Seuryong Vadisi" , "Yongbi Colu" , "Sohan Dagi" , "Tapinak" , "Orumcek Zindani" , "Doyum Paper" , "Devler Diyari" , "Hayalet Orman" , "Kizil Orman" , "Kapat" } 
+local s = select_table ( main_tablo ) 
+local m_name = "" 
+local m_x = 0 
+local m_y = 0 
+local m_min = 1 
+local is_village = false 
+if s == 1 then 
+local koy_tablo = { "Kirmizi 1" , "Kirmizi 2" , "Sari 1" , "Sari 2" , "Mavi 1" , "Mavi 2" , "Geri" } 
+local s2 = select_table ( koy_tablo ) 
+is_village = true 
+if s2 == 1 then m_name = "Kirmizi 1" m_x = 469300 m_y = 964200 
+elseif s2 == 2 then m_name = "Kirmizi 2" m_x = 360800 m_y = 877600 
+elseif s2 == 3 then m_name = "Sari 1" m_x = 55700 m_y = 157900 
+elseif s2 == 4 then m_name = "Sari 2" m_x = 138500 m_y = 234900 
+elseif s2 == 5 then m_name = "Mavi 1" m_x = 969600 m_y = 278400 
+elseif s2 == 6 then m_name = "Mavi 2" m_x = 873100 m_y = 242600 
+else loop_active = true is_village = false end 
+elseif s == 2 then m_name = "Seuryong Vadisi" m_x = 402100 m_y = 673900 m_min = 30 
+elseif s == 3 then m_name = "Yongbi Colu" m_x = 217800 m_y = 627200 m_min = 40 
+elseif s == 4 then m_name = "Sohan Dagi" m_x = 434200 m_y = 290600 m_min = 50 
+elseif s == 5 then m_name = "Tapinak" m_x = 553600 m_y = 143600 m_min = 50 
+elseif s == 6 then 
+local oz_tablo = { "1. Kat Basi" , "2. Kat Basi" , "Geri" } 
+local s3 = select_table ( oz_tablo ) 
+if s3 == 1 then m_name = "1. Kat Basi" m_x = 59800 m_y = 497300 m_min = 45 
+elseif s3 == 2 then m_name = "2. Kat Basi" m_x = 704000 m_y = 463300 m_min = 45 
+else loop_active = true end 
+elseif s == 7 then m_name = "Doyum Paper" m_x = 599400 m_y = 756300 m_min = 60 
+elseif s == 8 then m_name = "Devler Diyari" m_x = 840600 m_y = 755400 m_min = 65 
+elseif s == 9 then m_name = "Hayalet Orman" m_x = 294200 m_y = 38900 m_min = 65 
+elseif s == 10 then m_name = "Kizil Orman" m_x = 1.1201e+06 m_y = 70500 m_min = 70 
+else return end 
+if m_x > 0 then 
+if vnum == 40004 and not is_village then 
+local farm_cd = pc . getqf ( "tp_farm_cd" ) 
+if get_time ( ) < farm_cd then 
+local left = farm_cd - get_time ( ) 
+say_title ( "Farm Kilidi Aktif" ) 
+say ( "Farm bolgelerine tekrar gitmek icin henuz erken." ) 
+if left >= 60 then 
+say_reward ( "Kalan sure: " .. math . floor ( left / 60 ) .. " dk." ) 
+else 
+say_reward ( "Kalan sure: " .. left .. " sn." ) 
+end 
+say ( "Ancak kirmizi, sari veya mavi koylere gidebilirsin." ) 
+say ( "" ) 
+confirm = select ( "Koyler Menusune Don" , "Kapat" ) 
+if confirm == 1 then 
+loop_active = true 
+m_x = 0 
+else 
+return 
+end 
+end 
+end 
+if m_x > 0 then 
+say ( m_name .. " bolgesine isinlanmak istiyor musun?" ) 
+local confirm = select ( "Isinlan" , "Vazgec" , "Ana Menu" ) 
+if confirm == 1 then 
+if pc . is_dead ( ) then 
+syschat ( "Oldugun icin isinlanma iptal edildi." ) 
+loop_active = false 
+elseif pc . get_level ( ) < m_min then 
+say_reward ( "Seviyeniz uygun degil. Gerekli: " .. m_min ) 
+loop_active = false 
+else 
+pc . setqf ( qf_name , get_time ( ) + 10 ) 
+if vnum == 40004 and not is_village then 
+pc . setqf ( "tp_farm_cd" , get_time ( ) + 3600 ) 
+syschat ( "Farm bolgesine isinlandin. 1 saatlik farm kilidi basladi." ) 
+end 
+pc . warp ( m_x , m_y ) 
+loop_active = false 
+end 
+elseif confirm == 2 then 
+loop_active = false 
+end 
+end 
+end 
+end 

@@ -1,0 +1,19 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: main_quest_lv*.quest
+Kategori: Hikaye - Ana Görev Hattı (Level 1-55)
+
+AÇIKLAMA:
+Oyuncunun seviyesine paralel olarak ilerleyen, imparatorluğun tarihini, sırlarini ve biyoloğun araştırmalarını konu alan ana görev serisidir.
+
+FONKSİYONLAR:
+- Seviye 1-10 (Başlangıç): Eğitmenlerle tanışma, temel savaş mekanikleri ve şehir gardiyanının emirlerini yerine getirme.
+- Seviye 10-30 (Gelişim): Yüzbaşı ve Müzisyen Yu-Hwan gibi karakterler üzerinden imparatorluklar arası casusluk ve bilgi toplama adımları.
+- Seviye 30-55 (Araştırma): Uriel (Bilge) tarafından verilen görevlerle antik anıtları inceleme, "Günlük Sayfaları" toplama ve diğer krallıkların topraklarına sızma.
+- Sayfa Toplama: 55. seviyede belirli canavarlardan (örn: Bogy-Pa) düşürülen sayfalarla hikaye derinleştirilir.
+
+TETİKLEYİCİLER:
+- NPC: Yüzbaşı (20355), Uriel (20011), Yu-Hwan (20017).
+- Olay: Seviye atlama, Canavar kesme, Nesne toplama.
+
+NOT: Mevcut `mainstory` klasöründeki görevler 55. seviyede sona ermekte veya bir sonraki kategoriye aktarılmaktadır.

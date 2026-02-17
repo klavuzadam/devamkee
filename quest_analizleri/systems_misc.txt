@@ -1,0 +1,43 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: affect_remove.quest
+Kategori: Sistem - Etki (Buff/Debuff) Kaldırma
+
+AÇIKLAMA:
+Bu quest, oyuncunun üzerindeki bazı geçici etkileri (buff veya debuff) manuel olarak kaldırmasını sağlar.
+
+FONKSİYONLAR:
+- Kaldırılabilir Etkiler: Dönüşüm (polymorph), şebnem/iksir etkileri ve Tecrübe Engelleme (XP block) gibi etkilerin listeden seçilerek silinmesini yönetir.
+- Güvenlik: Lanetli dönüşümler gibi kalıcı olması gereken bazı özel durumların silinmesini engeller.
+
+-------------------
+
+Dosya Adı: special_shop.quest
+Kategori: Sistem - Özel Marketler
+
+AÇIKLAMA:
+Bu quest, standart marketler dışında özel birimlerle (İtibar puanı vb.) veya özel zaman dilimlerinde çalışan marketleri yönetir.
+
+FONKSİYONLAR:
+- Evlilik Marketi: Yaşlı Kadın (9006) üzerinden erişilen, her 12 saatte bir güncellenen özel bir markettir.
+- İtibar Marketi: Bölge sorumluları (örn: 20406) üzerinden erişilen ve bölge itibarına göre eşya satan marketlerdir.
+- İmparatorluk Marketi: Sadece kendi krallığınızın NPC'lerinden alışveriş yapmanıza izin veren sistemdir.
+
+-------------------
+
+Dosya Adı: warehouse_expand.quest
+Kategori: Sistem - Depo Genişletme Görevi
+
+AÇIKLAMA:
+Bu quest, oyuncuların depo kapasitelerini kalıcı olarak artırmalarını sağlayan zorlu bir taşıma görevini yönetir.
+
+FONKSİYONLAR:
+- Görev Koşulu: 30. seviye ve üzeri oyuncular Depocu (9005) üzerinden başlatabilir.
+- Taşıma Görevi: Oyuncu, Map 1'den Map 2'deki Depocu'ya ağır bir kutu taşımalıdır.
+- Kısıtlamalar: Hareket hızı düşer, ata binilemez ve görev süresi 10 dakikadır. Eğer ölürseniz görev başarısız olur.
+- Pusu (Ambush): Taşıma sırasında rastgele canavarlar belirerek oyuncuya saldırabilir ve onu sersemletebilir.
+- Ödül: Başarıyla tamamlandığında hesabın depo kapasitesi kalıcı olarak 2. kata (veya daha fazlasına) genişletilir.
+
+TETİKLEYİCİLER:
+- NPC: Depocu (9005).
+- Olay: Harita değiştirme, Öldürülme.

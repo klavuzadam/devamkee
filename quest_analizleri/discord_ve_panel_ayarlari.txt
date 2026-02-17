@@ -1,0 +1,35 @@
+DISCORD, PANEL VE TEKNİK ÇEVİRİ NOKTALARI
+----------------------------------------
+
+Oyun kodunda (Source) doğrudan müdahale etmeniz gereken, Discord ve Yönetim Paneli ile ilgili kritik noktalar şunlardır:
+
+### 1. Yönetim Paneli Linki (Giriş Yapınca)
+GM karakterle oyuna girdiğinizde sol üstte veya chatte çıkan panel linki:
+- **Dosya:** `Game Source/Server/game/src/input_login.cpp`
+- **Satır:** 767
+- **Kod:** `ch->ChatPacket(CHAT_TYPE_COMMAND, "GameMaster %s", "https://panel.mt2009.pl/");`
+- **Ne yapılmalı?** Tırnak içindeki .pl li adresi kendi panel adresinizle değiştirmelisiniz.
+
+### 2. Nesne Market (Web Mall) Linki
+Oyun içindeki nesne market butonu tıklandığında açılacak adres:
+- **Dosya:** `Game Source/Server/game/src/config.cpp`
+- **Satır:** 110
+- **Kod:** `string g_strWebMallURL = "www.metin2.de";`
+- **Ne yapılmalı?** Buraya kendi nesne market adresinizi yazmalısınız.
+
+### 3. Discord / Veri İstek Sistemi (Teknik Loglar)
+Sistem arka planda Discord bilgisi veya hack kontrolü yaparken loglara Lehçe mesajlar düşmektedir:
+- **Dosya:** `Game Source/Server/game/src/char.cpp`
+- **Satır:** 9380 ve 9386
+- **Lehçe:** "koncze event!" -> Çeviri: "İşlem tamamlandı."
+- **Lehçe:** "otrzymalem response! :)" -> Çeviri: "Yanıt alındı! :)"
+
+### 4. Ikarus Shop (Pazar Sistemi) Debug Mesajı
+Pazar sistemiyle ilgili bir teknik mesaj:
+- **Dosya:** `Game Source/Server/game/src/input_login.cpp`
+- **Satır:** 885
+- **Lehçe:** "jests pusto wiec wysylam zapytanie do DB o itemy"
+- **Çeviri:** "Pazar boş, veritabanından eşyalar isteniyor."
+
+### Önemli Not:
+Bu metinler locale_string.txt dosyasından okunmaz. Bunlar "hardcoded" yani kodun içine direkt yazılmış metinlerdir. Bunları değiştirmek için source dosyasını düzenleyip, serverı tekrar derlemeniz (build etmeniz) gerekmektedir.

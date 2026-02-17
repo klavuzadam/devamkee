@@ -1,0 +1,85 @@
+ScriptType         EnvironmentData
+ScriptVersion      1.0000
+
+Group DirectionalLight
+{
+    Direction     0.500000 0.500000 -0.500000
+
+    Group Background
+    {
+        Enable        1
+        Diffuse       0.572549 0.470588 0.380392 1.000000
+        Ambient       0.247059 0.313726 0.309804 1.000000
+    }
+    
+    Group Character
+    {
+        Enable        1
+        Diffuse       0.572549 0.470588 0.380392 1.000000
+        Ambient       0.397059 0.463726 0.459804 1.000000
+    }
+}
+Group Material
+{
+    Diffuse       0.376471 0.349020 0.349020 1.000000
+    Ambient       0.466667 0.423529 0.305882 1.000000
+    Emissive      0.200000 0.200000 0.200000 1.000000
+}
+
+Group Fog
+{
+    foglevel		5
+    Color         0.098039 0.062745 0.027451 1.000000
+}
+
+Group Filter
+{
+    Enable        0
+    Color         0.301961 0.109804 0.109804 0.000000
+    AlphaSrc      2
+    AlphaDest     2
+}
+
+Group SkyBox
+{
+    bTextureRenderMode    0
+    Scale                 3500.000000 3500.000000 3500.000000
+    GradientLevelUpper    1
+    GradientLevelLower    1
+    FrontFaceFileName	   ""
+    BackFaceFileName	   ""
+    LeftFaceFileName	   ""
+    RightFaceFileName	   ""
+    TopFaceFileName	   ""
+    BottomFaceFileName	   ""
+    
+    CloudScale            200000.000000 200000.000000
+    CloudHeight           4000.000000
+    CloudTextureScale     4.000000 4.000000
+    CloudSpeed            0.001000 0.001000
+    CloudTextureFileName  "D:\YMIR WORK\environment\clouds_zone05.tga"
+    List CloudColor
+    {
+        0.000000 0.000000 0.000000 0.000000
+        0.000000 0.000000 0.000000 0.000000
+    }
+    List Gradient
+    {
+        0.000000 0.074510 0.149020 0.000000
+        0.184314 0.082353 0.000000 0.000000
+        
+        0.164706 0.082353 0.000000 0.000000
+        0.129412 0.023529 0.023529 0.000000
+    }
+}
+
+Group LensFlare
+{
+    Enable                     0
+    BrightnessColor            0.976471 0.976471 0.976471 1.000000
+    MaxBrightness              1.000000
+    MainFlareEnable            0
+    MainFlareTextureFileName   ""
+    MainFlareSize              0.200000
+}
+

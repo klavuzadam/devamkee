@@ -1,0 +1,34 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: loot_chest.quest
+Kategori: Sistem - Define Sandıkları
+
+AÇIKLAMA:
+Bu quest, oyun dünyasında NPC (nesne) olarak beliren define sandıklarının açılma sürecini yönetir.
+
+FONKSİYONLAR:
+- Seviye Kontrolü: Sandığın türüne göre minimum ve maksimum seviye sınırlaması vardır. Kendi seviyenizden çok düşük veya çok yüksek sandıkları açamazsınız.
+- Gereksinim: Açmak için "Maymuncuk" (30380) eşyası gereklidir.
+- Bekleme Süresi: Bir sandığı açtıktan sonra tekrar bir sandık açmak için 1 saat (3600 sn) beklemeniz gerekir.
+- Ödül Sistemi: Başarıyla açıldığında içinden rastgele değerli eşyalar çıkar. Premium (Eşya Ele Geçirme Şansı) aktifse düşen eşya sayısı artar.
+- Animasyon: Sandık açılırken 9 saniyelik bir işlem süresi uygulanır.
+
+TETİKLEYİCİLER:
+- NPC: Haritadaki Define Sandıkları (20701-20710).
+- Item: Maymuncuk (30380).
+
+-------------------
+
+Dosya Adı: item_exchange.quest
+Kategori: Sistem - Eşya Takas Yönetimi
+
+AÇIKLAMA:
+Bu quest, oyuncuların ellerindeki bazı özel eşyaları (Ruh Taşı veya Beceri Kitabı gibi) bir pencere üzerinden takas etmelerini sağlar.
+
+FONKSİYONLAR:
+- Ruh Taşı Takası: Alchemist (Simyacı - 20001) üzerinden Ruh Taşlarını takas etmek için kullanılır.
+- Beceri Kitabı Takası: Soon (Bilgin - 20023) üzerinden gereksiz beceri kitaplarını başkalarıyla takas etmek veya işlemek için kullanılır.
+- Arayüz: Özel bir takas penceresi açılır ve oyuncu envanterindeki eşyaları buraya yerleştirerek işlemi tamamlar.
+
+TETİKLEYİCİLER:
+- NPC: Simyacı (20001), Soon (20023).

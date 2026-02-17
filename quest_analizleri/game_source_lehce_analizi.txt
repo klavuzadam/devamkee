@@ -1,0 +1,34 @@
+DETAYLI GAME SOURCE (SERVER) LEHÇE ANALİZ RAPORU
+-----------------------------------------------
+
+Tüm source dosyaları (330+ dosya) üzerinde yapılan derinlemesine tarama sonucunda, sadece sistem yapılandırmalarında değil, aynı zamanda oyunun çekirdek komutlarında ve hata günlüklerinde de hardcoded (kod içine gömülmüş) Lehçe ifadeler tespit edilmiştir.
+
+### 1. Hardcoded Kullanıcı Mesajları (ChatPacket)
+Bazı GM komutları ve sistem mesajları doğrudan Lehçe metinler içermektedir:
+- **cmd_gm.cpp:** `ch->ChatPacket(CHAT_TYPE_INFO, "Wskazana postac nie jest w M1.");`
+  *(Anlamı: Belirtilen karakter M1 haritasında değil.)*
+- **ikarus_shop_manager.cpp:** `ch->ChatPacket(CHAT_TYPE_INFO, "Blad depozytu sklepu. Zglos administracji...");`
+  *(Anlamı: Pazar deposu hatası. Yönetime bildirin...)*
+
+### 2. Geliştirici Logları ve Hata Günlükleri (sys_err / sys_log)
+Geliştiricilerin teknik takip için kullandığı loglarda Lehçe ve hatta yer yer Lehçe argotik ifadeler bulunmaktadır:
+- **questmanager.cpp:** `sys_err("Something kurwa wrong: CQuestManager::Resume...");`
+- **name_reservation.cpp:** `sys_log(0, "jest rezerwacja %s dla %d", name, p->dwOwner);`
+  *(Anlamı: %d için %s ismi rezerve edilmiştir.)*
+- **input_login.cpp:** `ch->ChatDebug("jests pusto wiec wysylam zapytanie do DB o itemy");`
+  *(Anlamı: Boş olduğu için DB'ye item sorgusu gönderiyorum.)*
+
+### 3. Teknik Yorum Satırları (Code Comments)
+Kodun işleyişini anlatan yorum satırlarının bir kısmı Lehçe olarak kalmıştır:
+- **char_battle.cpp:** `// odleglosc od gracza` (Oyuncuya olan mesafe)
+- **char_battle.cpp:** `// nie dziala na bossy` (Bosslarda çalışmaz)
+- **battle.cpp:** `// sprawdzamy czy gracz nie bije za duzo targetow na raz` (Oyuncunun aynı anda çok fazla hedefe vurup vurmadığını kontrol ediyoruz)
+- **char.cpp:** `// mt2009 edit: nie wysylamy pakietu do klienta bo nie da sie zmienic rozmiaru magazynu...` (Depo açıkken boyutu değişmediği için paket gönderilmiyor)
+- **Makefile:** `# main.cpp jest traktowany osobno` (main.cpp ayrı ele alınır)
+
+### 4. Dil ve Karakter Seti Yapılandırması
+- **locale_service.cpp:** `g_stLocale="cp1250";` (Lehçe karakter kodlaması)
+- **ClientManager.cpp:** Veritabanı bağlantısında Polonya seçilirse dil setini otomatik olarak `cp1250` yapar.
+
+SONUÇ:
+Analizimiz, oyunun "Metin2 Poland" veya benzeri bir Lehçe tabandan geliştirildiğini/migrate edildiğini kesinleştirmiştir. Ikarus Shop gibi sonradan eklenen sistemlerde Lehçe kalıntılar daha yoğundur. Bu ifadelerin temizlenmesi, hem oyun içi profesyonellik hem de logların okunabilirliği açısından önerilir.

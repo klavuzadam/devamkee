@@ -1,0 +1,32 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: check_trans_ticket.quest
+Kategori: Harita Giriş - Geçiş Biletleri
+
+AÇIKLAMA:
+Ücretli veya özel eşya gerektiren haritalara (Örümcek Zindanı 2. Kat vb.) giriş sürecini yönetir.
+
+FONKSİYONLAR:
+- Örümcek Zindanı 2. Kat: Giriş için "Geçiş Bileti" (71095) veya "VİP üyelik" gereklidir. Minimum 15. seviye şartı vardır.
+- Sürgün Mağarası: (Şu an pasif/yorum satırında) Giriş için 75. seviye ve "Kan Taşı" gereksinimi kodlanmıştır.
+
+-------------------
+
+Dosya Adı: monkey_curse.quest
+Kategori: Harita Giriş - Maymun Zindanı Laneti
+
+AÇIKLAMA:
+Maymun zindanlarında (Kolay, Normal, Zor) bulunan oyuncular için geçerli olan benzersiz bir "Zaman Sınırı" ve "Lanet" mekaniğidir.
+
+FONKSİYONLAR:
+- Lanet Sayacı: Oyuncu zindana girdiğinde bir sayaç başlar (Kolay: 55 dk, Normal: 35 dk, Zor: 25 dk).
+- Ceza: Süre dolduğunda oyuncu bir maymuna dönüştürülür ve zindandan dışarı atılır.
+- Koruma: Belirli eşyalar (50057-50059) kullanılarak bu lanete karşı bağışıklık kazanılabilir veya oluşmuş lanet bozulabilir.
+
+-------------------
+
+Dosya Adı: spider_dungeon_2floor.quest & heavens_cave_escape.quest
+Kategori: Harita Giriş - Katlar Arası Geçiş
+
+AÇIKLAMA:
+Örümcek zindanı katları arasındaki geçişleri ve Sürgün Mağarası'ndan çıkış yollarını yöneten basit ışınlanma questleridir.

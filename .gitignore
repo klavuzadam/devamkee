@@ -1,0 +1,52 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+ipch/
+*.VC.db
+*.VC.opendb
+
+# Build Outputs
+*/Debug/
+*/Release/
+*/x64/
+*/x86/
+*.obj
+*.lib
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.pch
+*.idb
+*.tlog
+*.lastbuildstate
+
+# Logs & Temp
+*.log
+*.bak
+*.tmp
+Server/db/log/
+Server/share/data/log/
+Server/share/data/dump/
+
+# Large Binary Files (Optional, can be tracked if small)
+# *.tga
+# *.dds
+# *.gr2
+
+# Specific excludes for this environment
+Ojinalpack/
+DumpProto_USED/
+Mob Names/
+v5-DumpMysqlProto/
+PackMakerLite/
+123/
+*.json
+*.txt
+!locale_pairs.json
+!polish_to_translate.txt
+!GameCoreTop.txt
+!quest_analizleri/*.txt
+!discord_ve_panel_ayarlari.txt

@@ -1,0 +1,40 @@
+KARAKTER KODLAMASI VE ÇEVİRİ REHBERİ
+-----------------------------------
+
+### 1. Karakter Kodlaması (2. Madde) Nedir?
+Karakter kodlaması, bilgisayarın harfleri nasıl okuduğudur. 
+- **Lehçe (Poland):** `cp1250` kodlamasını kullanır. Bu kodlamada Türkçe "ş, ı, ğ" harfleri yoktur.
+- **Türkçe (Turkey):** `latin5` kodlamasını kullanır.
+
+**Sorun:** Eğer server "Lehçe" modundaysa, siz dosyaya "Merhaba" yazsanız bile oyunda "Merhab?" veya garip semboller görünür. Çünkü sistem o harfi tanımaz.
+
+**Ne yapmalısınız?**
+Kodlarınızı incelediğimde, bu ayarın OTOMATİK yapıldığını gördüm. Sizin tek yapmanız gereken veritabanında (Navicat/HeidiSQL):
+- `common` veritabanındaki `locale` tablosuna gidin.
+- `LOCALE` anahtarının (key) karşısındaki değerin (value) **"turkey"** olduğundan emin olun.
+- Bunu "turkey" yaptığınızda, server açılırken kod otomatik olarak dil setini `latin5` (Türkçe) yapacaktır. Hiçbir dosyayı ellemenize gerek kalmaz.
+
+---
+
+### 2. Hardcoded (Kod İçindeki) Mesajlar
+"Source'a müdahale etmeyelim" dediğiniz için bir açıklama yapmam gerekiyor:
+Eğer source (C++ kodları) içinde şu mesajı değiştirmezsek:
+`"Wskazana postac nie jest w M1."`
+Siz `locale_string.txt` dosyasına ne eklerseniz ekleyin, bu mesaj **her zaman Lehçe** görünmeye devam eder. 
+
+**Nasıl Çözülür? (İki Seçenek)**
+1. **Seçenek (Tavsiye Edilen):** Source kodunda bu metni silip yerine `LC_TEXT("Karakter M1 haritasinda degil.")` yazarız. O zaman gidip `locale_string.txt` ye ekleme yapabilirsiniz.
+2. **Seçenek (Source Değişmeyecekse):** Bu metni doğrudan source içinde tırnak arasındayken Türkçe ile değiştiririz: `"Karakter M1 haritasinda degil."`
+
+**Hangi metinleri `locale_string.txt` içine eklemelisiniz? (Eğer source'u güncellersek):**
+Aşağıdakileri `locale_string.txt` dosyanızın en altına ekleyin:
+
+```txt
+"Wskazana postac nie jest w M1.";
+"Karakter M1 haritasinda degil.";
+
+"Blad depozytu sklepu. Zglos administracji (kod: check_safe)";
+"Pazar deposu hatası. Yönetime bildirin (kod: check_safe)";
+```
+
+**Önemli:** Source'u güncellemediğimiz sürece yukarıdaki eklemeler oyuna yansımaz. Müdahale etmek istemiyorsanız bu mesajlar Lehçe kalacaktır.

@@ -1,0 +1,34 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: captcha_manage.quest
+Kategori: Sistem - Captcha / Bot Kontrolü
+
+AÇIKLAMA:
+Bu quest, oyun içinde bot kullanımını engellemek için tasarlanmış "Captcha" (doğrulama kodu) sisteminin teknik arka planını yönetir.
+
+FONKSİYONLAR:
+- Doğrulama Kontrolü: İstemciden (client) gelen doğrulama kodlarını sunucu tarafında kontrol eder (`verify`).
+- Yenileme Talebi: Oyuncunun kodu yenileme taleplerini işler (`change_request`).
+- Güvenlik: Sadece Captcha penceresi aktif olan oyuncuların yanıt vermesine izin verir.
+
+TETİKLEYİCİLER:
+- Olay: Teknik paket (captcha_respond).
+
+-------------------
+
+Dosya Adı: marriage_manage.quest
+Kategori: Sistem - Evlilik Yönetimi
+
+AÇIKLAMA:
+Bu quest, Metin2'nin evlilik sistemini tüm detaylarıyla yönetir. Nişanlanma, düğün töreni ve boşanma süreçlerini kapsar.
+
+FONKSİYONLAR:
+- Evlilik Başvurusu: 25. seviye üzeri, aralarında en fazla 15 seviye fark olan ve karşı cinsten olan oyuncular "Yaşlı Kadın" üzerinden başvurabilir.
+- Gereksinimler: Söz Yüzüğü (70301), Gelinlik/Smokin ve 1.000.000 Yang.
+- Düğün Töreni: Çiftler özel düğün haritasına ışınlanır. Burada müzik başlatma, hava durumunu değiştirme (kar yağdırma), gece/gündüz ayarı yapma gibi yetkileri olur.
+- Boşanma: "Köy Koruyucusu" üzerinden karşılıklı (anlaşmalı) veya tek taraflı (paralı) olarak boşanma işlemleri yapılabilir.
+- Hediye: Düğün sonunda çiftlere rastgele evlilik hediyeleri verilir.
+
+TETİKLEYİCİLER:
+- NPC: Yaşlı Kadın (oldwoman - 20041), Köy Koruyucusu (11000, 11002, 11004).
+- Item: Söz Yüzüğü, Evlilik Yüzüğü, Gelinlik, Smokin.

@@ -1,0 +1,18 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: quest_book_kill.quest & quest_book_manage.quest
+Kategori: Sistem - Görev Kitapları (Mission Scrolls)
+
+AÇIKLAMA:
+Bu quest sistemi, oyuncuların envanterlerindeki Görev Kitaplarını (Kolay, Normal, Zor vb.) kullanarak rastgele avlanma görevleri almalarını yönetir.
+
+FONKSİYONLAR:
+- Görev Başlatma: 50307-50310 arasındaki eşyalar kullanıldığında oyuncuya rastgele bir avlanma görevi atanır.
+- İlerleme Takibi: Görev aktifken ekranın sağında bir mektup belirir. Oyuncu mektuba tıklayarak hangi canavardan kaç tane kaldığını görebilir.
+- Avlanma: Belirlenen canavarlar kesildikçe sayaç otomatik olarak düşer.
+- Ödüllendirme: Tüm hedefler tamamlandığında görev mektubu kapanır ve oyuncuya otomatik olarak ödülü verilir.
+- İptal Etme: Oyuncu dilerse aktif görevi mektup üzerinden iptal edebilir.
+
+TETİKLEYİCİLER:
+- Item: Görev Kitapları (50307, 50308, 50309, 50310).
+- Olay: Canavar öldürme (Kill).

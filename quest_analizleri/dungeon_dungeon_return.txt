@@ -1,0 +1,17 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: dungeon_return.quest
+Kategori: Zindan (Dungeon) - Geri Dönüş Sistemi
+
+AÇIKLAMA:
+Bu quest, oyuncuların herhangi bir zindandan (kule, ejderha odası vb.) bir sebeple bağlantısı kesildiğinde veya ayrıldığında, belirli bir süre içinde kaldıkları yerden devam etmelerini sağlayan "Zindana Geri Dönüş" sistemini yönetir.
+
+FONKSİYONLAR:
+- Kayıt Sistemi: Oyuncu zindan içindeyken oyundan çıkarsa veya bağlantısı koparsa, koordinatları ve zindan kimliği (index) kaydedilir.
+- Geri Dönüş Penceresi: Oyundan çıkan oyuncu, tekrar giriş yaptığında eğer üzerinden 300 saniye (5 dakika) geçmediyse ekranın sağ tarafında bir mektup belirir.
+- Işınlanma: Oyuncu mektuba tıklayıp onay verirse, zindan hala aktifse (başkaları içerideyse veya süre dolmadıysa) doğrudan kaldığı koordinata ışınlanır.
+- Kısıtlamalar: Labirent (Labirynth) gibi bazı özel haritalarda bu sistem devre dışıdır.
+
+TETİKLEYİCİLER:
+- Olay: Oyuna Giriş (Login), Oyundan Çıkış (Logout).
+- Arayüz: Görev Mektubu (Letter).

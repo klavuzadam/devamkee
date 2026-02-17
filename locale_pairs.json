@@ -1,0 +1,6224 @@
+[
+  {
+    "id": 0,
+    "key": "Everyone will be teleported into the city shortly.",
+    "pl": "Wszyscy ludzie zostaną przeniesieni do miasta.",
+    "tr": "Herkes kısa süre içinde şehre ışınlanacak."
+  },
+  {
+    "id": 1,
+    "key": "This item does not exist.",
+    "pl": "Ta rzecz nie istnieje.",
+    "tr": "Bu eşya mevcut değil."
+  },
+  {
+    "id": 2,
+    "key": "The box suddenly exploded! You have lost Hit Points (HP).",
+    "pl": "Skrzynia niespodziewanie wybuchła! Straciłeś Punkty Życia.",
+    "tr": "Kutu aniden patladı! HP kaybettin."
+  },
+  {
+    "id": 3,
+    "key": "If you inhale the green smoke that is coming out of the box, the poison will spread through your body!",
+    "pl": "Jeśli będziesz wdychać zielony dym ze skrzyni, rozprzestrzenisz truciznę w swoim ciele!",
+    "tr": "Kutudan çıkan yeşil dumanı solursan, zehir vücuduna yayılacaktır!"
+  },
+  {
+    "id": 4,
+    "key": "You have received %s, %d units.",
+    "pl": "Otrzymano %s, %d sztuk.",
+    "tr": "%s aldın, %d adet."
+  },
+  {
+    "id": 5,
+    "key": "The box contains %s.",
+    "pl": "Ze skrzyni wypadł następujący przedmiot: %s.",
+    "tr": "Kutunun içinden %s çıktı."
+  },
+  {
+    "id": 6,
+    "key": "This key does not seem to fit the lock.",
+    "pl": "Ten klucz chyba nie pasuje do zamka.",
+    "tr": "Bu anahtar kilide uymuyor gibi görünüyor."
+  },
+  {
+    "id": 7,
+    "key": "You have not received anything.",
+    "pl": "Nic nie dostałeś.",
+    "tr": "Hiçbir şey almadın."
+  },
+  {
+    "id": 8,
+    "key": "You do not have enough Yang to use this item.",
+    "pl": "Masz za mało Yang, aby móc użyć tego przedmiotu.",
+    "tr": "Bu eşyayı kullanmak için yeterli Yang'ın yok."
+  },
+  {
+    "id": 9,
+    "key": "You do not have enough Yang to use this item.",
+    "pl": "Masz za mało Yang, aby móc użyć tego przedmiotu.",
+    "tr": "Bu eşyayı kullanmak için yeterli Yang'ın yok."
+  },
+  {
+    "id": 10,
+    "key": "You have lowered your Skill Level.",
+    "pl": "Obniżyłeś swój poziom umiejętności.",
+    "tr": "Beceri Seviyeni düşürdün."
+  },
+  {
+    "id": 11,
+    "key": "You cannot lower your Skill Level.",
+    "pl": "Nie możesz obniżyć swojego poziomu umiejętności.",
+    "tr": "Beceri Seviyeni düşüremezsin."
+  },
+  {
+    "id": 12,
+    "key": "This effect is already activated.",
+    "pl": "Ten efekt jest już aktywny.",
+    "tr": "Bu efekt zaten aktif."
+  },
+  {
+    "id": 13,
+    "key": "This item can only be used in an Internet cafe.",
+    "pl": "Ten przedmiot może być użyty tylko w kafejce internetowej.",
+    "tr": "Bu eşya sadece bir internet kafede kullanılabilir."
+  },
+  {
+    "id": 14,
+    "key": "That is over the limit.",
+    "pl": "To jest powyżej limitu.",
+    "tr": "Bu sınırın üzerinde."
+  },
+  {
+    "id": 15,
+    "key": "Unfortunately you don't have enough space in your inventory.",
+    "pl": "Masz za mało miejsca w swoim ekwipunku.",
+    "tr": "Maalesef envanterinde yeterli yer yok."
+  },
+  {
+    "id": 16,
+    "key": "Used Moon Cake or Seed.",
+    "pl": "Użyto Księżycowego Torcika lub Nasionka.",
+    "tr": "Ay Pastası veya Tohum kullanıldı."
+  },
+  {
+    "id": 17,
+    "key": "You cannot wear a Wedding Ring if you are not married.",
+    "pl": "Nie możesz nosić obrączki jeśli nie jesteś w związku małżeńskim.",
+    "tr": "Evli değilsen Söz Yüzüğü takamazsın."
+  },
+  {
+    "id": 18,
+    "key": "You cannot use the Event Detector from this position.",
+    "pl": "Nie możesz użyć wykrawacza zdarzeń z tej pozycji.",
+    "tr": "Bu pozisyondan Etkinlik Dedektörünü kullanamazsın."
+  },
+  {
+    "id": 19,
+    "key": "This item cannot be absorbed.",
+    "pl": "Ten przedmiot nie może być absorbowany.",
+    "tr": "Bu eşya emilemez."
+  },
+  {
+    "id": 20,
+    "key": "The Event Detector vanished in a mysterious light.",
+    "pl": "Wykrywacz zdarzeń zniknął w rozbłysku tajemniczego światła.",
+    "tr": "Etkinlik Dedektörü gizemli bir ışıkla yok oldu."
+  },
+  {
+    "id": 21,
+    "key": "The Event Detector has vanished.",
+    "pl": "Wykrywacz eventów zniknął.",
+    "tr": "Etkinlik Dedektörü yok oldu."
+  },
+  {
+    "id": 22,
+    "key": "The Compass for Metin Stones does not work in dungeons.",
+    "pl": "Kompas Kamieni Metin nie funkcjonuje w Lochach.",
+    "tr": "Metin Taşı Dedektörü zindanlarda çalışmaz."
+  },
+  {
+    "id": 23,
+    "key": "The Compass for Metin Stones has vanished in the mysterious light.",
+    "pl": "Kompas Kamieni Metin zniknął wraz z tajemniczym światłem.",
+    "tr": "Metin Taşı Dedektörü gizemli bir ışıkla kayboldu."
+  },
+  {
+    "id": 24,
+    "key": "Receive: %s - %d",
+    "pl": "Otrzymaj: %s - %d",
+    "tr": "Alındı: %s - %d"
+  },
+  {
+    "id": 25,
+    "key": "The Compass for Metin Stones has vanished.",
+    "pl": "Kompas Kamieni Metin zniknął.",
+    "tr": "Metin Taşı Dedektörü yok oldu."
+  },
+  {
+    "id": 26,
+    "key": "You find a simple Piece of Stone in the Clam.",
+    "pl": "W muszli znajdujesz jedynie zwyczajny Kawałek Kamienia.",
+    "tr": "İstiridye içinde sıradan bir Taş Parçası buldun."
+  },
+  {
+    "id": 27,
+    "key": "The Clam has vanished.",
+    "pl": "Muszla zniknęła.",
+    "tr": "İstiridye yok oldu."
+  },
+  {
+    "id": 28,
+    "key": "There is a White Pearl inside the Clam.",
+    "pl": "W muszli jest Biała Perła.",
+    "tr": "İstiridyenin içinde Beyaz İnci var."
+  },
+  {
+    "id": 29,
+    "key": "There is a Blue Pearl inside the Clam.",
+    "pl": "W muszli jest Niebieska Perła.",
+    "tr": "İstiridyenin içinde Mavi İnci var."
+  },
+  {
+    "id": 30,
+    "key": "There is a Blood-Red Pearl inside the Clam.",
+    "pl": "W muszli jest Krwawa Perła.",
+    "tr": "İstiridyenin içinde Kan Kırmızı İnci var."
+  },
+  {
+    "id": 31,
+    "key": "It isn't easy to understand this book.",
+    "pl": "Nie jest łatwo zrozumieć tę książkę.",
+    "tr": "Bu kitabı anlamak kolay değil."
+  },
+  {
+    "id": 32,
+    "key": "This book will not help you.",
+    "pl": "Ta książka Ci nie pomoże.",
+    "tr": "Bu kitap sana yardımcı olmayacak."
+  },
+  {
+    "id": 33,
+    "key": "You need to have a minimum level of 30 to understand this book.",
+    "pl": "Musisz być na 30 poziomie, aby zrozumieć tą Księge.",
+    "tr": "Bu kitabı anlamak için en az 30. seviye olman gerekir."
+  },
+  {
+    "id": 34,
+    "key": "You need a minimum level of 50 to understand this book.",
+    "pl": "Musisz być na 50 poziomie, aby zrozumieć tą Księgę.",
+    "tr": "Bu kitabı anlamak için en az 50. seviye olman gerekir."
+  },
+  {
+    "id": 35,
+    "key": "You need a minimum level of %d to understand this book.",
+    "pl": "Musisz być na %d poziomie, aby zrozumieć tą Księgę.",
+    "tr": "Bu kitabı anlamak için en az %d seviye olman gerekir."
+  },
+  {
+    "id": 36,
+    "key": "You can't train any more Combos.",
+    "pl": "Nie możesz wytrenować więcej kombinacji.",
+    "tr": "Daha fazla Kombo eğitemezsin."
+  },
+  {
+    "id": 37,
+    "key": "%s has captured the flag of %s!",
+    "pl": "Gildia %s przejęła flagę Gildii %s!",
+    "tr": "%s loncası, %s loncasının bayrağını ele geçirdi!"
+  },
+  {
+    "id": 38,
+    "key": "You already understand this language.",
+    "pl": "Już mówisz płynnie tym językiem.",
+    "tr": "Bu dili zaten anlıyorsun."
+  },
+  {
+    "id": 39,
+    "key": "You have to improve your Level to read this Book.",
+    "pl": "Musisz podnieść swój poziom, aby zrozumieć tę książkę.",
+    "tr": "Bu kitabı okumak için seviye atlamalısın."
+  },
+  {
+    "id": 40,
+    "key": "The book is too hard for practising.",
+    "pl": "Książka jest za trudna do nauki.",
+    "tr": "Kitap pratik yapmak için çok zor."
+  },
+  {
+    "id": 41,
+    "key": "You cannot train with this Book any more.",
+    "pl": "Nie możesz już trenować z tą książką.",
+    "tr": "Bu kitapla daha fazla eğitim yapamazsın."
+  },
+  {
+    "id": 42,
+    "key": "Taxes are set to %d%%.",
+    "pl": "Podatki ustawione na %d%%.",
+    "tr": "Vergiler %d%% olarak ayarlandı."
+  },
+  {
+    "id": 43,
+    "key": "You need a minimum level of 50 to get riding training.",
+    "pl": "Trening Jeździectwa jest dostępny dopiero od poziomu 50.",
+    "tr": "Binicilik eğitimi almak için en az 50. seviye olman gerekir."
+  },
+  {
+    "id": 44,
+    "key": "You have escaped the evil ghost curse with the help of an Exorcism Scroll.",
+    "pl": "Uniknąłeś klątwy Złego Ducha przy pomocy Zwoju Egzorcyzmu.",
+    "tr": "Kötü Ruh Kovma Kağıdı yardımıyla kötü ruhun lanetinden kurtuldun."
+  },
+  {
+    "id": 45,
+    "key": "You cannot read any more Riding Guides.",
+    "pl": "Nie możesz czytać więcej przewodników Jeździectwa.",
+    "tr": "Daha fazla Binicilik Kılavuzu okuyamazsın."
+  },
+  {
+    "id": 46,
+    "key": "You read the Horse Riding Manual and received a Riding Point.",
+    "pl": "Otrzymałeś punkt jeździectwa po przeczytaniu przewodnika jeździectwa.",
+    "tr": "At Binicilik Kılavuzunu okudun ve bir Binicilik Puanı kazandın."
+  },
+  {
+    "id": 47,
+    "key": "You can use this point to improve your riding skill!",
+    "pl": "Możesz podnieść swoje umiejętności jeździeckie poprzez otrzymany punkt.",
+    "tr": "Bu puanı binicilik becerini geliştirmek için kullanabilirsin!"
+  },
+  {
+    "id": 48,
+    "key": "The guild %s's flag has been stolen by player %s.",
+    "pl": "Flaga Gildii %s została ukradziona przez gracza %s.",
+    "tr": "%s loncasının bayrağı %s oyuncusu tarafından çalındı."
+  },
+  {
+    "id": 49,
+    "key": "You did not understand the riding guide.",
+    "pl": "Nie zrozumiałeś Przewodnika Jeździectwa.",
+    "tr": "Binicilik kılavuzunu anlamadın."
+  },
+  {
+    "id": 50,
+    "key": "Your mind is clear. You can concentrate really well now.",
+    "pl": "Twój umysł jest czysty. Możesz się skoncentrować.",
+    "tr": "Zihnin açık. Artık çok iyi konsantre olabilirsin."
+  },
+  {
+    "id": 51,
+    "key": "Your rank has increased by %d points.",
+    "pl": "Twoja Ranga została zwiększona o %d punktów.",
+    "tr": "Derecen %d puan arttı."
+  },
+  {
+    "id": 52,
+    "key": "You cannot dye or bleach your current hairstyle.",
+    "pl": "Nie możesz pofarbować swojej aktualnej fryzury. Użyj wybielacza, aby ją zmienić.",
+    "tr": "Mevcut saç stilini boyayamaz veya beyazlatamazsın."
+  },
+  {
+    "id": 53,
+    "key": "You need to have reached level %d to be able to dye your hair again.",
+    "pl": "Musisz osiągnąć poziom %d, aby móc ponownie zmienić kolor fryzury.",
+    "tr": "Saçını tekrar boyayabilmek için %d seviyesine ulaşmış olmalısın."
+  },
+  {
+    "id": 54,
+    "key": "This item can only be opened by the another gender.",
+    "pl": "Ten przedmiot może zostać otwarty tylko przez inną płeć.",
+    "tr": "Bu eşya sadece karşı cinsiyet tarafından açılabilir."
+  },
+  {
+    "id": 55,
+    "key": "You cannot use this from your current position.",
+    "pl": "Nie możesz tego użyć z Twojego aktualnego położenia.",
+    "tr": "Bunu mevcut konumundan kullanamazsın."
+  },
+  {
+    "id": 56,
+    "key": "You are ready to warp, so you cannot use the Scroll of the Location.",
+    "pl": "Jesteś gotowy do przeniesienia, więc nie możesz skorzystać ze zwoju powrotu.",
+    "tr": "Işınlanmaya hazırsın, bu yüzden Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 57,
+    "key": "You are being brought back to the place of origin.",
+    "pl": "Wróciłeś do punktu wyjścia.",
+    "tr": "Başlangıç noktasına geri getiriliyorsun."
+  },
+  {
+    "id": 58,
+    "key": "%s%s cannot be used in a dungeon.",
+    "pl": "%s%s nie może być użyty w lochu.",
+    "tr": "%s%s bir zindanda kullanılamaz."
+  },
+  {
+    "id": 59,
+    "key": "[Quest] You have already received your reward.",
+    "pl": "[Misja] Odebrałeś już swoją nagrodę.",
+    "tr": "[Görev] Ödülünü zaten aldın."
+  },
+  {
+    "id": 60,
+    "key": "the",
+    "pl": "the",
+    "tr": "the"
+  },
+  {
+    "id": 61,
+    "key": "the",
+    "pl": "the",
+    "tr": "the"
+  },
+  {
+    "id": 62,
+    "key": "There aren't any Soul Stones available for extraction.",
+    "pl": "Przedmiot nie posiada Kamienia Duszy do wyjęcia.",
+    "tr": "Eşyada çıkarılacak herhangi bir Ruh Taşı yok."
+  },
+  {
+    "id": 63,
+    "key": "There aren't any Pieces of Broken Stone available for removal.",
+    "pl": "Przedmiot nie posiada Odłamku Kamienia do usuwania.",
+    "tr": "Temizlenecek herhangi bir Kırık Taş Parçası mevcut değil."
+  },
+  {
+    "id": 64,
+    "key": "You cannot change the upgrade of this item.",
+    "pl": "Nie możesz zmienić ulepszenia tego Przedmiotu.",
+    "tr": "Bu eşyanın yükseltmesini değiştiremezsin."
+  },
+  {
+    "id": 65,
+    "key": "There is no upgrade that you can change.",
+    "pl": "Nie masz ulepszenia, które mógłbyś zmienić.",
+    "tr": "Değiştirebileceğin bir yükseltme yok."
+  },
+  {
+    "id": 66,
+    "key": "You can only do this %d minutes after an upgrade. (%d minutes left)",
+    "pl": "Możesz tego dokonać tylko w %d minut po ulepszeniu. (Zostało %d minut)",
+    "tr": "Bunu sadece bir yükseltmeden %d dakika sonra yapabilirsin. (%d dakika kaldı) "
+  },
+  {
+    "id": 67,
+    "key": "You have changed the upgrade.",
+    "pl": "Zmieniłeś ulepszenie.",
+    "tr": "Yükseltmeyi değiştirdin."
+  },
+  {
+    "id": 68,
+    "key": "Upgrade successfully added.",
+    "pl": "Ulepszenie dodane pomyślnie.",
+    "tr": "Yükseltme başarıyla eklendi."
+  },
+  {
+    "id": 69,
+    "key": "No upgrade added.",
+    "pl": "Ulepszenie nie zostało dodane.",
+    "tr": "Yükseltme eklenmedi."
+  },
+  {
+    "id": 70,
+    "key": "You must use the Blessing Marble in order to add another bonus to this item.",
+    "pl": "Aby dodać kolejny bonus do tego przedmiotu, musisz użyć kuli błogosławieństwa.",
+    "tr": "Bu eşyaya başka bir efsun eklemek için Kutsama Küresi kullanmalısın."
+  },
+  {
+    "id": 71,
+    "key": "You cannot use this on war map.",
+    "pl": "Nie możesz użyć tego na wojnie.",
+    "tr": "Bunu savaş haritasında kullanamazsın."
+  },
+  {
+    "id": 72,
+    "key": "You cannot summon horse here.",
+    "pl": "Nie możesz przywołać konia w tym miejscu.",
+    "tr": "Burada at çağıramazsın."
+  },
+  {
+    "id": 73,
+    "key": "You cannot use this in the duel arena.",
+    "pl": "Nie możesz użyć tego na arenie.",
+    "tr": "Bunu düello arenasından kullanamazsın."
+  },
+  {
+    "id": 74,
+    "key": "This item can no longer be improved. The maximum number of bonuses has been reached.",
+    "pl": "Tego przedmiotu nie można już ulepszać w ten sposób. Maksymalna ilość bonusów została osiągnięta.",
+    "tr": "Bu eşya artık geliştirilemez. Maksimum efsun sayısına ulaşıldı."
+  },
+  {
+    "id": 75,
+    "key": "You can only use the Blessing Marble with an item which already has 4 bonuses.",
+    "pl": "Kula błogosławieństwa może zostać użyty tylko na przedmiotach, które już mają 4 bonusy.",
+    "tr": "Kutsama Küresi sadece 4 efsunu olan bir eşyada kullanılabilir."
+  },
+  {
+    "id": 76,
+    "key": "Socket successfully added.",
+    "pl": "Slot dodano pomyślnie.",
+    "tr": "Soket başarıyla açıldı."
+  },
+  {
+    "id": 77,
+    "key": "No socket added.",
+    "pl": "Slot nie został dodany.",
+    "tr": "Soket eklenmedi."
+  },
+  {
+    "id": 78,
+    "key": "No additional sockets could be added to this item.",
+    "pl": "Do tego przedmiotu nie możesz dodać więcej nowych slotów.",
+    "tr": "Bu eşyaya daha fazla soket eklenemez."
+  },
+  {
+    "id": 79,
+    "key": "You cannot add a socket to this item.",
+    "pl": "Nie możesz przydzielić slotu dla tego przedmiotu.",
+    "tr": "Bu eşyaya soket ekleyemezsin."
+  },
+  {
+    "id": 80,
+    "key": "Arming successful.",
+    "pl": "Uzbrajanie pomyślne.",
+    "tr": "Başarıyla eklendi."
+  },
+  {
+    "id": 81,
+    "key": "Arming has failed.",
+    "pl": "Uzbrajanie niepomyślne.",
+    "tr": "Ekleme başarısız."
+  },
+  {
+    "id": 82,
+    "key": "You have to add a socket first. Use a diamond in order to do this.",
+    "pl": "Musisz wpierw dodać slot. Użyj do tego Diamentu.",
+    "tr": "Önce bir soket eklemelisin. Bunu yapmak için bir Elmas kullan."
+  },
+  {
+    "id": 83,
+    "key": "There are no sockets for gemstones in this item.",
+    "pl": "Nie ma tu slotu z Klejnotami.",
+    "tr": "Bu eşyada mücevherler için soket yok."
+  },
+  {
+    "id": 84,
+    "key": "You can do this when you wear an Emotion Mask.",
+    "pl": "Możesz to zrobić jedynie z założoną Maską Uczuć.",
+    "tr": "Bunu bir Duygu Maskesi taktığında yapabilirsin."
+  },
+  {
+    "id": 85,
+    "key": "EMOTIONS_ONLY_PREMIUM",
+    "pl": "Emocje są dostepne tylko dla Subskrybentów Premium.",
+    "tr": "Duygular sadece Premium üyeler için mevcuttur."
+  },
+  {
+    "id": 86,
+    "key": "You have to add a socket if you want to use a Diamond.",
+    "pl": "Musisz dodać slot, jeśli chcesz użyć Diamentu.",
+    "tr": "Elmas kullanmak istiyorsan bir soket eklemelisin."
+  },
+  {
+    "id": 87,
+    "key": "No more gems can be added to this item.",
+    "pl": "Do tego przedmiotu nie można dodać więcej klejnotów.",
+    "tr": "Bu eşyaya daha fazla mücevher eklenemez."
+  },
+  {
+    "id": 88,
+    "key": "These items cannot be used together.",
+    "pl": "Te przedmioty nie mogą zostać użyte razem.",
+    "tr": "Bu eşyalar birlikte kullanılamaz."
+  },
+  {
+    "id": 89,
+    "key": "You cannot change the Bait whilst fishing.",
+    "pl": "Nie możesz zmienić przynęty podczas wędkowania.",
+    "tr": "Balık tutarken yemi değiştiremezsin."
+  },
+  {
+    "id": 90,
+    "key": "You are exchanging the current Bait for %s.",
+    "pl": "Zmieniłeś aktualną przynętę na %s.",
+    "tr": "Mevcut yemi %s ile değiştiriyorsun."
+  },
+  {
+    "id": 91,
+    "key": "You attached %s to the hook as bait.",
+    "pl": "Umieściłeś %s jako przynętę na haczyku.",
+    "tr": "Oltaya yem olarak %s taktın."
+  },
+  {
+    "id": 92,
+    "key": "You are missing some ingredients to make the potion.",
+    "pl": "Nie masz wszystkich materiałów potrzebnych do zrobienia mikstury.",
+    "tr": "İksir yapmak için bazı malzemeler eksik."
+  },
+  {
+    "id": 93,
+    "key": "You do not have enough material (%s).",
+    "pl": "Nie masz wystarczająco materiałów (%s).",
+    "tr": "Yeterli malzemen yok (%s)."
+  },
+  {
+    "id": 94,
+    "key": "You do not have enough empty bottles.",
+    "pl": "Nie masz wystarczającej liczby pustych butelek.",
+    "tr": "Yeterli boş şişen yok."
+  },
+  {
+    "id": 95,
+    "key": "The potion production has failed.",
+    "pl": "Mieszanie napoju nie powiodło się.",
+    "tr": "İksir üretimi başarısız oldu."
+  },
+  {
+    "id": 96,
+    "key": "Only women can do this.",
+    "pl": "Tylko kobiety mogą to zrobić.",
+    "tr": "Bunu sadece kadınlar yapabilir."
+  },
+  {
+    "id": 97,
+    "key": "You cannot attach several stones of the same type.",
+    "pl": "Nie możesz umieścić kilku Kamieni Duszy tego samego rodzaju.",
+    "tr": "Aynı türden birden fazla taş ekleyemezsin."
+  },
+  {
+    "id": 98,
+    "key": "This Spirit Stone cannot be attached to this type of item.",
+    "pl": "Ten Kamień Duszy nie może zostać umieszczony w przedmiocie tego rodzaju.",
+    "tr": "Bu Ruh Taşı bu tür bir eşyaya eklenemez."
+  },
+  {
+    "id": 99,
+    "key": "You cannot attach this Spirit Stone to a weapon.",
+    "pl": "Nie możesz umieścić tego Kamienia Duszy w broni.",
+    "tr": "Bu Ruh Taşı'nı bir silaha ekleyemezsin."
+  },
+  {
+    "id": 100,
+    "key": "You have attached the Spirit Stone successfully.",
+    "pl": "Pomyślnie umieściłeś Kamień Duszy.",
+    "tr": "Ruh Taşı başarıyla eklendi."
+  },
+  {
+    "id": 101,
+    "key": "The Spirit Stone broke while being attached.",
+    "pl": "Kamień Duszy pękł podczas umieszczania.",
+    "tr": "Ruh Taşı eklenirken kırıldı."
+  },
+  {
+    "id": 102,
+    "key": "No slot free.",
+    "pl": "Brak wolnych miejsc.",
+    "tr": "Boş yuva yok."
+  },
+  {
+    "id": 103,
+    "key": "This function is not available right now.",
+    "pl": "Ta funkcja jest teraz niedostępna.",
+    "tr": "Bu fonksiyon şu an mevcut değil."
+  },
+  {
+    "id": 104,
+    "key": "You cannot teleport your partner currently.",
+    "pl": "Nie możesz teleportować twojego partnera w tym momencie.",
+    "tr": "Şu anda eşini ışınlayamazsın."
+  },
+  {
+    "id": 105,
+    "key": "You cannot save position here.",
+    "pl": "Nie możesz zapisać pozycji w tym miejscu.",
+    "tr": "Burada konum kaydedemezsin."
+  },
+  {
+    "id": 106,
+    "key": "You cannot use this item here.",
+    "pl": "Nie możesz użyć tego przedmiotu w tym miejscu.",
+    "tr": "Bu eşyayı burada kullanamazsın."
+  },
+  {
+    "id": 107,
+    "key": "You cannot use a Scroll of the Location whilst taking part in a kingdom battle.",
+    "pl": "Nie możesz użyć zwoju powrotu podczas Bitwy Królestw.",
+    "tr": "İmparatorluk savaşına katılırken Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 108,
+    "key": "After opening the Storeroom you cannot use a Scroll of the Location for %d seconds.",
+    "pl": "Nie możesz użyć zwoju powrotu przez %d sek. po otwarciu magazynu.",
+    "tr": "Depoyu açtıktan sonra %d saniye boyunca Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 109,
+    "key": "You cannot use a Scroll of the Location while another window is open.",
+    "pl": "Nie możesz skorzystać ze zwoju powrotu, gdy masz otwarte inne okno.",
+    "tr": "Başka bir pencere açıkken Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 110,
+    "key": "This person does not exist.",
+    "pl": "Ta osoba nie istnieje.",
+    "tr": "Bu kişi mevcut değil."
+  },
+  {
+    "id": 111,
+    "key": "WAIT_BEFORE_NEXT_REFINE",
+    "pl": "Odczekaj przed następnym ulepszeniem.",
+    "tr": "Bir sonraki yükseltme için bekleyin."
+  },
+  {
+    "id": 112,
+    "key": "After a trade, you cannot use a scroll for another %d seconds.",
+    "pl": "Nie możesz użyć Zwoju przez %d sek. po handlu.",
+    "tr": "Ticaretten sonra %d saniye boyunca Parşömen kullanamazsın."
+  },
+  {
+    "id": 113,
+    "key": "After opening a storeroom you cannot use a Scroll of the Location for another %d seconds.",
+    "pl": "Nie możesz użyć zwoju powrotu przez %d sek. po otwarciu magazynu.",
+    "tr": "Depoyu açtıktan sonra %d saniye boyunca Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 114,
+    "key": "You cannot use the Scroll of the Location because the distance is too small.",
+    "pl": "Nie możesz użyć zwoju powrotu, ponieważ odległość jest zbyt mała.",
+    "tr": "Mesafe çok kısa olduğu için Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 115,
+    "key": "After a trade you cannot use a Scroll of the Location for %d seconds.",
+    "pl": "Po dokonaniu handlu nie możesz skorzystać ze zwoju powrotu przez %d sek.",
+    "tr": "Ticaret yaptıktan sonra %d saniye boyunca Konum Kağıdı kullanamazsın."
+  },
+  {
+    "id": 116,
+    "key": "You cannot open the Storeroom if another window is already open.",
+    "pl": "Nie możesz otworzyć Magazynu, jeśli otwarte jest inne okno.",
+    "tr": "Başka bir pencere zaten açıkken Depoyu açamazsın."
+  },
+  {
+    "id": 117,
+    "key": "You cannot drop this item.",
+    "pl": "Nie możesz wyrzucić tego przedmiotu.",
+    "tr": "Bu eşyayı yere atamazsın."
+  },
+  {
+    "id": 118,
+    "key": "The dropped item will vanish in %d minutes.",
+    "pl": "Upuszczony przedmiot zniknie za %d minut.",
+    "tr": "Atılan eşya %d dakika içinde yok olacak."
+  },
+  {
+    "id": 119,
+    "key": "%s received",
+    "pl": "Otrzymałeś %s",
+    "tr": "%s alındı."
+  },
+  {
+    "id": 120,
+    "key": "%s %d received",
+    "pl": "Otrzymałeś %s (szt. %d)",
+    "tr": "%s (%d adet) alındı."
+  },
+  {
+    "id": 121,
+    "key": "%s received (Horse Inventory)",
+    "pl": "Otrzymałeś %s (Juki Konne)",
+    "tr": "%s (At Envanteri) alındı."
+  },
+  {
+    "id": 122,
+    "key": "%s %d received (Horse Inventory)",
+    "pl": "Otrzymałeś %s (szt. %d) (Juki Konne)",
+    "tr": "%s (%d adet) (At Envanteri) alındı."
+  },
+  {
+    "id": 123,
+    "key": "Owner has too many items in his inventory.",
+    "pl": "Właściciel przedmiotu ma za dużo przedmiotów w ekwipunku.",
+    "tr": "Sahibinin envanterinde çok fazla eşya var."
+  },
+  {
+    "id": 124,
+    "key": "You have too many items in your inventory.",
+    "pl": "Masz za dużo przedmiotów w ekwipunku.",
+    "tr": "Envanterinde çok fazla eşya var."
+  },
+  {
+    "id": 125,
+    "key": "%s receives %s.",
+    "pl": "%s otrzymuje %s.",
+    "tr": "%s, %s aldı."
+  },
+  {
+    "id": 126,
+    "key": "Everyone will be teleported into the city shortly.",
+    "pl": "Za chwilę wszyscy ludzie zostaną przeniesieni do wybranego miasta.",
+    "tr": "Herkes kısa süre içinde şehre ışınlanacak."
+  },
+  {
+    "id": 127,
+    "key": "You are too near.",
+    "pl": "Jesteś za blisko.",
+    "tr": "Çok yakındasın."
+  },
+  {
+    "id": 128,
+    "key": "Item Trade: %s, %s",
+    "pl": "%s otrzymał: %s",
+    "tr": "Eşya Ticareti: %s, %s"
+  },
+  {
+    "id": 129,
+    "key": "You cannot change the equipped item while you are transformed.",
+    "pl": "Nie możesz zmienić używanych przedmiotów, gdy jesteś przemieniony.",
+    "tr": "Dönüşmüşken kuşanılmış eşyayı değiştiremezsin."
+  },
+  {
+    "id": 130,
+    "key": "You have to stand still to equip the item.",
+    "pl": "Musisz stać w miejscu, aby wyposażyć się w ten przedmiot.",
+    "tr": "Eşyayı kuşanmak için hareketsiz durmalısın."
+  },
+  {
+    "id": 131,
+    "key": "Monkey Herbs cannot be fed to living horses. It is used to revive dead horses.",
+    "pl": "Zioło z małp nie nadaje się na karmę. Służy ożywianiu martwych koni.",
+    "tr": "Maymun Zindanı Bitkileri yaşayan atlara verilmez. Ölü atları canlandırmak için kullanılır."
+  },
+  {
+    "id": 132,
+    "key": "You cannot feed a dead Horse.",
+    "pl": "Nie możesz karmić martwego konia.",
+    "tr": "Ölü bir atı besleyemezsin."
+  },
+  {
+    "id": 133,
+    "key": "You fed the Horse with Herbs.",
+    "pl": "Nakarmiłeś konia ziołami.",
+    "tr": "Atı bitkilerle besledin."
+  },
+  {
+    "id": 134,
+    "key": "You have fed the Horse.",
+    "pl": "Nakarmiłeś konia.",
+    "tr": "Atı besledin."
+  },
+  {
+    "id": 135,
+    "key": "Your level is too low to wear this Hairstyle.",
+    "pl": "Twój poziom jest za niski, aby móc nosić tą fryzurę.",
+    "tr": "Bu saç stilini kullanmak için seviyen çok düşük."
+  },
+  {
+    "id": 136,
+    "key": "You already have this Hairstyle.",
+    "pl": "Masz już taką fryzurę.",
+    "tr": "Zaten bu saç stiline sahipsin."
+  },
+  {
+    "id": 137,
+    "key": "You have already transformed.",
+    "pl": "Jesteś już przemieniony.",
+    "tr": "Zaten dönüşmüş durumdasın."
+  },
+  {
+    "id": 138,
+    "key": "You are too far away.",
+    "pl": "Jesteś za daleko.",
+    "tr": "Çok uzaktasın."
+  },
+  {
+    "id": 139,
+    "key": "That's the wrong trading item.",
+    "pl": "To jest zły przedmiot na handel.",
+    "tr": "Bu yanlış ticaret eşyası."
+  },
+  {
+    "id": 140,
+    "key": "You cannot transform into a monster who has a higher level than you.",
+    "pl": "Nie możesz się przemienić w postać, która ma wyższy poziom od Ciebie.",
+    "tr": "Senden daha yüksek seviyeli bir canavara dönüşemezsin."
+  },
+  {
+    "id": 141,
+    "key": "Your level is too low to equip this item.",
+    "pl": "Twój poziom jest za niski, aby wyposażyć się w ten przedmiot.",
+    "tr": "Bu eşyayı kuşanmak için seviyen çok düşük."
+  },
+  {
+    "id": 142,
+    "key": "You are not strong enough to equip yourself with this item.",
+    "pl": "Nie jesteś wystarczająco silny, aby wyposażyć się w ten przedmiot.",
+    "tr": "Bu eşyayı kuşanmak için yeterince güçlü değilsin."
+  },
+  {
+    "id": 143,
+    "key": "Your intelligence is too low to equip yourself with this item.",
+    "pl": "Twój poziom Inteligencji jest za niski, aby wyposażyć się w ten przedmiot.",
+    "tr": "Bu eşyayı kuşanmak için zekan çok düşük."
+  },
+  {
+    "id": 144,
+    "key": "Your dexterity is too low to equip yourself with this item.",
+    "pl": "Masz za niską Zręczność, aby wyposażyć się w ten przedmiot.",
+    "tr": "Bu eşyayı kuşanmak için çevikliğin çok düşük."
+  },
+  {
+    "id": 145,
+    "key": "Your vitality is too low to equip yourself with this item.",
+    "pl": "Twoja Witalność jest za niska, aby wyposażyć się w ten przedmiot.",
+    "tr": "Bu eşyayı kuşanmak için canlılığın çok düşük."
+  },
+  {
+    "id": 146,
+    "key": "You cannot use this item because you are not married.",
+    "pl": "Nie możesz użyć tego przedmiotu, ponieważ nie jesteś w związku małżeńskim.",
+    "tr": "Evli olmadığın için bu eşyayı kullanamazsın."
+  },
+  {
+    "id": 147,
+    "key": "You cannot equip this item twice.",
+    "pl": "Nie możesz założyć tego przedmiotu dwukrotnie.",
+    "tr": "Bu eşyayı iki kez kuşanamazsın."
+  },
+  {
+    "id": 148,
+    "key": "Time left until the removal of the socket of %s: %d",
+    "pl": "Pozostały czas do usunięcia Kieszeni %s: %d",
+    "tr": "%s soketinin temizlenmesine kalan süre: %d"
+  },
+  {
+    "id": 149,
+    "key": "This action can only be done with another gender.",
+    "pl": "Ta akcja może zostać wykonana tylko z inną płcią.",
+    "tr": "Bu eylem sadece karşı cinsiyetle yapılabilir."
+  },
+  {
+    "id": 150,
+    "key": "A gem socketed in the %s has vanished.",
+    "pl": "Z %s zniknął klejnot.",
+    "tr": "%s içindeki bir mücevher yok oldu."
+  },
+  {
+    "id": 151,
+    "key": "[Guild] This guild name is invalid.",
+    "pl": "[Gildia] Nazwa gildii jest niepoprawna.",
+    "tr": "[Lonca] Bu lonca adı geçersiz."
+  },
+  {
+    "id": 152,
+    "key": "[Guild] This guild name is already taken.",
+    "pl": "[Gildia] Ta nazwa jest już zajęta.",
+    "tr": "[Lonca] Bu lonca adı zaten alınmış."
+  },
+  {
+    "id": 153,
+    "key": "[Guild] You cannot found a guild.",
+    "pl": "[Gildia] Nie możesz stworzyć gildii.",
+    "tr": "[Lonca] Lonca kuramazsın."
+  },
+  {
+    "id": 154,
+    "key": "The guild %s has declared war on %s!",
+    "pl": "Gildia %s wypowiedziała wojnę Gildii %s!",
+    "tr": "%s loncası, %s loncasına savaş ilan etti!"
+  },
+  {
+    "id": 155,
+    "key": "[Guild] %s has refused the Guild war.",
+    "pl": "[Gildia] %s odrzuciła wojnę gildii.",
+    "tr": "[Lonca] %s loncası savaşı reddetti."
+  },
+  {
+    "id": 156,
+    "key": "<Guild> The player is busy.",
+    "pl": "<Gildia> Wskazany gracz jest zajęty.",
+    "tr": "<Lonca> Oyuncu meşgul."
+  },
+  {
+    "id": 157,
+    "key": "The guild war between %s and %s will start in a few seconds!",
+    "pl": "Wojna pomiędzy gildiami %s i %s rozpocznie się za kilka sekund!",
+    "tr": "%s ve %s arasındaki lonca savaşı birkaç saniye içinde başlayacak!"
+  },
+  {
+    "id": 158,
+    "key": "The guild war between %s and %s has begun!",
+    "pl": "Wojna pomiędzy Gildiami %s oraz %s rozpoczęta!",
+    "tr": "%s ve %s arasındaki lonca savaşı başladı!"
+  },
+  {
+    "id": 159,
+    "key": "The guild war between %s and %s has ended in a draw.",
+    "pl": "Wojna pomiędzy Gildiami %s oraz %s zakończona remisem.",
+    "tr": "%s ve %s arasındaki lonca savaşı berabere bitti."
+  },
+  {
+    "id": 160,
+    "key": "%s has won the guild war against %s.",
+    "pl": "Gildia %s wygrała wojnę przeciwko Gildii %s.",
+    "tr": "%s loncası, %s loncasına karşı savaşı kazandı."
+  },
+  {
+    "id": 161,
+    "key": "You need your fellow player's approval for this.",
+    "pl": "Potrzebujesz potwierdzenia partnera do tego.",
+    "tr": "Bunun için diğer oyuncunun onayına ihtiyacın var."
+  },
+  {
+    "id": 162,
+    "key": "[Guild] The guild war has been cancelled.",
+    "pl": "[Gildia] Wojna gildii została anulowana.",
+    "tr": "[Lonca] Lonca savaşı iptal edildi."
+  },
+  {
+    "id": 163,
+    "key": "The guild war between %s and %s has been cancelled.",
+    "pl": "Wojna pomiędzy Gildiami %s oraz %s została anulowana.",
+    "tr": "%s ve %s arasındaki lonca savaşı iptal edildi."
+  },
+  {
+    "id": 164,
+    "key": "Close",
+    "pl": "Zamknij",
+    "tr": "Kapat"
+  },
+  {
+    "id": 165,
+    "key": "Action cancelled. You have entered a battle.",
+    "pl": "Akcja anulowana. Bitwa została rozpoczęta.",
+    "tr": "İşlem iptal edildi. Bir savaşa girdin."
+  },
+  {
+    "id": 166,
+    "key": "Someone has logged into your account. You will be disconnected from the server.",
+    "pl": "Ktoś zalogował się na Twoje konto. Zostaniesz rozłączony.",
+    "tr": "Hesabına başka biri giriş yaptı. Sunucuyla bağlantın kesilecek."
+  },
+  {
+    "id": 167,
+    "key": "A mysterious light appears from the tree.",
+    "pl": "Tajemnicze światło dobiega z drzewa.",
+    "tr": "Ağaçtan gizemli bir ışık doğuyor."
+  },
+  {
+    "id": 168,
+    "key": "%d Playtime added to your account. (Payment number %d)",
+    "pl": "Czas gry ( %d ) dodany do Twojego konta. (Numer płatności %d)",
+    "tr": "Hesabına %d oyun süresi eklendi. (Ödeme numarası %d)"
+  },
+  {
+    "id": 169,
+    "key": "You can participate in the guild battle in viewer mode.",
+    "pl": "Możesz uczestniczyć w Bitwie Gildii jako Obserwator.",
+    "tr": "Lonca savaşına izleyici modunda katılabilirsin."
+  },
+  {
+    "id": 170,
+    "key": "While choosing a character, an icon appears.",
+    "pl": "Po zaznaczeniu postaci pojawi się guzik do Zakończenia Obserwacji.",
+    "tr": "Bir karakter seçerken izlemeyi bitirmek için bir buton belirir."
+  },
+  {
+    "id": 171,
+    "key": "There are no opponents.",
+    "pl": "Nie ma żadnych przeciwników.",
+    "tr": "Rakip yok."
+  },
+  {
+    "id": 172,
+    "key": "The battle with %s has begun!",
+    "pl": "Pojedynek z %s rozpoczęty!",
+    "tr": "%s ile düello başladı!"
+  },
+  {
+    "id": 173,
+    "key": "If no enemy can be found, the guild war will be ended automatically.",
+    "pl": "Jeśli nie ma przeciwników, wojna Gildii zakończy się automatycznie.",
+    "tr": "Düşman bulunamazsa lonca savaşı otomatik olarak sona erecektir."
+  },
+  {
+    "id": 174,
+    "key": "Because the guild war finished early, the result will judged as a draw.",
+    "pl": "Jako że wojna Gildii zakończyła się przed czasem, zostanie uznana jako remis.",
+    "tr": "Lonca savaşı erken bittiği için sonuç berabere kabul edilecektir."
+  },
+  {
+    "id": 175,
+    "key": "The energy is reflected because of the Emperors Blessing.",
+    "pl": "Energia została odbita z powodu Błogosławieństwa Imperatora.",
+    "tr": "İmparatorun Kutsaması nedeniyle enerji yansıtıldı."
+  },
+  {
+    "id": 176,
+    "key": "After %d seconds you can use the Emperors Blessing.",
+    "pl": "Po %d sekundach możesz użyć Błogosławieństwa Imperatora.",
+    "tr": "%d saniye sonra İmparatorun Kutsamasını kullanabilirsin."
+  },
+  {
+    "id": 177,
+    "key": "After %d seconds you can use the Emperors Blessing.",
+    "pl": "Po %d sekundach możesz użyć Błogosławieństwa Imperatora.",
+    "tr": "%d saniye sonra İmparatorun Kutsamasını kullanabilirsin."
+  },
+  {
+    "id": 178,
+    "key": "Not enough tax income : %d.",
+    "pl": "Za mały przychód z podatków : %d",
+    "tr": "Vergi geliri yetersiz: %d."
+  },
+  {
+    "id": 179,
+    "key": "[TEST_ONLY]Tax : %d",
+    "pl": "[TEST_ONLY] Podatek: %d",
+    "tr": "[TEST_ONLY] Vergi: %d"
+  },
+  {
+    "id": 180,
+    "key": "Transformation error.",
+    "pl": "Błąd podczas przemiany.",
+    "tr": "Dönüşüm hatası."
+  },
+  {
+    "id": 181,
+    "key": "You learned the transmutation completely.",
+    "pl": "Całkowicie nauczyłeś się przekształcania.",
+    "tr": "Dönüşümü tamamen öğrendin."
+  },
+  {
+    "id": 182,
+    "key": "Please call your Horse first.",
+    "pl": "Najpierw zawołaj swojego konia.",
+    "tr": "Lütfen önce atını çağır."
+  },
+  {
+    "id": 183,
+    "key": "You have sent your horse away.",
+    "pl": "Odesłałeś swojego konia.",
+    "tr": "Atını geri gönderdin."
+  },
+  {
+    "id": 184,
+    "key": "%s challenged you to a battle!",
+    "pl": "%s wyzwał Cię na pojedynek!",
+    "tr": "%s seni düelloya davet etti!"
+  },
+  {
+    "id": 185,
+    "key": "You have to get off your Horse.",
+    "pl": "Musisz zejść z konia.",
+    "tr": "Atından inmelisin."
+  },
+  {
+    "id": 186,
+    "key": "You cannot feed your Horse whilst sitting on it.",
+    "pl": "Nie możesz karmić konia podczas siedzenia na nim.",
+    "tr": "Atın üzerindeyken onu besleyemezsin."
+  },
+  {
+    "id": 187,
+    "key": "You have fed the Horse with %s%s.",
+    "pl": "Nakarmiłeś konia (%s%s).",
+    "tr": "Atı %s%s ile besledin."
+  },
+  {
+    "id": 188,
+    "key": "You need %s.",
+    "pl": "Potrzebujesz %s.",
+    "tr": "%s gerekiyor."
+  },
+  {
+    "id": 189,
+    "key": "%d seconds until Exit.",
+    "pl": "%d sekund do wyłączenia.",
+    "tr": "Çıkışa %d saniye."
+  },
+  {
+    "id": 190,
+    "key": "The game will be closed in %d seconds.",
+    "pl": "Gra zostanie zamknięta po %d sekundach.",
+    "tr": "Oyun %d saniye içinde kapatılacak."
+  },
+  {
+    "id": 191,
+    "key": "%d seconds until Exit.",
+    "pl": "%d sekund do wyłączenia.",
+    "tr": "Çıkışa %d saniye."
+  },
+  {
+    "id": 192,
+    "key": "Your logout has been cancelled.",
+    "pl": "Wylogowanie zostało anulowane.",
+    "tr": "Çıkış işlemin iptal edildi."
+  },
+  {
+    "id": 193,
+    "key": "Back to login window. Please wait.",
+    "pl": "Powrót do okna logowania. Proszę czekać.",
+    "tr": "Giriş ekranına dönülüyor. Lütfen bekle."
+  },
+  {
+    "id": 194,
+    "key": "You have been disconnected from the server. Please wait.",
+    "pl": "Zostaniesz rozłączony z serwerem. Proszę czekać.",
+    "tr": "Sunucu ile bağlantın kesildi. Lütfen bekle."
+  },
+  {
+    "id": 195,
+    "key": "You have challenged %s to a battle.",
+    "pl": "Wyzwałeś %s na pojedynek.",
+    "tr": "%s oyuncusunu düelloya davet ettin."
+  },
+  {
+    "id": 196,
+    "key": "You are changing character. Please wait.",
+    "pl": "Zmieniłeś postać. Proszę czekać.",
+    "tr": "Karakter değiştiriyorsun. Lütfen bekle."
+  },
+  {
+    "id": 197,
+    "key": "A new start is not possible at the moment. Please wait %d seconds.",
+    "pl": "Wznowienie jeszcze nie jest możliwe. Odczekaj %d sekund.",
+    "tr": "Şu an yeniden başlamak mümkün değil. Lütfen %d saniye bekle."
+  },
+  {
+    "id": 198,
+    "key": "You cannot restart yet. Please wait another %d seconds.",
+    "pl": "Wznowienie jeszcze nie jest możliwe. Odczekaj %d sekund.",
+    "tr": "Henüz yeniden başlayamazsın. Lütfen %d saniye daha bekle."
+  },
+  {
+    "id": 199,
+    "key": "You cannot restart yet. Please wait another %d seconds.",
+    "pl": "Wznowienie jeszcze nie jest możliwe. Odczekaj %d sekund.",
+    "tr": "Henüz yeniden başlayamazsın. Lütfen %d saniye daha bekle."
+  },
+  {
+    "id": 200,
+    "key": "You cannot restart in the city yet. Wait another %d seconds.",
+    "pl": "Wznowienie w mieście jeszcze nie jest możliwe. Odczekaj %d sekund.",
+    "tr": "Henüz şehirde yeniden başlayamazsın. %d saniye daha bekle."
+  },
+  {
+    "id": 201,
+    "key": "The waiting time has expired. You will be revived in the city.",
+    "pl": "Minął czas oczekiwania. Zostaniesz wskrzeszony w mieście.",
+    "tr": "Bekleme süresi doldu. Şehirde diriltileceksin."
+  },
+  {
+    "id": 202,
+    "key": "You cannot change your status while you are transformed.",
+    "pl": "Nie możesz zmienić swojego stanu, gdy jesteś przemieniony.",
+    "tr": "Dönüşmüşken durumunu değiştiremezsin."
+  },
+  {
+    "id": 203,
+    "key": "You cannot learn while you are transformed.",
+    "pl": "Nie możesz uczyć się będąc przemienionym.",
+    "tr": "Dönüşmüşken öğrenemezsin."
+  },
+  {
+    "id": 204,
+    "key": "This player is currently fighting.",
+    "pl": "Gracz bierze udział w walce.",
+    "tr": "Bu oyuncu şu an bir düelloda/savaşta."
+  },
+  {
+    "id": 205,
+    "key": "[Guild] It does not belong to the guild.",
+    "pl": "[Gildia] To nie należy do gildii.",
+    "tr": "[Lonca] Bu loncaya ait değil."
+  },
+  {
+    "id": 206,
+    "key": "[Guild] You do not have the authority to change the level of the guild skills.",
+    "pl": "[Gildia] Nie możesz zmienić poziomu umiejętności gildii.",
+    "tr": "[Lonca] Lonca becerilerinin seviyesini değiştirme yetkin yok."
+  },
+  {
+    "id": 207,
+    "key": "Your choice is incorrect.",
+    "pl": "Twój wybór jest błędny.",
+    "tr": "Seçimin hatalı."
+  },
+  {
+    "id": 208,
+    "key": "[Storeroom] You have entered an incorrect password.",
+    "pl": "[Magazyn] Podałeś złe hasło.",
+    "tr": "[Depo] Yanlış şifre girdin."
+  },
+  {
+    "id": 209,
+    "key": "[Storeroom] The Storeroom is already open.",
+    "pl": "[Magazyn] Magazyn jest już otwarty.",
+    "tr": "[Depo] Depo zaten açık."
+  },
+  {
+    "id": 210,
+    "key": "[Storeroom] You have to wait 10 seconds before you can open the Storeroom again.",
+    "pl": "[Magazyn] Musisz odczekać 10 sekund zanim otworzysz Magazyn ponownie.",
+    "tr": "[Depo] Depoyu tekrar açabilmek için 10 saniye beklemelisin."
+  },
+  {
+    "id": 211,
+    "key": "[Storeroom] You are too far away to open the storeroom.",
+    "pl": "[Magazyn] Odległość pomiędzy Tobą a magazynem jest zbyt duża, aby go otworzyć.",
+    "tr": "[Depo] Depoyu açmak için çok uzaktasın."
+  },
+  {
+    "id": 212,
+    "key": "[Group] The server cannot execute this group request.",
+    "pl": "[Grupa] Serwer nie może wykonać żądania Grupy.",
+    "tr": "[Grup] Sunucu bu grup talebini gerçekleştiremiyor."
+  },
+  {
+    "id": 213,
+    "key": "[Group] You cannot leave a group while you are in a dungeon.",
+    "pl": "[Grupa] Nie możesz opuścić Grupy podczas przebywania w Lochu.",
+    "tr": "[Grup] Zindandayken bir gruptan ayrılamazsın."
+  },
+  {
+    "id": 214,
+    "key": "[Group] You have left the group.",
+    "pl": "[Grupa] Opuściłeś grupę.",
+    "tr": "[Grup] Gruptan ayrıldın."
+  },
+  {
+    "id": 215,
+    "key": "[Guild] Your guild is already participating in another war.",
+    "pl": "[Gildia] Twoja gildia w tym momencie jest zaangażowana w inną wojnę.",
+    "tr": "[Lonca] Loncan şu an başka bir savaşa katılıyor."
+  },
+  {
+    "id": 216,
+    "key": "[Guild] No one is entitled to a guild war.",
+    "pl": "[Gildia] Nikt nie ma uprawnień do wojen gildii.",
+    "tr": "[Lonca] Lonca savaşı için kimsenin yetkisi yok."
+  },
+  {
+    "id": 217,
+    "key": "[Guild] No guild with this name exists.",
+    "pl": "[Gildia] Gildia o tej nazwie nie istnieje.",
+    "tr": "[Lonca] Bu isimde bir lonca mevcut değil."
+  },
+  {
+    "id": 218,
+    "key": "There already is a candidacy.",
+    "pl": "Już jest kandydatura",
+    "tr": "Zaten bir adaylık mevcut."
+  },
+  {
+    "id": 219,
+    "key": "[Guild] This guild is already participating in a war.",
+    "pl": "[Gildia] Ta gildia jest już zaangażowana w inną wojnę.",
+    "tr": "[Lonca] Bu lonca zaten bir savaşa katılıyor."
+  },
+  {
+    "id": 220,
+    "key": "[Guild] Not enough Yang to participate in a guild war.",
+    "pl": "[Gildia] Nie ma wystarczającej ilości Yang, aby uczestniczyć w wojnie gildii.",
+    "tr": "[Lonca] Lonca savaşına katılmak için yeterli Yang yok."
+  },
+  {
+    "id": 221,
+    "key": "[Guild] The guild does not have enough Yang to participate in a guild war.",
+    "pl": "[Gildia] Gildia nie posiada wystarczającej ilości Yang by uczestniczyć w wojnie gildii.",
+    "tr": "[Lonca] Loncanın bir lonca savaşına katılması için yeterli Yang'ı yok."
+  },
+  {
+    "id": 222,
+    "key": "[Guild] This Guild is already scheduled for another war.",
+    "pl": "[Gildia] Ta gildia jest już zapisana do innej wojny gildii.",
+    "tr": "[Lonca] Bu lonca zaten başka bir savaş için planlanmış."
+  },
+  {
+    "id": 223,
+    "key": "[Guild] This guild is already participating in another war.",
+    "pl": "[Gildia] Ta gildia aktualnie uczestniczy w innej wojnie.",
+    "tr": "[Lonca] Bu lonca şu an başka bir savaşa katılıyor."
+  },
+  {
+    "id": 224,
+    "key": "[Guild] A minimum of %d players are needed to participate in a guild war.",
+    "pl": "[Gildia] Przynajmniej %d graczy musi uczestniczyć w wojnie gildii.",
+    "tr": "[Lonca] Bir lonca savaşına katılmak için en az %d oyuncu gereklidir."
+  },
+  {
+    "id": 225,
+    "key": "[Guild] The guild does not have enough points to participate in a guild war.",
+    "pl": "[Gildia] Ta gildia nie posiada wystarczającej liczby punktów rankingu, aby uczestniczyć w wojnie gildii.",
+    "tr": "[Lonca] Loncada bir lonca savaşına katılmak için yeterli puan yok."
+  },
+  {
+    "id": 226,
+    "key": "[Guild] The guild does not have enough members to participate in a guild war.",
+    "pl": "[Gildia] Gildia nie posiada wystarczająco dużo członków, aby uczestniczyć w wojnie gildii.",
+    "tr": "[Lonca] Loncada bir lonca savaşına katılmak için yeterli üye yok."
+  },
+  {
+    "id": 227,
+    "key": "Your level has to be higher than 20 to register a cell phone number.",
+    "pl": "Twój poziom musi być wyższy niż 20, aby zapisać numer telefonu komórkowego.",
+    "tr": "Telefon numarası kaydetmek için seviyen 20'den yüksek olmalıdır."
+  },
+  {
+    "id": 228,
+    "key": "You do not have the emperor qualification.",
+    "pl": "Nie nadajesz się na Imperatora.",
+    "tr": "İmparatorluk niteliğine sahip değilsin."
+  },
+  {
+    "id": 229,
+    "key": "%s declined the invitation.",
+    "pl": "%s odrzucił zaproszenie.",
+    "tr": "%s daveti reddetti."
+  },
+  {
+    "id": 230,
+    "key": "You cannot accept the invitation because you are already in the group.",
+    "pl": "Nie możesz przyjąć zaproszenia, ponieważ jesteś już w Grupie.",
+    "tr": "Zaten bir grupta olduğun için daveti kabul edemezsin."
+  },
+  {
+    "id": 231,
+    "key": "Only the emperor can use this.",
+    "pl": "Tylko Imperator może tego użyć.",
+    "tr": "Bunu sadece imparator kullanabilir."
+  },
+  {
+    "id": 232,
+    "key": "Cooldown time for approximately %d seconds",
+    "pl": "Regeneracja około %d sekund.",
+    "tr": "Yaklaşık %d saniye bekleme süresi."
+  },
+  {
+    "id": 233,
+    "key": "Lack of Taxes. Current Capital : %u Missing Capital : %u",
+    "pl": "Brakuje podatków. Aktualny kapitał : %u Brakujący kapitał : %u",
+    "tr": "Vergi yetersiz. Mevcut Sermaye: %u Eksik Sermaye: %u"
+  },
+  {
+    "id": 234,
+    "key": "Command: warpto <character name>",
+    "pl": "Rozkaz: warpto <character name>",
+    "tr": "Komut: warpto <karakter ismi>"
+  },
+  {
+    "id": 235,
+    "key": "You cannot be warped to an unknown player.",
+    "pl": "Nie możesz przenieść się do nieznanego gracza.",
+    "tr": "Bilinmeyen bir oyuncuya ışınlanamazsın."
+  },
+  {
+    "id": 236,
+    "key": "Adding player %d into the channel. (Present channel %d)",
+    "pl": "Dodawanie gracza %d do kanału. (Aktualny kanał %d)",
+    "tr": "%d oyuncusu kanala ekleniyor. (Mevcut kanal %d)"
+  },
+  {
+    "id": 237,
+    "key": "Warp to player %s.",
+    "pl": "Teleport do %s.",
+    "tr": "%s oyuncusuna ışınlanılıyor."
+  },
+  {
+    "id": 238,
+    "key": "You cannot call unknown players.",
+    "pl": "Nie możesz przenosić nieznanych graczy.",
+    "tr": "Bilinmeyen oyuncuları çağıramazsın."
+  },
+  {
+    "id": 239,
+    "key": "[Guild] There are no experience points for hunting during a guild war.",
+    "pl": "[Gildia] Podczas wojny gildii nie otrzymuje się Punktów Doświadczenia z polowania.",
+    "tr": "[Lonca] Lonca savaşı sırasında avlanmadan tecrübe puanı alınmaz."
+  },
+  {
+    "id": 240,
+    "key": "When the Blessing of the Emperor is used %s the HP and SP are restored again.",
+    "pl": "Gdy Błogosławieństwo Imperatora jest użyte, przywraca ponownie %s punktów PŻ i PE.",
+    "tr": "İmparatorun Kutsaması kullanıldığında %s HP ve SP tekrar geri kazanılır."
+  },
+  {
+    "id": 241,
+    "key": "My information about the emperor",
+    "pl": "Informacje Mojego Imperatora",
+    "tr": "İmparator hakkındaki bilgilerim"
+  },
+  {
+    "id": 242,
+    "key": "[%sMonarch] : %s Yang owned %lld",
+    "pl": "[Monarcha %s] : %s Posiadanie Yang %lld",
+    "tr": "[%s Monarşi] : %s Sahip olunan Yang %lld"
+  },
+  {
+    "id": 243,
+    "key": "[%sMonarch] : %s",
+    "pl": "[Monarcha %s] : %s",
+    "tr": "[%s Monarşi] : %s"
+  },
+  {
+    "id": 244,
+    "key": "Information about the emperor",
+    "pl": "Informacje Imperatora",
+    "tr": "İmparator hakkındaki bilgiler"
+  },
+  {
+    "id": 245,
+    "key": "Only an emperor can use this.",
+    "pl": "Tylko Imperator może tego użyć",
+    "tr": "Bunu sadece bir imparator kullanabilir."
+  },
+  {
+    "id": 246,
+    "key": "Choose a number between 1 and 50.",
+    "pl": "Wybierz liczbę pomiędzy 1 a 50.",
+    "tr": "1 ile 50 arasında bir sayı seçin."
+  },
+  {
+    "id": 247,
+    "key": "The Monster cannot be called. Check the Mob Number.",
+    "pl": "Potwór nie może być przywołany. Sprawdź numer Potwora.",
+    "tr": "Canavar çağırılamıyor. Canavar numarasını kontrol edin."
+  },
+  {
+    "id": 248,
+    "key": "Hit Points +%d",
+    "pl": "Punkty Życia +%d",
+    "tr": "HP +%d"
+  },
+  {
+    "id": 249,
+    "key": "Spell Points +%d",
+    "pl": "Punkty Energii +%d",
+    "tr": "SP +%d"
+  },
+  {
+    "id": 250,
+    "key": "The Emperor Blessing is activated.",
+    "pl": "Błogosławieństwo Imperatora jest aktywne.",
+    "tr": "İmparatorun Kutsaması aktif edildi."
+  },
+  {
+    "id": 251,
+    "key": "Endurance +%d",
+    "pl": "Wytrzymałość +%d",
+    "tr": "Dayanıklılık +%d"
+  },
+  {
+    "id": 252,
+    "key": "Intelligence +%d",
+    "pl": "Inteligencja +%d",
+    "tr": "Zeka +%d"
+  },
+  {
+    "id": 253,
+    "key": "Strength +%d",
+    "pl": "Siła +%d",
+    "tr": "Güç +%d"
+  },
+  {
+    "id": 254,
+    "key": "Dexterity +%d",
+    "pl": "Zręczność +%d",
+    "tr": "Çeviklik +%d"
+  },
+  {
+    "id": 255,
+    "key": "Attack Speed +%d",
+    "pl": "Szybkość Ataku +%d",
+    "tr": "Saldırı Hızı +%d"
+  },
+  {
+    "id": 256,
+    "key": "Movement Speed %d",
+    "pl": "Szybkość Ruchu %d",
+    "tr": "Hareket Hızı %d"
+  },
+  {
+    "id": 257,
+    "key": "Cooldown Time -%d",
+    "pl": "Czas wypoczynku -%d",
+    "tr": "Bekleme Süresi -%d"
+  },
+  {
+    "id": 258,
+    "key": "Energy Recovery +%d",
+    "pl": "Odnawianie Energii +%d",
+    "tr": "Enerji Yenileme +%d"
+  },
+  {
+    "id": 259,
+    "key": "Spell Point Recovery +%d",
+    "pl": "Odnawianie Many +%d",
+    "tr": "SP Yenileme +%d"
+  },
+  {
+    "id": 260,
+    "key": "Poison Attack %d",
+    "pl": "Atak Trucizny %d",
+    "tr": "Zehirli Saldırı %d"
+  },
+  {
+    "id": 261,
+    "key": "Star +%d",
+    "pl": "Gwiazda +%d",
+    "tr": "Yıldız +%d"
+  },
+  {
+    "id": 262,
+    "key": "Speed Reduction +%d",
+    "pl": "Redukcja Szybkości +%d",
+    "tr": "Hız Azaltma +%d"
+  },
+  {
+    "id": 263,
+    "key": "Critical Attack with a chance of %d%%",
+    "pl": "Szansa na Krytyczny Atak %d%%",
+    "tr": "%d%% Kritik Saldırı şansı"
+  },
+  {
+    "id": 264,
+    "key": "Chance of a Speared Attack of %d%%",
+    "pl": "Szansa na Przeszywający Atak od %d%%",
+    "tr": "%d%% Delici Saldırı şansı"
+  },
+  {
+    "id": 265,
+    "key": "Player's Attack Power against Monsters +%d%%",
+    "pl": "Siła Ataku Gracza przeciwko Potworom +%d%%",
+    "tr": "Oyuncunun Canavarlara karşı Saldırı Gücü +%d%%"
+  },
+  {
+    "id": 266,
+    "key": "Horse's Attack Power against Monsters +%d%%",
+    "pl": "Siła Ataku Konia przeciwko Potworom +%d%%",
+    "tr": "Atın Canavarlara karşı Saldırı Gücü +%d%%"
+  },
+  {
+    "id": 267,
+    "key": "Attack Boost against Wonggui + %d%%",
+    "pl": "Wzmocnienie ataku przeciwko Wonggui + %d%%",
+    "tr": "Wonggui'ye karşı güçlü + %d%%"
+  },
+  {
+    "id": 268,
+    "key": "Attack Boost against Milgyo + %d%%",
+    "pl": "Wzmocnienie ataku przeciwko Mistykom + %d%%",
+    "tr": "Mistiklere karşı güçlü + %d%%"
+  },
+  {
+    "id": 269,
+    "key": "Attack boost against zombies + %d%%",
+    "pl": "Wzmocnienie ataku przeciwko Nieumarłym + %d%%",
+    "tr": "Ölümsüzlere karşı güçlü + %d%%"
+  },
+  {
+    "id": 270,
+    "key": "Attack boost against devils + %d%%",
+    "pl": "Wzmocnienie ataku przeciwko Diabłom + %d%%",
+    "tr": "Şeytanlara karşı güçlü + %d%%"
+  },
+  {
+    "id": 271,
+    "key": "Due to Emperor Sa-Za-Hu, the player %s will receive an attack power increase of 10 %% for 3 minutes in this area.",
+    "pl": "Dzięki Imperatorowi Sa-Za-Hu, gracz %s otrzymuje 10%% więcej siły ataku przez 3 minuty.",
+    "tr": "İmparator Sa-Za-Hu sayesinde, %s oyuncusu bu bölgede 3 dakika boyunca 10%% saldırı gücü artışı kazanacak."
+  },
+  {
+    "id": 272,
+    "key": "Absorbing of Energy %d%% while attacking.",
+    "pl": "Pochłanianie Energii %d%% podczas ataku.",
+    "tr": "Saldırı yaparken %d%% HP emilimi."
+  },
+  {
+    "id": 273,
+    "key": "Absorption of Spell Points (SP) %d%% while attacking.",
+    "pl": "Pochłanianie Many %d%% podczas ataku.",
+    "tr": "Saldırı yaparken %d%% SP emilimi."
+  },
+  {
+    "id": 274,
+    "key": "With a chance of %d%% Spell Points (SP) will be taken from the enemy.",
+    "pl": "Z szansą %d%% Many zostanie zabranej od wroga.",
+    "tr": "%d%% şansla düşmandan SP çalınacak."
+  },
+  {
+    "id": 275,
+    "key": "Absorbing of Spell Points (SP) with a chance of %d%%",
+    "pl": "Absorbowanie Many z szansą %d%% .",
+    "tr": "%d%% şansla SP absorbe etme."
+  },
+  {
+    "id": 276,
+    "key": "%d%% Chance of blocking a close-combat attack",
+    "pl": "%d%% szans na blok ataku z bliskiej odległości.",
+    "tr": "Yakın dövüş saldırılarını bloklama şansı %d%%"
+  },
+  {
+    "id": 277,
+    "key": "%d%% Chance of blocking a long range attack",
+    "pl": "%d%% szans na blok ataku dystansowego",
+    "tr": "Uzaktan saldırıları bloklama şansı %d%%"
+  },
+  {
+    "id": 278,
+    "key": "One-Handed Sword defence %d%%",
+    "pl": "Odporność na Miecze %d%%",
+    "tr": "Kılıç Savunması %d%%"
+  },
+  {
+    "id": 279,
+    "key": "Two-Handed Sword Defence %d%%",
+    "pl": "Odporność na Broń Dwuręczną %d%%",
+    "tr": "Çift El Savunması %d%%"
+  },
+  {
+    "id": 280,
+    "key": "Two-Handed Sword Defence %d%%",
+    "pl": "Odporność na Broń Dwuręczną %d%%",
+    "tr": "Çift El Savunması %d%%"
+  },
+  {
+    "id": 281,
+    "key": "Bell Defence %d%%",
+    "pl": "Odporność na Dzwony %d%%",
+    "tr": "Çan Savunması %d%%"
+  },
+  {
+    "id": 282,
+    "key": "By the Emperor Geum-Gang-Gwon the player %s gets 10 %% more armour for 3 minutes.",
+    "pl": "Dzięki Imperatorowi Geum-Gang-Gwon, gracz %s otrzymuje 10%% więcej obrony przez 3 minuty.",
+    "tr": "İmparator Geum-Gang-Gwon sayesinde, %s oyuncusu 3 dakika boyunca 10%% daha fazla savunma kazanacak."
+  },
+  {
+    "id": 283,
+    "key": "Fan Defence %d%%",
+    "pl": "Odporność na Wachlarze %d%%",
+    "tr": "Yelpaze Savunması %d%%"
+  },
+  {
+    "id": 284,
+    "key": "Distant Attack Resistance %d%%",
+    "pl": "Odporność na Atak z odległości %d%%",
+    "tr": "Oka Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 285,
+    "key": "Fire Resistance %d%%",
+    "pl": "Odporność na Ogień %d%%",
+    "tr": "Ateşe Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 286,
+    "key": "Lightning Resistance %d%%",
+    "pl": "Odporność na Błyskawice %d%%",
+    "tr": "Şimşeğe Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 287,
+    "key": "Magic Resistance %d%%",
+    "pl": "Odporność na Magię %d%%",
+    "tr": "Büyüye Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 288,
+    "key": "Wind Resistance %d%%",
+    "pl": "Odporność na Wiatr %d%%",
+    "tr": "Rüzgara Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 289,
+    "key": "Reflect Direct Hit: %d%%",
+    "pl": "Odbicie bezpośredniego uderzenia: %d%%",
+    "tr": "Yakın dövüş saldırılarını yansıtma: %d%%"
+  },
+  {
+    "id": 290,
+    "key": "Reflect Curse: %d%%",
+    "pl": "Odbicie Klątwy: %d%%",
+    "tr": "Laneti yansıtma: %d%%"
+  },
+  {
+    "id": 291,
+    "key": "Poison Resistance %d%%",
+    "pl": "Odporność na Trucizny %d%%",
+    "tr": "Zehre Karşı Koyma %d%%"
+  },
+  {
+    "id": 292,
+    "key": "Spell Points (SP) will be increased by %d%% if you win.",
+    "pl": "Jeśli wygrasz, Mana zostanie podniesiona do %d%%",
+    "tr": "Kazanırsan SP %d%% artacak."
+  },
+  {
+    "id": 293,
+    "key": "The event is already running. (Flag: %d)",
+    "pl": "Wydarzenie już trwa. (Flag: %d)",
+    "tr": "Etkinlik zaten devam ediyor. (Flag: %d)"
+  },
+  {
+    "id": 294,
+    "key": "Experience increases by %d%% if you win against an opponent.",
+    "pl": "Jeśli wygrasz, Doświadczenie wzrośnie do %d%%.",
+    "tr": "Bir rakibe karşı kazanırsan Tecrübe %d%% artacak."
+  },
+  {
+    "id": 295,
+    "key": "Increase of Yang up to %d%% if you win.",
+    "pl": "Jeśli wygrasz, Yang wzrosną do %d%%.",
+    "tr": "Kazanırsan Yang %d%% artacak."
+  },
+  {
+    "id": 296,
+    "key": "Increase of captured Items up to %d%% if you win.",
+    "pl": "Jeśli wygrasz, Ilość przejętych przedmiotów wzrośnie do %d%%.",
+    "tr": "Kazanırsan düşen eşya sayısı %d%% artacak."
+  },
+  {
+    "id": 297,
+    "key": "Power increase of up to %d%% after taking the potion.",
+    "pl": "Gdy weźmiesz miksturę, Moc wzrośnie do %d%%.",
+    "tr": "İksiri içtikten sonra güç %d%% artar."
+  },
+  {
+    "id": 298,
+    "key": "%d%% Chance of filling up Hit Points after a victory.",
+    "pl": "%d%% szansa na uzupełnienie Punktów Energii po zwycięstwie.",
+    "tr": "%d%% şansla HP yenileme."
+  },
+  {
+    "id": 299,
+    "key": "No Dizziness %d%%",
+    "pl": "Brak Ogłuszenia %d%%",
+    "tr": "Sersemleme Bağışıklığı %d%%"
+  },
+  {
+    "id": 300,
+    "key": "No Slowing Down %d%%",
+    "pl": "Brak Spowolnienia %d%%",
+    "tr": "Yavaşlamaya Karşı Bağışıklık %d%%"
+  },
+  {
+    "id": 301,
+    "key": "No falling down %d%%",
+    "pl": "Brak Upadku %d%%",
+    "tr": "Yere Düşmeye Karşı Bağışıklık %d%%"
+  },
+  {
+    "id": 302,
+    "key": "Attack Power + %d",
+    "pl": "Siła Ataku +%d",
+    "tr": "Saldırı Değeri +%d"
+  },
+  {
+    "id": 303,
+    "key": "Armour + %d",
+    "pl": "Obrona +%d",
+    "tr": "Savunma +%d"
+  },
+  {
+    "id": 304,
+    "key": "OX quiz script could not be loaded.",
+    "pl": "Pytanie OX nie zostało załadowane.",
+    "tr": "OX yarışma dosyası yüklenemedi."
+  },
+  {
+    "id": 305,
+    "key": "Magical Attack + %d",
+    "pl": "Atak Magiczny +%d",
+    "tr": "Büyülü Saldırı Değeri +%d"
+  },
+  {
+    "id": 306,
+    "key": "Magical Defence + %d",
+    "pl": "Obrona Magiczna +%d",
+    "tr": "Büyü Savunması +%d"
+  },
+  {
+    "id": 307,
+    "key": "Maximum Endurance + %d",
+    "pl": "Maksymalna Wytrzymałość +%d",
+    "tr": "Maksimum Dayanıklılık +%d"
+  },
+  {
+    "id": 308,
+    "key": "Strong against Warriors + %d%%",
+    "pl": "Silny przeciwko Wojownikom +%d%%",
+    "tr": "Savaşçılara Karşı Güçlü +%d%%"
+  },
+  {
+    "id": 309,
+    "key": "Strong against Ninjas + %d%%",
+    "pl": "Silny przeciwko Ninja +%d%%",
+    "tr": "Ninjalara Karşı Güçlü +%d%%"
+  },
+  {
+    "id": 310,
+    "key": "Strong against Sura + %d%%",
+    "pl": "Silny przeciwko Sura +%d%%",
+    "tr": "Suralara Karşı Güçlü +%d%%"
+  },
+  {
+    "id": 311,
+    "key": "Strong against Shamans + %d%%",
+    "pl": "Silny przeciwko Szamanom +%d%%",
+    "tr": "Şamanlara Karşı Güçlü +%d%%"
+  },
+  {
+    "id": 312,
+    "key": "Strength against monsters + %d%%",
+    "pl": "Silny przeciwko Potworom +%d%%",
+    "tr": "Canavarlara Karşı Güçlü +%d%%"
+  },
+  {
+    "id": 313,
+    "key": "Attack + %d%%",
+    "pl": "Atak +%d%%",
+    "tr": "Saldırı +%d%%"
+  },
+  {
+    "id": 314,
+    "key": "Defence + %d%%",
+    "pl": "Obrona +%d%%",
+    "tr": "Savunma +%d%%"
+  },
+  {
+    "id": 315,
+    "key": "OX quiz script has loaded.",
+    "pl": "OX Quiz został załadowany.",
+    "tr": "OX yarışma dosyası yüklendi."
+  },
+  {
+    "id": 316,
+    "key": "Experience %d%%",
+    "pl": "Doświadczenie %d%%",
+    "tr": "Tecrübe %d%%"
+  },
+  {
+    "id": 317,
+    "key": "Chance to find an Item %. 1f",
+    "pl": "Szansa na znalezienie przedmiotu %.1f",
+    "tr": "Eşya ELE GEÇİRME şansı %.1f"
+  },
+  {
+    "id": 318,
+    "key": "Chance to find Yang %. 1f",
+    "pl": "Szansa na znalezienie Yang %.1f",
+    "tr": "Yang ELE GEÇİRME şansı %.1f"
+  },
+  {
+    "id": 319,
+    "key": "Maximum Energy +%d%%",
+    "pl": "Górny limit Energii +%d%%",
+    "tr": "Maksimum Enerji +%d%%"
+  },
+  {
+    "id": 320,
+    "key": "Maximum Energy +%d%%",
+    "pl": "Górny limit Energii +%d%%",
+    "tr": "Maksimum Enerji +%d%%"
+  },
+  {
+    "id": 321,
+    "key": "Skill Damage %d%%",
+    "pl": "Obrażenia Umiejętności %d%%",
+    "tr": "Beceri Hasarı %d%%"
+  },
+  {
+    "id": 322,
+    "key": "Hit Damage %d%%",
+    "pl": "Obrażenia Uderzeń %d%%",
+    "tr": "Ortalama Zarar %d%%"
+  },
+  {
+    "id": 323,
+    "key": "Resistance against Skill Damage %d%%",
+    "pl": "Odporność na Obrażenia Umiejętności %d%%",
+    "tr": "Beceri Hasarına Karşı Koyma %d%%"
+  },
+  {
+    "id": 324,
+    "key": "Resistance against Hits %d%%",
+    "pl": "Odporność na Trafienia %d%%",
+    "tr": "Ortalama Zarara Karşı Koyma %d%%"
+  },
+  {
+    "id": 325,
+    "key": "%d%% Resistance against Warrior Attacks",
+    "pl": "%d%% Odporność na Ataki Wojownika",
+    "tr": "Savaşçı Saldırılarına Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 326,
+    "key": "Welcome to Metin2.",
+    "pl": "Witamy w Metin2.",
+    "tr": "Metin2'ye hoş geldiniz."
+  },
+  {
+    "id": 327,
+    "key": "%d%% Resistance against Ninja Attacks",
+    "pl": "%d%% Odporność na Ataki Ninja",
+    "tr": "Ninja Saldırılarına Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 328,
+    "key": "%d%% Resistance against Sura Attacks",
+    "pl": "%d%% Odporność na Ataki Sura",
+    "tr": "Sura Saldırılarına Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 329,
+    "key": "%d%% Resistance against Shaman Attacks",
+    "pl": "%d%% Odporność na Ataki Szamana",
+    "tr": "Şaman Saldırılarına Karşı Dayanıklılık %d%%"
+  },
+  {
+    "id": 330,
+    "key": "(Procedure: %d y- %d m - %d d)",
+    "pl": "(Procedura: %d y- %d m - %d d)",
+    "tr": "(İşlem: %d y - %d a - %d g)"
+  },
+  {
+    "id": 331,
+    "key": "Your chat is blocked.",
+    "pl": "Twój Chat jest zablokowany.",
+    "tr": "Sohbetin engellendi."
+  },
+  {
+    "id": 332,
+    "key": "You need a higher level to be able to call.",
+    "pl": "Aby móc wołać, musisz mieć wyższy poziom postaci.",
+    "tr": "Bağırmak için daha yüksek bir seviyeye ihtiyacın var."
+  },
+  {
+    "id": 333,
+    "key": "You need a minimum level of %d to be able to call.",
+    "pl": "Musisz mieć co najmniej %d poziom aby móc wołać.",
+    "tr": "Bağırmak için en az %d seviye olman gerekir."
+  },
+  {
+    "id": 334,
+    "key": "You are not in this Group.",
+    "pl": "Nie jesteś w tej Grupie.",
+    "tr": "Bu grupta değilsin."
+  },
+  {
+    "id": 335,
+    "key": "You did not join this Guild.",
+    "pl": "Nie dołączyłeś do tej Gildii.",
+    "tr": "Bu loncaya katılmadın."
+  },
+  {
+    "id": 336,
+    "key": "The player has rejected your request to add him to your friend list.",
+    "pl": "Gracz odrzucił twoje zaproszenie do Listy Przyjaciół.",
+    "tr": "Oyuncu, onu arkadaş listene ekleme isteğini reddetti."
+  },
+  {
+    "id": 337,
+    "key": "OX Event has started.",
+    "pl": "Konkurs OX rozpoczęty.",
+    "tr": "OX Yarışması başladı."
+  },
+  {
+    "id": 338,
+    "key": "[Friends] You cannot add a GM to your list.",
+    "pl": "[Przyjaciele] Nie możesz dodać GM do Listy Przyjaciół.",
+    "tr": "[Arkadaşlar] Bir GM'yi arkadaş listene ekleyemezsin."
+  },
+  {
+    "id": 339,
+    "key": "%s is not online.",
+    "pl": "%s nie jest online.",
+    "tr": "%s çevrimiçi değil."
+  },
+  {
+    "id": 340,
+    "key": "After a trade, you have to wait %d seconds before you can open a shop.",
+    "pl": "Po dokonaniu handlu musisz odczekać %d sekund, zanim będziesz mógł otworzyć Magazyn.",
+    "tr": "Ticaretten sonra pazar açabilmek için %d saniye beklemelisin."
+  },
+  {
+    "id": 341,
+    "key": "You can trade again in %d seconds.",
+    "pl": "Możesz handlować ponownie za %d sekund.",
+    "tr": "%d saniye içinde tekrar ticaret yapabilirsin."
+  },
+  {
+    "id": 342,
+    "key": "You have more than 2 Billion Yang. You cannot trade.",
+    "pl": "Masz więcej niż 2 miliardy Yang. Nie możesz handlować.",
+    "tr": "2 milyardan fazla Yang'ın var. Ticaret yapamazsın."
+  },
+  {
+    "id": 343,
+    "key": "You cannot open a private shop while another window is open.",
+    "pl": "Nie możesz otworzyć prywatnego sklepu, dopóki otwarte jest inne okno.",
+    "tr": "Başka bir pencere açıkken pazar açamazsın."
+  },
+  {
+    "id": 344,
+    "key": "The player has more than 2 Billion Yang. You cannot trade with him.",
+    "pl": "Ten gracz posiada więcej niż 2 miliardy Yang. Nie możesz z nim handlować.",
+    "tr": "Oyuncunun 2 milyardan fazla Yang'ı var. Onunla ticaret yapamazsın."
+  },
+  {
+    "id": 345,
+    "key": "[Storeroom] No movement possible.",
+    "pl": "[Magazyn] Ruch niemożliwy.",
+    "tr": "[Depo] Hareket edilemez."
+  },
+  {
+    "id": 346,
+    "key": "[Storeroom] The item cannot be stored.",
+    "pl": "[Magazyn] Ten przedmiot nie może być przechowany.",
+    "tr": "[Depo] Bu eşya depolanamaz."
+  },
+  {
+    "id": 347,
+    "key": "[Group] The player who invited you is not online.",
+    "pl": "[Grupa] Zaproszony gracz jest offline.",
+    "tr": "[Grup] Seni davet eden oyuncu çevrimiçi değil."
+  },
+  {
+    "id": 348,
+    "key": "Uriel allowed to enter.",
+    "pl": "Uriel zezwolił na wejście.",
+    "tr": "Uriel girişe izin verdi."
+  },
+  {
+    "id": 349,
+    "key": "[Group] Only the group leader can change this.",
+    "pl": "[Grupa] Tylko lider grupy może to zmienić.",
+    "tr": "[Grup] Bunu sadece grup lideri değiştirebilir."
+  },
+  {
+    "id": 350,
+    "key": "[Group] The target is not a member of your group.",
+    "pl": "[Grupa] Wskazany cel nie jest członkiem twojej grupy.",
+    "tr": "[Grup] Hedef grubunun bir üyesi değil."
+  },
+  {
+    "id": 351,
+    "key": "[Group] You cannot kick out a player while you are in a dungeon.",
+    "pl": "[Grupa] Nie możesz wyrzucić gracza jeśli jesteś w lochu.",
+    "tr": "[Grup] Zindandayken oyuncu atamazsın."
+  },
+  {
+    "id": 352,
+    "key": "[Group] You cannot kick out a player while you are in a dungeon.",
+    "pl": "[Grupa] Nie możesz wyrzucić gracza jeśli jesteś w lochu.",
+    "tr": "[Grup] Zindandayken oyuncu atamazsın."
+  },
+  {
+    "id": 353,
+    "key": "[Group] You have been out kicked of the group.",
+    "pl": "[Grupa] Zostałeś usunięty z Grupy.",
+    "tr": "[Grup] Gruptan atıldın."
+  },
+  {
+    "id": 354,
+    "key": "[Group] You cannot leave a group while you are in a dungeon.",
+    "pl": "[Grupa] Nie możesz opuścić grupy w lochach.",
+    "tr": "[Grup] Zindandayken gruptan ayrılamazsın."
+  },
+  {
+    "id": 355,
+    "key": "[Group] You cannot kick out group members.",
+    "pl": "[Grupa] Nie możesz wyrzucać członków grupy.",
+    "tr": "[Grup] Grup üyelerini atamazsın."
+  },
+  {
+    "id": 356,
+    "key": "[Guild] After disbanding a guild, you cannot create a new one for %d days.",
+    "pl": "[Gildia] Po usunięciu gildii, nie możesz stworzyć nowej przez %d dni.",
+    "tr": "[Lonca] Bir loncayı dağıttıktan sonra %d gün boyunca yeni bir tane kuramazsın."
+  },
+  {
+    "id": 357,
+    "key": "[Guild] After leaving a guild, you cannot create a new one for %d days.",
+    "pl": "[Gildia] Po opuszczeniu gildii, nie możesz stworzyć nowej przez %d dni.",
+    "tr": "[Lonca] Bir loncadan ayrıldıktan sonra %d gün boyunca yeni bir tane kuramazsın."
+  },
+  {
+    "id": 358,
+    "key": "This guild name is invalid.",
+    "pl": "Nazwa Gildii jest błędna.",
+    "tr": "Bu lonca adı geçersiz."
+  },
+  {
+    "id": 359,
+    "key": "We request the participation of a lot of players.",
+    "pl": "Prosimy o liczny udział graczy.",
+    "tr": "Birçok oyuncunun katılımını bekliyoruz."
+  },
+  {
+    "id": 360,
+    "key": "[Guild] [%s] guild has been created.",
+    "pl": "[Gildia] [%s] Gildia została stworzona.",
+    "tr": "[Lonca] [%s] loncası kuruldu."
+  },
+  {
+    "id": 361,
+    "key": "[Guild] Creation of the guild has failed.",
+    "pl": "[Gildia] Zakładanie gildii nieudane.",
+    "tr": "[Lonca] Lonca kurulması başarısız oldu."
+  },
+  {
+    "id": 362,
+    "key": "[Group] Only the group leader can use group skills.",
+    "pl": "[Grupa] Tylko lider grupy może używać zdolności grupy.",
+    "tr": "[Grup] Sadece grup lideri grup becerilerini kullanabilir."
+  },
+  {
+    "id": 363,
+    "key": "[Group] The target has not been found.",
+    "pl": "[Grupy] Cel nie został znaleziony.",
+    "tr": "[Grup] Hedef bulunamadı."
+  },
+  {
+    "id": 364,
+    "key": "[Guild] That is not the correct amount of Yang.",
+    "pl": "[Gildia] To nie jest poprawna ilość Yang.",
+    "tr": "[Lonca] Bu doğru Yang miktarı değil."
+  },
+  {
+    "id": 365,
+    "key": "[Guild] You do not have enough Yang.",
+    "pl": "[Gildia] Nie masz wystarczającej liczby Yang.",
+    "tr": "[Lonca] Yeterli Yang'ın yok."
+  },
+  {
+    "id": 366,
+    "key": "[Guild] The person you were searching for cannot be found.",
+    "pl": "[Gildia] Poszukiwana osoba nie została odnaleziona.",
+    "tr": "[Lonca] Aradığın kişi bulunamadı."
+  },
+  {
+    "id": 367,
+    "key": "[Guild] This person is not in the same guild.",
+    "pl": "[Gildia] Ta osoba nie jest w tej samej gildii.",
+    "tr": "[Lonca] Bu kişi aynı loncada değil."
+  },
+  {
+    "id": 368,
+    "key": "[Guild] You do not have the authority to kick out guild members.",
+    "pl": "[Gildia] Nie możesz wyrzucać członków gildii.",
+    "tr": "[Lonca] Lonca üyelerini atma yetkin yok."
+  },
+  {
+    "id": 369,
+    "key": "[Guild] The guild member %s has been kicked out of the Guild.",
+    "pl": "[Gildia] Członek Gildii %s został usunięty.",
+    "tr": "[Lonca] %s lonca üyesi loncadan atıldı."
+  },
+  {
+    "id": 370,
+    "key": "OX The Event has not ended yet. An error has occurred. (flag: %d)",
+    "pl": "Konkurs OX nie został jeszcze zakończony, wystąpiły błędy. (Flag: %d)",
+    "tr": "OX etkinliği henüz sona ermedi. Bir hata oluştu. (Flag: %d)"
+  },
+  {
+    "id": 371,
+    "key": "[Guild] You have kicked a guild member out.",
+    "pl": "[Gildia] Członek Gildii został usunięty.",
+    "tr": "[Lonca] Bir lonca üyesini attın."
+  },
+  {
+    "id": 372,
+    "key": "[Guild] You do not have the authority to change your rank name.",
+    "pl": "[Gildia] Nie możesz zmienić swojej rangi.",
+    "tr": "[Lonca] Rütbe ismini değiştirme yetkin yok."
+  },
+  {
+    "id": 373,
+    "key": "[Guild] The guild leader's rights cannot be changed.",
+    "pl": "[Gildia] Moce Mistrza Gildii nie mogą być zmienione.",
+    "tr": "[Lonca] Lonca liderinin hakları değiştirilemez."
+  },
+  {
+    "id": 374,
+    "key": "[Guild] This rank name is invalid.",
+    "pl": "[Gildia] Ranga jest niepoprawna.",
+    "tr": "[Lonca] Bu rütbe ismi geçersiz."
+  },
+  {
+    "id": 375,
+    "key": "[Guild] You do not have the authority to change your position.",
+    "pl": "[Gildia] Nie możesz zmienić swojej pozycji.",
+    "tr": "[Lonca] Pozisyonunu değiştirme yetkin yok."
+  },
+  {
+    "id": 376,
+    "key": "[Guild] The rights of the guild leader cannot be changed.",
+    "pl": "[Gildia] Prawa Lidera Gildii nie mogą zostać zmienione.",
+    "tr": "[Lonca] Lonca liderinin hakları değiştirilemez."
+  },
+  {
+    "id": 377,
+    "key": "[Guild] %u experience points used.",
+    "pl": "[Gildia] Wykorzystane Punkty Doświadczenia: %u.",
+    "tr": "[Lonca] %u tecrübe puanı kullanıldı."
+  },
+  {
+    "id": 378,
+    "key": "[Guild] Experience usage has failed.",
+    "pl": "[Gildia] Przekazanie Punktów Doświadczenia nieudane.",
+    "tr": "[Lonca] Tecrübe puanı kullanımı başarısız oldu."
+  },
+  {
+    "id": 379,
+    "key": "[Guild] Insufficient Yang in the guild treasury.",
+    "pl": "[Gildia] Za mało Yang w kasie gildii.",
+    "tr": "[Lonca] Lonca kasasında yetersiz Yang var."
+  },
+  {
+    "id": 380,
+    "key": "[Guild] Dragon ghost was not restored.",
+    "pl": "[Gildia] Duch Smoka nie został zregenerowany.",
+    "tr": "[Lonca] Ejderha Ruhu geri yüklenemedi."
+  },
+  {
+    "id": 381,
+    "key": "The OX Event will be restarted shortly.",
+    "pl": "Za chwilę wydarzenie OX zostanie zrestartowane.",
+    "tr": "OX etkinliği kısa süre içinde yeniden başlatılacak."
+  },
+  {
+    "id": 382,
+    "key": "[Guild] You do not have the authority to make an announcement.",
+    "pl": "[Gildia] Nie możesz umieszczać ogłoszeń.",
+    "tr": "[Lonca] Duyuru yapma yetkin yok."
+  },
+  {
+    "id": 383,
+    "key": "[Guild] You do not have the authority to change the position.",
+    "pl": "[Gildia] Nie możesz zmieniać pozycji.",
+    "tr": "[Lonca] Pozisyonu değiştirme yetkin yok."
+  },
+  {
+    "id": 384,
+    "key": "[Guild] The guild leader's position cannot be changed.",
+    "pl": "[Gildia] Ranga Mistrza Gildii nie może być zmieniona.",
+    "tr": "[Lonca] Lonca liderinin pozisyonu değiştirilemez."
+  },
+  {
+    "id": 385,
+    "key": "[Guild] You cannot make yourself guild leader.",
+    "pl": "[Gildia] Nie możesz sam siebie mianować mistrzem gildii.",
+    "tr": "[Lonca] Kendini lonca lideri yapamazsın."
+  },
+  {
+    "id": 386,
+    "key": "[Guild] You do not have the authority to choose the guild leader.",
+    "pl": "[Gildia] Nie możesz wybrać Lidera.",
+    "tr": "[Lonca] Lonca liderini seçme yetkin yok."
+  },
+  {
+    "id": 387,
+    "key": "[Guild] You cannot choose any more guild leaders.",
+    "pl": "[Gildia] Nie możesz wybrać więcej Liderów.",
+    "tr": "[Lonca] Daha fazla lonca lideri seçemezsin."
+  },
+  {
+    "id": 388,
+    "key": "You cannot trade this item.",
+    "pl": "Nie możesz sprzedać tego przedmiotu.",
+    "tr": "Bu eşyanın ticaretini yapamazsın."
+  },
+  {
+    "id": 389,
+    "key": "Illegal software has been detected. The game is being shut down.",
+    "pl": "Wykryto niedozwolone oprogramowanie. Gra zostanie zakończona.",
+    "tr": "Yasadışı yazılım tespit edildi. Oyun kapatılıyor."
+  },
+  {
+    "id": 390,
+    "key": "You have more than 2 Billion Yang with you. You cannot trade.",
+    "pl": "Masz więcej niż 2 miliardy Yang. Nie możesz handlować.",
+    "tr": "2 milyardan fazla Yang'ın var. Ticaret yapamazsın."
+  },
+  {
+    "id": 391,
+    "key": "Invalid Yang.",
+    "pl": "Błędny Yang.",
+    "tr": "Geçersiz Yang."
+  },
+  {
+    "id": 392,
+    "key": "The present event is limited to one area.",
+    "pl": "Aktualny Wydarzenie jest ograniczone tylko do jednego obszaru.",
+    "tr": "Mevcut etkinlik tek bir alanla sınırlıdır."
+  },
+  {
+    "id": 393,
+    "key": "Start Item Roulette.",
+    "pl": "Rozpocznij Ruletkę Przedmiotów.",
+    "tr": "Eşya Ruletini Başlat."
+  },
+  {
+    "id": 394,
+    "key": "Start Yang Roulette.",
+    "pl": "Rozpocznij Ruletkę Yang.",
+    "tr": "Yang Ruletini Başlat."
+  },
+  {
+    "id": 395,
+    "key": "The player is online. Please use whisper to chat.",
+    "pl": "Gracz jest dostępny. Proszę skorzystać z szeptów.",
+    "tr": "Oyuncu çevrimiçi. Lütfen sohbet için fısıltı kullanın."
+  },
+  {
+    "id": 396,
+    "key": "The cell phone number is not registered.",
+    "pl": "Numer telefonu komórkowego nie jest zapisany.",
+    "tr": "Telefon numarası kayıtlı değil."
+  },
+  {
+    "id": 397,
+    "key": "You need to be at least on level 20 to be able to send text messages.",
+    "pl": "Musisz być co najmniej na poziomie 20, aby wysyłać wiadomości tekstowe.",
+    "tr": "Mesaj gönderebilmek için en az 20. seviye olman gerekir."
+  },
+  {
+    "id": 398,
+    "key": "You need 2000 DT to send a text message.",
+    "pl": "Potrzebujesz 2000 Yang, aby wysłać wiadomość tekstową.",
+    "tr": "Mesaj göndermek için 2000 Yang gerekiyor."
+  },
+  {
+    "id": 399,
+    "key": "Your text message has been sent.",
+    "pl": "Twoja wiadomość została wysłana.",
+    "tr": "Mesajın gönderildi."
+  },
+  {
+    "id": 400,
+    "key": "%s of the Guild %s raised up to %d%% !",
+    "pl": "%s Gildii %s wzrósł do %d%%!",
+    "tr": "%s Loncasının %s değeri %d%%'ye yükseltildi!"
+  },
+  {
+    "id": 401,
+    "key": "%s of the Guild %s normal again.",
+    "pl": "%s Gildii %s jest ponownie normalny.",
+    "tr": "%s Loncasının %s değeri tekrar normale döndü."
+  },
+  {
+    "id": 402,
+    "key": "%s: %s has increased by %d%%!",
+    "pl": "%s: %s wzrósł o %d%%!",
+    "tr": "%s: %s değeri %d%% arttı!"
+  },
+  {
+    "id": 403,
+    "key": "%s 's %s normal again.",
+    "pl": "%s %s jest ponownie normalny.",
+    "tr": "%s'in %s değeri tekrar normale döndü."
+  },
+  {
+    "id": 404,
+    "key": "Your mining points have reached their maximum. (%d)",
+    "pl": "Twoje Punkty Wydobycia osiągnęły limit. (%d)",
+    "tr": "Madencilik puanın maksimuma ulaştı. (%d)"
+  },
+  {
+    "id": 405,
+    "key": "Your mining points have reached their maximum level.",
+    "pl": "Twoje punkty Wydobycia osiągnęły najwyższy poziom.",
+    "tr": "Madencilik puanın en yüksek seviyeye ulaştı."
+  },
+  {
+    "id": 406,
+    "key": "You can get lumberjack Deokbae to upgrade your Pickaxe.",
+    "pl": "Możesz ulepszyć swój Kilof u Drwala Deokbae.",
+    "tr": "Kazmanı yükseltmek için Oduncu Deokbae'ye gidebilirsin."
+  },
+  {
+    "id": 407,
+    "key": "Your Mining Points have increased! (%d/%d)",
+    "pl": "Twoje Punkty Wydobycia wzrosły! (%d/%d)",
+    "tr": "Madencilik puanın arttı! (%d/%d)"
+  },
+  {
+    "id": 408,
+    "key": "You cannot mine without a Pick.",
+    "pl": "Nie możesz wydobywać bez kilofu.",
+    "tr": "Kazman olmadan madencilik yapamazsın."
+  },
+  {
+    "id": 409,
+    "key": "Nothing to mine here.",
+    "pl": "Nie ma tu nic do wydobycia.",
+    "tr": "Burada maden çıkarılacak bir şey yok."
+  },
+  {
+    "id": 410,
+    "key": "The mining has been successful.",
+    "pl": "Wydobycie zakończone pomyślnie.",
+    "tr": "Maden çıkarma başarılı."
+  },
+  {
+    "id": 411,
+    "key": "The mining has failed.",
+    "pl": "Wydobycie niepomyślne.",
+    "tr": "Maden çıkarma başarısız."
+  },
+  {
+    "id": 412,
+    "key": "[Friends] You have added %s as a friend.",
+    "pl": "[Przyjaciele] Dodałeś %s do Listy Przyjaciół.",
+    "tr": "[Arkadaşlar] %s listene eklendi."
+  },
+  {
+    "id": 413,
+    "key": "The player will be teleported into the city shortly.",
+    "pl": "Za chwilę gracze zostaną przeniesieni do miasta.",
+    "tr": "Oyuncu kısa süre içinde şehre ışınlanacak."
+  },
+  {
+    "id": 414,
+    "key": "[Friends] You have deleted %s from the list.",
+    "pl": "[Przyjaciele] Usunąłeś %s z listy.",
+    "tr": "[Arkadaşlar] %s listeden silindi."
+  },
+  {
+    "id": 415,
+    "key": "A critical server error has occurred. The server will restart automatically.",
+    "pl": "Krytyczny błąd serwera. Serwer zostanie uruchomiony ponownie.",
+    "tr": "Kritik bir sunucu hatası oluştu. Sunucu otomatik olarak yeniden başlatılacak."
+  },
+  {
+    "id": 416,
+    "key": "You will be disconnected automatically in 10 seconds.",
+    "pl": "Zostaniesz rozłączony za 10 sekund.",
+    "tr": "10 saniye içinde otomatik olarak bağlantın kesilecek."
+  },
+  {
+    "id": 417,
+    "key": "You can connect again after 5 minutes.",
+    "pl": "Możesz połączyć się ponownie za 5 minut.",
+    "tr": "5 dakika sonra tekrar bağlanabilirsin."
+  },
+  {
+    "id": 418,
+    "key": "(%s) guild has been created. [Temporary]",
+    "pl": "(%s) Gildia utworzona. [Tymczasowo]",
+    "tr": "(%s) loncası kuruldu. [Geçici]"
+  },
+  {
+    "id": 419,
+    "key": "This guild is at war.",
+    "pl": "Ta Gildia jest w stanie wojny.",
+    "tr": "Bu lonca şu an savaşta."
+  },
+  {
+    "id": 420,
+    "key": "%s: This guild does not exist.",
+    "pl": "%s: Ta Gildia nie istnieje.",
+    "tr": "%s: Bu lonca mevcut değil."
+  },
+  {
+    "id": 421,
+    "key": "A guild with this name or number does not exist.",
+    "pl": "Gildia o takiej nazwie lub liczbie nie istnieje.",
+    "tr": "Bu isimde veya numarada bir lonca mevcut değil."
+  },
+  {
+    "id": 422,
+    "key": "The building does not exist.",
+    "pl": "Budynek nie istnieje.",
+    "tr": "Bina mevcut değil."
+  },
+  {
+    "id": 423,
+    "key": "This type of building can only be erected once.",
+    "pl": "Ten typ budynku może być zbudowany tylko raz.",
+    "tr": "Bu tür binalar sadece bir kez inşa edilebilir."
+  },
+  {
+    "id": 424,
+    "key": "Close the OX event card first. (Flag: %d)",
+    "pl": "Najpierw zamknij Mapę OX. (Flag: %d)",
+    "tr": "Önce OX etkinlik kartını kapat. (Flag: %d)"
+  },
+  {
+    "id": 425,
+    "key": "The Main Building has to be erected first.",
+    "pl": "Musisz najpierw zbudować Główny Budynek.",
+    "tr": "Önce Ana Bina inşa edilmelidir."
+  },
+  {
+    "id": 426,
+    "key": "Building failed because of incorrect pricing.",
+    "pl": "Budowa zakończona niepowodzeniem z powodu błędnej wyceny.",
+    "tr": "Hatalı fiyatlandırma nedeniyle inşaat başarısız oldu."
+  },
+  {
+    "id": 427,
+    "key": "Your guild does not have enough Yang to erect this building.",
+    "pl": "Twoja gildia nie posiada wystarczającej ilości Yang, aby zbudować ten budynek.",
+    "tr": "Loncanın bu binayı inşa etmek için yeterli Yang'ı yok."
+  },
+  {
+    "id": 428,
+    "key": "You do not have enough resources to build a building.",
+    "pl": "Nie masz wystarczająco surowców na ten budynek.",
+    "tr": "Binayı inşa etmek için yeterli kaynağın yok."
+  },
+  {
+    "id": 429,
+    "key": "You cannot erect a building at this place.",
+    "pl": "Nie możesz zbudować tego budynku w tym miejscu.",
+    "tr": "Buraya bina inşa edemezsin."
+  },
+  {
+    "id": 430,
+    "key": "This character does not exist.",
+    "pl": "Ta postać nie istnieje.",
+    "tr": "Bu karakter mevcut değil."
+  },
+  {
+    "id": 431,
+    "key": "Duel has not been successfully cancelled.",
+    "pl": "Pojedynek nie został przerwany.",
+    "tr": "Düello başarıyla iptal edilemedi."
+  },
+  {
+    "id": 432,
+    "key": "Duel cancelled successfully.",
+    "pl": "Pojedynek przerwany pomyślnie.",
+    "tr": "Düello başarıyla iptal edildi."
+  },
+  {
+    "id": 433,
+    "key": "The duel has been successfully started.",
+    "pl": "Pojedynek rozpoczęty pomyślnie.",
+    "tr": "Düello başarıyla başlatıldı."
+  },
+  {
+    "id": 434,
+    "key": "There is a problem with initiating the duel.",
+    "pl": "Napotkano problem przy rozpoczęciu pojedynku.",
+    "tr": "Düelloyu başlatırken bir sorun oluştu."
+  },
+  {
+    "id": 435,
+    "key": "No errors occurred.",
+    "pl": "Nie wystąpiły błędy.",
+    "tr": "Hata oluşmadı."
+  },
+  {
+    "id": 436,
+    "key": "There are no combatants.",
+    "pl": "Brak przeciwników.",
+    "tr": "Savaşçı yok."
+  },
+  {
+    "id": 437,
+    "key": "No status points left.",
+    "pl": "Nie zostały żadne Punkty Statusu.",
+    "tr": "Hiç statü puanı kalmadı."
+  },
+  {
+    "id": 438,
+    "key": "Remaining status points are too low.",
+    "pl": "Pozostało zbyt mało punktów statusu.",
+    "tr": "Kalan statü puanları çok düşük."
+  },
+  {
+    "id": 439,
+    "key": "You entered an incorrect value.",
+    "pl": "Podałeś złą wartość.",
+    "tr": "Hatalı bir değer girdin."
+  },
+  {
+    "id": 440,
+    "key": "Suborder or the Order is incorrect.",
+    "pl": "Polecenie jest nieprawidłowe.",
+    "tr": "Komut veya Alt Komut hatalı."
+  },
+  {
+    "id": 441,
+    "key": "Broken contract between player %d and player %d.",
+    "pl": "Zerwany kontrakt pomiędzy graczami %d i %d.",
+    "tr": "Broken contract between player %d and player %d."
+  },
+  {
+    "id": 442,
+    "key": "Turn the Roulette for %d Yang.",
+    "pl": "Rozpocznij ruletkę o %d Yang.",
+    "tr": "%d Yang karşılığında ruleti çevir."
+  },
+  {
+    "id": 443,
+    "key": "The Item log placed into the syslog.",
+    "pl": "Log przedmiotów umieszczony w logu systemowym.",
+    "tr": "Eşya logu sistem loguna (syslog) eklendi."
+  },
+  {
+    "id": 444,
+    "key": "Information for the Kingdoms",
+    "pl": "Informacje dla Królestw",
+    "tr": "İmparatorluklar için Bilgiler"
+  },
+  {
+    "id": 445,
+    "key": "Choose the Map Information of the Holy Land %d Entrance %d %d %d",
+    "pl": "Wybierz mapy Świętej Ziemi %d Wejście %d %d %d",
+    "tr": "Kutsal Toprakların Harita Bilgisini Seç %d Giriş %d %d %d"
+  },
+  {
+    "id": 446,
+    "key": "An error has occurred.",
+    "pl": "Wystąpił błąd.",
+    "tr": "Bir hata oluştu."
+  },
+  {
+    "id": 447,
+    "key": "An error has occurred. code %s",
+    "pl": "Wystąpił błąd. (Kod błędu: %s)",
+    "tr": "Bir hata oluştu. Kod: %s"
+  },
+  {
+    "id": 448,
+    "key": "%s killcount %d mobkillcount %d bosskillcount %d Number Holy Land %d",
+    "pl": "%s licznik zabójstw %d zabitych potworów %d zabitych bossów %d liczba świętej ziemi %d",
+    "tr": "%s öldürme sayısı %d canavar öldürme %d boss öldürme %d Kutsal Toprak No %d"
+  },
+  {
+    "id": 449,
+    "key": "Information about the status of the kingdom battle",
+    "pl": "Informacje o Bitwie Królestw",
+    "tr": "İmparatorluk savaşı durumu hakkındaki bilgiler"
+  },
+  {
+    "id": 450,
+    "key": "Your request is loading. Please wait.",
+    "pl": "Twoja prośba jest wczytywana. Proszę czekać.",
+    "tr": "Talebin yükleniyor. Lütfen bekle."
+  },
+  {
+    "id": 451,
+    "key": "You cannot open a Storeroom while another window is open.",
+    "pl": "Nie możesz otworzyć magazynu, dopóki otwarte jest inne okno.",
+    "tr": "Başka bir pencere açıkken Depoyu açamazsan."
+  },
+  {
+    "id": 452,
+    "key": "[Storeroom] Storeroom password has been changed.",
+    "pl": "[Magazyn] Hasło do magazynu zostało zmienione.",
+    "tr": "[Depo] Depo şifresi değiştirildi."
+  },
+  {
+    "id": 453,
+    "key": "[Storeroom] You have entered the wrong password.",
+    "pl": "[Magazyn] Wprowadzono nieprawidłowe hasło.",
+    "tr": "[Depo] Yanlış şifre girdin."
+  },
+  {
+    "id": 454,
+    "key": "Your playing time is going to run out in %d minutes.",
+    "pl": "Twój czas gry dobiega końca za %d minut.",
+    "tr": "Oyun süren %d dakika içinde dolacak."
+  },
+  {
+    "id": 455,
+    "key": "Regularly voted.",
+    "pl": "Głosowanie.",
+    "tr": "Oylama yapıldı."
+  },
+  {
+    "id": 456,
+    "key": "Already voted.",
+    "pl": "Już zagłosowałeś.",
+    "tr": "Zaten oy kullandın."
+  },
+  {
+    "id": 457,
+    "key": "%s player already in the vote.",
+    "pl": "%s graczy oddało już swój głos.",
+    "tr": "%s oyuncu zaten oylamada."
+  },
+  {
+    "id": 458,
+    "key": "OX Event is over. No errors occurred. (Flag: %d)",
+    "pl": "Event OX został zakończony. Nie wystąpiły żadne błędy. (Flag: %d)",
+    "tr": "OX Yarışması bitti. Hata oluşmadı. (Flag: %d)"
+  },
+  {
+    "id": 459,
+    "key": "Cannot run for office.",
+    "pl": "Nie może być głosowany.",
+    "tr": "Aday olunamaz."
+  },
+  {
+    "id": 460,
+    "key": "%s still has %u Yang available.",
+    "pl": "%s nadal ma %u Yang.",
+    "tr": "%s hala %u Yang'a sahip."
+  },
+  {
+    "id": 461,
+    "key": "%s still has %d Yang available.",
+    "pl": "%s nadal ma %d Yang.",
+    "tr": "%s hala %d Yang'a sahip."
+  },
+  {
+    "id": 462,
+    "key": "You do not have enough Yang.",
+    "pl": "Nie masz wystarczającej ilości Yang.",
+    "tr": "Yeterli Yang'ın yok."
+  },
+  {
+    "id": 463,
+    "key": "Item price has changed.",
+    "pl": "Cena przedmiotu zmieniła się.",
+    "tr": "Eşya fiyatı değişti."
+  },
+  {
+    "id": 464,
+    "key": "%s is deleted as an Emperor Candidate.",
+    "pl": "Kandydatura %s na Imperatora została skasowana.",
+    "tr": "%s isimli imparator adaylığı silindi."
+  },
+  {
+    "id": 465,
+    "key": "%s is not a candidate for the emperor elections.",
+    "pl": "%s nie jest kandydatem na Imperatora.",
+    "tr": "%s imparatorluk seçimleri için bir aday değil."
+  },
+  {
+    "id": 466,
+    "key": "%s has been nominated as emperor.",
+    "pl": "%s został nominowany na Imperatora.",
+    "tr": "%s imparator olarak atandı."
+  },
+  {
+    "id": 467,
+    "key": "%s cannot be nominated as emperor.",
+    "pl": "%s nie może być nominowany na Imperatora.",
+    "tr": "%s imparator adayı olamaz."
+  },
+  {
+    "id": 468,
+    "key": "The %s Emperor gets driven out.",
+    "pl": "Imperator %s został odwołany.",
+    "tr": "İmparator %s görevden alındı."
+  },
+  {
+    "id": 469,
+    "key": "The %s Emperor cannot be driven out.",
+    "pl": "Imperator %s nie może zostać odwołany.",
+    "tr": "İmparator %s görevden alınamaz."
+  },
+  {
+    "id": 470,
+    "key": "OX Event is not accepting any more participants.",
+    "pl": "Konkurs OX nie przyjmuje już nowych uczestników.",
+    "tr": "OX Yarışması artık yeni katılımcı kabul etmiyor."
+  },
+  {
+    "id": 471,
+    "key": "Shinsoo Kingdom",
+    "pl": "Królestwo Shinsoo",
+    "tr": "Shinsoo İmparatorluğu"
+  },
+  {
+    "id": 472,
+    "key": "Chunjo Kingdom",
+    "pl": "Królestwo Chunjo",
+    "tr": "Chunjo İmparatorluğu"
+  },
+  {
+    "id": 473,
+    "key": "Jinno Kingdom",
+    "pl": "Królestwo Jinno",
+    "tr": "Jinno İmparatorluğu"
+  },
+  {
+    "id": 474,
+    "key": "Your fishing points have increased! (%d/%d)",
+    "pl": "Twoje punkty wędkarskie wzrosły! (%d/%d)",
+    "tr": "Balıkçılık puanın arttı! (%d/%d)"
+  },
+  {
+    "id": 475,
+    "key": "You have reached the maximum number of fishing points.",
+    "pl": "Osiągnąłeś maksymalną ilość Punktów Wędkarskich.",
+    "tr": "Maksimum balıkçılık puanına ulaştın."
+  },
+  {
+    "id": 476,
+    "key": "Go to the Fisherman and get your Fishing Pole upgraded!",
+    "pl": "Ulepsz swoją wędkę u Rybaka!",
+    "tr": "Balıkçıya git ve oltanı yükselt!"
+  },
+  {
+    "id": 477,
+    "key": "You lost your bait to the fish.",
+    "pl": "Straciłeś swoją przynętę.",
+    "tr": "Yemini bir balığa kaptırdın."
+  },
+  {
+    "id": 478,
+    "key": "You have caught a fish! (%s)",
+    "pl": "Złapałeś rybę! (%s)",
+    "tr": "Bir balık yakaladın! (%s)"
+  },
+  {
+    "id": 479,
+    "key": "The length of the captured fish is %.2fcm.",
+    "pl": "Długość złapanej ryby wynosi %.2fcm.",
+    "tr": "Yakalanan balığın boyu %.2f cm."
+  },
+  {
+    "id": 480,
+    "key": "Fishing Event 'Great Zander'",
+    "pl": "Konkurs Wędkarski 'Najlepszy Rybak'",
+    "tr": "Balıkçılık Etkinliği 'Büyük Sudak'"
+  },
+  {
+    "id": 481,
+    "key": "OX The other event participants are being noted down.",
+    "pl": "OX Inni uczestnicy Wydarzenia są na liście.",
+    "tr": "Diğer OX etkinliği katılımcıları kaydediliyor."
+  },
+  {
+    "id": 482,
+    "key": "Fishing Event 'Carp'",
+    "pl": "Konkurs Wędkarski 'Karp'",
+    "tr": "Balıkçılık Etkinliği 'Sazan'"
+  },
+  {
+    "id": 483,
+    "key": "%s: %d",
+    "pl": "%s: %d",
+    "tr": "%s: %d"
+  },
+  {
+    "id": 484,
+    "key": "You have caught %d of %d .",
+    "pl": "Złapałeś %d z %d .",
+    "tr": "%d / %d yakaladın."
+  },
+  {
+    "id": 485,
+    "key": "The fish vanished in the depths of the water.",
+    "pl": "Ryba zniknęła w głębinach wody.",
+    "tr": "Balık suyun derinliklerinde gözden kayboldu."
+  },
+  {
+    "id": 486,
+    "key": "There is a Clam inside the Fish.",
+    "pl": "W rybie znajduje się muszla.",
+    "tr": "Balığın içinde bir İstiridye var."
+  },
+  {
+    "id": 487,
+    "key": "There is a Worm inside the Fish.",
+    "pl": "W rybie znajduje się robak.",
+    "tr": "Balığın içinde bir Solucan var."
+  },
+  {
+    "id": 488,
+    "key": "You are roasting %s over the fire.",
+    "pl": "Pieczesz %s nad ogniem.",
+    "tr": "%s eşyasını ateşin üzerinde pişiriyorsun."
+  },
+  {
+    "id": 489,
+    "key": "You cannot trade because you are carrying more than 2 billion Yang.",
+    "pl": "Nie możesz handlować, ponieważ masz przy sobie więcej niż 2 miliardy Yang.",
+    "tr": "Yanında 2 milyardan fazla Yang taşıdığın için ticaret yapamazsın."
+  },
+  {
+    "id": 490,
+    "key": "MONEY_WILL_EXCEED_OVER_LIMIT",
+    "pl": "Nie możesz kontynuować, ponieważ Yang przekroczą dozwolony limit 2 miliardów.",
+    "tr": "İşlem sonucunda Yang sınırı aşılacağı için devam edilemiyor."
+  },
+  {
+    "id": 491,
+    "key": "You can't give your shop an invalid name.",
+    "pl": "Nie możesz nadać niewłaściwej nazwy swojemu Magazynowi.",
+    "tr": "Pazarına geçersiz bir isim veremezsin."
+  },
+  {
+    "id": 492,
+    "key": "You can't sell Item-Shop items in a private shop.",
+    "pl": "Nie możesz sprzedawać Przedmiotów z ItemShop w prywatnym Sklepie.",
+    "tr": "Pazarında Nesne Market eşyalarını satamazsın."
+  },
+  {
+    "id": 493,
+    "key": "OX The other event participants have not been noted down.",
+    "pl": "OX Inni uczestnicy Wydarzenia nie są na liście.",
+    "tr": "Diğer OX etkinliği katılımcıları kaydedilemedi."
+  },
+  {
+    "id": 494,
+    "key": "Mining is finished.",
+    "pl": "Wydobycie przerwane.",
+    "tr": "Maden çıkarma bitti."
+  },
+  {
+    "id": 495,
+    "key": "You need a Pickaxe in order to extract ore!",
+    "pl": "Do wydobywania surowców potrzebny jest Kilof!",
+    "tr": "Maden çıkarmak için bir Kazma gerekiyor!"
+  },
+  {
+    "id": 496,
+    "key": "Please choose a Fishing Pole.",
+    "pl": "Proszę wybrać Wędkę.",
+    "tr": "Lütfen bir Olta seç."
+  },
+  {
+    "id": 497,
+    "key": "Place the Bait on the Hook first.",
+    "pl": "Najpierw umieść przynętę na haczyku.",
+    "tr": "Önce oltaya Yem tak."
+  },
+  {
+    "id": 498,
+    "key": "You can't go fishing without a fishing pole!",
+    "pl": "Nie możesz łowić bez Wędki!",
+    "tr": "Oltan olmadan balık tutamazsın!"
+  },
+  {
+    "id": 499,
+    "key": "YOU_CANT_FISH_HERE",
+    "pl": "Nie możesz tu łowić.",
+    "tr": "Burada balık tutamazsın."
+  },
+  {
+    "id": 500,
+    "key": "[Group] You cannot make a request because the group leader is not online.",
+    "pl": "[Grupa] Nie możesz wysłać Prośby, ponieważ Lider grupy jest offline.",
+    "tr": "[Grup] Grup lideri çevrimdışı olduğu için talepte bulunamazsın."
+  },
+  {
+    "id": 501,
+    "key": "[Group] You cannot form a group with players from another kingdom.",
+    "pl": "[Grupa] Nie możesz utworzyć Grupy z graczami z innych Królestw.",
+    "tr": "[Grup] Başka bir imparatorluktan oyuncularla grup kuramazsın."
+  },
+  {
+    "id": 502,
+    "key": "[Group] You cannot invite players while you are in a dungeon.",
+    "pl": "[Grupa] Nie możesz zaprosić innych graczy, gdy jesteś w lochu.",
+    "tr": "[Grup] Zindandayken oyuncu davet edemezsin."
+  },
+  {
+    "id": 503,
+    "key": "[Group] You cannot invite a player while you are in observer mode.",
+    "pl": "[Grupa] Nie możesz zaprosić innych graczy, gdy jesteś w Trybie Obserwatora.",
+    "tr": "[Grup] İzleyici modundayken oyuncu davet edemezsin."
+  },
+  {
+    "id": 504,
+    "key": "[Group] Only players with a level difference of -30 to +30 can be invited.",
+    "pl": "[Grupa] Tylko gracze z różnicą poziomu -30 do +30 mogą zostać zaproszeni.",
+    "tr": "[Grup] Sadece -30 ile +30 seviye farkı olan oyuncular davet edilebilir."
+  },
+  {
+    "id": 505,
+    "key": "Number of other participants : %d",
+    "pl": "Liczba innych uczestników: %d",
+    "tr": "Diğer katılımcıların sayısı: %d"
+  },
+  {
+    "id": 506,
+    "key": "[Group] You cannot invite this player, as their level is too low.",
+    "pl": "[Grupa] Nie możesz zaprosić tego gracza, jego poziom jest za niski.",
+    "tr": "[Grup] Bu oyuncuyu davet edemezsin, seviyesi çok düşük."
+  },
+  {
+    "id": 507,
+    "key": "[Group] You cannot invite this player, as their level is too high.",
+    "pl": "[Grupa] Nie możesz zaprosić tego gracza, jego poziom jest za wysoki.",
+    "tr": "[Grup] Bu oyuncuyu davet edemezsin, seviyesi çok yüksek."
+  },
+  {
+    "id": 508,
+    "key": "[Group] You cannot invite any more players into your group.",
+    "pl": "[Grupa] Nie możesz zaprosić więcej graczy do swojej Grupy.",
+    "tr": "[Grup] Grubuna daha fazla oyuncu davet edemezsin."
+  },
+  {
+    "id": 509,
+    "key": "You want to join %s's group.",
+    "pl": "Chcesz dołączyć się do Grupy %s.",
+    "tr": "%s grubuna katılmak istiyorsun."
+  },
+  {
+    "id": 510,
+    "key": "This player is not in this group.",
+    "pl": "Ten gracz nie jest w tej Grupie.",
+    "tr": "Bu oyuncu bu grupta değil."
+  },
+  {
+    "id": 511,
+    "key": "[Group] You cannot join this group because it is already full.",
+    "pl": "[Grupa] Nie możesz dołączyć do tej Grupy, ponieważ ma ona już maksymalną ilość członków.",
+    "tr": "[Grup] Bu grup zaten dolu olduğu için katılamazsın."
+  },
+  {
+    "id": 512,
+    "key": "[Group] You do not have the right to invite someone.",
+    "pl": "[Grupa] Nie masz prawa, aby zapraszać kogokolwiek.",
+    "tr": "[Grup] Birini davet etme yetkin yok."
+  },
+  {
+    "id": 513,
+    "key": "[Group] %s has declined your group invitation.",
+    "pl": "[Grupa] %s odrzucił zaproszenie do twojej Grupy.",
+    "tr": "[Grup] %s grup davetini reddetti."
+  },
+  {
+    "id": 514,
+    "key": "[Group] %s is already in the group.",
+    "pl": "[Grupa] %s jest już w Grupie.",
+    "tr": "[Grup] %s zaten bir grupta."
+  },
+  {
+    "id": 515,
+    "key": "[Group] You cannot accept an invitation into a dungeon.",
+    "pl": "[Grupa] Nie możesz przyjąć zaproszenia będąc w lochu.",
+    "tr": "[Grup] Zindandayken davet kabul edemezsin."
+  },
+  {
+    "id": 516,
+    "key": "OX Event is finishing.",
+    "pl": "Konkurs OX zakończony.",
+    "tr": "OX Yarışması sona eriyor."
+  },
+  {
+    "id": 517,
+    "key": "OX Event is finishing.",
+    "pl": "Konkurs OX zakończony.",
+    "tr": "OX Yarışması sona eriyor."
+  },
+  {
+    "id": 518,
+    "key": "[Group] You cannot accept the invitation.",
+    "pl": "[Grupa] Nie możesz przyjąć zaproszenia.",
+    "tr": "[Grup] Daveti kabul edemezsin."
+  },
+  {
+    "id": 519,
+    "key": "[Group] %s has declined your invitation.",
+    "pl": "[Grupa] %s odrzucił twoje zaproszenie.",
+    "tr": "[Grup] %s davetini reddetti."
+  },
+  {
+    "id": 520,
+    "key": "[Group] %s has joined your group.",
+    "pl": "[Grupa] %s dołączył do Grupy.",
+    "tr": "[Grup] %s gruba katıldı."
+  },
+  {
+    "id": 521,
+    "key": "[Group] %s has joined your Group.",
+    "pl": "[Grupa] %s dołączył do twojej Grupy.",
+    "tr": "[Grup] %s gruba katıldı."
+  },
+  {
+    "id": 522,
+    "key": "You can't use a private shop now.",
+    "pl": "Nie możesz skorzystać teraz z prywatnego Magazynu.",
+    "tr": "Şu an pazar kullanamazsın."
+  },
+  {
+    "id": 523,
+    "key": "This player is already trading with another player.",
+    "pl": "W tej chwili ten gracz handluje z kimś innym.",
+    "tr": "Bu oyuncu şu an başka biriyle ticaret yapıyor."
+  },
+  {
+    "id": 524,
+    "key": "Metin2 Confirmation Number: %s",
+    "pl": "Numer potwierdzający Metin2: %s",
+    "tr": "Metin2 Onay Numarası: %s"
+  },
+  {
+    "id": 525,
+    "key": "Your Confirmation Number is not correct. Please try again.",
+    "pl": "Twój numer potwierdzający jest błędny. Proszę spróbować ponownie.",
+    "tr": "Onay numaran hatalı. Lütfen tekrar dene."
+  },
+  {
+    "id": 526,
+    "key": "The mobile phone number is registered.",
+    "pl": "Numer komórkowy jest zarejestrowany.",
+    "tr": "Cep telefonu numarası kayıtlı."
+  },
+  {
+    "id": 527,
+    "key": "You cannot teleport to the player.",
+    "pl": "Nie możesz przenieść się do gracza.",
+    "tr": "Oyuncuya ışınlanamazsın."
+  },
+  {
+    "id": 528,
+    "key": "OX The prize has been awarded. ID: %d Quantity: %d",
+    "pl": "Nagroda za OX została wydana. ID: %d Ilość: %d",
+    "tr": "OX ödülü verildi. ID: %d Miktar: %d"
+  },
+  {
+    "id": 529,
+    "key": "This player is not online.",
+    "pl": "Ten gracz nie jest online.",
+    "tr": "Bu oyuncu çevrimiçi değil."
+  },
+  {
+    "id": 530,
+    "key": "The player is playing on channel %d. (You are on channel %d.)",
+    "pl": "Gracz ten jest na kanale %d. (Ty jesteś na kanale %d.)",
+    "tr": "Oyuncu kanal %d'de oynuyor. (Sen kanal %d'desin.)"
+  },
+  {
+    "id": 531,
+    "key": "After opening the Storeroom, you cannot go anywhere else for %d seconds.",
+    "pl": "Nie możesz udać się w inne miejsce przez %d sekund po otwarciu Magazynu.",
+    "tr": "Depoyu açtıktan sonra %d saniye boyunca başka bir yere gidemezsin."
+  },
+  {
+    "id": 532,
+    "key": "You cannot go elsewhere for a period of time after the trade.",
+    "pl": "Nie możesz udać się w inne miejsce przez chwilę po zakończeniu handlu.",
+    "tr": "Ticaretten sonra bir süre başka bir yere gidemezsin."
+  },
+  {
+    "id": 533,
+    "key": "After trading you cannot go elsewhere for %d seconds.",
+    "pl": "Nie możesz udać się w inne miejsce przez %d sekund po zakończeniu handlu.",
+    "tr": "Ticaret yaptıktan sonra %d saniye boyunca başka bir yere gidemezsin."
+  },
+  {
+    "id": 534,
+    "key": "The duel has finished, because your combatant vanished.",
+    "pl": "Pojedynek został zakończony, ponieważ zniknął twój przeciwnik.",
+    "tr": "Rakibin gözden kaybolduğu için düello sona erdi."
+  },
+  {
+    "id": 535,
+    "key": "There is no limit for Potions.",
+    "pl": "Nie ma limitu mikstur.",
+    "tr": "İksirler için bir sınır yok."
+  },
+  {
+    "id": 536,
+    "key": "You can use up to %d potions.",
+    "pl": "Możesz użyć tylko %d mikstur.",
+    "tr": "En fazla %d iksir kullanabilirsin."
+  },
+  {
+    "id": 537,
+    "key": "The fight will start in 10 seconds.",
+    "pl": "Walka rozpoczyna się za 10 sekund.",
+    "tr": "Savaş 10 saniye içinde başlayacak."
+  },
+  {
+    "id": 538,
+    "key": "The duel has begun.",
+    "pl": "Pojedynek rozpoczęty.",
+    "tr": "Düello başladı."
+  },
+  {
+    "id": 539,
+    "key": "TRUE",
+    "pl": "TRUE",
+    "tr": "DOĞRU"
+  },
+  {
+    "id": 540,
+    "key": "The duel is being finished because there is a problem in the duel arena.",
+    "pl": "Pojedynek został zakończony z powodu problemów z areną.",
+    "tr": "Düello arenadaki bir sorun nedeniyle bitiriliyor."
+  },
+  {
+    "id": 541,
+    "key": "The duel has finished because of a timeout.",
+    "pl": "Pojedynek został zakończony z powodu upływu czasu.",
+    "tr": "Düello zaman aşımı nedeniyle sona erdi."
+  },
+  {
+    "id": 542,
+    "key": "In 10 seconds you will be teleported into the city.",
+    "pl": "Za 10 sekund zostaniesz przeniesiony do miasta.",
+    "tr": "10 saniye içinde şehre ışınlanacaksın."
+  },
+  {
+    "id": 543,
+    "key": "The duel has been stopped because there is a problem in the arena.",
+    "pl": "Pojedynek jest zakończony z powodu problemów z areną.",
+    "tr": "Arenadaki bir sorun nedeniyle düello durduruldu."
+  },
+  {
+    "id": 544,
+    "key": "Your combatant has got some problems. The duel is being cancelled.",
+    "pl": "Twój przeciwnik ma jakieś problemy. Pojedynek zakończony.",
+    "tr": "Rakibinde bazı sorunlar var. Düello iptal ediliyor."
+  },
+  {
+    "id": 545,
+    "key": "The duel is being cancelled as there is a problem with the combatant.",
+    "pl": "Pojedynek został zakończony ponieważ jest problemów z przeciwnikiem.",
+    "tr": "Rakipteki bir sorun nedeniyle düello iptal ediliyor."
+  },
+  {
+    "id": 546,
+    "key": "%s has won the duel.",
+    "pl": "%s wygrał pojedynek.",
+    "tr": "%s düelloyu kazandı."
+  },
+  {
+    "id": 547,
+    "key": "%s has won.",
+    "pl": "%s wygrał.",
+    "tr": "%s kazandı."
+  },
+  {
+    "id": 548,
+    "key": "You will be teleported into the city in 10 seconds.",
+    "pl": "Zostaniesz przeniesiony do Miasta za 10 sekund.",
+    "tr": "10 saniye içinde şehre ışınlanacaksın."
+  },
+  {
+    "id": 549,
+    "key": "The next round will begin in 10 seconds.",
+    "pl": "Następna runda rozpoczyna się za 10 sekund.",
+    "tr": "Bir sonraki raunt 10 saniye içinde başlayacak."
+  },
+  {
+    "id": 550,
+    "key": "FALSE",
+    "pl": "FALSE",
+    "tr": "YANLIŞ"
+  },
+  {
+    "id": 551,
+    "key": "The combatants have been separated. The duel has been stopped.",
+    "pl": "Wojownicy się rozdzielili. Pojedynek zakończony.",
+    "tr": "Savaşçılar ayrıldı. Düello durduruldu."
+  },
+  {
+    "id": 552,
+    "key": "The quota of the Item Drop is at the moment plus %d%%",
+    "pl": "Aktualnie szansa na wypadnięcie przedmiotu to: +%d%%",
+    "tr": "Şu an eşya düşürme şansı +%d%%"
+  },
+  {
+    "id": 553,
+    "key": "The quota of the Yang Drop is at the moment plus %d%%",
+    "pl": "Ilość wypadających Yang jest zwiększona o: %d%%",
+    "tr": "Şu an Yang düşürme miktarı +%d%%"
+  },
+  {
+    "id": 554,
+    "key": "The drop rate for Yang rain is currently %d%% higher.",
+    "pl": "Aktualna szansa na deszcz dropów Yang jest zwiększona o: %d%%",
+    "tr": "Yang yağmuru şansı şu an %d%% daha yüksek."
+  },
+  {
+    "id": 555,
+    "key": "The experience bonus is currently an additional %d%%.",
+    "pl": "Bonus dodatkowego doświadczenia wynosi obecnie %d%%.",
+    "tr": "Tecrübe bonusu şu an ek olarak %d%%."
+  },
+  {
+    "id": 556,
+    "key": "You do not have the correct client version. Please install the normal patch.",
+    "pl": "Twoja wersja klienta jest niewłaściwa. Proszę zainstalować normalny patch.",
+    "tr": "İstemci versiyonun hatalı. Lütfen normal yamayı yükle."
+  },
+  {
+    "id": 557,
+    "key": "You cannot trade in the shop while another window is open.",
+    "pl": "Nie możesz handlować w sklepie, dopóki otwarte jest inne okno.",
+    "tr": "Başka bir pencere açıkken dükkanla ticaret yapamazsın."
+  },
+  {
+    "id": 558,
+    "key": "You are too far away from the shop to buy something.",
+    "pl": "Aby cokolwiek kupić, musisz podejść bliżej.",
+    "tr": "Bir şey satın almak için dükkana çok uzaktasın."
+  },
+  {
+    "id": 559,
+    "key": "You are too far away from the shop to sell something.",
+    "pl": "Znajdujesz się za daleko od Magazynu aby sprzedawać.",
+    "tr": "Bir şey satmak için dükkana çok uzaktasın."
+  },
+  {
+    "id": 560,
+    "key": "You cannot trade because you are carrying more than 2 billion Yang.",
+    "pl": "Nie możesz handlować, ponieważ masz przy sobie więcej niż 2 miliardy Yang.",
+    "tr": "Yanında 2 milyardan fazla Yang taşıdığın için ticaret yapamazsın."
+  },
+  {
+    "id": 561,
+    "key": "Total number of the Quiz: %d",
+    "pl": "Całkowita liczba Pytań: %d",
+    "tr": "Toplam soru sayısı: %d"
+  },
+  {
+    "id": 562,
+    "key": "This sale will be taxed %d%%.",
+    "pl": "Podatek od sprzedaży: %d%% (%lld Yang).",
+    "tr": "Bu satıştan %d%% vergi alınacak. (%lld Yang)"
+  },
+  {
+    "id": 563,
+    "key": "You cannot ride a Horse while you are transformed.",
+    "pl": "Gdy jesteś przemieniony, nie możesz jeździć konno.",
+    "tr": "Dönüşmüşken ata binemezsin."
+  },
+  {
+    "id": 564,
+    "key": "You cannot ride while you are wearing a Wedding Dress or a Tuxedo.",
+    "pl": "Nie możesz jeździć konno, gdy masz na sobie Suknię Ślubną lub Smoking.",
+    "tr": "Gelinlik veya Damatlık giyerken ata binemezsin."
+  },
+  {
+    "id": 565,
+    "key": "You do not have a Horse.",
+    "pl": "Nie masz konia.",
+    "tr": "Atın yok."
+  },
+  {
+    "id": 566,
+    "key": "Your Horse is dead.",
+    "pl": "Twój koń zdechł.",
+    "tr": "Atın ölü."
+  },
+  {
+    "id": 567,
+    "key": "Your Horse's endurance is too low.",
+    "pl": "Wytrzymałość Twojego konia jest za niska.",
+    "tr": "Atının dayanıklılığı çok düşük."
+  },
+  {
+    "id": 568,
+    "key": "Calling the Horse has failed.",
+    "pl": "Nie udało się przywołać konia.",
+    "tr": "Atı çağırma başarısız oldu."
+  },
+  {
+    "id": 569,
+    "key": "'s Horse",
+    "pl": " - Koń",
+    "tr": " - Atı"
+  },
+  {
+    "id": 570,
+    "key": "The wedding is finishing soon.",
+    "pl": "Ślub wkrótce dobiegnie końca.",
+    "tr": "Düğün yakında sona erecek."
+  },
+  {
+    "id": 571,
+    "key": "Will be left automatically.",
+    "pl": "Zostanie automatycznie opuszczony.",
+    "tr": "Otomatik olarak ayrılacak."
+  },
+  {
+    "id": 572,
+    "key": "The war is already over.",
+    "pl": "Wojna już się zakończyła.",
+    "tr": "Savaş zaten bitti."
+  },
+  {
+    "id": 573,
+    "key": "The result will follow in 10 seconds.",
+    "pl": "Wyniki zostaną ukazane za 10 sekund.",
+    "tr": "Sonuç 10 saniye sonra belli olacak."
+  },
+  {
+    "id": 574,
+    "key": "You cannot trade while observing.",
+    "pl": "Nie możesz handlować podczas obserwacji.",
+    "tr": "İzleyiciyken ticaret yapamazsın."
+  },
+  {
+    "id": 575,
+    "key": "If the window is open, you cannot trade with others.",
+    "pl": "Jeśli okno jest otwarte, nie możesz handlować z innymi.",
+    "tr": "Pencere açıkken başkalarıyla ticaret yapamazsın."
+  },
+  {
+    "id": 576,
+    "key": "The other person is currently busy so you cannot trade right now.",
+    "pl": "Nie możesz handlować teraz z tą osobą, ponieważ jest ona obecnie zajęta.",
+    "tr": "Diğer kişi şu an meşgul, bu yüzden ticaret yapamazsın."
+  },
+  {
+    "id": 577,
+    "key": "The other person has cancelled the trade.",
+    "pl": "Druga osoba zablokowała handel.",
+    "tr": "Diğer kişi ticareti iptal etti."
+  },
+  {
+    "id": 578,
+    "key": "Not enough Yang or not enough space in the inventory.",
+    "pl": "Za mało Yang lub brak miejsca w ekwipunku.",
+    "tr": "Yeterli Yang yok veya envanterde yer yok."
+  },
+  {
+    "id": 579,
+    "key": "The other person does not have enough Yang or does not have any space left in their inventory.",
+    "pl": "Druga osoba nie ma wystarczającej ilości Yang lub nie ma miejsca w ekwipunku.",
+    "tr": "Diğer kişinin yeterli Yang'ı yok veya envanterinde yer kalmamış."
+  },
+  {
+    "id": 580,
+    "key": "The other person has no space left in their inventory.",
+    "pl": "Druga osoba nie ma miejsca w ekwipunku.",
+    "tr": "Diğer kişinin envanterinde yer kalmamış."
+  },
+  {
+    "id": 581,
+    "key": "The trade with %s has been successful.",
+    "pl": "Handel z %s zakończony pomyślnie.",
+    "tr": "%s ile ticaret başarılı."
+  },
+  {
+    "id": 582,
+    "key": "You did not lose any Experience because of the Blessing of the Dragon God.",
+    "pl": "Nie straciłeś doświadczenia dzięki Błogosławieństwu Boga Smoków.",
+    "tr": "Ejderha Tanrısı Yaşamı sayesinde tecrübe puanı kaybetmedin."
+  },
+  {
+    "id": 583,
+    "key": "Current score: Shinsoo %d, Chunjo %d, Jinno %d",
+    "pl": "Aktualna punktacja: Shinsoo %d, Chunjo %d, Jinno %d",
+    "tr": "Mevcut puanlar: Shinsoo %d, Chunjo %d, Jinno %d"
+  },
+  {
+    "id": 584,
+    "key": "The correct answer is:",
+    "pl": "Prawidłowa odpowiedź to:",
+    "tr": "Doğru cevap:"
+  },
+  {
+    "id": 585,
+    "key": "%s deadcount %d Empire %d killcount %d(Purpose %d) killmobcount %d, RegenFlag %d",
+    "pl": "%s deadcount %d Empire %d killcount %d(Purpose %d) killmobcount %d, RegenFlag %d",
+    "tr": "%s ölüm_sayısı %d İmparatorluk %d öldürme_sayısı %d(Hedef %d) canavar_öldürme %d, Yenilenme_Bayrağı %d"
+  },
+  {
+    "id": 586,
+    "key": "The devil of the hallowed place: [ENTER][ENTER]",
+    "pl": "Diabeł Świętej Ziemi: [ENTER][ENTER]",
+    "tr": "Kutsal yerin şeytanı: [ENTER][ENTER]"
+  },
+  {
+    "id": 587,
+    "key": ", you don't have any right to be here! The members of your kingdom will leave this hallowed ground in 10 seconds.",
+    "pl": ", nie masz prawa tu przebywać. Za 10 sekund wszyscy obywatele twojego królestwa opuszczą tę świętą ziemię.",
+    "tr": ", burada bulunmaya hakkın yok! İmparatorluğunun üyeleri 10 saniye içinde bu kutsal topraklardan ayrılacak."
+  },
+  {
+    "id": 588,
+    "key": "%s has been defeated and drops out of the Kingdom Battle.",
+    "pl": "Królestwo %s zostało pokonane i odpada z Wojny Królestw.",
+    "tr": "%s imparatorluğu mağlup oldu ve İmparatorluk Savaşı'ndan çekildi."
+  },
+  {
+    "id": 589,
+    "key": "Number of Monsters in the Kingdom Battle:",
+    "pl": "Liczba potworów w Wojnie Królestw:",
+    "tr": "İmparatorluk Savaşı'ndaki Canavar Sayısı:"
+  },
+  {
+    "id": 590,
+    "key": "If you defeat the Guard of the Holy Place, you will become the owner of it.",
+    "pl": "Jeśli pokonasz Strażnika Świętej Ziemi, staniesz się jego właścicielem.",
+    "tr": "Eğer Kutsal Yer Muhafızı'nu yenerseniz, oranın sahibi olursunuz."
+  },
+  {
+    "id": 591,
+    "key": "You did not drop any Item(s) as you are protected by the Dragon God.",
+    "pl": "Nie upuściłeś żadnego przedmiotu, ponieważ jesteś chroniony przez Boga Smoków.",
+    "tr": "Ejderha Tanrısı'nın koruması altında olduğun için eşya düşürmedin."
+  },
+  {
+    "id": 592,
+    "key": "Additional Stabbing Weapon Damage %d",
+    "pl": "Dodatkowe obrażenia od pchnięcia %d",
+    "tr": "Ek Delici Silah Hasarı %d"
+  },
+  {
+    "id": 593,
+    "key": "%s block! (%d%%)",
+    "pl": "%s blokuje! (%d%%)",
+    "tr": "%s blokladı! (%d%%)"
+  },
+  {
+    "id": 594,
+    "key": "%s avoid! (%d%%)",
+    "pl": "%s robi unik! (%d%%)",
+    "tr": "%s kaçındı! (%d%%)"
+  },
+  {
+    "id": 595,
+    "key": "Yes (O)",
+    "pl": "Tak (O)",
+    "tr": "Evet (O)"
+  },
+  {
+    "id": 596,
+    "key": "%s[%d]'s Attack Position: %d %d",
+    "pl": "%s[%d]s Pozycja ataku: %d %d",
+    "tr": "%s[%d] Saldırı Pozisyonu: %d %d"
+  },
+  {
+    "id": 597,
+    "key": "Please enter the Order in full length.",
+    "pl": "Proszę wpisać pełne polecenie.",
+    "tr": "Lütfen komutu tam uzunlukta girin."
+  },
+  {
+    "id": 598,
+    "key": "You cannot do this whilst sitting on a Horse.",
+    "pl": "Nie możesz tego zrobić, gdy dosiadasz konia.",
+    "tr": "Atın üzerindeyken bunu yapamazsın."
+  },
+  {
+    "id": 599,
+    "key": "You cannot do that while you are lying on the ground.",
+    "pl": "Nie możesz wykonać tej akcji leżąc na ziemi.",
+    "tr": "Yerde uzanırken bunu yapamazsın."
+  },
+  {
+    "id": 600,
+    "key": "In my Dreams? What?",
+    "pl": "W moich snach? Że co?",
+    "tr": "Rüyalarımda mı? Ne?"
+  },
+  {
+    "id": 601,
+    "key": "Get up first.",
+    "pl": "Najpierw wstań.",
+    "tr": "Önce ayağa kalk."
+  },
+  {
+    "id": 602,
+    "key": "This command does not exist.",
+    "pl": "Ta komenda nie istnieje.",
+    "tr": "Bu komut mevcut değil."
+  },
+  {
+    "id": 603,
+    "key": "[Group] This group has been disbanded.",
+    "pl": "[Grupa] Grupa została skasowana.",
+    "tr": "[Grup] Bu grup dağıtıldı."
+  },
+  {
+    "id": 604,
+    "key": "[Group] You cannot call the target.",
+    "pl": "[Grupa] Nie możesz przenieść celu.",
+    "tr": "[Grup] Hedefi çağıramazsın."
+  },
+  {
+    "id": 605,
+    "key": "[Group] You cannot call group members over to your current position.",
+    "pl": "[Grupa] Nie możesz teleportować członków grupy na swoją aktualną pozycję.",
+    "tr": "[Grup] Grup üyelerini bulunduğun konuma çağıramazsın."
+  },
+  {
+    "id": 606,
+    "key": "No (X)",
+    "pl": "Nie (X)",
+    "tr": "Hayır (X)"
+  },
+  {
+    "id": 607,
+    "key": "Your group works well together, and group members near the group leader will receive an experience bonus.",
+    "pl": "Twoja grupa jest bardzo zgrana i członkowie grupy, którzy znajdują się w pobliżu lidera, otrzymają bonus doświadczenia.",
+    "tr": "Grubunuz birlikte iyi çalışıyor, grup liderinin yanındaki üyeler tecrübe bonusu kazanacak."
+  },
+  {
+    "id": 608,
+    "key": "Leader",
+    "pl": "Lider",
+    "tr": "Lider"
+  },
+  {
+    "id": 609,
+    "key": "Member",
+    "pl": "Członek",
+    "tr": "Üye"
+  },
+  {
+    "id": 610,
+    "key": "[Guild] Provided Experience is larger then left Experience.",
+    "pl": "[Gildia] Ilość przekazanego doświadczenie jest prawdopodobnie za duża.",
+    "tr": "[Lonca] Verilen tecrübe kalan tecrübeden daha fazla."
+  },
+  {
+    "id": 611,
+    "key": "[Guild] This message cannot be deleted.",
+    "pl": "[Gildia] Wiadomość nie może zostać usunięta.",
+    "tr": "[Lonca] Bu mesaj silinemez."
+  },
+  {
+    "id": 612,
+    "key": "[Guild] Not enough Dragon Ghost. (%d, %d)",
+    "pl": "[Gildia] Za mało Ducha Smoka. (%d, %d)",
+    "tr": "[Lonca] Yetersiz Ejderha Ruhu. (%d, %d)"
+  },
+  {
+    "id": 613,
+    "key": "[Guild] You cannot use the guild skills yet.",
+    "pl": "[Gildia] Jeszcze nie możesz używać umiejętności gildii.",
+    "tr": "[Lonca] Lonca becerilerini henüz kullanamazsın."
+  },
+  {
+    "id": 614,
+    "key": "[Guild] %d skill has been applied (%d, %d) to %u.",
+    "pl": "[Gildia] %d umiejętność użyta (%d, %d) na %u.",
+    "tr": "[Lonca] %d becerisi %u hedefine uygulandı (%d, %d)."
+  },
+  {
+    "id": 615,
+    "key": "[Guild] This player is on channel %d. (Current channel: %d)",
+    "pl": "[Gildia] Gracz jest na kanale %d (aktualny kanał: %d).",
+    "tr": "[Lonca] Oyuncu kanal %d'de. (Mevcut kanal: %d)"
+  },
+  {
+    "id": 616,
+    "key": "[Guild] This player is not online.",
+    "pl": "[Gildia] Gracz nie jest online.",
+    "tr": "[Lonca] Oyuncu çevrimiçi değil."
+  },
+  {
+    "id": 617,
+    "key": "In 5 sec. everyone who gave an incorrect answer will be removed.",
+    "pl": "Po 5 sekundach, uczestnicy, którzy udzielili złej odpowiedzi zostaną wykluczeni.",
+    "tr": "5 saniye içinde yanlış cevap veren herkes çıkarılacaktır."
+  },
+  {
+    "id": 618,
+    "key": "[Guild] This guild skill can only be used during war.",
+    "pl": "[Gildia] Ta umiejętność gildii może być użyta tylko podczas wojny.",
+    "tr": "[Lonca] Bu lonca becerisi sadece savaş sırasında kullanılabilir."
+  },
+  {
+    "id": 619,
+    "key": "[Guild] %u Dragon ghost points have been restored.",
+    "pl": "[Gildia] Zregenerowano %u Ducha Smoka.",
+    "tr": "[Lonca] %u Ejderha Ruhu puanı geri kazanıldı."
+  },
+  {
+    "id": 620,
+    "key": "[Guild] Only the guild leader can withdraw Yang.",
+    "pl": "[Gildia] Tylko Lider Gildii może pobrać Yang.",
+    "tr": "[Lonca] Sadece lonca lideri Yang çekebilir."
+  },
+  {
+    "id": 621,
+    "key": "[Guild] The player has declined the guild invitation.",
+    "pl": "[Gildia] Gracz odrzucił zaproszenie do Gildii.",
+    "tr": "[Lonca] Oyuncu lonca davetini reddetti."
+  },
+  {
+    "id": 622,
+    "key": "[Guild] You do not have the authority to invite someone to join the guild.",
+    "pl": "[Gildia] Nie możesz zapraszać osób do Gildii.",
+    "tr": "[Lonca] Loncaya birini davet etme yetkin yok."
+  },
+  {
+    "id": 623,
+    "key": "[Guild] You cannot invite players from another kingdom into the guild.",
+    "pl": "[Gildia] Nie możesz zapraszać do Gildii graczy z innych Królestw.",
+    "tr": "[Lonca] Başka bir imparatorluktan oyuncuları loncaya davet edemezsin."
+  },
+  {
+    "id": 624,
+    "key": "[Guild] This player can be invited again after %d day(s).",
+    "pl": "[Gildia] Gracz może zostać zaproszony ponownie za: %d dzień/dni.",
+    "tr": "[Lonca] Bu oyuncu %d gün sonra tekrar davet edilebilir."
+  },
+  {
+    "id": 625,
+    "key": "[Guild] After the rearrangement you can invite members again after %d days.",
+    "pl": "[Gildia] Możesz zapraszać członków dopiero po %d dniach od reorganizacji.",
+    "tr": "[Lonca] Düzenlemeden sonra üyeleri ancak %d gün sonra tekrar davet edebilirsin."
+  },
+  {
+    "id": 626,
+    "key": "[Guild] This person is already a member of another Guild.",
+    "pl": "[Gildia] Ten gracz należy już do innej Gildii.",
+    "tr": "[Lonca] Bu kişi zaten başka bir loncanın üyesi."
+  },
+  {
+    "id": 627,
+    "key": "[Guild] The maximum guild capacity has been reached.",
+    "pl": "[Gildia] Pojemność Gildii osiągnęła górny limit.",
+    "tr": "[Lonca] Maksimum lonca kapasitesine ulaşıldı."
+  },
+  {
+    "id": 628,
+    "key": "Ready for the next question?",
+    "pl": "Gotowi na następne pytanie?",
+    "tr": "Bir sonraki soruya hazır mısın?"
+  },
+  {
+    "id": 629,
+    "key": "You cannot train this skill.",
+    "pl": "Nie możesz szkolić się w tej umiejętności.",
+    "tr": "Bu beceriyi eğitemezsin."
+  },
+  {
+    "id": 630,
+    "key": "You cannot train this skill.",
+    "pl": "Nie możesz szkolić się w tej umiejętności.",
+    "tr": "Bu beceriyi eğitemezsin."
+  },
+  {
+    "id": 631,
+    "key": "You cannot train this skill up to Grand Master level.",
+    "pl": "Nie możesz szkolić się w tej umiejętności do Wielkiego Mistrza.",
+    "tr": "Bu beceriyi Grand Master seviyesine kadar eğitemezsin."
+  },
+  {
+    "id": 632,
+    "key": "You already are a Master of this skill. You cannot train this skill any further.",
+    "pl": "Jesteś już mistrzem w tej umiejętności. Nie możesz jej już szkolić.",
+    "tr": "Zaten bu becerinin ustasısın. Daha fazla eğitim yapamazsın."
+  },
+  {
+    "id": 633,
+    "key": "Your Skill is not high enough to become a Grand Master.",
+    "pl": "Twoja umiejętność nie jest na tyle wysoka, aby zostać Wielkim Mistrzem.",
+    "tr": "Beceri seviyen Grand Master olmak için yeterli değil."
+  },
+  {
+    "id": 634,
+    "key": "That did not work. Damn!",
+    "pl": "To nie zadziałało. Bleh!",
+    "tr": "Bu işe yaramadı. Lanet olsun!"
+  },
+  {
+    "id": 635,
+    "key": "Training has failed. Please try again later.",
+    "pl": "Szkolenie niepomyślne. Proszę spróbować później.",
+    "tr": "Eğitim başarısız oldu. Lütfen daha sonra tekrar dene."
+  },
+  {
+    "id": 636,
+    "key": "My body is full of energy!",
+    "pl": "Moje ciało jest pełne energii!",
+    "tr": "Vücudum enerjiyle dolu!"
+  },
+  {
+    "id": 637,
+    "key": "The training seems to be working already...",
+    "pl": "Widać już skutki treningu...",
+    "tr": "Eğitim şimdiden işe yarıyor gibi görünüyor..."
+  },
+  {
+    "id": 638,
+    "key": "You successfully finished your training with the book.",
+    "pl": "Pomyślnie zakończyłeś trening przy pomocy książki.",
+    "tr": "Kitapla eğitimin başarıyla tamamlandı."
+  },
+  {
+    "id": 639,
+    "key": "You cannot read this due to your lack of experience.",
+    "pl": "Nie możesz tego przeczytać, ponieważ brakuje Ci doświadczenia.",
+    "tr": "Tecrübe eksikliğin nedeniyle bunu okuyamazsın."
+  },
+  {
+    "id": 640,
+    "key": "Question.",
+    "pl": "Pytanie.",
+    "tr": "Soru."
+  },
+  {
+    "id": 641,
+    "key": "You cannot train this skill with a Book.",
+    "pl": "Nie możesz szkolić tej umiejętności za pomocą Książki.",
+    "tr": "Bu beceriyi bir Kitapla eğitemezsin."
+  },
+  {
+    "id": 642,
+    "key": "This skill's level is not high enough to be trained with a Book.",
+    "pl": "Umiejętność nie jest odpowiednio rozwinięta, aby szkolić ją przy pomocy Książki.",
+    "tr": "Beceri seviyen bir Kitapla eğitilmek için yeterli değil."
+  },
+  {
+    "id": 643,
+    "key": "I'm making progress, but I still haven't understood everything.",
+    "pl": "Robię postępy ale nie zrozumiałem jeszcze wszystkiego.",
+    "tr": "İlerleme kaydediyorum ama henüz her şeyi anlamadım."
+  },
+  {
+    "id": 644,
+    "key": "These instructions are difficult to understand. I have to carry on studying.",
+    "pl": "Tę technikę ciężko zrozumieć. Muszę kontynuować trening.",
+    "tr": "Bu talimatları anlamak çok zor. Çalışmaya devam etmeliyim."
+  },
+  {
+    "id": 645,
+    "key": "I understand this chapter. But I've got to carry on working hard.",
+    "pl": "Ten rozdział już zrozumiałem, ale czeka mnie jeszcze mnóstwo ciężkiej pracy.",
+    "tr": "Bu bölümü anladım, ancak sıkı çalışmaya devam etmeliyim."
+  },
+  {
+    "id": 646,
+    "key": "You have successfully finished your training with the Book.",
+    "pl": "Pomyślnie zakończyłeś trening przy pomocy książki.",
+    "tr": "Kitapla eğitimin başarıyla tamamlandı."
+  },
+  {
+    "id": 647,
+    "key": "Teleportation has failed.",
+    "pl": "Teleportacja niepomyślna.",
+    "tr": "Işınlanma başarısız oldu."
+  },
+  {
+    "id": 648,
+    "key": "No Horse here. Ask the Stable Boy.",
+    "pl": "Nie ma tu konia. Zapytaj Stajennego.",
+    "tr": "Burada at yok. Seyise sor."
+  },
+  {
+    "id": 649,
+    "key": "Please use an item to call a Horse.",
+    "pl": "Proszę użyć przedmiotu, aby przywołać konia.",
+    "tr": "Lütfen atı çağırmak için bir eşya kullan."
+  },
+  {
+    "id": 650,
+    "key": "%s FP-Consumption: %d",
+    "pl": "%s Użycie FP: %d",
+    "tr": "%s FP-Tüketimi: %d"
+  },
+  {
+    "id": 651,
+    "key": "If it's correct, then go to O. If it's wrong, go to X.",
+    "pl": "Jeśli TAK, przejdź na pole O, jeśli NIE, przejdź na pole X.",
+    "tr": "Doğruysa O'ya git. Yanlışsa X'e git."
+  },
+  {
+    "id": 652,
+    "key": "I am burning inside, but it is calming down my body. My Chi has to stabilise.",
+    "pl": "Płonę wewnątrz, ale to uspokaja moje ciało.",
+    "tr": "İçim yanıyor ama vücudum sakinleşiyor. Chi'm stabilize olmalı."
+  },
+  {
+    "id": 653,
+    "key": "A little slow, but steady... Without stopping!",
+    "pl": "Powoli, ale spokojnie.... Bez zatrzymywania.",
+    "tr": "Biraz yavaş ama istikrarlı... Hiç durmadan!"
+  },
+  {
+    "id": 654,
+    "key": "Yes, that feels great. My body is full of Chi.",
+    "pl": "Tak, to uczucie jest świetne. Moje ciało jest pełne Chi.",
+    "tr": "Evet, bu harika hissettiriyor. Vücudum Chi ile dolu."
+  },
+  {
+    "id": 655,
+    "key": "I have read it! Now the Chi will spread through my body.",
+    "pl": "Przeczytałem! Teraz Chi musi popłynąć przez moje ciało.",
+    "tr": "Okudum! Şimdi Chi tüm vücuduma yayılacak."
+  },
+  {
+    "id": 656,
+    "key": "The training is completed.",
+    "pl": "Trening zakończony.",
+    "tr": "Eğitim tamamlandı."
+  },
+  {
+    "id": 657,
+    "key": "I am on the last page of the book. The training is nearly finished!",
+    "pl": "Jestem na ostatniej stronie! Trening jest prawie zakończony!",
+    "tr": "Kitabın son sayfasındayım. Eğitim neredeyse bitti!"
+  },
+  {
+    "id": 658,
+    "key": "Nearly finished! Just a little bit more to go!",
+    "pl": "Prawie koniec! Jeszcze tylko troszeczkę!",
+    "tr": "Neredeyse bitti! Geriye çok az kaldı!"
+  },
+  {
+    "id": 659,
+    "key": "Eureka! I have nearly finished reading it!",
+    "pl": "Zostałem oświecony! Przeczytałem prawie wszystko!",
+    "tr": "Eureka! Okumayı neredeyse bitirdim!"
+  },
+  {
+    "id": 660,
+    "key": "Only a few more pages and then I'll have read everything.",
+    "pl": "Zostało mi już tylko kilka stron do przeczytania.",
+    "tr": "Geriye sadece birkaç sayfa kaldı, sonra her şeyi okumuş olacağım."
+  },
+  {
+    "id": 661,
+    "key": "I feel refreshed.",
+    "pl": "Czuję się odświeżony.",
+    "tr": "Tazelenmiş hissediyorum."
+  },
+  {
+    "id": 662,
+    "key": "Correct!",
+    "pl": "Prawidłowo!",
+    "tr": "Doğru!"
+  },
+  {
+    "id": 663,
+    "key": "Now I understand it!",
+    "pl": "Teraz rozumiem!",
+    "tr": "Şimdi anladım!"
+  },
+  {
+    "id": 664,
+    "key": "Okay I have to stay concentrated!",
+    "pl": "Dobrze, teraz muszę pozostać skoncentrowanym!",
+    "tr": "Tamam, konsantre olmalıyım!"
+  },
+  {
+    "id": 665,
+    "key": "I keep reading the same line over and over again.",
+    "pl": "Czytam tą samą linię ponownie.",
+    "tr": "Aynı satırı tekrar tekrar okuyup duruyorum."
+  },
+  {
+    "id": 666,
+    "key": "I do not want to learn any more.",
+    "pl": "Nie chcę już się więcej uczyć.",
+    "tr": "Daha fazla öğrenmek istemiyorum."
+  },
+  {
+    "id": 667,
+    "key": "It is a lot more complicated and more difficult to understand than I thought.",
+    "pl": "To jest dużo trudniejsze niż się spodziewałem.",
+    "tr": "Düşündüğümden çok daha karmaşık ve anlaması zor."
+  },
+  {
+    "id": 668,
+    "key": "It's hard for me to concentrate. I should take a break.",
+    "pl": "Nie potrafię się skoncentrować. Powinienem zrobić sobie przerwę.",
+    "tr": "Konsantre olmakta zorlanıyorum. Bir ara vermeliyim."
+  },
+  {
+    "id": 669,
+    "key": "Your chat has been blocked by a GM.",
+    "pl": "Możliwość pisania została zablokowana przez siły wyższe!",
+    "tr": "Sohbetin bir GM tarafından engellendi."
+  },
+  {
+    "id": 670,
+    "key": "Your chat block has been lifted.",
+    "pl": "Twój Chat został odblokowany.",
+    "tr": "Sohbet engelin kaldırıldı."
+  },
+  {
+    "id": 671,
+    "key": "The Build window is already open.",
+    "pl": "Okno budowania jest już otwarte.",
+    "tr": "İnşa penceresi zaten açık."
+  },
+  {
+    "id": 672,
+    "key": "You cannot build something while another trade/storeroom window is open.",
+    "pl": "Nie możesz nic budować, gdy jest otwarte inne okno handlu/magazynu.",
+    "tr": "Başka bir ticaret/depo penceresi açıkken bir şey inşa edemezsin."
+  },
+  {
+    "id": 673,
+    "key": "No further improvements possible.",
+    "pl": "Postęp nie jest możliwy",
+    "tr": "Daha fazla geliştirme mümkün değil."
+  },
+  {
+    "id": 674,
+    "key": "The build window is not open.",
+    "pl": "Okno budowania nie jest otwarte",
+    "tr": "İnşa penceresi açık değil."
+  },
+  {
+    "id": 675,
+    "key": "You do not have the right material.",
+    "pl": "Nie masz właściwego materiału.",
+    "tr": "Doğru malzemeye sahip değilsin."
+  },
+  {
+    "id": 676,
+    "key": "[Guild] Please try again later.",
+    "pl": "[Gildia] Spróbuj ponownie później.",
+    "tr": "[Lonca] Lütfen daha sonra tekrar dene."
+  },
+  {
+    "id": 677,
+    "key": "You have to read %d more skill books to improve this skill.",
+    "pl": "Musisz przeczytać jeszcze %d Ksiąg Umiejętności aby ulepszyć tę Umiejętność.",
+    "tr": "Bu beceriyi geliştirmek için %d beceri kitabı daha okumalısın."
+  },
+  {
+    "id": 678,
+    "key": "You are only able to use this function while you are at the castle.",
+    "pl": "Możesz używać tą czynność jedynie jak jesteś w zamku.",
+    "tr": "Bu fonksiyonu sadece kaledeyken kullanabilirsin."
+  },
+  {
+    "id": 679,
+    "key": "TEST: The Gold Bar has been paid back to your kingdom's safe.",
+    "pl": "TEST: Złota sztabka została wpłacona do skarbca twojego królestwa.",
+    "tr": "TEST: Altın Külçe imparatorluk kasasına geri ödendi."
+  },
+  {
+    "id": 680,
+    "key": "TEST: In your kingdom's safe there are: %d",
+    "pl": "TEST: W skarbcu twojego królestwa są: %d",
+    "tr": "TEST: İmparatorluk kasasında bulunan miktar: %d"
+  },
+  {
+    "id": 681,
+    "key": "TEST: You cannot pay the Gold Bar back into your kingdom's safe.",
+    "pl": "TEST: Nie możesz wpłacić złotej sztabki do skarbca twojego królestwa.",
+    "tr": "TEST: Altın Külçeyi imparatorluk kasasına geri ödeyemezsin."
+  },
+  {
+    "id": 682,
+    "key": "[Guild] The guild has reached %d points.",
+    "pl": "[Gildia] Ranga osiągnęła %d Punktów.",
+    "tr": "[Lonca] Lonca %d puana ulaştı."
+  },
+  {
+    "id": 683,
+    "key": "This item cannot be improved.",
+    "pl": "Ten przedmiot nie może być ulepszony.",
+    "tr": "Bu eşya geliştirilemez."
+  },
+  {
+    "id": 684,
+    "key": "REFINE_BONUS_USE_LEVEL_ERROR",
+    "pl": "Bonus na ulepszenie może być użyty na przedmiot do max. %d poziomu.",
+    "tr": "Yükseltme bonusu en fazla %d seviye eşyalarda kullanılabilir."
+  },
+  {
+    "id": 685,
+    "key": "REFINE_BONUS_REFINE_LEVEL_ERROR",
+    "pl": "Bonus na ulepszenie może być użyty na przedmiot o max. stopniu ulepszenia +%d.",
+    "tr": "Yükseltme bonusu en fazla +%d seviye eşyalarda kullanılabilir."
+  },
+  {
+    "id": 686,
+    "key": "REFINE_BONUS_ONLY_ARMOR",
+    "pl": "Bonus na ulepszenie może być użyty tylko na zbroje, hełmy i tarcze.",
+    "tr": "Yükseltme bonusu sadece zırhlar, kasklar ve kalkanlarda kullanılabilir."
+  },
+  {
+    "id": 687,
+    "key": "REFINE_BONUS_ONLY_JEWELRY",
+    "pl": "Bonus na ulepszenie może być użyty tylko na biżuterię.",
+    "tr": "Yükseltme bonusu sadece takılarda kullanılabilir."
+  },
+  {
+    "id": 688,
+    "key": "REFINE_BONUS_ONLY_WEAPON",
+    "pl": "Bonus na ulepszenie może być użyty tylko na bronie.",
+    "tr": "Yükseltme bonusu sadece silahlarda kullanılabilir."
+  },
+  {
+    "id": 689,
+    "key": "The free weapon improvements can only be used on weapons up to level 20.",
+    "pl": "Darmowe ulepszenie broni może być użyte jedynie w broniach do 20 poziomu.",
+    "tr": "Ücretsiz silah geliştirmeleri sadece 20. seviyeye kadar olan silahlarda kullanılabilir."
+  },
+  {
+    "id": 690,
+    "key": "You cannot use this item because you do not fulfil all the requirements.",
+    "pl": "Nie możesz użyć tego przedmiotu, ponieważ nie masz wszystkich kwalifikacji.",
+    "tr": "Gereksinimleri karşılamadığın için bu eşyayı kullanamazsın."
+  },
+  {
+    "id": 691,
+    "key": "You are not able to use that item because you do not have the right gender.",
+    "pl": "Nie możesz użyć tego przedmiotu, ponieważ nie jesteś odpowiedniej płci.",
+    "tr": "Cinsiyetin uygun olmadığı için bu eşyayı kullanamazsın."
+  },
+  {
+    "id": 692,
+    "key": "Use: transfer <name>",
+    "pl": "Użyj: transfer <name>",
+    "tr": "Kullanım: transfer <isim>"
+  },
+  {
+    "id": 693,
+    "key": "This function can only be used by the emperor.",
+    "pl": "Ta czynność może być użyta tylko przez Imperatora.",
+    "tr": "Bu fonksiyonu sadece imparator kullanabilir."
+  },
+  {
+    "id": 694,
+    "key": "You cannot recruit players from another kingdom.",
+    "pl": "Nie możesz rekrutować graczy z innego królestwa.",
+    "tr": "Başka bir imparatorluktan oyuncu alamazsın."
+  },
+  {
+    "id": 695,
+    "key": "The player %s is on channel %d at the moment. (Your channel: %d)",
+    "pl": "Gracz %s obecnie przebywa na kanale %d. (Twój Kanał: %d)",
+    "tr": "%s oyuncusu şu an kanal %d'de. (Senin kanalın: %d)"
+  },
+  {
+    "id": 696,
+    "key": "You have recruited %s players.",
+    "pl": "Zrekrutowałeś %s graczy.",
+    "tr": "%s oyuncu aldın."
+  },
+  {
+    "id": 697,
+    "key": "There is no user with this name.",
+    "pl": "Nie ma gracza o tej nazwie.",
+    "tr": "Bu isimde bir kullanıcı yok."
+  },
+  {
+    "id": 698,
+    "key": "You cannot recruit yourself.",
+    "pl": "Nie możesz przyjąć samego siebie.",
+    "tr": "Kendini alamazsın."
+  },
+  {
+    "id": 699,
+    "key": "Your level is too low to use this item.",
+    "pl": "Twój poziom jest niższy niż poziom przedmiotu po ulepszeniu.",
+    "tr": "Bu eşyayı kullanmak için seviyen çok düşük."
+  },
+  {
+    "id": 700,
+    "key": "You cannot upgrade anything while another window is open.",
+    "pl": "Nie możesz nic ulepszyć, dopóki otwarte jest inne okno.",
+    "tr": "Başka bir pencere açıkken hiçbir şeyi yükseltemezsin."
+  },
+  {
+    "id": 701,
+    "key": "The emperor of %s has changed to %s.",
+    "pl": "Imperator z %s został zmieniony na %s.",
+    "tr": "%s imparatoru %s olarak değişti."
+  },
+  {
+    "id": 702,
+    "key": "There are %s wars to inflame the bonfires.",
+    "pl": "Są %s wojny, by zapalić ogniska.",
+    "tr": "Ateşleri tutuşturmak için %s savaş var."
+  },
+  {
+    "id": 703,
+    "key": "%s has successfully defended.",
+    "pl": "%s był w stanie obronić pomyślnie.",
+    "tr": "%s başarıyla savundu."
+  },
+  {
+    "id": 704,
+    "key": "30 minutes from now on the player %s can get a reward because he destroyed the bonfire.",
+    "pl": "Przez 30 minut od teraz gracz %s może dostać nagrodę, gdyż zniszczył ognisko.",
+    "tr": "Şu andan itibaren 30 dakika boyunca %s oyuncusu ateşi yok ettiği için bir ödül alabilir."
+  },
+  {
+    "id": 705,
+    "key": "30 minutes are over. The bonfires have disappeared.",
+    "pl": "30 minut minęło. Ogniska zgasły.",
+    "tr": "30 dakika doldu. Ateşler söndü."
+  },
+  {
+    "id": 706,
+    "key": "A bonfire was inflamed at %s to warn because of a battle.",
+    "pl": "Ognisko zostało zapalone w %s by ostrzec o bitwie.",
+    "tr": "%s konumunda bir savaş uyarısı için ateş yakıldı."
+  },
+  {
+    "id": 707,
+    "key": "%s has destroyed the bonfire.",
+    "pl": "%s zniszczył ognisko.",
+    "tr": "%s ateşi yok etti."
+  },
+  {
+    "id": 708,
+    "key": "%s lost the war as they have not been able to defend the castle.",
+    "pl": "%s przegrali wojnę, ponieważ nie byli w stanie obronić zamku.",
+    "tr": "%s kaleyi savunamadıkları için savaşı kaybetti."
+  },
+  {
+    "id": 709,
+    "key": "%s has destroyed all the bonfires.",
+    "pl": "%s zniszczył ognisko.",
+    "tr": "%s tüm ateşleri yok etti."
+  },
+  {
+    "id": 710,
+    "key": "You can only open the shop if you take off your armour.",
+    "pl": "Możesz otworzyć Sklep tylko gdy zdejmiesz Zbroję.",
+    "tr": "Pazarı sadece zırhını çıkardıktan sonra açabilirsin."
+  },
+  {
+    "id": 711,
+    "key": "%d hours %d minutes %d seconds left on your chat block",
+    "pl": "Twoja blokada czatu trwa jeszcze %d godzin %d minut %d sekund",
+    "tr": "Sohbet engelinin bitmesine %d saat %d dakika %d saniye kaldı."
+  },
+  {
+    "id": 712,
+    "key": "%d hours %d seconds left on your chat block",
+    "pl": "Twoja blokada czatu trwa jeszcze %d godzin %d sekund",
+    "tr": "Sohbet engelinin bitmesine %d saat %d saniye kaldı."
+  },
+  {
+    "id": 713,
+    "key": "%d minutes %d seconds left on your chat block",
+    "pl": "Twoja blokada czatu trwa jeszcze %d minut %d sekund",
+    "tr": "Sohbet engelinin bitmesine %d dakika %d saniye kaldı."
+  },
+  {
+    "id": 714,
+    "key": "Yang rain drop rate",
+    "pl": "Szansa na deszcz dropów Yang",
+    "tr": "Yang yağmuru düşürme oranı"
+  },
+  {
+    "id": 715,
+    "key": "Not the right material for an upgrade.",
+    "pl": "Masz za mało materiału na ulepszenie.",
+    "tr": "Yükseltme için doğru malzeme değil."
+  },
+  {
+    "id": 716,
+    "key": "All kingdoms",
+    "pl": "Wszystkie Królestwa",
+    "tr": "Tüm imparatorluklar"
+  },
+  {
+    "id": 717,
+    "key": "Item drop rate in percent",
+    "pl": "Częstotliwość wypadania przedmiotów",
+    "tr": "Yüzde olarak eşya düşürme oranı"
+  },
+  {
+    "id": 718,
+    "key": "Yang drop rate in percent",
+    "pl": "Częstotliwość wypadania Yang",
+    "tr": "Yüzde olarak Yang düşürme oranı"
+  },
+  {
+    "id": 719,
+    "key": "Experience percentage",
+    "pl": "Procent Doświadczenia",
+    "tr": "Tecrübe yüzdesi"
+  },
+  {
+    "id": 720,
+    "key": "%d seconds left on your chat block",
+    "pl": "Pozostało %d sekund do końca twojej blokady pisania",
+    "tr": "Sohbet engelinin bitmesine %d saniye kaldı."
+  },
+  {
+    "id": 721,
+    "key": "You cannot express emotions whilst riding a horse.",
+    "pl": "Nie możesz okazywać emocji będąc na koniu.",
+    "tr": "At üzerindeyken duygu gösteremezsin."
+  },
+  {
+    "id": 722,
+    "key": "You cannot use emotions with a player who is riding on a Horse.",
+    "pl": "Nie możesz okazywać emocji graczowi, który jest na koniu.",
+    "tr": "At üzerindeki bir oyuncuya karşı duygu kullanamazsın."
+  },
+  {
+    "id": 723,
+    "key": "[Guild] The enemy's guild leader is offline.",
+    "pl": "[Gildia] Lider Gildii przeciwnika jest offline.",
+    "tr": "[Lonca] Rakip lonca lideri çevrimdışı."
+  },
+  {
+    "id": 724,
+    "key": "[Guild] The enemy's guild leader is offline.",
+    "pl": "[Gildia] Lider Gildii przeciwnika jest offline.",
+    "tr": "[Lonca] Rakip lonca lideri çevrimdışı."
+  },
+  {
+    "id": 725,
+    "key": "[Guild] This guild is taking part in a battle at the moment.",
+    "pl": "[Gildia] Obecnie ta Gildia uczestniczy już w walce.",
+    "tr": "[Lonca] Bu lonca şu an bir savaşa katılıyor."
+  },
+  {
+    "id": 726,
+    "key": "You're already riding. Get off first.",
+    "pl": "Jesteś na koniu. Najpierw musisz zsiąść.",
+    "tr": "Zaten biniyorsun. Önce in."
+  },
+  {
+    "id": 727,
+    "key": "You cannot upgrade items with this Scroll.",
+    "pl": "Nie możesz ulepszać tym zwojem.",
+    "tr": "Bu Parşömen ile eşya yükseltemezsin."
+  },
+  {
+    "id": 728,
+    "key": "You can only be rewarded once for the Demon Tower Quest.",
+    "pl": "Możesz zostać nagrodzony tylko raz za każdą wyprawę do Wieży Demonów.",
+    "tr": "Şeytan Kulesi görevinden sadece bir kez ödül alabilirsin."
+  },
+  {
+    "id": 729,
+    "key": "Dragon Stone has been removed.",
+    "pl": "Usunięcie Smoczego Kamienia powiodło się.",
+    "tr": "Ejderha Taşı çıkarıldı."
+  },
+  {
+    "id": 730,
+    "key": "You cannot move the item within the refinement window.",
+    "pl": "Nie możesz przesuwać tego przedmiotu w obrębie okienka uszlachetniania.",
+    "tr": "Arındırma penceresi içindeki eşyayı hareket ettiremezsin."
+  },
+  {
+    "id": 731,
+    "key": "Dragon Stone remaining duration has been extracted.",
+    "pl": "Ekstrakcja pozostałego czasu trwania Smoczego Kamienia powiodła się.",
+    "tr": "Ejderha Taşı'nın kalan süresi çıkarıldı."
+  },
+  {
+    "id": 732,
+    "key": "Remaining duration extraction failed.",
+    "pl": "Ekstrakcja pozostałego czasu trwania nie powiodła się.",
+    "tr": "Kalan süreyi çıkarma işlemi başarısız oldu."
+  },
+  {
+    "id": 733,
+    "key": "Removal of Dragon Stone failed. But you have received the following: %s",
+    "pl": "Usunięcie Smoczego Kamienia nie powiodło się. Otrzymano jednak: %s",
+    "tr": "Ejderha Taşı'nın çıkarılması başarısız oldu. Ancak şunları aldın: %s"
+  },
+  {
+    "id": 734,
+    "key": "Removal of Dragon Stone failed.",
+    "pl": "Usunięcie Smoczego Kamienia nie powiodło się.",
+    "tr": "Ejderha Taşı'nın çıkarılması başarısız oldu."
+  },
+  {
+    "id": 735,
+    "key": "This item is not required for improving the clarity level.",
+    "pl": "Przedmiot ten nie jest potrzebny do podwyższenia stopnia jakości.",
+    "tr": "Bu eşya saflık derecesini artırmak için gerekli değil."
+  },
+  {
+    "id": 736,
+    "key": "This item is not required for improving the clarity level.",
+    "pl": "Przedmiot ten nie jest potrzebny do podwyższenia stopnia jakości.",
+    "tr": "Bu eşya saflık derecesini artırmak için gerekli değil."
+  },
+  {
+    "id": 737,
+    "key": "This item cannot be advanced this way.",
+    "pl": "Ten przedmiot nie może być ulepszony w ten sposób.",
+    "tr": "Bu eşya bu şekilde geliştirilemez."
+  },
+  {
+    "id": 738,
+    "key": "This item cannot be advanced this way.",
+    "pl": "Ten przedmiot nie może być ulepszony w ten sposób.",
+    "tr": "Bu eşya bu şekilde geliştirilemez."
+  },
+  {
+    "id": 739,
+    "key": "Improvement of the clarity level successful.",
+    "pl": "Podwyższenie stopnia jakości powiodło się.",
+    "tr": "Saflık derecesi başarıyla artırıldı."
+  },
+  {
+    "id": 740,
+    "key": "Refinement up one class failed.",
+    "pl": "Uszlachetnienie o jedną klasę wzwyż nie powiodło się.",
+    "tr": "Bir üst sınıfa arındırma başarısız oldu."
+  },
+  {
+    "id": 741,
+    "key": "This item is not required for refinement.",
+    "pl": "Przedmiot ten nie jest potrzebny do uszlachetniania.",
+    "tr": "Bu eşya arındırma için gerekli değil."
+  },
+  {
+    "id": 742,
+    "key": "Refinement up one class was successful.",
+    "pl": "Uszlachetnienie o jedną klasę wzwyż powiodło się.",
+    "tr": "Bir üst sınıfa arındırma başarılı oldu."
+  },
+  {
+    "id": 743,
+    "key": "Improvement of the clarity level failed.",
+    "pl": "Podwyższenie stopnia jakości nie powiodło się.",
+    "tr": "Saflık derecesini artırma işlemi başarısız oldu."
+  },
+  {
+    "id": 744,
+    "key": "You do not own the materials required to strengthen the Dragon Stone.",
+    "pl": "Nie posiadasz odpowiednich materiałów do wzmocnienia Smoczego Kamienia.",
+    "tr": "Ejderha Taşı'nı güçlendirmek için gerekli malzemelere sahip değilsin."
+  },
+  {
+    "id": 745,
+    "key": "This Dragon Stone cannot be used for strengthening.",
+    "pl": "Tego Smoczego Kamienia nie można użyć w celu wzmocnienia.",
+    "tr": "Bu Ejderha Taşı güçlendirme için kullanılamaz."
+  },
+  {
+    "id": 746,
+    "key": "Strengthening was successful.",
+    "pl": "Wzmocnienie powiodło się.",
+    "tr": "Güçlendirme başarılı oldu."
+  },
+  {
+    "id": 747,
+    "key": "Strengthening failed.",
+    "pl": "Wzmocnienie nie powiodło się.",
+    "tr": "Güçlendirme başarısız oldu."
+  },
+  {
+    "id": 748,
+    "key": "You are already carrying a Dragon Stone of this type.",
+    "pl": "Nosisz już ten rodzaj Smoczego Kamienia.",
+    "tr": "Zaten bu türde bir Ejderha Taşı taşıyorsun."
+  },
+  {
+    "id": 749,
+    "key": "The Dragon Stone cannot be removed.",
+    "pl": "Nie można usunąć tego Smoczego Kamienia.",
+    "tr": "Ejderha Taşı çıkarılamaz."
+  },
+  {
+    "id": 750,
+    "key": "You have already equipped this kind of Dragon Stone.",
+    "pl": "Już masz na sobie taki Smoczy Kamień.",
+    "tr": "Zaten bu türde bir Ejderha Taşı kuşandın."
+  },
+  {
+    "id": 751,
+    "key": "Before you open the Cor Draconis, you have to complete the Dragon Stone quest and activate the Dragon Stone Alchemy.",
+    "pl": "Zanim otworzysz Cor Draconis, musisz zakończyć misję Smoczego Kamienia i aktywować Alchemię Smoczych Kamieni.",
+    "tr": "Cor Draconis'i açmadan önce Ejderha Taşı görevini tamamlamalı ve Ejderha Taşı Simyası'nı aktif etmelisin."
+  },
+  {
+    "id": 752,
+    "key": "Before you open the Cor Draconis, you have to complete the Dragon Stone quest and activate the Dragon Stone Alchemy.",
+    "pl": "Zanim otworzysz Cor Draconis, musisz zakończyć misję Smoczego Kamienia i aktywować Alchemię Smoczych Kamieni.",
+    "tr": "Cor Draconis'i açmadan önce Ejderha Taşı görevini tamamlamalı ve Ejderha Taşı Simyası'nı aktif etmelisin."
+  },
+  {
+    "id": 753,
+    "key": "You can only discard the belt when there are no longer any items in its inventory.",
+    "pl": "Możesz zdjąć pas dopiero wtedy, gdy w jego inwentarzu nie będzie żadnego przedmiotu.",
+    "tr": "Kemeri sadece içindeki eşyalar tamamen boşaldığında çıkarabilirsin."
+  },
+  {
+    "id": 754,
+    "key": "You can combine the Blessing Scroll with the Magic Iron Ore.",
+    "pl": "Zwój Błogosławieństwa oraz Magiczny Metal mogą zostać połączone.",
+    "tr": "Kutsama Kağıdı ile Büyülü Metal'i birleştirebilirsin."
+  },
+  {
+    "id": 755,
+    "key": "You cannot equip this item in your belt inventory.",
+    "pl": "Tego przedmiotu nie możesz zdeponować w inwentarzu swojego pasa.",
+    "tr": "Bu eşyayı kemer envanterine kuşanamazsın."
+  },
+  {
+    "id": 756,
+    "key": "[1106-??]No puedes unir esto.",
+    "pl": "[1106-??]No puedes unir esto.",
+    "tr": "Bunu birleştiremezsin."
+  },
+  {
+    "id": 757,
+    "key": "You have invested %d Yang.",
+    "pl": "Zainwestowałeś %d Yang.",
+    "tr": "%d Yang yatırım yaptın."
+  },
+  {
+    "id": 758,
+    "key": "There is no Stone available to take out.",
+    "pl": "Nie ma już więcej Kamieni do wyjęcia.",
+    "tr": "Çıkarılacak bir taş mevcut değil."
+  },
+  {
+    "id": 759,
+    "key": "You cannot store this location.",
+    "pl": "Nie możesz zapisać tej pozycji.",
+    "tr": "Bu konumu kaydedemezsin."
+  },
+  {
+    "id": 760,
+    "key": "You cannot save location placed in opposite kingdom.",
+    "pl": "Nie możesz zapisać pozycji wrogiego Królestwa.",
+    "tr": "Rakip imparatorluktaki bir konumu kaydedemezsin."
+  },
+  {
+    "id": 761,
+    "key": "There isn't enough space in your inventory.",
+    "pl": "Masz za mało miejsca w ekwipunku.",
+    "tr": "Envanterinde yeterli yer yok."
+  },
+  {
+    "id": 762,
+    "key": "You cannot teleport to a safe position in a foreign Kingdom.",
+    "pl": "Nie możesz przenieść się do zapisanej pozycji w obcym Królestwie.",
+    "tr": "Yabancı bir imparatorluktaki güvenli bir konuma ışınlanamazsın."
+  },
+  {
+    "id": 763,
+    "key": "You don't have enough HP.",
+    "pl": "Masz za mało PŻ.",
+    "tr": "Yeterli HP'n yok."
+  },
+  {
+    "id": 764,
+    "key": "You don't have enough Spell Points (SP) to use this.",
+    "pl": "Masz za mało Punktów Energii aby tego użyć.",
+    "tr": "Bunu kullanmak için yeterli SP'n yok."
+  },
+  {
+    "id": 765,
+    "key": "You'll reach your destination in %d seconds.",
+    "pl": "Osiągniesz miejsce docelowe w %d sekund po wykonaniu.",
+    "tr": "Hedefine %d saniye içinde ulaşacaksın."
+  },
+  {
+    "id": 766,
+    "key": "Your level is too low to use this item.",
+    "pl": "Twój poziom jest niższy od poziomu przedmiotu po ulepszeniu.",
+    "tr": "Bu eşyayı kullanmak için seviyen çok düşük."
+  },
+  {
+    "id": 767,
+    "key": "You can only use a Moon Cake every 5 seconds.",
+    "pl": "Możesz używać Księżycowych Torcików tylko raz na 5 sekund.",
+    "tr": "Her 5 saniyede sadece bir Ay Pastası kullanabilirsin."
+  },
+  {
+    "id": 768,
+    "key": "You cannot use this item in a duel.",
+    "pl": "Nie możesz użyć tego przedmiotu w pojedynku.",
+    "tr": "Bu eşyayı düelloda kullanamazsın."
+  },
+  {
+    "id": 769,
+    "key": "You have won %d Yang.",
+    "pl": "Wygrałeś %d Yang.",
+    "tr": "%d Yang kazandın."
+  },
+  {
+    "id": 770,
+    "key": "You cannot build a campfire here.",
+    "pl": "Nie możesz założyć tutaj obozu.",
+    "tr": "Burada kamp ateşi kuramazsın."
+  },
+  {
+    "id": 771,
+    "key": "You cannot build a campfire under water.",
+    "pl": "Nie możesz rozpalić Ogniska pod wodą.",
+    "tr": "Suyun altında kamp ateşi yakamazsın."
+  },
+  {
+    "id": 772,
+    "key": "Closed. You should look for the key.",
+    "pl": "Zamknięte. Powinieneś poszukać klucza.",
+    "tr": "Kapalı. Anahtarı bulmalısın."
+  },
+  {
+    "id": 773,
+    "key": "This item cannot be opened with a key.",
+    "pl": "Ten przedmiot nie może zostać otwarty za pomocą klucza.",
+    "tr": "Bu eşya bir anahtar ile açılamaz."
+  },
+  {
+    "id": 774,
+    "key": "That's the right key.",
+    "pl": "To jest właściwy klucz.",
+    "tr": "Bu doğru anahtar."
+  },
+  {
+    "id": 775,
+    "key": "You have received %d Yang.",
+    "pl": "Otrzymałeś %d Yang.",
+    "tr": "%d Yang aldın."
+  },
+  {
+    "id": 776,
+    "key": "A mysterious light comes out of the box.",
+    "pl": "Tajemnicze światło dobiega z tej skrzynki.",
+    "tr": "Kutudan gizemli bir ışık çıkıyor."
+  },
+  {
+    "id": 777,
+    "key": "You have received %d experience points.",
+    "pl": "Otrzymałeś %d Punktów Doświadczenia.",
+    "tr": "%d tecrübe puanı aldın."
+  },
+  {
+    "id": 778,
+    "key": "Look what came out of the box!",
+    "pl": "Zobacz, co wyskoczyło ze skrzyni!",
+    "tr": "Bak kutudan ne çıktı!"
+  },
+  {
+    "id": 779,
+    "key": "[Guild] The guild level is too low.",
+    "pl": "[Gildia] Poziom gildii jest za niski.",
+    "tr": "[Lonca] Lonca seviyesi çok düşük."
+  },
+  {
+    "id": 780,
+    "key": "If you inhale the red smoke coming out of the box, your speed will increase!",
+    "pl": "Jeśli będziesz wdychać czerwony dym ze skrzyni, będziesz szybszy!",
+    "tr": "Kutudan çıkan kırmızı dumanı solursan hızın artacak!"
+  },
+  {
+    "id": 781,
+    "key": "You cannot add more bonus.",
+    "pl": "Nie możesz dodać więcej bonusów.",
+    "tr": "Daha fazla efsun ekleyemezsin."
+  },
+  {
+    "id": 782,
+    "key": "New bonus added successfully.",
+    "pl": "Pomyślnie dodano bonus.",
+    "tr": "Yeni efsun başarıyla eklendi."
+  },
+  {
+    "id": 783,
+    "key": "You cannot change the bonuses.",
+    "pl": "Nie możesz zmienić bonusów.",
+    "tr": "Efsunları değiştiremezsin."
+  },
+  {
+    "id": 784,
+    "key": "ITEM_PRISM_NEED",
+    "pl": "Wymagane Szkło Intuicji lub aktywna Subskrypcja Premium.",
+    "tr": "Seziş Küresi gerekiyor."
+  },
+  {
+    "id": 785,
+    "key": "%s needed.",
+    "pl": "Wymagane %s.",
+    "tr": "%s gerekiyor."
+  },
+  {
+    "id": 786,
+    "key": "OX-Question: ",
+    "pl": "OX-Question: ",
+    "tr": "OX Sorusu: "
+  },
+  {
+    "id": 787,
+    "key": "MYSHOP_BUY %d %s %d",
+    "pl": "Ktoś zakupił %dx %s z Twojego sklepiku za %d Yang.",
+    "tr": "%s (%d adet) pazarından %d Yang karşılığında satın alındı."
+  },
+  {
+    "id": 788,
+    "key": "SHOP_SUCCESS_CLOSE",
+    "pl": "Sklep został zamknięty, pozostałe przedmioty oraz zarobione yang zostały dodane do depozytu.",
+    "tr": "Pazar kapandı; kalan eşyalar ve kazanılan Yang'lar depoya eklendi."
+  },
+  {
+    "id": 789,
+    "key": "SHOP_MAX_ERR",
+    "pl": "Nie możesz otworzyć więcej sklepów.",
+    "tr": "Daha fazla pazar açamazsın."
+  },
+  {
+    "id": 790,
+    "key": "INVENTORY_FULL_ERROR",
+    "pl": "Nie masz miejsca w ekwipunku.",
+    "tr": "Envanterde yer yok."
+  },
+  {
+    "id": 791,
+    "key": "UNKNOW_ERROR",
+    "pl": "Wystapił błąd",
+    "tr": "Bilinmeyen bir hata oluştu."
+  },
+  {
+    "id": 792,
+    "key": "SHOP_YANG_ADD",
+    "pl": "Pomyślnie wypłacono Yang z depozytu sklepu.",
+    "tr": "Yang başarıyla pazar deposundan çekildi."
+  },
+  {
+    "id": 793,
+    "key": "SHOP_YANG_TOO_LOW",
+    "pl": "Podana kwota jest za mała.",
+    "tr": "Girilen miktar çok düşük."
+  },
+  {
+    "id": 794,
+    "key": "SHOP_YANG_NO_MONEY",
+    "pl": "Podana kwota jest większa niż zarobione Yang.",
+    "tr": "Girilen miktar kazanılan Yang'dan daha fazla."
+  },
+  {
+    "id": 795,
+    "key": "GIFT_ADD_SUCCESS",
+    "pl": "Przedmiot został dodany do twojego ekwipunku",
+    "tr": "Eşya envanterine eklendi."
+  },
+  {
+    "id": 796,
+    "key": "GIFT_ADD_ALL_SUCCESS",
+    "pl": "Przedmioty zostały dodane do twojego ekwipunku",
+    "tr": "Eşyalar envanterine eklendi."
+  },
+  {
+    "id": 797,
+    "key": "SHOP_REASON",
+    "pl": "Zamkniecie sklepu",
+    "tr": "Pazar Kapatma"
+  },
+  {
+    "id": 798,
+    "key": "SHOP_ITEM_REASON",
+    "pl": "Usuniecie przedmiotu",
+    "tr": "Eşya Silme"
+  },
+  {
+    "id": 799,
+    "key": "SHOP_NAME",
+    "pl": "Sklep #PLAYER_NAME#",
+    "tr": "#PLAYER_NAME# Pazarı"
+  },
+  {
+    "id": 800,
+    "key": "SHOP_NAME_FORMAT",
+    "pl": "Sklep - %s",
+    "tr": "Pazar - %s"
+  },
+  {
+    "id": 801,
+    "key": "SHOP_PRIV_ERROR",
+    "pl": "Tworzenie sklepów dla twojej posady zostało zablokowane!",
+    "tr": "Mevcut rütben için pazar kurma engellendi!"
+  },
+  {
+    "id": 802,
+    "key": "SHOP_OX_ERROR",
+    "pl": "Nie możesz otworzyć sklepu w tym miejscu.",
+    "tr": "Burada pazar açamazsın."
+  },
+  {
+    "id": 803,
+    "key": "SHOP_CANNOT_OPEN_HERE",
+    "pl": "Nie możesz otworzyć sklepu w tym miejscu.",
+    "tr": "Burada pazar açamazsın."
+  },
+  {
+    "id": 804,
+    "key": "OFFLINE_SHOP_CANNOT_OPEN_HERE",
+    "pl": "Nie możesz otworzyć sklepu offline w tym miejscu.",
+    "tr": "Burada çevrimdışı pazar açamazsın."
+  },
+  {
+    "id": 805,
+    "key": "OFFLINE_SHOP_REMINDER_CANNOT_OPEN_HERE",
+    "pl": "Pamiętaj, że na tej mapie nie da się wystawić sklepu offline.",
+    "tr": "Bu haritada çevrimdışı pazar kurulamayacağını unutma."
+  },
+  {
+    "id": 806,
+    "key": "SHOP_NEED_MONEY",
+    "pl": "Potrzebujesz %lld Yang by otworzyć taki rodzaj sklepu",
+    "tr": "Bu tür bir pazar açmak için %lld Yang gerekiyor."
+  },
+  {
+    "id": 807,
+    "key": "SHOP_MAX_LIMIT_FREE",
+    "pl": "Na tym kanale jest za dużo sklepów. Aby ominać darmowy limit wymagany jest sklep premium.",
+    "tr": "Bu kanalda çok fazla pazar var. Ücretsiz sınırı aşmak için Premium pazar gerekiyor."
+  },
+  {
+    "id": 808,
+    "key": "SHOP_MAX_LIMIT",
+    "pl": "Na tym kanale osiągnięto maksymalny limit sklepów offline. Nie możesz otworzyć sklepu.",
+    "tr": "Bu kanalda maksimum çevrimdışı pazar sınırına ulaşıldı. Pazar açamazsın."
+  },
+  {
+    "id": 809,
+    "key": "SHOP_TEMP_OFF ",
+    "pl": "Tworzenie sklepów jest tymczasowo wyłączone",
+    "tr": "Pazar kurma geçici olarak devre dışı bırakıldı."
+  },
+  {
+    "id": 810,
+    "key": "SHOP_EDIT_SUCCESS",
+    "pl": "Przedmioty zostały pomyśnie zaktualizowane.",
+    "tr": "Eşyalar başarıyla güncellendi."
+  },
+  {
+    "id": 811,
+    "key": "Dropped Yang will disappear after %d seconds.",
+    "pl": "Upuszczone Yang zniknie za %d sekund.",
+    "tr": "Düşen Yang %d saniye sonra yok olacak."
+  },
+  {
+    "id": 812,
+    "key": "SHOP_BLOCK_ACTION_TIME",
+    "pl": "Zaczekaj %d sekund, aby dokonać kolejnej zmiany w sklepie.",
+    "tr": "Pazarda başka bir değişiklik yapmak için %d saniye bekle."
+  },
+  {
+    "id": 813,
+    "key": "SHOP_DIFF_MAP",
+    "pl": "Musisz znajdować się na tej samej mapie co sklep.",
+    "tr": "Pazarla aynı haritada olmalısın."
+  },
+  {
+    "id": 814,
+    "key": "SHOP_DIFF_CHANNEL",
+    "pl": "Musisz znajdować się na tym samym kanale co sklep.",
+    "tr": "Pazarla aynı kanalda olmalısın."
+  },
+  {
+    "id": 815,
+    "key": "SHOP_TOO_FAR",
+    "pl": "Musisz stać obok sklepu.",
+    "tr": "Pazarın yanında durmalısın."
+  },
+  {
+    "id": 816,
+    "key": "SHOP_DOESNT_EXIST",
+    "pl": "Nie posiadasz sklepu.",
+    "tr": "Bir pazarın yok."
+  },
+  {
+    "id": 817,
+    "key": "SHOP_NO_PREMIUM",
+    "pl": "Nie posiadasz sklepu premium.",
+    "tr": "Bir premium pazarın yok."
+  },
+  {
+    "id": 818,
+    "key": "SHOP_LOCKED_SLOTS",
+    "pl": "Niektóre przedmioty w sklepie położone są w zablokowanym miejscu.",
+    "tr": "Pazardaki bazı eşyalar kilitli bir yuvada bulunuyor."
+  },
+  {
+    "id": 819,
+    "key": "SHOP_WRONG_CONFIGURATION",
+    "pl": "Niektóre przedmioty w sklepie na siebie nachodzą.",
+    "tr": "Pazardaki bazı eşyalar üst üste biniyor."
+  },
+  {
+    "id": 820,
+    "key": "CLEAR_SHOP_DEPOSIT_FIRST",
+    "pl": "W depozycie sklepu offline zalegają przedmioty.",
+    "tr": "Çevrimdışı pazar deposunda bekleyen eşyalar var."
+  },
+  {
+    "id": 821,
+    "key": "SHOP_NO_CREATION_ITEM",
+    "pl": "Aby otworzyć sklep potrzebujesz Tobół.",
+    "tr": "Pazar açmak için Bohça gerekiyor."
+  },
+  {
+    "id": 822,
+    "key": "SHOP_CANNOT_BUY_FROM_MYSELF",
+    "pl": "Nie możesz kupować od samego siebie.",
+    "tr": "Kendi pazarından alışveriş yapamazsın."
+  },
+  {
+    "id": 823,
+    "key": "SHOP_VALUE_EXCEED_GOLD_MAX",
+    "pl": "Wartość sklepu i Twoich Yang jest większa niż dozwolona ilość Yang (2 miliardy).",
+    "tr": "Pazarın değeri ve senin Yang miktarının toplamı izin verilen sınırı (2 milyar) aşıyor."
+  },
+  {
+    "id": 824,
+    "key": "Moving channel has been interrupted.",
+    "pl": "Zmiana kanału została przerwana.",
+    "tr": "Kanal değiştirme işlemi kesintiye uğradı."
+  },
+  {
+    "id": 825,
+    "key": "You cannot change channel.",
+    "pl": "Nie możesz zmienić kanału.",
+    "tr": "Kanal değiştiremezsin."
+  },
+  {
+    "id": 826,
+    "key": "Currently, you cannot switch to that channel.",
+    "pl": "Zmiana na wskazany kanał jest obecnie niemożliwa.",
+    "tr": "Şu an bu kanala geçiş yapamazsın."
+  },
+  {
+    "id": 827,
+    "key": "Please wait a moment. Changing channel...",
+    "pl": "Zaczekaj chwilę. Trwa zmiana kanału...",
+    "tr": "Lütfen bir dakika bekle. Kanal değiştiriliyor..."
+  },
+  {
+    "id": 828,
+    "key": "%d seconds till channel change.",
+    "pl": "%d sekund do zmiany kanału.",
+    "tr": "Kanal değişimine %d saniye kaldı."
+  },
+  {
+    "id": 829,
+    "key": "You cannot sell equiped items.",
+    "pl": "Nie możesz sprzedawać założonych przedmiotów.",
+    "tr": "Kuşanılmış eşyaları satamazsın."
+  },
+  {
+    "id": 830,
+    "key": "You cannot sell locked items.",
+    "pl": "Nie możesz sprzedawać zablokowanych przedmiotów.",
+    "tr": "Kilitli eşyaları satamazsın."
+  },
+  {
+    "id": 831,
+    "key": "USE_SKILL_STAMINA%d",
+    "pl": "Wymagane %d Staminy",
+    "tr": "%d Dayanıklılık gerekiyor."
+  },
+  {
+    "id": 832,
+    "key": "USE_SKILL_STAMINA_TOO_HIGH_MOVEMENT%d",
+    "pl": "Sprint pieszo jest niemożliwy przy posiadanej szybkości ruchu (>= %d)",
+    "tr": "Mevcut hareket hızıyla (>= %d) sprint yapmak mümkün değil."
+  },
+  {
+    "id": 833,
+    "key": "FISHING_NOTIFY1",
+    "pl": "Wygląda na to, że na haczyku jest %s.",
+    "tr": "Görünüşe göre oltaya %s takıldı."
+  },
+  {
+    "id": 834,
+    "key": "FISHING_NOTIFY2",
+    "pl": "Wyglądało na to, że %s wisi na haku.",
+    "tr": "Oltaya %s takılmış gibi görünüyordu."
+  },
+  {
+    "id": 835,
+    "key": "FISHING_SUCCESS1",
+    "pl": "Zdobyłeś %s!",
+    "tr": "%s yakaladın!"
+  },
+  {
+    "id": 836,
+    "key": "FISHING_SUCCESS2",
+    "pl": "Wyłowiłeś %s!",
+    "tr": "%s oltana takıldı!"
+  },
+  {
+    "id": 837,
+    "key": "FISHING_UNKNOWN",
+    "pl": "Coś nadziało się na haczyk, ale nie widzisz, co to jest.",
+    "tr": "Oltaya bir şey takıldı ama ne olduğunu göremiyorsun."
+  },
+  {
+    "id": 838,
+    "key": "FISHING_BLOCK_MOUNT",
+    "pl": "Nie możesz jeździć konno podczas łowienia.",
+    "tr": "Balık tutarken binek kullanamazsın."
+  },
+  {
+    "id": 839,
+    "key": "FISHING_MAP_INDEX",
+    "pl": "Możesz łowić tylko w M1.",
+    "tr": "Sadece M1 haritasında balık tutabilirsin."
+  },
+  {
+    "id": 840,
+    "key": "ITEM_ROD_REFINE_ONLY_FISHER",
+    "pl": "Wędka może zostać ulepszona tylko u Rybaka.",
+    "tr": "Olta sadece Balıkçı'da yükseltilebilir."
+  },
+  {
+    "id": 841,
+    "key": "ITEM_ROD_REFINE_ONLY_HERBALIST",
+    "pl": "Nożyk Zielarza może zostać ulepszony tylko u Zielarza.",
+    "tr": "Bitki Uzmanı Bıçağı sadece Bitki Uzmanı'nda yükseltilebilir."
+  },
+  {
+    "id": 842,
+    "key": "ITEM_PICKAXE_REFINE_ONLY_DEOKBAE",
+    "pl": "Kilof może zostać ulepszony tylko u Deokbae.",
+    "tr": "Kazma sadece Deokbae'de yükseltilebilir."
+  },
+  {
+    "id": 843,
+    "key": "TOO_FAR_FROM_REFINE_NPC",
+    "pl": "Jesteś za daleko od Kowala.",
+    "tr": "Demirci'den çok uzaktasın."
+  },
+  {
+    "id": 844,
+    "key": "ITEMSHOP_ITEM_AWARD",
+    "pl": "Nie masz miejsca w ekwipunku. Przedmiot nadano do magazynu ItemShop.",
+    "tr": "Envanterinde yer yok. Eşya Nesne Market deposuna gönderildi."
+  },
+  {
+    "id": 845,
+    "key": "ITEMSHOP_AUCTION_NOT_AVAILABLE",
+    "pl": "Ta aukcja nie jest już dostępna.",
+    "tr": "Bu açık artırma artık mevcut değil."
+  },
+  {
+    "id": 846,
+    "key": "ITEMSHOP_NO_DRAGON_COINS",
+    "pl": "Niewystarczająca ilość Smoczych Monet.",
+    "tr": "Yetersiz Ejderha Parası."
+  },
+  {
+    "id": 847,
+    "key": "ITEMSHOP_NO_DRAGON_MARKS",
+    "pl": "Niewystarczająca ilość Smoczych Znaków.",
+    "tr": "Yetersiz Ejderha Markası."
+  },
+  {
+    "id": 848,
+    "key": "NEXT_ACTION_WAIT",
+    "pl": "Zaczekaj %d sekund, przed kolejną akcją.",
+    "tr": "Bir sonraki eylemden önce %d saniye bekle."
+  },
+  {
+    "id": 849,
+    "key": "NEXT_ACTION_WAIT_NO_FORMAT",
+    "pl": "Zaczekaj chwilę, przed kolejną akcją.",
+    "tr": "Bir sonraki eylemden önce bir süre bekle."
+  },
+  {
+    "id": 850,
+    "key": "ITEMSHOP_TIME_AUCTION_ACCOUNT_LIMIT",
+    "pl": "Wykorzystano limit zakupu aukcji na tym koncie (max %d zakupów).",
+    "tr": "Bu hesaptaki açık artırma satın alma sınırı kullanıldı (maksimum %d satın alma)."
+  },
+  {
+    "id": 851,
+    "key": "ITEMSHOP_TIME_AUCTION_PURCHASE_WOULD_EXCEED_LIMIT",
+    "pl": "Ten zakup przekroczyłby dozwolony limit zakupów na konto. Kup mniej sztuk.",
+    "tr": "Bu satın alma işlemi hesap başına düşen sınırı aşıyor. Lütfen daha az adet satın al."
+  },
+  {
+    "id": 852,
+    "key": "ITEMSHOP_BUY_VIP_INFO",
+    "pl": "Przeloguj się, aby efekt VIP został poprawnie nadany.",
+    "tr": "VIP efektinin doğru şekilde uygulanması için lütfen tekrar giriş yap."
+  },
+  {
+    "id": 853,
+    "key": "ITEMSHOP_LOW_LEVEL_FOR_ITEM",
+    "pl": "Aby zakupić ten przedmiot, postać musi posiadać przynajmniej %u poziom.",
+    "tr": "Bu eşyayı satın alabilmek için karakterin en az %u seviye olmalıdır."
+  },
+  {
+    "id": 854,
+    "key": "CANNOT_ACTION_WHILE_DEAD",
+    "pl": "Nie możesz wykonać tej akcji będąc martwy.",
+    "tr": "Ölüyken bu eylemi gerçekleştiremezsin."
+  },
+  {
+    "id": 855,
+    "key": "CANNOT_RIDE_WHILE_CARRY_ITEM",
+    "pl": "Nie możesz jeździć nosząc przedmiot.",
+    "tr": "Bir eşya taşırken binemezsin."
+  },
+  {
+    "id": 856,
+    "key": "CANNOT_TELEPORT_WHILE_CARRY_ITEM",
+    "pl": "Nie możesz teleportować się nosząc przedmiot.",
+    "tr": "Bir eşya taşırken ışınlanamazsın."
+  },
+  {
+    "id": 857,
+    "key": "CANNOT_SPRINT_WHILE_CARRY_ITEM",
+    "pl": "Nie możesz sprintować nosząc przedmiot.",
+    "tr": "Bir eşya taşırken koşamazsın (sprint yapamazsın)."
+  },
+  {
+    "id": 858,
+    "key": "CANNOT_SPRINT_WHILE_SLOW",
+    "pl": "Nie możesz sprintować będąc spowolnionym.",
+    "tr": "Yavaşlamış durumdayken koşamazsın."
+  },
+  {
+    "id": 859,
+    "key": "SKILL_ALREADY_MAX_LEVEL%d",
+    "pl": "Szkolona umiejętność posiada już maksymalny poziom (%d).",
+    "tr": "Eğitilen beceri zaten maksimum seviyede (%d)."
+  },
+  {
+    "id": 860,
+    "key": "LEARN_NO_FAIL_TIME",
+    "pl": "Pomimo treningu nie czujesz się zmęczony.",
+    "tr": "Eğitime rağmen yorgun hissetmiyorsun."
+  },
+  {
+    "id": 861,
+    "key": "POTION_COOLDOWN_MINUTE%d",
+    "pl": "Musisz zaczekać %d min. przed ponownym użyciem.",
+    "tr": "Tekrar kullanmadan önce %d dakika beklemelisin."
+  },
+  {
+    "id": 862,
+    "key": "POTION_COOLDOWN_SECOND%d",
+    "pl": "Musisz zaczekać %d sek. przed ponownym użyciem.",
+    "tr": "Tekrar kullanmadan önce %d saniye beklemelisin."
+  },
+  {
+    "id": 863,
+    "key": "FISHING_NEED_ONBOARDING",
+    "pl": "Te wody są bardzo słabej jakości, nie ma tu prawie ryb, porozmawiaj z Rybakiem.",
+    "tr": "Bu sular çok kalitesiz ve neredeyse hiç balık yok, Balıkçı ile konuş."
+  },
+  {
+    "id": 864,
+    "key": "CANT_OPEN_SHOP_HERE",
+    "pl": "Nie możesz otworzyć tutaj sklepu. Jesteś zbyt blisko innego sklepu.",
+    "tr": "Burada pazar açamazsın. Başka bir pazara çok yakındasın."
+  },
+  {
+    "id": 865,
+    "key": "NO_METIN_STONES_HERE",
+    "pl": "To miejsce jest wolne od plagi Kamieni Metin.",
+    "tr": "Bu bölge Metin Taşı istilasından temizlenmiş."
+  },
+  {
+    "id": 866,
+    "key": "HORSE_IS_HUNGRY_CANNOT_SPRINT",
+    "pl": "Twój Koń jest wygłodzony, nie może się w tym stanie przemęczać.",
+    "tr": "Atın çok aç, bu durumda kendini zorlayamaz."
+  },
+  {
+    "id": 867,
+    "key": "CHANNEL_IS_PREMIUM",
+    "pl": "Wskazany kanał dostępny jest tylko dla kont Premium.",
+    "tr": "Bu kanal sadece Premium hesaplar içindir."
+  },
+  {
+    "id": 868,
+    "key": "BUY_VIP_WITH_SUBSCRIPTION_ACTIVE_ERROR",
+    "pl": "Efekty VIP nie łączą się z Subskrypcją Premium. Nie możesz dokonać zakupu.",
+    "tr": "VIP efektleri Premium Üyelik ile birleştirilemez. Satın alma işlemi yapılamaz."
+  },
+  {
+    "id": 869,
+    "key": "CANNOT_REMOVE_SOCKET_FROM_JEWELRY",
+    "pl": "Nie możesz wyjąć umieszczonego kamienia.",
+    "tr": "Eklenen taşı çıkaramazsın."
+  },
+  {
+    "id": 870,
+    "key": "CANNOT_WEAR_ON_HORSE",
+    "pl": "Nie możesz nosić tego przedmiotu konno.",
+    "tr": "At üzerindeyken bu eşyayı takamazsın."
+  },
+  {
+    "id": 871,
+    "key": "CANNOT_USE_ON_HORSE",
+    "pl": "Nie możesz użyć tego przedmiotu konno.",
+    "tr": "At üzerindeyken bu eşyayı kullanamazsın."
+  },
+  {
+    "id": 872,
+    "key": "CANNOT_UNMOUNT",
+    "pl": "Nie możesz teraz zejść z wierzchowca.",
+    "tr": "Binekten şu an inemezsin."
+  },
+  {
+    "id": 873,
+    "key": "DICE_MYSELF",
+    "pl": "Rzuciłeś %d. (%d-%d)",
+    "tr": "Zar attın: %d (%d-%d)"
+  },
+  {
+    "id": 874,
+    "key": "DICE_OTHER",
+    "pl": "%s rzucił %d. (%d-%d)",
+    "tr": "%s zar attı: %d (%d-%d)"
+  },
+  {
+    "id": 875,
+    "key": "GUILD_CHARGE_SP",
+    "pl": "[Gildia] Naładowano %d Energii Ducha Smoka.",
+    "tr": "[Lonca] %d Ejderha Ruhu Enerjisi yüklendi."
+  },
+  {
+    "id": 876,
+    "key": "GUILD_JOIN_OTHER_IS_BUSY",
+    "pl": "[Gildia] Zaproszona osoba jest w tym momencie zajęta.",
+    "tr": "[Lonca] Davet edilen kişi şu an meşgul."
+  },
+  {
+    "id": 877,
+    "key": "GUILD_JOIN_IS_IN_WAR",
+    "pl": "[Gildia] Gildia jest w trakcie wojny.",
+    "tr": "[Lonca] Lonca şu an savaşta."
+  },
+  {
+    "id": 878,
+    "key": "GUILD_REMOVE_MEMBER_IN_WAR",
+    "pl": "[Gildia] Nie możesz usunąć członka gildii w trakcie wojny.",
+    "tr": "[Lonca] Savaş sırasında bir lonca üyesini çıkaramazsın."
+  },
+  {
+    "id": 879,
+    "key": "GUILD_INVITE_LIMIT",
+    "pl": "[Gildia] Gildia osiągnęła limit zaproszeń.",
+    "tr": "[Lonca] Lonca davet sınırına ulaştı."
+  },
+  {
+    "id": 880,
+    "key": "GUILD_OFFER_MAX_LEVEL",
+    "pl": "Gildia jest na maksymalnym poziomie, jednak przyjmie Twój podarunek.",
+    "tr": "Lonca maksimum seviyede ancak bağışını kabul edecektir."
+  },
+  {
+    "id": 881,
+    "key": "CANNOT_SELL_EQUIPPED_ITEM",
+    "pl": "Nie możesz sprzedać założonego przedmiotu.",
+    "tr": "Kuşanılmış bir eşyayı satamazsın."
+  },
+  {
+    "id": 882,
+    "key": "MESSENGER_ADD_BUSY",
+    "pl": "Zaproszony gracz jest w tym momencie zajęty.",
+    "tr": "Davet edilen oyuncu şu an meşgul."
+  },
+  {
+    "id": 883,
+    "key": "LEARN_SKILL_DELAY",
+    "pl": "Odczekaj jeszcze %s przed kolejnym szkoleniem.",
+    "tr": "Bir sonraki eğitime kadar %s bekle."
+  },
+  {
+    "id": 884,
+    "key": "WAIT_DELAY_DH",
+    "pl": "%d dni %d godzin",
+    "tr": "%d gün %d saat"
+  },
+  {
+    "id": 885,
+    "key": "WAIT_DELAY_DHM",
+    "pl": "%d dni %d godzin i %d minut",
+    "tr": "%d gün %d saat ve %d dakika"
+  },
+  {
+    "id": 886,
+    "key": "WAIT_DELAY_HM",
+    "pl": "%d godzin i %d minut",
+    "tr": "%d saat ve %d dakika"
+  },
+  {
+    "id": 887,
+    "key": "WAIT_DELAY_M",
+    "pl": "%d minut",
+    "tr": "%d dakika"
+  },
+  {
+    "id": 888,
+    "key": "WORLDBOSS_TRENT2_SPAWN",
+    "pl": "W lesie słychać złowieszczy szum... Władca Duchów Drzew budzi się ze snu!",
+    "tr": "Ormanda uğursuz bir hışırtı duyuluyor... Ağaç Ruhlarının Efendisi uykusundan uyanıyor!"
+  },
+  {
+    "id": 889,
+    "key": "WORLDBOSS_TRENT2_POSTKILL_DIALOG1",
+    "pl": "Czerwony Las skrywa wiele sekretów, o których nie wiedzieliście.",
+    "tr": "Kızıl Orman, bilmediğiniz birçok sırrı saklıyor."
+  },
+  {
+    "id": 890,
+    "key": "WORLDBOSS_TRENT2_POSTKILL_DIALOG2",
+    "pl": "Śmierć nie jest końcem, a raczej początkiem nowej drogi.",
+    "tr": "Ölüm bir son değil, aksine yeni bir yolun başlangıcıdır."
+  },
+  {
+    "id": 891,
+    "key": "WORLDBOSS_TRENT2_POSTKILL_DIALOG3",
+    "pl": "Zostało coś, co muszę naprawić... coś, co nigdy nie powinno się wydarzyć.",
+    "tr": "Düzeltmem gereken bir şeyler kaldı...hiç olmaması gereken bir şeyler."
+  },
+  {
+    "id": 892,
+    "key": "WORLDBOSS_TRENT2_POSTKILL_DIALOG4",
+    "pl": "To nie ja... ale oni cię wybrali. Zobaczymy się ponownie, szybciej, niż myślicie.",
+    "tr": "Ben değil... onlar seni seçti. Düşündüğünüzden daha erken tekrar görüşeceğiz."
+  },
+  {
+    "id": 893,
+    "key": "GIANT_BOSS_START_BATTLE",
+    "pl": "Ja ci pokazać, że mi nie przeszkadzać!",
+    "tr": "Sana beni rahatsız etmemeni göstereceğim!"
+  },
+  {
+    "id": 894,
+    "key": "You cannot fish here.",
+    "pl": "Nie możesz tutaj łowić.",
+    "tr": "Burada balık tutamazsın."
+  },
+  {
+    "id": 895,
+    "key": "You cannot sell items you have equipped.",
+    "pl": "Nie możesz sprzedać przedmiotów, które nosisz.",
+    "tr": "Üzerindeki eşyaları satamazsın."
+  },
+  {
+    "id": 896,
+    "key": "%s block! (%d%%)",
+    "pl": "%s block! (%d%%)",
+    "tr": "%s bloklandı! (%d%%)"
+  },
+  {
+    "id": 897,
+    "key": "%s avoid! (%d%%)",
+    "pl": "%s avoid! (%d%%)",
+    "tr": "%s kaçındı! (%d%%)"
+  },
+  {
+    "id": 898,
+    "key": "%s[%d]s Attack Position: %d %d",
+    "pl": "%s[%d]s Attack Position: %d %d",
+    "tr": "%s[%d] Saldırı Pozisyonu: %d %d"
+  },
+  {
+    "id": 899,
+    "key": "You cannot ride while falling.",
+    "pl": "Nie możesz jeździć konno, gdy jesteś powalony.",
+    "tr": "Düşerken ata binemezsin."
+  },
+  {
+    "id": 900,
+    "key": "Charged for %d seconds",
+    "pl": "Naładowany na %d sekund.",
+    "tr": "%d saniye boyunca yüklendi."
+  },
+  {
+    "id": 901,
+    "key": "+3 spirit stones can not be upgraded by this item.",
+    "pl": "Kamienie Duszy +3 nie mogą być ulepszone tym przedmiotem.",
+    "tr": "+3 Ruh Taşları bu eşya ile yükseltilemez."
+  },
+  {
+    "id": 902,
+    "key": "You cannot open a warehouse in this area.",
+    "pl": "Nie możesz tutaj otworzyć depozytu.",
+    "tr": "Bu bölgede depo açamazsın."
+  },
+  {
+    "id": 903,
+    "key": "Not available.",
+    "pl": "Niedostępne.",
+    "tr": "Mevcut değil."
+  },
+  {
+    "id": 904,
+    "key": "The item will disappear in %d minutes.",
+    "pl": "Przedmiot zniknie za %d minut.",
+    "tr": "Eşya %d dakika içinde yok olacak."
+  },
+  {
+    "id": 905,
+    "key": "You cannot wear Tuxido on a horse.",
+    "pl": "Nie możesz nosić Smokingu na koniu.",
+    "tr": "At üzerindeyken Damatlık giyemezsin."
+  },
+  {
+    "id": 906,
+    "key": "This item cannot be used on accesories.",
+    "pl": "Przedmiot nie może być użyty na akcesoriach.",
+    "tr": "Bu eşya aksesuarlarda kullanılamaz."
+  },
+  {
+    "id": 907,
+    "key": "You cannot read books while transformed.",
+    "pl": "Nie możesz czytać ksiąg będąć przemieniony.",
+    "tr": "Dönüşmüşken kitap okuyamazsın."
+  },
+  {
+    "id": 908,
+    "key": "No metin stone to take out.",
+    "pl": "Brak kamienia do wyjęcia.",
+    "tr": "Çıkarılacak Metin Taşı yok."
+  },
+  {
+    "id": 909,
+    "key": "Your rank cannot raise any more.",
+    "pl": "Twoja ranga nie może już wzrosnąć.",
+    "tr": "Derecen daha fazla artamaz."
+  },
+  {
+    "id": 910,
+    "key": "You can only drop gold once in every 10 seconds.",
+    "pl": "Możesz wyrzucić Yang co 10 sekund.",
+    "tr": "Her 10 saniyede bir Yang düşürebilirsin."
+  },
+  {
+    "id": 911,
+    "key": "You can only drop item once in every %d seconds.",
+    "pl": "Możesz wyrzucić przedmioty co %d sekund.",
+    "tr": "Her %d saniyede bir eşya düşürebilirsin."
+  },
+  {
+    "id": 912,
+    "key": "You cannot use it now.",
+    "pl": "Nie możesz tego teraz użyć.",
+    "tr": "Bunu şu an kullanamazsın."
+  },
+  {
+    "id": 913,
+    "key": "The spirit stone can not be advanced by this item.",
+    "pl": "Kamień Duszy nie może być ulepszony tym przedmiotem.",
+    "tr": "Ruh Taşı bu eşya ile geliştirilemez."
+  },
+  {
+    "id": 914,
+    "key": "You cannot upgrade this item.",
+    "pl": "Nie możesz ulepszyć tego przedmiotu.",
+    "tr": "Bu eşyayı yükseltemezsin."
+  },
+  {
+    "id": 915,
+    "key": "This item can only be used on weapons or armor up to level 40.",
+    "pl": "Przedmiot może być użyty tylko na bronie i zbroje do 40 poziomu.",
+    "tr": "Bu eşya sadece 40. seviyeye kadar olan silahlarda veya zırhlarda kullanılabilir."
+  },
+  {
+    "id": 916,
+    "key": "Test server time limit passed",
+    "pl": "Test server time limit passed",
+    "tr": "Test sunucusu zaman sınırı aşıldı."
+  },
+  {
+    "id": 917,
+    "key": "Your inventory is full.",
+    "pl": "Twój ekwipunek jest pełny.",
+    "tr": "Envanterin dolu."
+  },
+  {
+    "id": 918,
+    "key": "%s rolled dice and got %d. (%d-%d)",
+    "pl": "%s rzucił kostką i uzyskał %d. (%d-%d)",
+    "tr": "%s zar attı: %d (%d-%d)"
+  },
+  {
+    "id": 919,
+    "key": "You rolled dice and got %d. (%d-%d)",
+    "pl": "Rzuciłeś kostką i uzyskałeś %d. (%d-%d)",
+    "tr": "Zar attın: %d (%d-%d)"
+  },
+  {
+    "id": 920,
+    "key": "Lack of Taxes. Current Capital : %u Needed Capital : %u",
+    "pl": "Brak podatków. Bieżący kapitał: %u Potrzebny kapitał: %u",
+    "tr": "Vergi yetersiz. Mevcut Sermaye: %u Gereken Sermaye: %u"
+  },
+  {
+    "id": 921,
+    "key": "You can use this skill only in your land.",
+    "pl": "Możesz użyć tej umiejętności tylko w swoim Królestwie.",
+    "tr": "Bu beceriyi sadece kendi topraklarında kullanabilirsin."
+  },
+  {
+    "id": 922,
+    "key": "Failed to craft.",
+    "pl": "Nie udało się wytworzyć.",
+    "tr": "Üretim başarısız oldu."
+  },
+  {
+    "id": 923,
+    "key": "You managed to defeat the dragon in %d seconds!",
+    "pl": "Udało ci się pokonać smoka w %d sekund!",
+    "tr": "Ejderhayı %d saniyede yenmeyi başardın!"
+  },
+  {
+    "id": 924,
+    "key": "<Guild> The Guild is at war.",
+    "pl": "[Gildia] Gildia jest w trakcie wojny.",
+    "tr": "<Lonca> Lonca şu an savaşta."
+  },
+  {
+    "id": 925,
+    "key": "<Guild> %d Skills used (%d, %d) to %u",
+    "pl": "<Guild> %d Skills used (%d, %d) to %u",
+    "tr": "<Lonca> %d Becerisi %u hedefine uygulandı (%d, %d)"
+  },
+  {
+    "id": 926,
+    "key": "<Guild> %u Dragon ghost restored.",
+    "pl": "[Gildia] Zregenerowano %u Ducha Smoka.",
+    "tr": "<Lonca> %u Ejderha Ruhu geri kazanıldı."
+  },
+  {
+    "id": 927,
+    "key": "<Guild> The Guild has already reached maximum level.",
+    "pl": "[Gildia] Gildia osiągnęła maksymalny poziom.",
+    "tr": "<Lonca> Lonca zaten maksimum seviyeye ulaştı."
+  },
+  {
+    "id": 928,
+    "key": "<Guild> During a guild war, you cannot kick out other guild members.",
+    "pl": "[Gildia] W trakcie wojny gildii nie możesz usunąć członka gildii.",
+    "tr": "<Lonca> Lonca savaşı sırasında diğer lonca üyelerini çıkaramazsın."
+  },
+  {
+    "id": 929,
+    "key": "<Storage> Cannot move items in safebox.",
+    "pl": "[Magazyn] Nie możesz przenosić przedmiotów w magazynie.",
+    "tr": "<Depo> Depodaki eşyalar hareket ettirilemez."
+  },
+  {
+    "id": 930,
+    "key": "Time remaining %d seconds.",
+    "pl": "Pozostały czas %d sekund.",
+    "tr": "Kalan süre %d saniye."
+  },
+  {
+    "id": 931,
+    "key": "The recipient cannot receive friend invitation.",
+    "pl": "Odbiorca nie może otrzymać zaproszenia do znajomych.",
+    "tr": "Alıcı arkadaşlık daveti kabul edemiyor."
+  },
+  {
+    "id": 932,
+    "key": "%s is connected on %d channel. (current channel:%d)",
+    "pl": "%s jest połączony na kanale %d. (bieżący kanał: %d)",
+    "tr": "%s, kanal %d'de bağlı. (Mevcut kanal: %d)"
+  },
+  {
+    "id": 933,
+    "key": "%s is near you.",
+    "pl": "%s jest blisko Ciebie.",
+    "tr": "%s yakında."
+  },
+  {
+    "id": 934,
+    "key": "Summon request has been sent.",
+    "pl": "Prośba o wezwanie została wysłana.",
+    "tr": "Çağırma isteği gönderildi."
+  },
+  {
+    "id": 935,
+    "key": "You cannot sell items you are already equipped.",
+    "pl": "Nie możesz sprzedawać noszonych przedmiotów.",
+    "tr": "Kuşanılmış eşyaları satamazsın."
+  },
+  {
+    "id": 936,
+    "key": "Items you are using cannot be sold in your personal shop.",
+    "pl": "Przedmiotów, których używasz, nie można sprzedać w Twoim sklepie osobistym.",
+    "tr": "Kullandığın eşyalar kişisel pazarında satılamaz."
+  },
+  {
+    "id": 937,
+    "key": "The Dragon Soul Stone box is not activated.",
+    "pl": "Skrzynia z Kamieniami Duszy Smoka nie jest aktywowana.",
+    "tr": "Ejderha Ruh Taşı kutusu aktif değil."
+  },
+  {
+    "id": 938,
+    "key": "The detector was activated, but no spirit stones were detected.",
+    "pl": "Detektor został uruchomiony, ale nie wykryto żadnych kamieni duszy.",
+    "tr": "Dedektör aktif edildi ancak hiçbir ruh taşı tespit edilemedi."
+  },
+  {
+    "id": 939,
+    "key": "Cannot charge.",
+    "pl": "Nie można ładować.",
+    "tr": "Yüklenemiyor."
+  },
+  {
+    "id": 940,
+    "key": "You cannot summon to that area.",
+    "pl": "Nie możesz przywołać do tego obszaru.",
+    "tr": "Bu bölgeye çağırma yapamazsın."
+  },
+  {
+    "id": 941,
+    "key": "<Guild> New membership is currently restricted.",
+    "pl": "[Gildia] Nowi członkowie są obecnie ograniczeni.",
+    "tr": "<Lonca> Yeni üyelik şu an kısıtlanmış durumda."
+  },
+  {
+    "id": 942,
+    "key": "There may be forced battles on this map.",
+    "pl": "Na tej mapie mogą odbywać się wymuszone bitwy.",
+    "tr": "Bu haritada zorunlu savaşlar olabilir."
+  },
+  {
+    "id": 943,
+    "key": "If you do not agree to these terms",
+    "pl": "Jeżeli nie zgadzasz się z niniejszymi warunkami",
+    "tr": "Eğer bu şartları kabul etmiyorsanız"
+  },
+  {
+    "id": 944,
+    "key": "Please return to your original state and original location.",
+    "pl": "Prosimy o powrót do pierwotnej lokalizacji.",
+    "tr": "Lütfen orijinal durumunuza ve konumunuza geri dönün."
+  },
+  {
+    "id": 945,
+    "key": "<Party> The party cannot be disbanded because there are party members inside the dungeon.",
+    "pl": "[Grupa] Drużyny nie można rozwiązać, ponieważ w lochu znajdują się członkowie drużyny.",
+    "tr": "<Grup> Zindanda grup üyeleri olduğu için grup dağıtılamaz."
+  },
+  {
+    "id": 946,
+    "key": "You cannot move to that area.",
+    "pl": "Nie możesz przenieść się do tego obszaru.",
+    "tr": "Bu bölgeye gidemezsin."
+  },
+  {
+    "id": 947,
+    "key": "The server will be closed in 10 minutes due to the maintenance.",
+    "pl": "Serwer zostanie zamknięty za 10 minut z powodu prac konserwacyjnych.",
+    "tr": "Sunucu bakım nedeniyle 10 dakika içinde kapatılacak."
+  },
+  {
+    "id": 948,
+    "key": "FEATURE_UNAVAILABLE",
+    "pl": "Funkcja tymczasowo niedostępna.",
+    "tr": "Özellik şu an kullanılamaz."
+  },
+  {
+    "id": 949,
+    "key": "MYSHOP_NOT_THIS_CHANNEL",
+    "pl": "Nie masz sklepu na tym kanale. (Znaleziono na kanale %d).",
+    "tr": "Bu kanalda pazarın yok. (Kanal %d'de bulundu)."
+  },
+  {
+    "id": 950,
+    "key": "MYSHOP_NOT_THIS_MAP",
+    "pl": "Nie masz sklepu na tej mapie.",
+    "tr": "Bu haritada pazarın yok."
+  },
+  {
+    "id": 951,
+    "key": "MYSHOP_NOT_FOUND",
+    "pl": "Nie posiadasz otwartego sklepu.",
+    "tr": "Açık bir pazarın yok."
+  },
+  {
+    "id": 952,
+    "key": "MYSHOP_POSITION_SENT",
+    "pl": "Pozycja sklepu została oznaczona strzałką.",
+    "tr": "Pazarın konumu ok işaretiyle gösterildi."
+  },
+  {
+    "id": 953,
+    "key": "CANNOT_OPEN_NEW_SHOP",
+    "pl": "Posiadasz otwarty sklep lub depozyt sklepu zawiera przedmioty.",
+    "tr": "Zaten açık bir pazarın var veya pazar deposunda eşyalar bulunuyor."
+  },
+  {
+    "id": 954,
+    "key": "YOU_DONT_MEET_SHOP_REQUIREMENTS",
+    "pl": "Nie spełniasz wymagań do otwarcia własnego sklepu.",
+    "tr": "Kendi pazarını açmak için gerekli kriterleri karşılamıyorsun."
+  },
+  {
+    "id": 955,
+    "key": "You cannot use this item if you're using quests",
+    "pl": "Nie możesz użyć tego przedmiotu kiedy okno misji jest aktywne.",
+    "tr": "Görev pencereleri açıkken bu eşyayı kullanamazsın."
+  },
+  {
+    "id": 956,
+    "key": "WAIT_AFTER_EXCHANGE",
+    "pl": "Odczekaj chwilę po zakończeniu handlu.",
+    "tr": "Ticaretten sonra bir süre bekle."
+  },
+  {
+    "id": 957,
+    "key": "CANNOT_CONTINUE_WHEN_BUSY",
+    "pl": "Nie możesz kontynuować kiedy inne okno jest aktywne.",
+    "tr": "Başka bir pencere aktifken devam edilemez."
+  },
+  {
+    "id": 958,
+    "key": "You cannot perform this operation right now.",
+    "pl": "Nie możesz teraz wykonać tej operacji.",
+    "tr": "Bu işlemi şu an gerçekleştiremezsin."
+  },
+  {
+    "id": 959,
+    "key": "You need a minimum level of %d to buy this item.",
+    "pl": "Musisz mieć co najmniej %d poziom aby kupić ten przedmiot.",
+    "tr": "Bu eşyayı satın almak için en az %d seviye olmalısın."
+  },
+  {
+    "id": 960,
+    "key": "You need certain items to buy this item.",
+    "pl": "Nie posiadasz wymaganych przedmiotów do zakupu.",
+    "tr": "Bu eşyayı satın almak için belirli eşyalara sahip olmalısın."
+  },
+  {
+    "id": 961,
+    "key": "Not enough inventory space.",
+    "pl": "Brak miejsca w ekwipunku.",
+    "tr": "Envanterde yeterli yer yok."
+  },
+  {
+    "id": 962,
+    "key": "SPECIAL_SHOP_LIMIT_REPUTATION",
+    "pl": "Zakup wymaga odpowiedniej reputacji.",
+    "tr": "Bu satın alma işlemi için belirli bir itibar gerekiyor."
+  },
+  {
+    "id": 963,
+    "key": "SPECIAL_SHOP_TIME_DELAY",
+    "pl": "Odczekaj jeszcze %s przed zakupem.",
+    "tr": "Satın almadan önce %s kadar bekle."
+  },
+  {
+    "id": 964,
+    "key": "SPECIAL_SHOP_ACCOUNT_LIMIT",
+    "pl": "Osiągnięto maksymalną ilość zakupów tego przedmiotu na tym koncie.",
+    "tr": "Bu hesap için bu eşyanın maksimum satın alma sınırına ulaşıldı."
+  },
+  {
+    "id": 965,
+    "key": "SPECIAL_SHOP_PRICE_NO_REPUTATION",
+    "pl": "Nie posiadasz wystarczająco dużo reputacji.",
+    "tr": "Yeterli itibara sahip değilsin."
+  },
+  {
+    "id": 966,
+    "key": "USE_AFFECT_TARGET_NO_TARGET",
+    "pl": "Musisz posiadać cel.",
+    "tr": "Bir hedef seçmelisin."
+  },
+  {
+    "id": 967,
+    "key": "USE_AFFECT_TARGET_PLAYER_CHARACTER",
+    "pl": "Nie można użyć na innym graczu.",
+    "tr": "Başka bir oyuncu üzerinde kullanılamaz."
+  },
+  {
+    "id": 968,
+    "key": "POISON_ONLY_GIANT_TURTLE",
+    "pl": "Trucizna może zostać użyta tylko na Olbrzymim Żółwiu.",
+    "tr": "Zehir sadece Dev Kaplumbağa üzerinde kullanılabilir."
+  },
+  {
+    "id": 969,
+    "key": "REPUTATION_DESERT_REWARD",
+    "pl": "Otrzymałeś %d reputacji (Synowie Pustyni)",
+    "tr": "%d itibar puanı aldın (Çöl Evlatları)"
+  },
+  {
+    "id": 970,
+    "key": "REPUTATION_ORC_VALLEY_REWARD",
+    "pl": "Otrzymałeś %d reputacji (Królewska Gwardia)",
+    "tr": "%d itibar puanı aldın (Kraliyet Muhafızları)"
+  },
+  {
+    "id": 971,
+    "key": "WAIT_%d_BEFORE_USING_ITEM",
+    "pl": "Zaczekaj %d sekund przed użyciem tego przedmiotu.",
+    "tr": "Bu eşyayı kullanmadan önce %d saniye bekle."
+  },
+  {
+    "id": 972,
+    "key": "WHILE_FLAG_DELAY%d",
+    "pl": "Możesz używać Białej Flagi co %d minut.",
+    "tr": "Beyaz Flagi her %d dakikada bir kullanabilirsin."
+  },
+  {
+    "id": 973,
+    "key": "YOU_CANNOT_WARP_NOW",
+    "pl": "Nie możesz się teraz teleportować.",
+    "tr": "Şu an ışınlanamazsın."
+  },
+  {
+    "id": 974,
+    "key": "CANNOT_WHILE_DEAD",
+    "pl": "Twoja postać nie żyje, nie możesz tego zrobić.",
+    "tr": "Karakterin yaşamıyor, bunu yapamazsın."
+  },
+  {
+    "id": 975,
+    "key": "[Guild] You cannot use guild skills outside the guild war arena.",
+    "pl": "[Gildia] Nie możesz użyć umiejętności gildyjnych poza areną.",
+    "tr": "[Lonca] Lonca becerilerini lonca savaşı arenası dışında kullanamazsın."
+  },
+  {
+    "id": 976,
+    "key": "The war between %s and %s will start after %d minutes!",
+    "pl": "Wojna pomiędzy %s a %s zacznie się za %d minut!",
+    "tr": "%s ve %s arasındaki savaş %d dakika sonra başlayacak!"
+  },
+  {
+    "id": 977,
+    "key": "Your group consists of each class, which you will recieve an experience bonus.",
+    "pl": "Twoja grupa składa się z każdej klasy, dzięki czemu otrzymujesz bonus doświadczenia.",
+    "tr": "Grubun her sınıftan üyeye sahip, bu sayede tecrübe bonusu kazanacaksın."
+  },
+  {
+    "id": 978,
+    "key": "You need room for atleast 3 slot item to open the box.",
+    "pl": "Potrzebujesz miejsca na minimum 3 slotowy przedmiot, aby otworzyć skrzynie.",
+    "tr": "Kutuyu açmak için en az 3 yuvalık yerin olmalı."
+  },
+  {
+    "id": 979,
+    "key": "DAILY_MAP_RESET_PREINFO",
+    "pl": "Za 5 min zostanie wykonany automatyczny reset spotów!",
+    "tr": "5 dakika içinde slotların otomatik sıfırlanması gerçekleştirilecek!"
+  },
+  {
+    "id": 980,
+    "key": "DAILY_MAP_RESET_INFO",
+    "pl": "Wszystkie potwory na mapach zostały zabite!",
+    "tr": "Haritalardaki tüm canavarlar öldürüldü!"
+  },
+  {
+    "id": 981,
+    "key": "SPECIAL_SHOP_OFFER_CHANGED",
+    "pl": "Oferta sklepu zmieniła się.",
+    "tr": "Mağaza teklifi değişti."
+  },
+  {
+    "id": 982,
+    "key": "You cannot pickup this item if you're using quests",
+    "pl": "Nie możesz podności przedmiotów jeżeli jesteś w oknie misji.",
+    "tr": "Görev penceresi açıkken eşya toplayamazsın."
+  },
+  {
+    "id": 983,
+    "key": "You cannot pickup item while busy.",
+    "pl": "Nie możesz teraz podnosić przedmiotów.",
+    "tr": "Şu an eşya toplayamazsın."
+  },
+  {
+    "id": 984,
+    "key": "OFFLINE_SHOP_CANNOT_REOPEN",
+    "pl": "Nie możesz otworzyć tego sklepu. Odbierz wszystkie przedmioty.",
+    "tr": "Bu pazarı tekrar açamazsın. Önce tüm eşyaları teslim al."
+  },
+  {
+    "id": 985,
+    "key": "OFFLINE_SHOP_CANNOT_REOPEN_EMPTY",
+    "pl": "Nie możesz otworzyć pustego sklepu.",
+    "tr": "Boş bir pazarı açamazsın."
+  },
+  {
+    "id": 986,
+    "key": "OFFLINE_SHOP_MANAGE_MUST_BE_OPEN",
+    "pl": "Okno zarządzania sklepem musi być otwarte.",
+    "tr": "Pazar yönetim penceresi açık olmalıdır."
+  },
+  {
+    "id": 987,
+    "key": "OFFLINE_SHOP_IS_CLOSED",
+    "pl": "Sklep jest zamknięty.",
+    "tr": "Pazar kapalı."
+  },
+  {
+    "id": 988,
+    "key": "SHOP_ITEM_ERROR",
+    "pl": "Bład przedmiotu przy próbie otwarcia sklepu.",
+    "tr": "Pazar açılmaya çalışılırken eşya hatası oluştu."
+  },
+  {
+    "id": 989,
+    "key": "SHOP_ITEM_WRONG_POS",
+    "pl": "Jeden z przedmiotów znajduje się na niedozwolonej pozycji.",
+    "tr": "Eşyalardan biri izin verilmeyen bir konumda bulunuyor."
+  },
+  {
+    "id": 990,
+    "key": "SHOP_ITEM_WRONG_PRICE%s",
+    "pl": "Jeden z przedmiotów posiada niedozwoloną cenę (%s).",
+    "tr": "Eşyalardan birinin fiyatı (%s) geçersiz."
+  },
+  {
+    "id": 991,
+    "key": "SHOP_CREATE_NO_ITEM",
+    "pl": "Aby otworzyć sklep potrzebujesz Tobół.",
+    "tr": "Pazar açmak için Bohça gerekiyor."
+  },
+  {
+    "id": 992,
+    "key": "You can't advance this skill further. Use Skill Reset Scroll or Band of Oblivion.",
+    "pl": "Nie możesz dalej rozwijać tej umiejętności. Użyj Zwoju Powrotu Um. lub Księgi Zapomnienia.",
+    "tr": "Bu beceriyi daha fazla geliştiremezsin. Beceri Sıfırlama Kağıdı veya Unutkanlık Kitabı kullan."
+  },
+  {
+    "id": 993,
+    "key": "You have to wait few seconds before changing channel.",
+    "pl": "Musisz odczekać kilka sekund zanim zmienisz kanał.",
+    "tr": "Kanal değiştirmeden önce birkaç saniye beklemelisin."
+  },
+  {
+    "id": 994,
+    "key": "You cannot warp to this person.",
+    "pl": "Nie możesz przenieść się do tej osoby.",
+    "tr": "Bu kişiye ışınlanamazsın."
+  },
+  {
+    "id": 995,
+    "key": "AUTOPOTION_IS_EMPTY",
+    "pl": "Eliksir jest pusty. Napełnij go u Alchemika.",
+    "tr": "İksir bitti. Lütfen Simyacı'da yenile."
+  },
+  {
+    "id": 996,
+    "key": "DUEL_SUMMARY%d/%d(%d%%)",
+    "pl": "Wygrałeś pojedynek z %d/%d (%d%%) PŻ!",
+    "tr": "Düelloyu %d/%d (%d%%) HP ile kazandın!"
+  },
+  {
+    "id": 997,
+    "key": "MESSENGER_BLOCK_NO_PLAYER",
+    "pl": "Nie znaleziono gracza o podanej nazwie.",
+    "tr": "Belirtilen isimde bir oyuncu bulunamadı."
+  },
+  {
+    "id": 998,
+    "key": "MESSENGER_BLOCK_YOURSELF",
+    "pl": "Nie możesz zablokować samego siebie.",
+    "tr": "Kendini engelleyemezsin."
+  },
+  {
+    "id": 999,
+    "key": "MESSENGER_BLOCK_IS_FRIEND",
+    "pl": "Podana osoba jest na liście Twoich przyjaciół.",
+    "tr": "Bu kişi zaten arkadaş listende."
+  },
+  {
+    "id": 1000,
+    "key": "MESSENGER_ADD_IS_BLOCKED",
+    "pl": "Nie możesz zaprosić do przyjaciół zablokowanej osoby.",
+    "tr": "Engellenmiş bir kişiyi arkadaş olarak ekleyemezsin."
+  },
+  {
+    "id": 1001,
+    "key": "MESSENGER_BLOCK_MAX_LIMIT%d",
+    "pl": "Nie możesz zablokować więcej niż %d osób.",
+    "tr": "En fazla %d kişiyi engelleyebilirsin."
+  },
+  {
+    "id": 1002,
+    "key": "MESSENGER_FRIEND_MAX_LIMIT%d",
+    "pl": "Nie możesz mieć więcej niż %d przyjaciół.",
+    "tr": "En fazla %d arkadaşın olabilir."
+  },
+  {
+    "id": 1003,
+    "key": "MESSENGER_BLOCK_SUCCESS%s",
+    "pl": "Gracz %s został dodany do listy zablokowanych.",
+    "tr": "%s başarıyla engellenenler listesine eklendi."
+  },
+  {
+    "id": 1004,
+    "key": "MESSENGER_UNBLOCK_SUCCESS%s",
+    "pl": "Gracz %s został usunięty z listy zablokowanych.",
+    "tr": "%s başarıyla engellenenler listesinden çıkarıldı."
+  },
+  {
+    "id": 1005,
+    "key": "The shop was recently edited by the owner. Please wait a while.",
+    "pl": "Sklep został niedawno edytowany przez właściciela. Odczekaj chwilę przed zakupem.",
+    "tr": "Pazar sahibi tarafından henüz düzenlendi. Lütfen satın almadan önce biraz bekle."
+  },
+  {
+    "id": 1006,
+    "key": "You have to wait %d minutes to use this option again.",
+    "pl": "Musisz odczekać %d min. przed ponownym użyciem tej opcji.",
+    "tr": "Bu seçeneği tekrar kullanabilmek için %d dakika beklemelisin."
+  },
+  {
+    "id": 1007,
+    "key": "You have to wait a while after combat before using this option.",
+    "pl": "Musisz odczekać chwilę po walce przed użyciem tej opcji.",
+    "tr": "Bu seçeneği kullanabilmek için savaştan sonra biraz beklemelisin."
+  },
+  {
+    "id": 1008,
+    "key": "You have successfully freed yourself.",
+    "pl": "Uwolniłeś się!",
+    "tr": "Başarıyla kurtuldun!"
+  },
+  {
+    "id": 1009,
+    "key": "You are not stuck.",
+    "pl": "Nie jesteś zablokowany.",
+    "tr": "Sıkışmış durumda değilsin."
+  },
+  {
+    "id": 1010,
+    "key": "Searching was stopped. Found above %d shops with specified item.",
+    "pl": "Wyszukiwanie zatrzymane. Znaleziono ponad %d sklepów z podanym przedmiotem.",
+    "tr": "Arama durduruldu. Belirtilen eşyaya sahip %d'den fazla pazar bulundu."
+  },
+  {
+    "id": 1011,
+    "key": "Searching ended. Found %d shops.",
+    "pl": "Wyszukiwanie zakończone. Znaleziono %d sklepów.",
+    "tr": "Arama sona erdi. %d pazar bulundu."
+  },
+  {
+    "id": 1012,
+    "key": "Wait %s before using the scroll again.",
+    "pl": "Zaczekaj %s zanim ponownie użyjesz zwoju.",
+    "tr": "Parşömeni tekrar kullanmadan önce %s kadar bekle."
+  },
+  {
+    "id": 1013,
+    "key": "You are already friends with %s.",
+    "pl": "Jesteś już przyjacielem gracza %s.",
+    "tr": "%s ile zaten arkadaşsın."
+  },
+  {
+    "id": 1014,
+    "key": "<Party> The party leader is inside a dungeon.",
+    "pl": "<Grupa> Lider grupy jest w lochu.",
+    "tr": "<Grup> Grup lideri şu an zindanda."
+  },
+  {
+    "id": 1015,
+    "key": "<Party> The party can't invite people if members are inside a dungeon.",
+    "pl": "<Grupa> Grupa nie może przyjmować innych kiedy członkowe są w lochu.",
+    "tr": "<Grup> Zindanda grup üyeleri varken yeni üyeler davet edilemez."
+  },
+  {
+    "id": 1016,
+    "key": "You cannot change PvP mode on war.",
+    "pl": "Nie możesz zmienić trybu PvP na wojnie.",
+    "tr": "Savaş sırasında PvP modunu değiştiremezsin."
+  },
+  {
+    "id": 1017,
+    "key": "Remaining time: %.2f",
+    "pl": "Pozostały czas: %.2f sek.",
+    "tr": "Kalan süre: %.2f"
+  },
+  {
+    "id": 1018,
+    "key": "Remaining time: %.1f",
+    "pl": "Pozostały czas: %.1f sek.",
+    "tr": "Kalan süre: %.1f"
+  },
+  {
+    "id": 1019,
+    "key": "Remaining time: %.1f",
+    "pl": "Remaining time: %.1f",
+    "tr": "Kalan süre: %.1f"
+  },
+  {
+    "id": 1020,
+    "key": "Wedding is still ongoing!",
+    "pl": "Wesele dalej trwa!",
+    "tr": "Düğün hala devam ediyor!"
+  },
+  {
+    "id": 1021,
+    "key": "One of the wedding quests is not ready to leave the wedding.",
+    "pl": "Jeden z uczestników wesela jest zajęty lub niedawno zakończył handel.",
+    "tr": "Düğündeki katılımcılardan biri meşgul veya henüz ticaretini tamamlamadı."
+  },
+  {
+    "id": 1022,
+    "key": "Please wait a moment. Leaving the map.",
+    "pl": "Zaczekaj chwilę. Trwa wyjście z mapy.",
+    "tr": "Lütfen bekle. Haritadan çıkılıyor."
+  },
+  {
+    "id": 1023,
+    "key": "Exit map was interrupted.",
+    "pl": "Wyjście z mapy zostało przerwane.",
+    "tr": "Haritadan çıkış işlemi kesintiye uğradı."
+  },
+  {
+    "id": 1024,
+    "key": "%d seconds till map exit.",
+    "pl": "%d sekund do wyjścia z mapy.",
+    "tr": "Haritadan çıkışa %d saniye."
+  },
+  {
+    "id": 1025,
+    "key": "You have to wait few seconds before exiting the map.",
+    "pl": "Musisz odczekać kilka sekund zanim wyjdziesz z mapy.",
+    "tr": "Haritadan çıkmadan önce birkaç saniye beklemelisin."
+  },
+  {
+    "id": 1026,
+    "key": "You cannot do that on special channel.",
+    "pl": "Nie możesz tego zrobić na kanale specjalnym.",
+    "tr": "Bunu özel kanalda yapamazsın."
+  },
+  {
+    "id": 1027,
+    "key": "You must wear a wedding dress to equip a bouquet.",
+    "pl": "Musisz nosić suknie ślubną, aby założyć bukiet.",
+    "tr": "Buket alabilmek için gelinlik giymelisin."
+  },
+  {
+    "id": 1028,
+    "key": "You must unequip bouquet first.",
+    "pl": "Musisz zdjąć bukiet.",
+    "tr": "Önce buketi çıkarmalısın."
+  },
+  {
+    "id": 1029,
+    "key": "Summon your horse to get access to horse inventory.",
+    "pl": "Przywołaj konia, aby uzyskać dostęp do przedmiotów w jukach konnych.",
+    "tr": "At envanterine erişebilmek için atını çağırmalısın."
+  },
+  {
+    "id": 1030,
+    "key": "You cannot add items from horse inventory to normal shop.",
+    "pl": "Nie możesz włożyć przedmiotów z juków konnych do zwykłego sklepu.",
+    "tr": "At envanterindeki eşyaları normal pazara ekleyemezsin."
+  },
+  {
+    "id": 1031,
+    "key": "Affects are not loaded yet!",
+    "pl": "Nie możesz teraz nadać efektu, zaczekaj chwilę.",
+    "tr": "Efektler henüz yüklenmedi!"
+  },
+  {
+    "id": 1032,
+    "key": "This feature is temporarily unavailable.",
+    "pl": "Ta opcja jest tymczasowo niedostępna.",
+    "tr": "Bu özellik geçici olarak kullanılamaz."
+  },
+  {
+    "id": 1033,
+    "key": "The shop is not in edit mode.",
+    "pl": "Sklep nie jest w trybie edycji.",
+    "tr": "Pazar düzenleme modunda değil."
+  },
+  {
+    "id": 1034,
+    "key": "The shop is in edit mode.",
+    "pl": "Sklep jest w trybie edycji.",
+    "tr": "Pazar düzenleme modunda."
+  },
+  {
+    "id": 1035,
+    "key": "The shop is open.",
+    "pl": "Sklep jest otwarty.",
+    "tr": "Pazar açık."
+  },
+  {
+    "id": 1036,
+    "key": "Item price edited successfully.",
+    "pl": "Cena przedmiotu została zmieniona.",
+    "tr": "Eşya fiyatı başarıyla düzenlendi."
+  }
+]

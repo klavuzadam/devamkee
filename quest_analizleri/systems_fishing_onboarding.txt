@@ -1,0 +1,29 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: sprint_onboarding.quest
+Kategori: Sistem - Başlangıç Rehberi (Sprint)
+
+AÇIKLAMA:
+Bu quest, yeni başlayan oyunculara (seviye 3) "Sprint" (Hızlı Koşu) özelliğini tanıtan kısa bir öğreticidir.
+
+FONKSİYONLAR:
+- Mektup Bildirimi: Oyuncu 3. seviyeye ulaştığında bir görev mektubu alır.
+- Aktivasyon: Mektup açıldığında oyun istemcisine (client) komut göndererek sprint özelliğinin nasıl kullanılacağını oyuncuya gösterir.
+
+-------------------
+
+Dosya Adı: fishing.quest & fishing_onboarding.quest
+Kategori: Sistem - Balıkçılık ve Öğretici Görevi
+
+AÇIKLAMA:
+Balık tutma mekaniklerini ve balıkçılığa giriş sürecini yöneten sistemdir.
+
+FONKSİYONLAR:
+- Balıkçılık Giriş Görevi: 30. seviyeye ulaşan oyuncular Balıkçı (9009) üzerinden balıkçılığa başlayabilir. Görev, Uriel ve Baek-Go gibi NPC'lerle etkileşim ve Çöl haritasında bir araştırma adımını içerir.
+- Balıkçılık Mekaniği: Olta atıldığında balığın türüne ve oyuncunun balıkçılık becerisine göre bir başarı şansı hesaplanır.
+- Balık Açma: Yakalanan canlı balıklar kullanıldığında ölürler ve içlerinden nadir durumlarda değerli eşyalar (örn: İstiridye) veya ölü balık çıkar.
+- Su Temizleme: Öğretici sırasında suyun temizlenmesi gibi özel mekanikler gösterilir.
+
+TETİKLEYİCİLER:
+- NPC: Balıkçı (9009), Uriel (20011), Baek-Go (20018).
+- Olay: Balık tutma (Fishing), Canlı balık kullanımı.

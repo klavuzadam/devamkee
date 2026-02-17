@@ -1,0 +1,25 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: deviltower_zone.quest
+Kategori: Zindan (Dungeon) - Şeytan Kulesi
+
+AÇIKLAMA:
+Bu quest, Metin2'nin klasik Şeytan Kulesi (Devil Tower) zindanını yönetir. Oyuncuların kat çıkma, mühür açma, metin kesme ve Kule Gardiyanı (Lucifer) ile savaşma süreçlerini kontrol eder.
+
+FONKSİYONLAR:
+- Giriş Kontrolü: 40. seviye ve üzeri oyuncular Kule Gardiyanı NPC'si üzerinden girebilir.
+- Günlük Giriş Limiti: Oyuncunun seviyesine göre günlük giriş sınırı vardır (Premium anahtar ile bu limit artırılabilir).
+- Kat Sistemi: 
+  * 1. Kat: Metin kesilerek zindan başlatılır.
+  * 2. Kat: Tüm slotlar temizlenir.
+  * 3. Kat: Şeytan Kral (Miniboss) kesilir.
+  * 4. Kat: Doğru Metin taşı bulunur.
+  * 5. Kat: 5 adet mühür taşı (Seal Stone) açılır.
+  * 6. Kat: Kibrit Kutusu ve harita yardımıyla doğru kat anahtarı bulunur.
+  * 7. Kat: Lusifer (Azrail) katıdır. 75 seviye üstü oyuncular buraya devam edebilir.
+- Demirci Ödülü: 6. katta boss kesildikten sonra rastgele bir kule demircisi (Zırh, Silah veya Takı) belirir.
+
+TETİKLEYİCİLER:
+- NPC: Kule Gardiyanı (VNUM: 20348 - deviltower_man)
+- Item: Zin-Sa-Gui Haritası, Küçülen Kafa (çıkışlar için), Premium Anahtar (30377).
+- Mob: Azrail (1093), Şeytan Kral (1091).

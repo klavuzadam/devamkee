@@ -1,0 +1,20 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: desert_reputation_*.quest & orc_valley_*.quest
+Kategori: Sistem - Bölge İtibarı (Reputation)
+
+AÇIKLAMA:
+Bu quest serisi, oyuncuların belirli haritalarda (Çöl ve Ork Vadisi) canavar öldürerek veya görev yaparak o bölgeye özel "İtibar" kazanmalarını sağlayan sistemi yönetir.
+
+FONKSİYONLAR:
+- İtibar Kazanma (Kill): 
+    * Haritadaki Metin taşlarını kesmek sabit itibar puanı (örn: 15) verir.
+    * Bossları yenmek yüksek itibar puanı (örn: 50) verir.
+    * Belirli canavarları kesmek küçük miktarlarda itibar sağlar.
+- Günlük Görevler: Bölge NPC'lerinden alınabilen günlük görevler (seviye 30+), tamamlandığında yüklü miktarda (örn: 750) itibar puanı ve eşya ödülü verir.
+- Kademe Sistemi: Biriken itibar puanları oyuncunun o bölgedeki rütbesini/kademesini belirler. Daha yüksek kademeler, daha ileri seviye itibar görevlerini açar.
+- Sıfırlama: Günlük görevler her sabah saat 05:00'te sıfırlanır.
+
+TETİKLEYİCİLER:
+- NPC: Bölge sorumluları (örn: 20406).
+- Olay: Canavar/Metin kesme, Bölgeye giriş (Login).

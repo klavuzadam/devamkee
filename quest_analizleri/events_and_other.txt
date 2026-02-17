@@ -1,0 +1,41 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: oxevent.quest
+Kategori: Etkinlik - OX Yarışması
+
+AÇIKLAMA:
+Bilgiye dayalı, doğru/yanlış (O/X) formatındaki büyük topluluk etkinliğini yönetir.
+
+FONKSİYONLAR:
+- Yönetim: GM tarafından başlatılır, sorular sorulur ve kazananlara ödül verilir.
+- Katılım: Belirli seviye aralıkları (15-39, 40-64 vb.) GM tarafından belirlenerek katılım sınırlandırılabilir.
+
+-------------------
+
+Dosya Adı: forked_road.quest
+Kategori: Etkinlik - Üç Yol Savaşı
+
+AÇIKLAMA:
+Üç krallık (Shinsoo, Chunjo, Jinno) arasındaki rekabeti konu alan büyük çaplı bir PvP/PvE savaşıdır.
+
+FONKSİYONLAR:
+- Amaç: Kendi krallığının geçitlerini açmak için eşya toplamak ve nihayetinde merkez haritadaki (Sungzi) patron canavarları (Boss) diğer krallıklardan önce öldürmek.
+
+-------------------
+
+Dosya Adı: give_basic_weapon.quest
+Kategori: Diğer - Başlangıç Ekipmanı
+
+AÇIKLAMA:
+Oyuna ilk kez giren karakterlere sınıflarına uygun temel silahlarını ve iksirlerini verir.
+
+-------------------
+
+Dosya Adı: couple_ring.quest
+Kategori: Diğer - Söz Yüzüğü Görevi
+
+AÇIKLAMA:
+Evlilik için gerekli olan "Söz Yüzüğü"nü (70301) elde etmek için 25. seviyede yapılan görevdir.
+
+FONKSİYONLAR:
+- Görev: Yaşlı Kadın (9006) tarafından verilir. 30 adet Siyah Ork (394) öldürülmesi istenir.

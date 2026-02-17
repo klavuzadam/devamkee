@@ -1,0 +1,31 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: inventory_remove_item.quest
+Kategori: Sistem - Envanter Eşya Silme (Çöp Kutusu)
+
+AÇIKLAMA:
+Bu quest, oyuncuların envanterlerindeki gereksiz eşyaları silmelerini sağlayan "Çöp Kutusu" fonksiyonunu yönetir.
+
+FONKSİYONLAR:
+- Eşya Silme: Envanterdeki bir eşya belirlenen slota sürüklendiğinde veya seçildiğinde silme işlemini başlatır.
+- Güvenlik Kontrolü: `ITEM_ANTIFLAG_DELETE` özelliğine sahip (silinemez) eşyaların silinmesini engeller.
+- Günlük Kaydı (Log): Hangi eşyanın, hangi saatte ve hangi oyuncu tarafından silindiğini güvenlik amacıyla sunucu loglarına kaydeder.
+
+TETİKLEYİCİLER:
+- Olay: Teknik paket (inventory_remove).
+
+-------------------
+
+Dosya Adı: shop_unlock_slots.quest
+Kategori: Sistem - Market Slot Genişletme
+
+AÇIKLAMA:
+Bu quest, oyuncuların (muhtemelen pazar veya özel market) slot sayılarını artırmalarını sağlayan sistemi yönetir.
+
+FONKSİYONLAR:
+- Yuva Açma: Belirli bir eşya (30376) kullanılarak kilitli olan pazar/market slotları kalıcı olarak açılır.
+- Kısıtlama: Maksimum 4 seviyeye kadar geliştirme yapılabilir.
+- İlerleme: Mevcut slot seviyesi oyuncunun bayraklarında (`special_flag`) saklanır.
+
+TETİKLEYİCİLER:
+- Item: Slot Anahtarı (30380 veya koda göre 30376).

@@ -1,0 +1,16 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: _unused/* (Toplam 125 Dosya)
+Kategori: Sistem - Arşiv ve Devre Dışı Sistemler
+
+AÇIKLAMA:
+Sunucunun `_unused` klasöründe bulunan, şu anki aktif oyun döngüsünde yer almayan veya geliştirme aşamasındaki sistemlerin dökümüdür.
+
+SİSTEMLER:
+- Enerji Sistemi (energy_system.quest): Silah parçalayarak enerji kristali üretme sistemi.
+- Simya (dragon_soul): Ejderha Taşı Simyası ile ilgili başlangıç ve yönetim kodları.
+- Pet Sistemi (pet_system.quest): Evcil hayvanların seviye atlaması ve özellik kazanması ile ilgili eski kodlar.
+- Üst Düzey Zindanlar (flame_dungeon.quest): 100+ seviye için planlanan Razador/Alevli Araf zindanı taslakları.
+- Binek Geliştirme (training_mount.quest): Bineklerin seviye atlatılması ve sertifikaların kullanılması ile ilgili ek sistemler.
+
+NOT: Bu dosyalar aktif `quest_list` içerisinde yer almadıkça oyunda çalışmazlar, ancak sunucu yapısını anlamak için önemli referanslardır.

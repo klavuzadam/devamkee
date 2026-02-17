@@ -1,0 +1,35 @@
+GÖREV ANALİZ RAPORU
+-------------------
+Dosya Adı: arena_manager.quest
+Kategori: Sistem - Arena / Düello Yöneticisi
+
+AÇIKLAMA:
+Bu quest, oyuncuların birbirleriyle arena haritasında resmi düellolar yapmasını sağlayan "Arena Sistemi"ni yönetir. Ancak şu anki kod yapısında çoğu fonksiyon yorum satırına (comment) alınmış durumdadır, bu da sistemin aktif olmadığını veya pasifize edildiğini gösterir.
+
+FONKSİYONLAR:
+- Düello Başlatma: Belirli bir seviye üzerindeki oyuncuların birbirlerine meydan okumasını sağlar.
+- İzleyici Sistemi: Devam eden düelloların diğer oyuncular tarafından izlenebilmesini yönetir.
+- Kısıtlamalar: Seviye sınırı ve oyuncuların birbirine yakınlığı gibi kontrolleri içerir.
+
+TETİKLEYİCİLER:
+- NPC: Arena Sorumlusu (20017).
+
+-------------------
+
+Dosya Adı: beta_server.quest
+Kategori: Sistem - Beta Sunucu Yönetimi
+
+AÇIKLAMA:
+Bu quest, sunucunun "Beta" aşamasında test sürecini kolaylaştırmak için tasarlanmış kapsamlı bir araç setidir. Geliştiricilerin ve test oyuncularının hızlıca karakter geliştirmesini sağlar.
+
+FONKSİYONLAR:
+- Aşama Sistemi (Etaplar): Beta sürecini 1'den 4'e kadar aşamalara ayırır, her aşamada daha fazla özellik açılır.
+- Hızlı Karakter Gelişimi: Tek tıkla seviye atlama, at seviyesi yükseltme ve beceri (skill) sıfırlama/yükseltme.
+- Ücretsiz Kaynaklar: Bedava Ejderha Parası (SM), Yang ve özel eşya setleri (Equipment).
+- Özel Marketler: Beta sürecine özel eşyaların satıldığı marketleri açar.
+- Biyolog Geçme: Biyolog görevlerini tek tıkla tamamlamayı sağlar.
+- XP Oranı: Oyuncuların kendi XP kazanma oranlarını seçebilmelerini sağlar.
+
+TETİKLEYİCİLER:
+- NPC: Beta Yardımcısı (20999).
+- Olay: Oyuna Giriş (Login).
