@@ -1022,7 +1022,7 @@ void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 
 	if (pkAttacker->GetPoint(POINT_GOLD_DOUBLE_BONUS))
 		if (number(1, 100) <= pkAttacker->GetPoint(POINT_GOLD_DOUBLE_BONUS))
-			iGoldMultipler *= 2; // nie dziala na bossy
+			iGoldMultipler *= 2; // bosslarda calismaz
 
 	if (test_server)
 		pkAttacker->ChatPacket(CHAT_TYPE_PARTY, "gold_mul %d rate %d", iGoldMultipler, CHARACTER_MANAGER::instance().GetMobGoldAmountRate(pkAttacker));

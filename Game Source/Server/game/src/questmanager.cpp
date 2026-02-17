@@ -417,7 +417,7 @@ namespace quest
 			QuestState* currentState = pPC->GetRunningQuestState();
 			if (!currentState)
 			{
-				sys_err("Something kurwa wrong: CQuestManager::Resume.. null runningqueststate");
+				sys_err("Something went wrong: CQuestManager::Resume.. null runningqueststate");
 				return;
 			}
 
