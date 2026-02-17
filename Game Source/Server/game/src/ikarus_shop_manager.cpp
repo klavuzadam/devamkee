@@ -3220,7 +3220,7 @@ namespace ikashop
 
 		if (!CheckSafeboxSize(ch))
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, "Blad depozytu sklepu. Zglos administracji (kod: check_safe)");
+			ch->ChatPacket(CHAT_TYPE_INFO, "Pazar deposu hatasi. Yonetime bildirin (kod: check_safe)");
 			return false;
 		}
 

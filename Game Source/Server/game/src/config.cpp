@@ -107,7 +107,7 @@ int VIEW_RANGE = 5000;
 int VIEW_BONUS_RANGE = 500;
 
 int g_server_id = 0;
-string g_strWebMallURL = "www.metin2.de";
+string g_strWebMallURL = "www.your-domain.com";
 
 unsigned int g_uiSpamBlockDuration = 60 * 15;
 unsigned int g_uiSpamBlockScore = 100;

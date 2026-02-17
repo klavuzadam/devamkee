@@ -9377,13 +9377,13 @@ EVENTFUNC(request_info_event)
 	}
 	else
 	{
-		ch->ChatDebug("koncze event!");
+		ch->ChatDebug("Islem tamamlandi!");
 		if (!ch->playerData->IsRequestInfoResponseReceived(info->requestType))
 		{
 			LogManager::instance().RequestInfoLog(ch->GetPlayerID(), info->requestType, "NO RESPONSE", "");
 		}
 		else
-			ch->ChatDebug("otrzymalem response! :)");
+			ch->ChatDebug("Yanit alindi! :)");
 	}
 
 	switch (info->requestType)

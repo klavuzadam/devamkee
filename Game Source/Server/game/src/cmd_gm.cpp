@@ -404,7 +404,7 @@ ACMD(do_warp)
 				{
 					if (!(pkCCI->lMapIndex == 1 || pkCCI->lMapIndex == 21 || pkCCI->lMapIndex == 41))
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, "Wskazana postac nie jest w M1.");
+						ch->ChatPacket(CHAT_TYPE_INFO, "Belirtilen karakter M1 haritalarinda degil.");
 						return;
 					}
 				}

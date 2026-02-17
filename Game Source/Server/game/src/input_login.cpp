@@ -764,7 +764,7 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 	if (ch->IsGM() == true)
 	{
 		ch->ChatPacket(CHAT_TYPE_COMMAND, "ConsoleEnable");
-		ch->ChatPacket(CHAT_TYPE_COMMAND, "GameMaster %s", "https://panel.mt2009.pl/");
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "GameMaster %s", "https://your-panel-url.com/");
 	}
 
 	ch->ChangeGold(0, false);
@@ -882,7 +882,7 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 			ch->SetIkarusShop(pkShop);
 			if (pkShop->GetItems().size() < 1)
 			{
-				ch->ChatDebug("jests pusto wiec wysylam zapytanie do DB o itemy");
+				ch->ChatDebug("Pazar bos, veritabanindan esyalar isteniyor.");
 				ikashop::CShopManager::instance().SendShopLoadExpiredShop(ch->GetPlayerID());
 			}
 
