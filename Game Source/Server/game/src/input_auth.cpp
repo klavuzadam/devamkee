@@ -219,7 +219,7 @@ void CInputAuth::Login(LPDESC d, const char * c_pData)
 #else
 		// @fixme138 1. PASSWORD('%s') -> %s 2. szPasswd wrapped inside mysql_hash_password(%s).c_str()
 		// nie wysylamy szPasswd po escape stringu bo i tak sam string nie trafia jako query tylko hash
-		// a powoduje to blad hasla przy haslach ze znakiem "'" lub "/" i "\"
+		// "'" veya "/" ve "\" karakterleri olan sifrelerde sifre hatasina neden olur
 		DBManager::instance().ReturnQuery(QID_AUTH_LOGIN, dwKey, p,
 			GetAuthLoginQuery(szLogin, mysql_hash_password(passwd).c_str(), szHardware).c_str());
 #endif
