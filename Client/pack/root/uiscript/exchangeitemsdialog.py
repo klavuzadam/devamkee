@@ -44,7 +44,7 @@ window = {
 						"children":
 							(
 								{
-									"name": "TitleName", "type": "text", "x": -4, "y": 4, "text": "Wymiana",
+									"name": "TitleName", "type": "text", "x": -4, "y": 4, "text": "Takas",
 									"horizontal_align": "center", "text_horizontal_align": "center"
 								},
 							),
@@ -101,7 +101,7 @@ window = {
 								"children" : (
 									{
 										"type": "text",
-										"text": "Rezultat",
+										"text": "Sonu\xe7",
 										"x": 0, "y": 0,
 										"text_horizontal_align": "center",
 										"horizontal_align": "center",
@@ -186,7 +186,7 @@ window = {
 								"horizontal_align": "right",
 								"vertical_align": "bottom",
 
-								"text": "Wymiana",
+								"text": "Takas",
 
 								"default_image": "d:/ymir work/ui/public/large_button_01.sub",
 								"over_image": "d:/ymir work/ui/public/large_button_02.sub",

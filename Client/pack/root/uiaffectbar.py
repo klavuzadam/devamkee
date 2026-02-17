@@ -748,7 +748,7 @@ class AffectImage(BarItem):
 				self.durationLabel = proxy(self.tooltip.AppendTextLine(self.GetDurationLabelValue(duration)))
 		elif IsVIPAffect(self.affect):
 			self.tooltip.AppendSpace(5)
-			self.tooltip.AppendTextLine("Nieaktywny", grp.GenerateColor(1.0, 0.3745, 0.3627, 1.0))
+			self.tooltip.AppendTextLine("Devre dýþý", grp.GenerateColor(1.0, 0.3745, 0.3627, 1.0))
 
 		if self.affect in REMOVABLE_AFFECTS:
 			self.tooltip.AppendSpace(5)

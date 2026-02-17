@@ -27,9 +27,9 @@ ITEMSHOP_SORT_TYPE_PRICE = 1
 
 def GetCurrencyShortName(currency):
 	if currency == CURRENCY_DRAGON_COIN:
-		return "SM"
+		return "EP"
 	else:
-		return "SZ"
+		return "KP"
 
 ITEMSHOP_CATEGORY_FEATURED_INDEX = 10
 ITEMSHOP_CATEGORY_TIMED_INDEX = 11
@@ -198,17 +198,17 @@ ITEMSHOP_CUSTOM_ITEM_DATA = {
 	109: {"itemName" : "$ITEM_NAME (1 " + localeInfo.ONE_DAY.lower() + ")"},
 	110: {"itemName" : "$ITEM_NAME (3 " + localeInfo.DAY.lower() + ")"},
 	111: {
-		"itemName" : "$ITEM_NAME (30 dni)",
+		"itemName" : "$ITEM_NAME (30 gün)",
 	},
 	112: {
-		"itemName" : "$ITEM_NAME (30 dni)",
+		"itemName" : "$ITEM_NAME (30 gün)",
 	},
 
 	608: {"itemName": "$ITEM_NAME (3+1)"},
-	610: {"itemName": "$ITEM_NAME (Paczka 25)"},
+	610: {"itemName": "$ITEM_NAME (Paket 25)"},
 
-	1: {"itemName": "$ITEM_NAME (30 godzin)"},
-	5: {"itemName": "$ITEM_NAME (7 dni)"},
+	1: {"itemName": "$ITEM_NAME (30 saat)"},
+	5: {"itemName": "$ITEM_NAME (7 gün)"},
 
 }
 
@@ -399,7 +399,7 @@ class ItemShopWindow(ui.ScriptWindow):
 				return
 
 			self.itemName.SetText(itemName)
-			self.itemCount.SetText("Sztuk: %d" % itemCount)
+			self.itemCount.SetText("Adet: %d" % itemCount)
 			item.SelectItem(itemVnum)
 			self.itemIcon.LoadImage(item.GetIconImageFileName())
 			self.SetButtons(price, currency, itemCount, item.GetItemMaxStack())

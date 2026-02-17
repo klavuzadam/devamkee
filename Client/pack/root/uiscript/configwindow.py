@@ -90,7 +90,7 @@ window = {
 									"x": 20,
 									"y": 28,
 									"bold" : True,
-									"text": "Muzyka",
+									"text": "Müzik",
 								},
 								{
 									"name": "BGMSlider",
@@ -104,7 +104,7 @@ window = {
 									"x": 20,
 									"y": 73,
 									"bold" : True,
-									"text": "Inne",
+									"text": "Diðer",
 								},
 								{
 									"name": "SFXSlider",
@@ -365,7 +365,7 @@ window = {
 									"x": 20,
 									"y": 53,
 									"bold" : True,
-									"text": "Skala (1.0)",
+									"text": "Ölçek (1.0)",
 								},
 								{
 									"name": "ScaleSlider",

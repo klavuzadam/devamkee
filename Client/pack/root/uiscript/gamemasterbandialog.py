@@ -92,7 +92,7 @@ window = {
 									"x": -70,
 									"y": 2,
 
-									"text": "Czas blokady",
+									"text": "Süre (Gün)",
 								},
 
 								{
@@ -104,7 +104,7 @@ window = {
 									"height": 25,
 									"input_limit": 3,
 									"only_number": 1,
-									"placeholder": "w dniach",
+									"placeholder": "gün",
 								},
 							),
 					},
@@ -125,7 +125,7 @@ window = {
 									"x": -70,
 									"y": 2,
 
-									"text": "DLACZEGO?!",
+									"text": "SEBEP?!",
 								},
 
 								{
@@ -138,7 +138,7 @@ window = {
 									"input_limit": 68,
 									"limit_width": 160,
 									"multi_line": True,
-									"placeholder": "Podaj powod...",
+									"placeholder": "Sebep girin...",
 								},
 							),
 					},
@@ -157,7 +157,7 @@ window = {
 						"over_image": "d:/ymir work/ui/public/middle_button_02.sub",
 						"down_image": "d:/ymir work/ui/public/middle_button_03.sub",
 
-						"text": "Blokuj",
+						"text": "Engelle",
 					},
 				),
 			},

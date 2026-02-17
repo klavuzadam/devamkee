@@ -17,28 +17,28 @@ from _weakref import proxy
 
 TRADEABLE_CRAFTING_CATEGORIES = {
 	0 : {
-		"name": "Niehandlowalne",
+		"name": "Ticaret yapýlmaz",
 		"items": [],
 		"filters": {
 			"antiflag": item.ITEM_ANTIFLAG_MYSHOP,
 		}
 	},
 	1 : {
-		"name": "Handlowalne",
+		"name": "Ticaret yapýlabilir",
 		"items": [],
 	},
 }
 
 DEFAULT_CRAFTING_CATEGORIES = {
 	0 : {
-		"name": "Bronie",
+		"name": "Silahlar",
 		"items": [],
 		"filters": {
 			"item_type": 1,
 		}
 	},
 	1: {
-		"name": "Pancerze",
+		"name": "Zýrhlar",
 		"items": [],
 		"filters": {
 			"item_type": 2,
@@ -46,7 +46,7 @@ DEFAULT_CRAFTING_CATEGORIES = {
 		}
 	},
 	2 : {
-		"name": "Inne",
+		"name": "Diðer",
 		"items": [],
 	},
 }
@@ -65,22 +65,22 @@ HERB_CRAFTING_CATEGORIES = {
 		"filters": {"item_value": (1, 3)}
 	},
 	3: {
-		"name": "Inne",
+		"name": "Diðer",
 		"items": [],
 	},
 }
 
 SURA_CRAFTING_CATEGORIES = {
 	0 : {
-		"name": "Zwoje i Marmury", "items": [],
+		"name": "Parþömenler ve Küreler", "items": [],
 		"filters": {"craft_vnum": (100, 101, 102,)}
 	},
 	1 : {
-		"name": "Wymiany", "items": [],
+		"name": "Takaslar", "items": [],
 		"filters": {"craft_vnum": (104,)}
 	},
 	3: {
-		"name": "Inne",
+		"name": "Diðer",
 		"items": [],
 	},
 }
@@ -510,7 +510,7 @@ class CraftingWindow(ui.ScriptWindow):
 
 		except:
 			import exception
-			exception.Abort("MessengerWindow.__LoadWindow.__Bind")
+			exception.Abort("CraftingWindow.__LoadWindow.__Bind")
 
 	def __OnSearchValueUpdate(self):
 		ui.EditLine.OnIMEUpdate(self.searchInput)
@@ -790,7 +790,7 @@ class CraftingWindow(ui.ScriptWindow):
 			self.current_crafting_index = crafting_index
 			self.infoLabel.Hide()
 
-			if not gameSettings.GetBoolKey("attr_change_craft") and crafting_index == 100: # zmianka
+			if not gameSettings.GetBoolKey("attr_change_craft") and crafting_index == 100: # efsun deðiþtirme
 				eventManager.EventManager().send_event(uiCommon.POPUP_EVENT, localeInfo.CRAFTING_ATTR_CHANGER_INFO)
 				gameSettings.SetKey("attr_change_craft", True)
 

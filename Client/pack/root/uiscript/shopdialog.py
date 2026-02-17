@@ -234,7 +234,7 @@ window = {
 							"y": 3,
 							"text_horizontal_align": "center",
 							"horizontal_align": "center",
-							"text": "Pozostalo 23:59:59",
+							"text": "Kalan 23:59:59",
 						},
 
 						{

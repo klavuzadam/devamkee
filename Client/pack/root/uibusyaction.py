@@ -46,7 +46,7 @@ class BusyActionDialog(ui.ScriptWindow, updateable.UpdatableAbstract):
 
 	def GetActionName(self):
 		if self.action_type == 1:
-			return "Zbieranie"
+			return "Toplanýyor"
 		else:
 			return "Trwa akcja"
 
@@ -82,7 +82,7 @@ class BusyActionDialog(ui.ScriptWindow, updateable.UpdatableAbstract):
 
 	def Fail(self, is_interrupt):
 		self.actionLabel.SetPackedFontColor(colorinfo.NEGATIVE_COLOR)
-		self.actionLabel.SetText("Przerwano" if is_interrupt else "Niepowodzenie")
+		self.actionLabel.SetText("Ýptal edildi" if is_interrupt else "Baþarýsýz")
 		self.interrupted = True
 		self.progressBar.SetColor(1.0, 0.4, 0.4, 1.0)
 		self.tip.SetColor(1.0, 0.3, 0.3, 1.0)

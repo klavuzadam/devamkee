@@ -53,7 +53,7 @@ class GameMasterTargetPlayerDialog(ui.ScriptWindow):
 			self.banDialog = None
 
 	def SetName(self, name, pid, is_premium):
-		text = "Nick: %s (pid: |cff5af22c%d|r)" % (name, pid)
+		text = "Ýsim: %s (pid: |cff5af22c%d|r)" % (name, pid)
 
 		if is_premium:
 			text += "|cffffa600*|r"
@@ -61,7 +61,7 @@ class GameMasterTargetPlayerDialog(ui.ScriptWindow):
 		self.playerLabel.SetText(text)
 
 	def SetAccount(self, login, aid):
-		self.accountLabel.SetText("Login: %s (aid: |cfffffb24%d|r)" % (login, aid))
+		self.accountLabel.SetText("Hesap: %s (aid: |cfffffb24%d|r)" % (login, aid))
 
 	def __ViewPlayer(self):
 		utils.open_url(constInfo.ADMIN_API + "players/%d" % self.pid)
@@ -180,11 +180,11 @@ class GameMasterBanDialog(ui.ScriptWindow):
 
 	def __Ban(self):
 		if len(self.__GetReason()) < 3:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "LÃ¼tfen bir sebep belirtin (en az 3 karakter)")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, "Lütfen bir sebep belirtin (en az 3 karakter)")
 			return
 
 		if not self.isPerm and len(self.durationInput.GetText()) < 1:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Podaj czas trwania blokady w dniach.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, "Lütfen engelleme süresini gün olarak girin.")
 			return
 
 		command = ""

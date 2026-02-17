@@ -56,6 +56,12 @@ volatile int _AVOID_FLOATING_POINT_LIBRARY_BUG = _fltused;
 //#pragma comment( lib, "wsock32.lib" )
 #include <stdlib.h>
 #include <cryptopp/cryptoppLibLink.h>
+
+// UNIQUE_CLIENT_ID
+#include <shobjidl.h>
+#include <sstream>
+// END_OF_UNIQUE_CLIENT_ID
+
 bool __IS_TEST_SERVER_MODE__=false;
 
 #ifdef __USE_CYTHON__
@@ -1080,12 +1086,26 @@ bool __IsLocaleVersion(LPSTR lpCmdLine)
 	return (strcmp(lpCmdLine, "--perforce-revision") == 0);
 }
 
+// UNIQUE_CLIENT_ID
+std::wstring GenerateAppUserModelID()
+{
+	std::wstringstream ss;
+	ss << L"Metin2_" << GetCurrentProcessId();
+	return ss.str();
+}
+// END_OF_UNIQUE_CLIENT_ID
+
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 #ifdef _DEBUG
 	_CrtSetDbgFlag( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_CHECK_CRT_DF | _CRTDBG_LEAK_CHECK_DF );
 	//_CrtSetBreakAlloc( 110247 );
 #endif
+
+	// UNIQUE_CLIENT_ID
+	std::wstring appUserModelID = GenerateAppUserModelID();
+	SetCurrentProcessExplicitAppUserModelID(appUserModelID.c_str());
+	// END_OF_UNIQUE_CLIENT_ID
 
 	ApplicationStringTable_Initialize(hInstance);
 

@@ -50,7 +50,7 @@ window = {
 					"x" : 10,
 					"y" : 57,
 
-					"text" : "Support",
+					"text" : "Destek",
 
 					"default_image" : ROOT + "XLarge_Button_01.sub",
 					"over_image" : ROOT + "XLarge_Button_02.sub",
@@ -63,12 +63,12 @@ window = {
 					"x" : 0,
 					"y" : 92,
 
-					"text" : "Support",
+					"text" : "Destek",
 					"horizontal_align" : "center",
 					"text_horizontal_align" : "center",
 					"bold": True,
 
-					"text": "Wersja: 1.0.0",
+					"text": "Versiyon: 1.0.0",
 				},
 				{
 					"name" : "mall_button",

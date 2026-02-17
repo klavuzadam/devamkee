@@ -38,7 +38,7 @@ window = {
 					"vertical_align" : "center",
 					"text_vertical_align" : "center",
 					
-					"text" : "Zaczarowanie Przedmiotu (Paczka 4x)",
+					"text" : "Efsun Nesnesi (4'lü Paket)",
 					"bold" : True,
 				},
 				
@@ -119,7 +119,7 @@ window = {
 			"bold" : True,
 			"color" : colorInfo.GetColorFromColorTuple(colorInfo.ITEMSHOP_TIMED_CATEGORY_COLOR),
 
-			"text" : "Koniec za xxx",
+			"text" : "Bitis xxx",
 			"children" : (
 				{
 					"name" : "ClockIcon",

@@ -182,10 +182,10 @@ class ItemShopItemView(ui.ScriptWindow):
 		current_time = app.GetGlobalTimeStamp()
 		if current_time < start_time:
 			leftSec = max(0, start_time - current_time)
-			text.SetText("Zaczyna siÄ™ za %s  " % localeInfo.SecondToSmartDHMS2(leftSec))
+			text.SetText("Baþlýyor: %s  " % localeInfo.SecondToSmartDHMS2(leftSec))
 		else:
 			leftSec = max(0, end_time - current_time)
-			text.SetText("Koniec za %s  " % localeInfo.SecondToSmartDHMS2(leftSec))
+			text.SetText("Bitiþ: %s  " % localeInfo.SecondToSmartDHMS2(leftSec))
 
 		width, height = text.GetTextSize()
 		return titleBarTextLength + width
@@ -195,7 +195,7 @@ class ItemShopItemView(ui.ScriptWindow):
 		text.SetHorizontalAlignRight()
 		text.SetWindowHorizontalAlignRight()
 		text.SetPosition(titleBarTextLength, 4)
-		text.SetText("Sztuk: %d | " % count)
+		text.SetText("Adet: %d | " % count)
 		width, height = text.GetTextSize()
 		return titleBarTextLength + width
 
@@ -239,7 +239,7 @@ class ItemShopItemView(ui.ScriptWindow):
 		text.SetHorizontalAlignRight()
 		text.SetWindowHorizontalAlignRight()
 		text.SetPosition(totalWidth, basePosY)
-		text.SetText("Cena: ")
+		text.SetText("Fiyat: ")
 		width, height = text.GetTextSize()
 		totalWidth += width
 
@@ -250,7 +250,7 @@ class ItemShopItemView(ui.ScriptWindow):
 			timeText.SetHorizontalAlignRight()
 			timeText.SetWindowHorizontalAlignRight()
 			timeText.SetPosition(totalWidth, basePosY)
-			timeText.SetText("Koniec promocji za %s | " % localeInfo.SecondToSmartDHMS2(leftSec, shortText=True))
+			timeText.SetText("Ýndirim bitiþi: %s | " % localeInfo.SecondToSmartDHMS2(leftSec, shortText=True))
 			width, height = timeText.GetTextSize()
 			totalWidth += width
 

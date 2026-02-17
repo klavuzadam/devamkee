@@ -180,7 +180,7 @@ class GameMasterCaptchaDialog(ui.ScriptWindow):
 
 	def RefreshTime(self):
 		left_time = max(self.expire_time - app.GetGlobalTimeStamp(), 0)
-		self.timeLabel.SetText("Pozostaly czas: %ds" % left_time)
+		self.timeLabel.SetText("Kalan süre: %ds" % left_time)
 
 	def SetTime(self, time):
 		self.expire_time = time
@@ -203,7 +203,7 @@ class GameMasterCaptchaDialog(ui.ScriptWindow):
 			self.SetTime(0)
 		elif type == captcha.WRONG_CODE:
 			log.SetPackedFontColor(colorInfo.NEGATIVE_COLOR)
-			log.SetText("Niepoprawny kod (|cffffa826%s|r)" % code)
+			log.SetText("Geçersiz kod (|cffffa826%s|r)" % code)
 		elif type == captcha.EXPIRE:
 			log.SetPackedFontColor(colorInfo.NEGATIVE_COLOR)
 			log.SetText("Czas minal.")

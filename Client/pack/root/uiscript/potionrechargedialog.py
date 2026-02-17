@@ -96,7 +96,7 @@ window = {
 								"children" : (
 									{
 										"type": "text",
-										"text": "Miejsce na eliksir",
+										"text": "Ýksir Yuvasý",
 										"x": 0, "y": 0,
 										"text_horizontal_align": "center",
 										"horizontal_align": "center",

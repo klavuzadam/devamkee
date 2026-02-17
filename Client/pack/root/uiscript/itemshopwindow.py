@@ -51,7 +51,7 @@ window = {
 					"children":
 					(
 						{
-							"name": "TitleName", "type": "text", "x": -4, "y": 4, "text": "Sklep z przedmiotami",
+							"name": "TitleName", "type": "text", "x": -4, "y": 4, "text": "Nesne Market",
 							"horizontal_align": "center", "text_horizontal_align": "center"
 						},
 
@@ -131,7 +131,7 @@ window = {
 									"y" : 0,
 									"all_align" : True,
 									"color" : colorInfo.GetColorFromColorTuple(colorInfo.CHAT_RGB_NOTICE),
-									"text" : "Stan Konta",
+									"text" : "Hesap Durumu",
 									"bold" : True,
 									"fontsize" : "LARGE",
 								},
@@ -168,7 +168,7 @@ window = {
 									"x" : 2,
 									"y" : -13,
 									"color" : colorInfo.GetColorFromColorTuple(colorInfo.DRAGON_COIN_COLOR),
-									"text" : "SM",
+									"text" : "EP",
 									"bold" : True,
 								},
 							),
@@ -202,7 +202,7 @@ window = {
 									"x" : 2,
 									"y" : -13,
 									"color" : colorInfo.GetColorFromColorTuple(colorInfo.DRAGON_MARK_COLOR),
-									"text" : "SZ",
+									"text" : "KP",
 									"bold" : True,
 								},
 							),
@@ -224,7 +224,7 @@ window = {
 									"y" : 0,
 									"all_align" : True,
 									"color" : colorInfo.GetColorFromColorTuple(colorInfo.CHAT_RGB_NOTICE),
-									"text" : "Kategorie",
+									"text" : "Kategoriler",
 									"bold" : True,
 									"fontsize" : "LARGE",
 								},
@@ -282,7 +282,7 @@ window = {
 									"bold" : True,
 									"fontsize" : "LARGE",
 
-									"text" : "Potwierdzenie zakupu",
+									"text" : "Satin Alma Onayi",
 								},
 
 								{
@@ -329,7 +329,7 @@ window = {
 									"horizontal_align": "center",
 									"vertical_align": "bottom",
 
-									"text": "Kup 1",
+									"text": "Satin Al (1)",
 
 									"default_image": "d:/ymir work/ui/public/xlarge_button_01.sub",
 									"over_image": "d:/ymir work/ui/public/xlarge_button_02.sub",
@@ -345,7 +345,7 @@ window = {
 									"horizontal_align": "center",
 									"vertical_align": "bottom",
 
-									"text": "Kup 5",
+									"text": "Satin Al (5)",
 
 									"default_image": "d:/ymir work/ui/public/xlarge_button_01.sub",
 									"over_image": "d:/ymir work/ui/public/xlarge_button_02.sub",
@@ -362,7 +362,7 @@ window = {
 									"horizontal_align": "center",
 									"vertical_align": "bottom",
 
-									"text": "Kup 10",
+									"text": "Satin Al (1)0",
 
 									"default_image": "d:/ymir work/ui/public/xlarge_button_01.sub",
 									"over_image": "d:/ymir work/ui/public/xlarge_button_02.sub",

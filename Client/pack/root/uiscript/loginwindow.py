@@ -24,10 +24,10 @@ window = {
 			"image" : "locale/tr/ui/login_medium.jpg", 
 		},
 
-		{
-			"name" : "logo", "type" : "image", "x" : 0, "y" : 0,
-			"image" : "locale/tr/ui/logo.tga",
-		},
+		# {
+		# 	"name" : "logo", "type" : "image", "x" : 0, "y" : 0,
+		# 	"image" : "locale/tr/ui/logo.tga",
+		# },
 
 		## ConnectBoard
 		{
@@ -101,13 +101,27 @@ window = {
 			"children" :
 			(
 				{
+					"name" : "ID_Label",
+					"type" : "text",
+					"x" : 25,
+					"y" : 22,
+					"text" : uiScriptLocale.LOGIN_ID_LABEL,
+				},
+				{
+					"name" : "Password_Label",
+					"type" : "text",
+					"x" : 10,
+					"y" : 58,
+					"text" : uiScriptLocale.LOGIN_PASSWORD_LABEL,
+				},
+				{
 					"name" : "ID_EditLine",
 					"type" : "editline",
 
-					"x" : 77,
-					"y" : 16,
+					"x" : 45,
+					"y" : 22,
 
-					"width" : 120,
+					"width" : 140,
 					"height" : 18,
 
 					"input_limit" : 16,
@@ -122,10 +136,10 @@ window = {
 					"name" : "Password_EditLine",
 					"type" : "editline",
 
-					"x" : 77,
-					"y" : 43,
+					"x" : 45,
+					"y" : 59,
 
-					"width" : 120,
+					"width" : 140,
 					"height" : 18,
 
 					"input_limit" : 16,
@@ -142,7 +156,7 @@ window = {
 					"type" : "button",
 
 					"x" : 15,
-					"y" : 65,
+					"y" : 78,
 
 					"default_image" : "d:/ymir work/ui/public/large_button_01.sub",
 					"over_image" : "d:/ymir work/ui/public/large_button_02.sub",
@@ -155,7 +169,7 @@ window = {
 					"type" : "button",
 
 					"x" : 105,
-					"y" : 65,
+					"y" : 78,
 
 					"default_image" : "d:/ymir work/ui/public/large_button_01.sub",
 					"over_image" : "d:/ymir work/ui/public/large_button_02.sub",
@@ -360,7 +374,7 @@ window = {
 
 			"bold" : True,
 
-			"text" : "Ustawienia",
+			"text" : "Ayarlar",
 		},
 
 		{
@@ -376,7 +390,7 @@ window = {
 			"over_image" : "d:/ymir work/ui/public/large_button_02.sub",
 			"down_image" : "d:/ymir work/ui/public/large_button_03.sub",
 			"bold" : True,
-			"text" : "Zasady",
+			"text" : "Kurallar",
 		},
 
 		{
@@ -394,7 +408,7 @@ window = {
 
 			"outline" : True,
 			"bold": True,
-			"text" : "Wersja: xxx",
+			"text" : "Versiyon: xxx",
 		},
 
 	),

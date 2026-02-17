@@ -2903,7 +2903,7 @@ class GameWindow(ui.ScriptWindow):
 		if vnum > 1:
 			item.SelectItem(vnum)
 			message = localeInfo.MYSHOP_BUY % (count, item.GetItemName(), localeInfo.NumberToMoneyString(price))
-			self.OnRecvWhisper(chat.WHISPER_TYPE_MYSHOP, "[Sklep]", message)
+			self.OnRecvWhisper(chat.WHISPER_TYPE_MYSHOP, "[Nesne Market]", message)
 
 	## PrivateShop
 	def __PrivateShop_Open(self, tax):

@@ -74,7 +74,7 @@ window = {
 										"width": WINDOW_WIDTH - 30,
 										"height": 15,
 										"input_limit": 32,
-										"placeholder" : "Podaj nazwe sklepu...",
+										"placeholder" : "Pazar ismini gir...",
 									},
 								),
 						},
@@ -190,35 +190,35 @@ window = {
 
 							# "item": {
 							# 	0: {
-							# 		"value": "Zwykly Sklep | Cena: 0 Yang",
+							# 		"value": "Zwykly Market | Fiyat: 0 Yang",
 							# 	},
 							#
 							# 	1: {
-							# 		"value": "3 godz. | Cena: 45.000 Yang",
+							# 		"value": "3 godz. | Fiyat: 45.000 Yang",
 							# 	},
 							# 	2: {
-							# 		"value": "6 godz. | Cena: 90.000 Yang",
+							# 		"value": "6 godz. | Fiyat: 90.000 Yang",
 							# 	},
 							#
 							# 	3: {
-							# 		"value": "8 godz. | Cena: 120.000 Yang",
+							# 		"value": "8 godz. | Fiyat: 120.000 Yang",
 							# 	},
 							#
 							# 	4: {
-							# 		"value": "12 godz. | Cena: 180.000 Yang",
+							# 		"value": "12 godz. | Fiyat: 180.000 Yang",
 							# 	},
 							# 	5: {
-							# 		"value": "* 24 godz. | Cena: 240.000 Yang *",
+							# 		"value": "* 24 godz. | Fiyat: 240.000 Yang *",
 							# 		"color": grp.GenerateColor(float(225) / 255, float(200) / 255, float(100) / 255,
 							# 								   1.0)
 							# 	},
 							# 	6: {
-							# 		"value": "* 48 godz. | Cena: 480.000 Yang *",
+							# 		"value": "* 48 godz. | Fiyat: 480.000 Yang *",
 							# 		"color": grp.GenerateColor(float(225) / 255, float(200) / 255, float(100) / 255,
 							# 								   1.0)
 							# 	},
 							# 	7: {
-							# 		"value": "* 72 godz. | Cena: 720.000 Yang *",
+							# 		"value": "* 72 godz. | Fiyat: 720.000 Yang *",
 							# 		"color": grp.GenerateColor(float(225) / 255, float(200) / 255, float(100) / 255,
 							# 								   1.0)
 							# 	},

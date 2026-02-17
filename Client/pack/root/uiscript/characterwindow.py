@@ -427,7 +427,7 @@ window = {
 
 								{ "name":"Status_Extent_Bar", "type":"horizontalbar", "x":12, "y":6, "width":223, },
 								# { "name":"Status_Extent_Label", "type" : "image", "x" : 13, "y" : 8, "image" : LOCALE_PATH+"label_ext.sub", },
-								{ "name":"Status_Extent_Label", "type" : "text", "x" : 15, "y" : 8, "text" : "Ã–zellikler", "bold":True, "fontsize":"LARGE","r":0.9373, "g":0.8902, "b":0.7412, },
+								{ "name":"Status_Extent_Label", "type" : "text", "x" : 15, "y" : 8, "text" : "Özellikler", "bold":True, "fontsize":"LARGE","r":0.9373, "g":0.8902, "b":0.7412, },
 
 								{
 									"name" : "AttributeListButton",
@@ -805,3 +805,4 @@ window = {
 		},
 	),
 }
+

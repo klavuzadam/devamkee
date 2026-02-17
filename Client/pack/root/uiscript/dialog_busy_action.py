@@ -57,7 +57,7 @@ window = {
 					"all_align": "center",
 					"outline": True,
 
-					"text": "Zbieranie...",
+					"text": "Toplanýyor...",
 				},
 			),
 		},

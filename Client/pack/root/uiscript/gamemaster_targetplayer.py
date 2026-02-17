@@ -39,7 +39,7 @@ window = {
 						"children":
 							(
 								{
-									"name": "TitleName", "type": "text", "x": -4, "y": 3, "text": "GM: Podglad Gracza",
+									"name": "TitleName", "type": "text", "x": -4, "y": 3, "text": "GM: Oyuncu Ýzleme",
 									"horizontal_align": "center", "text_horizontal_align": "center", "bold": True,
 								},
 							),
@@ -57,7 +57,7 @@ window = {
 						"name": "PlayerName",
 						"type": "text",
 						"x": 10, "y": 24,
-						"text": "Nick: PLAYER_NAME",
+						"text": "Ýsim: PLAYER_NAME",
 						"bold": True,
 					},
 
@@ -65,7 +65,7 @@ window = {
 						"name": "AccountName",
 						"type": "text",
 						"x": 10, "y": 39,
-						"text": "Konto: ACCOUNT_NAME)",
+						"text": "Hesap: ACCOUNT_NAME",
 					},
 
 					{
@@ -104,7 +104,7 @@ window = {
 						"x": 10,
 						"y": 75,
 
-						"text": "Podglad",
+						"text": "Ýzle",
 
 						"default_image": "d:/ymir work/ui/public/middle_button_01.sub",
 						"over_image": "d:/ymir work/ui/public/middle_button_02.sub",

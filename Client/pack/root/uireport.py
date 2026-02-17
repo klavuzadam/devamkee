@@ -9,7 +9,7 @@ EVENT_REPORT_PLAYER = "EVENT_REPORT_PLAYER" # args: name: string, vid: number
 
 class ReportPlayerDialog(ui.ScriptWindow):
 	REPORT_REASONS = [
-		"Wybierz",
+		"Seç",
 		localeInfo.REPORT_PLAYER_REASON_BOT,
 		localeInfo.REPORT_PLAYER_REASON_FISHBOT,
 		localeInfo.REPORT_PLAYER_REASON_HACK,

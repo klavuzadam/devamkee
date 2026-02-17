@@ -923,7 +923,7 @@ class LoginWindow(ui.ScriptWindow):
 
 	def SetVersion(self):
 		data = constInfo.GAME_VERSION
-		version_string = "Wersja: %d.%d.%d%s" % (
+		version_string = "Versiyon: %d.%d.%d%s" % (
 		data["expansion"], data["major"], data["minor"], "b" if data["is_beta"] else "")
 		self.versionLabel.SetText(version_string)
 

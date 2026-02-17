@@ -59,7 +59,7 @@ window = {
 						"name": "TimeLeft",
 						"type": "text",
 						"x": 10, "y": 24,
-						"text": "Pozostalo czasu: 30s",
+						"text": "Kalan süre: 30s",
 						"text_horizontal_align": "right",
 						"horizontal_align": "right",
 					},

@@ -57,33 +57,33 @@ namespace Discord
 			{ "metin2_map_c1", "Pyungmoo (M1)" },
 			{ "metin2_map_c3", "Bakra (M2)" },
 			{ "metin2_map_guild_03", "Imha (M3)" },
-			{ "map_a2", "Dolina Seungryong" },
-			{ "map_n_snowm_01", "Góra Sohan" },
-			{ "metin2_map_milgyo", "Œwi¹tynia Hwang" },
-			{ "metin2_map_n_desert_01", "Pustynia Yongbi" },
-			{ "metin2_map_n_flame_01", "Doyyumhwaji" },
-			{ "metin2_map_trent", "Lungsam" },
-			{ "metin2_map_trent02", "Czerwony Las" },
-			{ "metin2_map_nusluck01", "Kraina Gigantów" },
-			{ "metin2_map_deviltower1", "Wie¿a Demonów" },
-			{ "metin2_map_devilscatacomb", "Diabelskie Katakumby" },
-			{ "metin2_map_wl_pass", "G³ucha Prze³êcz" },
-			{ "metin2_map_duel", "Arena PvP" },
-			{ "metin2_map_oxevent", "Arena OX" },
-			{ "metin2_map_wedding_01", "Obszar Œlubny" },
-			{ "metin2_map_t3", "Wojna Gildii (Arena)" },
-			{ "metin2_map_t4", "Wojna Gildii (Flagi)" },
-			{ "metin2_map_spiderdungeon", "Kuahlo Dong (V1)" },
-			{ "metin2_map_spiderdungeon_02", "Loch Paj¹ków V2" },
-			{ "metin2_map_monkeydungeon", "Hasun Dong (£atwy Loch Ma³p)" },
-			{ "metin2_map_monkeydungeon_02", "Jungsun Dong (Normalny Loch Ma³p)" },
-			{ "metin2_map_monkeydungeon_03", "Sangsun Dong (Trudny Loch Ma³p)" },
-			{ "metin2_map_empirewar01", "Zamek Milaard" },
-			{ "metin2_map_empirewar02", "Zamek Listhmos" },
-			{ "metin2_map_empirewar03", "Zamek Dendera" },
+			{ "map_a2", "Seungryong Vadisi" },
+			{ "map_n_snowm_01", "Sohan Dağı" },
+			{ "metin2_map_milgyo", "Hwang Tapınağı" },
+			{ "metin2_map_n_desert_01", "Yongbi Çölü" },
+			{ "metin2_map_n_flame_01", "Doyyumhwan (Ateş Diyarı)" },
+			{ "metin2_map_trent", "Hayalet Orman" },
+			{ "metin2_map_trent02", "Kızıl Orman" },
+			{ "metin2_map_nusluck01", "Devler Diyarı" },
+			{ "metin2_map_deviltower1", "Şeytan Kulesi" },
+			{ "metin2_map_devilscatacomb", "Şeytan Katakombu" },
+			{ "metin2_map_wl_pass", "Yılan Vadisi" },
+			{ "metin2_map_duel", "PvP Arenası" },
+			{ "metin2_map_oxevent", "OX Yarışması" },
+			{ "metin2_map_wedding_01", "Evlilik Bölgesi" },
+			{ "metin2_map_t3", "Lonca Savaşı (Arena)" },
+			{ "metin2_map_t4", "Lonca Savaşı (Bayrak)" },
+			{ "metin2_map_spiderdungeon", "Örümcek Zindanı V1" },
+			{ "metin2_map_spiderdungeon_02", "Örümcek Zindanı V2" },
+			{ "metin2_map_monkeydungeon", "Kolay Maymun Zindanı" },
+			{ "metin2_map_monkeydungeon_02", "Normal Maymun Zindanı" },
+			{ "metin2_map_monkeydungeon_03", "Zor Maymun Zindanı" },
+			{ "metin2_map_empirewar01", "Milaard Kalesi" },
+			{ "metin2_map_empirewar02", "Listhmos Kalesi" },
+			{ "metin2_map_empirewar03", "Dendera Kalesi" },
 		};
 
-		auto MapName = "Lokacja: " + (DCmapname.count(WarpName) ? DCmapname.at(WarpName) : "Nieznana");
+		auto MapName = "Konum: " + (DCmapname.count(WarpName) ? DCmapname.at(WarpName) : "Bilinmiyor");
 
 		std::string level = "";
 		auto pInstance = CPythonCharacterManager::Instance().GetMainInstancePtr();
@@ -91,7 +91,7 @@ namespace Discord
 			level = std::to_string(pInstance->GetLevel());
 
 		/*CH Name*/
-		std::string CHName = "Nazwa:";
+		std::string CHName = "İsim:";
 		if (level != "")
 		{
 			CHName += " Lv. " + std::string(level);
@@ -101,7 +101,7 @@ namespace Discord
 
 		std::string GuildName;
 		if (CPythonGuild::Instance().GetGuildName(CPythonPlayer::Instance().GetGuildID(), &GuildName))
-			CHName += ", Gildia: " + GuildName;
+			CHName += ", Lonca: " + GuildName;
 
 		return { MapName, CHName };
 	}

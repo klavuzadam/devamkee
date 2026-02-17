@@ -78,7 +78,7 @@ window = {
 										"y": 0,
 
 										"all_align": "center",
-										"text": "Pozostalo: 45s",
+										"text": "Kalan: 45s",
 									},
 
 									{
@@ -168,7 +168,7 @@ window = {
 									"vertical_align": "bottom",
 									"horizontal_align": "center",
 									"text_horizontal_align": "center",
-									"text": "Pozostalo prob: 3",
+									"text": "Kalan deneme: 3",
 								},
 							),
 					},

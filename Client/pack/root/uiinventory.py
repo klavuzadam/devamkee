@@ -447,7 +447,7 @@ class InventorySlotManager(GridSlotStateManager):
 	def OnSafeboxClose(self):
 		self.ClearSlotStates(self.SLOT_STATE_UNUSABLE)
 
-	def OnExchangeItemClose(self): # nie handel
+	def OnExchangeItemClose(self): # ticaret degil
 		self.ClearSlotStates(self.SLOT_STATE_IN_USE)
 
 	def OnExchangeClose(self): # handel
@@ -478,10 +478,10 @@ class InventorySlotManager(GridSlotStateManager):
 	def OnRefineItem(self, itemSlotPos):
 		self.MarkItemUnusable(itemSlotPos)
 
-	def OnAddItemToItemExchange(self, sourceSlotPos): # nie handel
+	def OnAddItemToItemExchange(self, sourceSlotPos): # ticaret degil
 		self.MarkItemInUse(sourceSlotPos)
 
-	def OnRemoveItemFromItemExchange(self, sourceSlotPos): # nie handel
+	def OnRemoveItemFromItemExchange(self, sourceSlotPos): # ticaret degil
 		self.MarkItemClean(sourceSlotPos)
 
 	def OnAddItemToExchange(self, sourceWindowType, sourceSlotPos): # handel
@@ -606,8 +606,8 @@ class InventoryWindow(ui.ScriptWindow):
 		eventManager.EventManager().add_observer(uiSafeBox.EVENT_OPEN_SAFEBOX, self.OnSafeboxOpen)
 		eventManager.EventManager().add_observer(uiSafeBox.EVENT_CLOSE_SAFEBOX, self.OnSafeboxClose)
 
-		eventManager.EventManager().add_observer(uiItemExchange.EVENT_ITEM_EXCHANGE_OPEN, self.OnExchangeItemOpen) # nie handel
-		eventManager.EventManager().add_observer(uiItemExchange.EVENT_ITEM_EXCHANGE_CLOSE, self.OnExchangeItemClose) # nie handel
+		eventManager.EventManager().add_observer(uiItemExchange.EVENT_ITEM_EXCHANGE_OPEN, self.OnExchangeItemOpen) # ticaret degil
+		eventManager.EventManager().add_observer(uiItemExchange.EVENT_ITEM_EXCHANGE_CLOSE, self.OnExchangeItemClose) # ticaret degil
 
 		eventManager.EventManager().add_observer(uiPotionRecharge.EVENT_RECHARGE_POTION_OPEN, self.OnRechargePotionOpen)
 		eventManager.EventManager().add_observer(uiPotionRecharge.EVENT_RECHARGE_POTION_CLOSE, self.OnRechargePotionClose)
@@ -1108,10 +1108,10 @@ class InventoryWindow(ui.ScriptWindow):
 	def OnSafeboxClose(self):
 		self.isSafeboxOpen = False
 
-	def OnExchangeItemOpen(self): # nie handel
+	def OnExchangeItemOpen(self): # ticaret degil
 		self.isExchangeItemOpen = True
 
-	def OnExchangeItemClose(self): # nie handel
+	def OnExchangeItemClose(self): # ticaret degil
 		self.isExchangeItemOpen = False
 
 	def OnRechargePotionOpen(self):
