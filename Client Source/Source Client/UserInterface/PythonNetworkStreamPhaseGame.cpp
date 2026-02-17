@@ -5108,7 +5108,7 @@ void CPythonNetworkStream::Discord_Update(const bool ingame)
 
 #ifdef ENABLE_DISCORD_JOIN_URL
 	discordPresence.buttonLabel = "Oyuna Katil!";
-	discordPresence.buttonURL = "https://mt2009.tr/";
+	discordPresence.buttonURL = "https://discord.gg/your-invite";
 #endif
 
 	Discord_RunCallbacks();
