@@ -314,7 +314,7 @@ void CPythonIkarusShop::OpenShopOwner(const ikashop::TShopInfo& shop, const std:
 void CPythonIkarusShop::ShowMyShopPosition(DWORD vid, long x, long y)
 {
 	myShopVID = vid;
-	CPythonMiniMap::instance().CreateTarget(OFFLINESHOP_MYSHOP_TARGET_INDEX, "Sklep", x, y);
+	CPythonMiniMap::instance().CreateTarget(OFFLINESHOP_MYSHOP_TARGET_INDEX, "Pazar", x, y);
 	CPythonBackground::Instance().CreateShopTargetEffect(OFFLINESHOP_MYSHOP_TARGET_INDEX, vid);
 }
 

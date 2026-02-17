@@ -642,7 +642,7 @@ static void __LocaleService_Init_Turkey()
 
 static void __LocaleService_Init_Poland()
 {
-	g_stLocale="cp1250";
+	g_stLocale="latin5";
 	g_stServiceBasePath = "locale/poland";
 	g_stQuestDir = "locale/poland/quest";
 	g_stServiceMapPath = "locale/poland/map";

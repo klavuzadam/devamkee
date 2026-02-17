@@ -3470,7 +3470,7 @@ bool CClientManager::InitializeLocalization()
 				if (g_stLocale != locale.szValue)
 					sys_log(0, "Changed g_stLocale %s to %s", g_stLocale.c_str(), "euckr");
 
-				g_stLocale = "cp1250";
+				g_stLocale = "latin5";
 				g_stLocaleNameColumn = "locale_name";
 			}
 			else if (strcmp(locale.szValue, "portugal") == 0)
