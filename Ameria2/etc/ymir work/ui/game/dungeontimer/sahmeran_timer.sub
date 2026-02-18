@@ -1,0 +1,7 @@
+title subImage
+version 1.0
+image "timer.tga"
+left 390
+top 124
+right 520
+bottom 248

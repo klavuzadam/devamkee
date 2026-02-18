@@ -177,8 +177,8 @@ void CPythonPlayerEventHandler::OnHit(UINT uSkill, CActorInstance& rkActorVictim
 	CPythonCharacterManager::Instance().AdjustCollisionWithOtherObjects(&rkActorVictim);
 
 
-	if (!rkActorVictim.CanBePushedByGreatHit() || iHitType != HIT_TYPE_GREAT)
-		return;
+	// if (!rkActorVictim.CanBePushedByGreatHit())
+	// 	return;
 
 	const TPixelPosition& kPPosLast=rkActorVictim.NEW_GetLastPixelPositionRef();
 

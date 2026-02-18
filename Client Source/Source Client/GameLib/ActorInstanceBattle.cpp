@@ -838,39 +838,13 @@ void CActorInstance::__HitGreate(CActorInstance& rVictim, UINT uiSkill)
 	//bool isComboSkill = uiSkill == SKILL_ROLLING_DAGGER;
 	bool isSkill = uiSkill > 0;
 
-	// DISABLE_KNOCKDOWN_ATTACK
-	if (!isSkill && rVictim.IsKnockDown())
-		return;
-	 
 	if (rVictim.__IsStandUpMotion())
 		return;
-	// END_OF_DISABLE_KNOCKDOWN_ATTACK
 
 	rVictim.__Shake(100);
 
 	if (rVictim.IsUsingSkill())
 		return;
-
-	if (!isSkill && !rVictim.CanBePushedByGreatHit())
-		return;
-
-	if (!isSkill)
-	{
-		DWORD currentDwordTime = (DWORD)(CTimer::Instance().GetCurrentSecond() * 1000);
-
-		DWORD limit = 0;
-		if (rVictim.IsPC())
-			limit = 3000;
-
-		if (IsPC() && __IsMountingHorse())
-			limit = 500;
-
-		rVictim.m_dwLastGreatHitTime = currentDwordTime + limit;
-	}
-	else
-	{
-		rVictim.m_dwLastGreatHitTime = 0;
-	}
 
 	float fRotRad = D3DXToRadian(GetRotation());
 	float fVictimRotRad = D3DXToRadian(rVictim.GetRotation());

@@ -1653,15 +1653,16 @@ void CInputMain::Move(LPCHARACTER ch, const char * data)
 		}
 	}
 
+	ch->SetLastMoveFunc(pinfo->bFunc);
+
 	const float fDist = DISTANCE_SQRT((ch->GetX() - pinfo->lX) / 100, (ch->GetY() - pinfo->lY) / 100);
-	if (pinfo->bFunc == 0 && ch->GetLastMoveFunc() == 0 && fDist > 3.2f) {
+	if (pinfo->bFunc == 0 && ch->GetLastMoveFunc() == 0 && fDist > 25.0f) {
 
 		ch->Show(ch->GetMapIndex(), ch->GetX(), ch->GetY(), ch->GetZ());
 		ch->Stop();
 		return;
 	}
 
-	ch->SetLastMoveFunc(pinfo->bFunc);
 
 	//ch->ChatDebug("command_move: bFunc %u, bArg %u, bRot %u, lX %ld, lY %ld, Time %d ", pinfo->bFunc, pinfo->bArg, pinfo->bRot, pinfo->lX, pinfo->lY, pinfo->dwTime);
 	
@@ -1669,7 +1670,7 @@ void CInputMain::Move(LPCHARACTER ch, const char * data)
 		// mt2009 cheatwarden
 		const float fDist = DISTANCE_SQRT((ch->GetX() - pinfo->lX) / 100, (ch->GetY() - pinfo->lY) / 100);
 
-		if (((false == ch->IsRiding() && fDist > 25) || fDist > 40) && OXEVENT_MAP_INDEX != ch->GetMapIndex())
+		if (((false == ch->IsRiding() && fDist > 150) || fDist > 150) && OXEVENT_MAP_INDEX != ch->GetMapIndex())
 		{
 			sys_log(0, "MOVE: %s trying to move too far (dist: %.1fm) Riding(%d)", ch->GetName(), fDist, ch->IsRiding());
 
@@ -1677,6 +1678,7 @@ void CInputMain::Move(LPCHARACTER ch, const char * data)
 			ch->Stop();
 			return;
 		}
+
 
 		const int distance = DISTANCE_APPROX((ch->GetX() - pinfo->lX), (ch->GetY() - pinfo->lY));
 		if (distance < 0 || distance > REAL_MOVE_MAX_DISTANCE) {
@@ -1705,7 +1707,7 @@ void CInputMain::Move(LPCHARACTER ch, const char * data)
 		// #define ENABLE_TP_SPEED_CHECK
 		#ifdef ENABLE_TP_SPEED_CHECK
 		const float fDist = DISTANCE_SQRT((ch->GetX() - pinfo->lX) / 100, (ch->GetY() - pinfo->lY) / 100);
-		if (((false == ch->IsRiding() && fDist > 25) || fDist > 60) && OXEVENT_MAP_INDEX != ch->GetMapIndex()) // @fixme106 (changed 40 to 60)
+		if (((false == ch->IsRiding() && fDist > 150) || fDist > 150) && OXEVENT_MAP_INDEX != ch->GetMapIndex()) // @fixme106 (changed 40 to 60)
 		{
 			#ifdef ENABLE_HACK_TELEPORT_LOG // @warme006
 			{
@@ -2085,7 +2087,7 @@ int CInputMain::SyncPosition(LPCHARACTER ch, const char * c_pcData, size_t uiByt
 				return -1;
 			}
 		}
-		else if( fDist > 25.0f )
+		else if( fDist > 120.0f ) // @fixme106 (changed 25.0f to 120.0f)
 		{
 			LogManager::instance().HackLog( "SYNC_POSITION_HACK", ch );
 
@@ -2093,10 +2095,11 @@ int CInputMain::SyncPosition(LPCHARACTER ch, const char * c_pcData, size_t uiByt
 				   	fDist, victim->GetName(), ch->GetName(), ch->GetX(), ch->GetY(), victim->GetX(), victim->GetY(),
 				  e->lX, e->lY );
 
-			ch->GetDesc()->SetPhase(PHASE_CLOSE);
+			// ch->GetDesc()->SetPhase(PHASE_CLOSE);
 
 			return -1;
 		}
+
 		else
 		{
 			victim->SetLastSyncTime(tvCurTime);

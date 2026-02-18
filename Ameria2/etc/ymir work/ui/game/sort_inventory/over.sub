@@ -1,0 +1,7 @@
+title subImage
+version 2.0
+image "button.tga"
+left 39
+top 0
+right 78
+bottom 21

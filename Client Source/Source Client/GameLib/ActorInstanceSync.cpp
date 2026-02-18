@@ -21,8 +21,7 @@ void CActorInstance::__Push(int x, int y)
 	{
 		if (pWorld->isPhysicalCollision(c_rv3Src + v3Movement))
 		{
-			ResetBlendingPosition();
-			return;
+			break;
 		}
 		v3Movement += inc;
 	}
