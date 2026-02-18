@@ -48,7 +48,7 @@ class BusyActionDialog(ui.ScriptWindow, updateable.UpdatableAbstract):
 		if self.action_type == 1:
 			return "Toplanýyor"
 		else:
-			return "Trwa akcja"
+			return "Ýþlem yapýlýyor"
 
 	def UpdateLabel(self):
 		self.text_anim_timer += updateable.FIXED_TIMESTEP_UPDATE
@@ -89,7 +89,7 @@ class BusyActionDialog(ui.ScriptWindow, updateable.UpdatableAbstract):
 
 	def Success(self):
 		self.actionLabel.SetPackedFontColor(colorinfo.POSITIVE_COLOR)
-		self.actionLabel.SetText("Sukces")
+		self.actionLabel.SetText("Baþarýlý")
 		self.success = True
 		self.progressBar.SetColor(0.3, 1.0, 0.3, 1.0)
 		self.tip.SetColor(0.3, 1.0, 0.3, 1.0)

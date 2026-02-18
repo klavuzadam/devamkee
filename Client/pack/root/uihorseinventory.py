@@ -96,7 +96,7 @@ class HorseInventoryWindow(ui.ScriptWindow):
 					itemInfo.AppendImage(item.GetIconImageFileName())
 					itemInfo.AppendSpace(1)
 
-					itemName = ("%dx " + item.GetItemName() + " (%d na %d)") % (count, countInInventory, count)
+					itemName = ("%dx " + item.GetItemName() + " (%d / %d)") % (count, countInInventory, count)
 					itemInfo.AppendTextLine(itemName,
 											colorInfo.POSITIVE_COLOR if hasEnoughItems else colorInfo.NEGATIVE_COLOR)
 					itemInfo.ShowToolTip()
@@ -223,3 +223,4 @@ class HorseInventoryWindow(ui.ScriptWindow):
 	def OnPressEscapeKey(self):
 		self.Close()
 		return True
+
