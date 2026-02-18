@@ -3,8 +3,6 @@
  * 30.03.2022
 **/
 
-#define DARK_MODE
-
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -93,8 +91,15 @@ namespace Metin2Config
 
             public void AddFrequency(int Frequency)
             {
-                if (!FrequencyList.Contains(Frequency))
-                    FrequencyList.Add(Frequency);
+                // 0 veya 1 genelde 60Hz (Varsayılan) demektir.
+                int freq = (Frequency <= 1) ? 60 : Frequency;
+
+                // Sadece 60 ve 75 frekanslarını kabul et
+                if (freq == 60 || freq == 75)
+                {
+                    if (!FrequencyList.Contains(freq))
+                        FrequencyList.Add(freq);
+                }
             }
 
             public override string ToString()
@@ -103,185 +108,157 @@ namespace Metin2Config
             }
         }
 
-        public enum ELocaleType
-        {
-            LANGUAGE,
-            CODE,
-            NAME,
-
-            TYPE_MAX
-        }
-
         private List<SScreenSettings> m_ScreenSettingsList = new List<SScreenSettings>();
         private List<SLocale> m_LocaleList = new List<SLocale>();
-        private Dictionary<string, string> m_StringDictionary = new Dictionary<string, string>();
 
-        private const string m_ConfigFileName = "metin2.cfg";
+        private const string m_ConfigFileName = "game1.cfg";
         private const string m_LocaleListFileName = "locale_list.txt";
         private const string m_LocaleFileName = "loca.cfg";
-        private const string m_StringINIFileName = "config.ini";
 
-        private bool m_DarkModeEnabled = false;
-        private Color DarkBackColor = Color.FromArgb(22, 22, 24); // Main Form's Dark Back Color
-
-        private string GetString(string key)
+        private void LoadLocaleList()
         {
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-            return m_StringDictionary.TryGetValue(key, out var value) ? value : "";
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
-        }
+            cboxLocale.Items.Clear();
+            m_LocaleList.Clear();
 
-        private void LoadStrings()
-        {
-            if (File.Exists(m_StringINIFileName) == false)
-                return;
+            // Önce varsayılan Türkçe'yi ekleyelim kimseden bağımsız olsun
+            SLocale trLocale = new SLocale { language = "TURKISH", code = "tr", name = "TURKISH" };
+            m_LocaleList.Add(trLocale);
+            cboxLocale.Items.Add("Türkçe");
 
-            var lines = File.ReadAllLines(m_StringINIFileName);
-            foreach (var line in lines)
-            {
-                var arrString = line.Split('=');
-                if (arrString.Length < 2)
-                    continue;
+             if (File.Exists(m_LocaleListFileName))
+             {
+                try
+                {
+                    var lines = File.ReadAllLines(m_LocaleListFileName);
+                    foreach (var line in lines)
+                    {
+                        if (string.IsNullOrWhiteSpace(line)) continue;
 
-                var k = arrString[0];
-                if (k.EndsWith(" "))
-                    k = k.Substring(0, k.Length - 1);
+                        var tokens = line.Split('\t');
+                        if (tokens.Length < 3) continue;
 
-                var v = arrString[1];
-                v = v.Replace("\"", "");
-                if (v.StartsWith(" "))
-                    v = v.Substring(1);
+                        if (tokens[1] == "tr") continue; // Zaten ekledik
 
-                m_StringDictionary.Add(k, v);
-            }
+                        SLocale localeObj = new SLocale();
+                        localeObj.language = tokens[0];
+                        localeObj.code = tokens[1];
+                        localeObj.name = tokens[2];
+
+                        m_LocaleList.Add(localeObj);
+                        cboxLocale.Items.Add(localeObj.language); // Dil ismini gösterelim
+                    }
+                }
+                catch { }
+             }
+
+            if (cboxLocale.Items.Count > 0)
+                cboxLocale.SelectedIndex = 0;
         }
 
         private void SetStrings()
         {
-            this.Text = GetString("CONFIG_STRING_CAPTINO");
-            if (this.Text == "")
-                this.Text = " ";
+            this.Text = "Metin2 Ayarları";
 
-            btnOK.Text = GetString("CONFIG_STRING_APPLY");
-            btnCANCEL.Text = GetString("CONFIG_STRING_CANCLE");
+            btnOK.Text = "Kaydet";
+            btnCANCEL.Text = "İptal";
 
-            gboxDisplaySettings.Text = GetString("CONFIG_STRING_GRAPHIC");
-            lblResolution.Text = GetString("CONFIG_STRING_RESOLUTIN");
-            lblFrequency.Text = GetString("CONFIG_STRING_FREQUENCY");
-            lblGamma.Text = GetString("CONFIG_STRING_GAMMA");
+            gboxDisplay.Text = "Ekran";
+            lblResolution.Text = "Çözünürlük";
+            lblFrequency.Text = "Frekans";
+            lblGamma.Text = "Gama";
 
-            gboxSoundSettings.Text = GetString("CONFIG_STRING_SOUND");
-            lblBGM.Text = GetString("CONFIG_STRING_MUSIC");
-            lblSFX.Text = GetString("CONFIG_STRING_SOUNDEFFECT");
+            gboxSound.Text = "Ses";
+            lblBGM.Text = "Müzik";
+            lblSFX.Text = "Efekt";
 
-            gboxNightMode.Text = GetString("CONFIG_STRING_NIGHT_MODE");
-            rbtnNightOn.Text = GetString("CONFIG_STRING_NIGHT_MODE_ON");
-            rbtnNightOff.Text = GetString("CONFIG_STRING_NIGHT_MODE_OFF");
+            gboxWindowMode.Text = "Pencere";
+            rbtnWindowMode.Text = "Pencere Modu";
+            rbtnFullscreen.Text = "Tam Ekran";
+            
+            gboxIMEMode.Text = "IME Modu";
+            rbtnGameIME.Text = "Oyun IME";
+            rbtnExternalIME.Text = "Harici IME";
 
-            gboxFogMode.Text = GetString("CONFIG_STRING_FOG_MODE");
-            rbtnFogOn.Text = GetString("CONFIG_STRING_FOG_MODE_ON");
-            rbtnFogOff.Text = GetString("CONFIG_STRING_FOG_MODE_OFF");
+            gboxGFX.Text = "Grafik";
+            lblFog.Text = "Sis";
+            lblTNL.Text = "TNL";
+            lblShadow.Text = "Gölge";
+            lblAntiAlias.Text = "Yumuşatma";
 
-            gboxSnowMode.Text = GetString("CONFIG_STRING_SNOW_MODE");
-            rbtnSnowOn.Text = GetString("CONFIG_STRING_SNOW_MODE_ON");
-            rbtnSnowOff.Text = GetString("CONFIG_STRING_SNOW_MODE_OFF");
+            chboxUseSoftCursor.Text = "Yazılım İmleci";
+            
+            // Populate ComboBoxes
+            cboxGamma.Items.Clear();
+            cboxGamma.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
 
-            gboxSnowTextureMode.Text = GetString("CONFIG_STRING_SNOW_TEXTURE_MODE");
-            rbtnSnowTextureOn.Text = GetString("CONFIG_STRING_SNOW_TEXTURE_MODE_ON");
-            rbtnSnowTextureOff.Text = GetString("CONFIG_STRING_SNOW_TEXTURE_MODE_OFF");
+            cboxFog.Items.Clear();
+            cboxFog.Items.AddRange(new object[] { "Yakın", "Orta", "Uzak" }); // Near, Mid, Far
 
-            gboxPetMode.Text = GetString("CONFIG_STRING_PET");
-            rbtnPetOn.Text = GetString("CONFIG_STRING_PET_ON");
-            rbtnPetOff.Text = GetString("CONFIG_STRING_PET_OFF");
+            cboxTNL.Items.Clear();
+            cboxTNL.Items.AddRange(new object[] { "Otomatik", "CPU", "GPU" }); // Auto, CPU, GPU
 
-            chboxUseSoftCursor.Text = GetString("CONFIG_STRING_USESOFTCURSOR");
-            gboxLanguage.Text = GetString("CONFIG_STRING_LANGUAGE");
+            cboxShadow.Items.Clear();
+            // Brak, Teren, Teren i gracz, Teren gracz i NPC, Niskie, Srednie, Wysokie, Ultra
+            cboxShadow.Items.AddRange(new object[] { 
+                "Yok",                  // Brak
+                "Zemin",                // Teren
+                "Zemin ve Karakter",    // Teren i gracz
+                "Zemin, Karakter ve NPC", // Teren, gracz i NPC
+                "Düşük",                // Niskie
+                "Orta",                 // Srednie
+                "Yüksek",               // Wysokie
+                "Ultra"                 // Ultra
+            });
 
-            gboxWindowSettings.Text = GetString("CONFIG_STRING_WINDOWSETTING");
-            rbtnWindowMode.Text = GetString("CONFIG_STRING_WINDOWMODE");
-            rbtnFullscreen.Text = GetString("CONFIG_STRING_FULLSCREEN");
-
-            gboxIMESettings.Text = GetString("CONFIG_STRING_IMESETTING");
-            rbtnGameIME.Text = GetString("CONFIG_STRING_GAMEIME");
-            rbtnOutIME.Text = GetString("CONFIG_STRING_OUTIME");
-
-            gboxGraphicSettings.Text = GetString("CONFIG_STRING_GRAPHICSETTING");
-            lblShadowTarget.Text = GetString("CONFIG_STRING_SHADOW_TARGET");
-            lblShadowQuality.Text = GetString("CONFIG_STRING_SHADOW_QUALITY");
-            lblEffects.Text = GetString("CONFIG_STRING_EFFECT");
-            lblPrivateShop.Text = GetString("CONFIG_STRING_PRIVATE_SHOP");
-            lblDropItem.Text = GetString("CONFIG_STRING_DROP_ITEM");
-
-            gboxNPCName.Text = GetString("CONFIG_STRING_NPC_NAME");
-            rbtnNPCNameOn.Text = GetString("CONFIG_STRING_NPC_NAME_ON");
-            rbtnNPCNameOff.Text = GetString("CONFIG_STRING_NPC_NAME_OFF");
-
-            cboxTargetShadow.Items[0] = GetString("CONFIG_STRING_NONE");
-            cboxTargetShadow.Items[1] = GetString("CONFIG_STRING_BG");
-            cboxTargetShadow.Items[2] = GetString("CONFIG_STRING_BGSELF");
-            cboxTargetShadow.Items[3] = GetString("CONFIG_STRING_ALL");
-
-            cboxShadowQuality.Items[0] = GetString("CONFIG_STRING_BAD");
-            cboxShadowQuality.Items[1] = GetString("CONFIG_STRING_AVERAGE");
-            cboxShadowQuality.Items[2] = GetString("CONFIG_STRING_GOOD");
-
-            for (int i = 0; i < cboxEffect.Items.Count; i++)
-                cboxEffect.Items[i] = GetString($"CONFIG_STRING_EFFECT_LEVEL{i + 1}");
-
-            for (int i = 0; i < cboxPrivateShop.Items.Count; i++)
-                cboxPrivateShop.Items[i] = GetString($"CONFIG_STRING_PRIVATE_SHOP_LEVEL{i + 1}");
-
-            for (int i = 0; i < cboxDropItem.Items.Count; i++)
-                cboxDropItem.Items[i] = GetString($"CONFIG_STRING_DROP_ITEM_LEVEL{i + 1}");
+            cboxAntiAlias.Items.Clear();
+            cboxAntiAlias.Items.AddRange(new object[] { "Yok", "2x", "4x", "8x" }); // Brak -> Yok
         }
 
-        private void LoadLocaleList()
-        {
-            if (File.Exists(m_LocaleListFileName) == false)
-                return;
-
-            var lines = File.ReadAllLines(m_LocaleListFileName);
-            foreach (var line in lines)
-            {
-                var arrLocale = line.Split(' ');
-                if (arrLocale.Length < (int)ELocaleType.TYPE_MAX)
-                    continue;
-
-                var localeObj = new SLocale
-                {
-                    language = arrLocale[(int)ELocaleType.LANGUAGE],
-                    code = arrLocale[(int)ELocaleType.CODE],
-                    name = arrLocale[(int)ELocaleType.NAME]
-                };
-
-                m_LocaleList.Add(localeObj);
-                cboxLocale.Items.Add(localeObj.language);
-            }
-        }
+        private List<string> m_FileLines = new List<string>();
+        private Dictionary<string, int> m_KeyLineMap = new Dictionary<string, int>();
 
         private void LoadSettings()
         {
-            cboxTargetShadow.SelectedIndex = (cboxTargetShadow.Items.Count - 1);
-            cboxShadowQuality.SelectedIndex = (cboxShadowQuality.Items.Count - 1);
-            cboxEffect.SelectedIndex = 0;
-            cboxPrivateShop.SelectedIndex = 0;
-            cboxDropItem.SelectedIndex = 0;
-            cboxGamma.SelectedIndex = 2;
+            // Defaults
+            cboxFog.SelectedIndex = 2; // Uzak
+            cboxTNL.SelectedIndex = 0; // Otomatik
+            cboxShadow.SelectedIndex = 6; // Yüksek (Wysokie)
+            cboxGamma.SelectedIndex = 2; // 3
+            cboxAntiAlias.SelectedIndex = 0; // Yok
+
+            m_FileLines.Clear();
+            m_KeyLineMap.Clear();
 
             if (File.Exists(m_ConfigFileName))
             {
                 try
                 {
+                    m_FileLines = File.ReadAllLines(m_ConfigFileName).ToList();
                     var TempScreenSettings = new SScreenSettings(-1, -1, -1);
 
-                    var lines = File.ReadAllLines(m_ConfigFileName);
-                    foreach (var line in lines)
+                    for (int i = 0; i < m_FileLines.Count; i++)
                     {
-                        if (line == "")
+                        string line = m_FileLines[i];
+                        if (string.IsNullOrWhiteSpace(line))
                             continue;
 
-                        var Key = line.Substring(0, line.IndexOf('\t'));
-                        var Value = line.Substring(line.LastIndexOf('\t') + 1);
+                        int tabIndex = line.IndexOf('\t');
+                        int spaceIndex = line.IndexOf(' ');
+                        int separatorIndex = (tabIndex != -1 && (spaceIndex == -1 || tabIndex < spaceIndex)) ? tabIndex : spaceIndex;
+
+                        if (separatorIndex == -1) 
+                            continue;
+
+                        var Key = line.Substring(0, separatorIndex).Trim();
+                        var Value = line.Substring(separatorIndex).Trim(); // Trim başındaki boşlukları/tabları atar
+
+                        if (!m_KeyLineMap.ContainsKey(Key))
+                        {
+                            m_KeyLineMap.Add(Key, i);
+                        }
+
+                        if (string.IsNullOrEmpty(Value))
+                            continue;
 
                         switch (Key)
                         {
@@ -296,88 +273,107 @@ namespace Metin2Config
                             case "BPP":
                                 TempScreenSettings.BPP = Convert.ToInt32(Value);
                                 break;
-
-                            case "SOFTWARE_CURSOR":
-                                chboxUseSoftCursor.Checked = (Value == "1");
+                                
+                            case "FREQUENCY":
+                                int freq;
+                                if (int.TryParse(Value, out freq))
+                                    TempScreenSettings.FrequencyList.Add(freq);
                                 break;
 
                             case "MUSIC_VOLUME":
                                 if (Value.Contains('.'))
-                                    trbarBGM.Value = (int)(decimal.Parse(Value, System.Globalization.CultureInfo.InvariantCulture) * trbarBGM.Maximum);
+                                {
+                                    float vol;
+                                    if (float.TryParse(Value, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out vol))
+                                        trbarBGM.Value = (int)(vol * trbarBGM.Maximum);
+                                }
                                 else
-                                    trbarBGM.Value = Convert.ToByte(Value) * 200;
+                                {
+                                    byte vol;
+                                    if (byte.TryParse(Value, out vol))
+                                        trbarBGM.Value = vol * 200;
+                                }
                                 trbarBGM_Scroll(trbarBGM, null);
                                 break;
 
                             case "VOICE_VOLUME":
-                                trbarSFX.Value = Convert.ToByte(Value) * 10;
-                                trbarSFX_Scroll(trbarSFX, null);
+                                byte voiceVol;
+                                if (byte.TryParse(Value, out voiceVol))
+                                {
+                                    trbarSFX.Value = voiceVol * 10;
+                                    trbarSFX_Scroll(trbarSFX, null);
+                                }
                                 break;
 
                             case "GAMMA":
-                                cboxGamma.SelectedIndex = (Convert.ToByte(Value) - 1);
-                                break;
-
-                            case "NIGHT_MODE_ON":
-                                rbtnNightOff.Checked = (Value == "0");
-                                break;
-
-                            case "FOG_MODE_ON":
-                                rbtnFogOff.Checked = (Value == "0");
-                                break;
-
-                            case "SNOW_MODE_ON":
-                                rbtnSnowOff.Checked = (Value == "0");
-                                break;
-
-                            case "SNOW_TEXTURE_MODE":
-                                rbtnSnowTextureOff.Checked = (Value == "0");
+                                byte gammaVal;
+                                if (byte.TryParse(Value, out gammaVal) && gammaVal >= 1 && gammaVal <= cboxGamma.Items.Count)
+                                    cboxGamma.SelectedIndex = (gammaVal - 1);
                                 break;
 
                             case "WINDOWED":
                                 rbtnWindowMode.Checked = (Value == "1");
+                                rbtnFullscreen.Checked = (Value == "0");
                                 break;
-
+                                
                             case "USE_DEFAULT_IME":
-                                rbtnOutIME.Checked = (Value == "0");
+                                rbtnGameIME.Checked = (Value == "0");
+                                rbtnExternalIME.Checked = (Value == "1");
+                                break;
+                                
+                            case "SOFTWARE_CURSOR":
+                                chboxUseSoftCursor.Checked = (Value == "1");
+                                break;
+                                
+                            case "VISIBILITY": // FOG
+                            case "FOG":
+                                int fogVal;
+                                if (int.TryParse(Value, out fogVal) && fogVal >= 1 && fogVal <= 3)
+                                    cboxFog.SelectedIndex = fogVal - 1;
+                                break;
+                                
+                            case "SHADOW_LEVEL":
+                            case "SHADOW":
+                                int shadowVal;
+                                if (int.TryParse(Value, out shadowVal) && shadowVal >= 0 && shadowVal < cboxShadow.Items.Count)
+                                    cboxShadow.SelectedIndex = shadowVal;
                                 break;
 
-                            case "SHADOW_QUALITY_LEVEL":
-                                cboxShadowQuality.SelectedIndex = Convert.ToByte(Value);
+                            case "TNL_MODE": 
+                            case "TNL":
+                            case "SOFTWARE_TILING":
+                                int tnlVal;
+                                if (int.TryParse(Value, out tnlVal))
+                                {
+                                    // Kullanıcı bildirimine göre:
+                                    // 0 = Auto
+                                    // 1 = CPU
+                                    // 2 = GPU
+                                    if (tnlVal >= 0 && tnlVal <= 2)
+                                        cboxTNL.SelectedIndex = tnlVal;
+                                }
                                 break;
 
-                            case "SHADOW_TARGET_LEVEL":
-                                cboxTargetShadow.SelectedIndex = Convert.ToByte(Value);
+                            case "ANTIALIASING_LEVEL":
+                            case "MULTI_SAMPLE":
+                                int aaVal;
+                                if (int.TryParse(Value, out aaVal))
+                                {
+                                    // Kullanıcı bildirimine göre Index = Value (0, 1, 2, 3)
+                                    if (aaVal >= 0 && aaVal <= 3)
+                                        cboxAntiAlias.SelectedIndex = aaVal;
+                                }
                                 break;
 
-                            case "EFFECT_LEVEL":
-                                cboxEffect.SelectedIndex = Convert.ToByte(Value);
+                            case "LANGUAGE":
+                                // game1.cfg içindeki LANGUAGE tr kısmını okuyalım
+                                int langIdx = m_LocaleList.FindIndex(x => x.code == Value.Trim());
+                                if (langIdx != -1)
+                                    cboxLocale.SelectedIndex = langIdx;
                                 break;
-
-                            case "PRIVATE_SHOP_LEVEL":
-                                cboxPrivateShop.SelectedIndex = Convert.ToByte(Value);
-                                break;
-
-                            case "DROP_ITEM_LEVEL":
-                                cboxDropItem.SelectedIndex = Convert.ToByte(Value);
-                                break;
-
-                            case "PET_STATUS":
-                                rbtnPetOff.Checked = (Value == "0");
-                                break;
-
-                            case "NPC_NAME_STATUS":
-                                rbtnNPCNameOff.Checked = (Value == "0");
-                                break;
-
-#if DARK_MODE
-                            case "CONFIG_DARK_MODE":
-                                if (Value == "1")
-                                    pboxDarkMode_Click(pboxDarkMode, null);
-                                break;
-#endif
                         }
                     }
+
 
                     int idx = m_ScreenSettingsList.FindIndex(x =>
                         x.Width == TempScreenSettings.Width &&
@@ -385,7 +381,24 @@ namespace Metin2Config
                         x.BPP == TempScreenSettings.BPP);
 
                     if (idx != -1)
+                    {
                         cboxResolution.SelectedIndex = idx;
+                        
+                        // Resolution değişti, Frequency listesi doldu (SelectedIndexChanged).
+                        // Şimdi varsa doğru frekansı seç.
+                        if (TempScreenSettings.FrequencyList.Count > 0)
+                        {
+                            int targetFreq = TempScreenSettings.FrequencyList[0];
+                            for (int f = 0; f < cboxFrequency.Items.Count; f++)
+                            {
+                                if (cboxFrequency.Items[f].ToString() == targetFreq.ToString())
+                                {
+                                    cboxFrequency.SelectedIndex = f;
+                                    break;
+                                }
+                            }
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -393,23 +406,23 @@ namespace Metin2Config
                 }
             }
 
+            // loca.cfg dosyasını oku ve dili seç
             if (File.Exists(m_LocaleFileName))
             {
-                var lines = File.ReadAllLines(m_LocaleFileName);
-                foreach (var line in lines)
+                try
                 {
-                    var arrLocale = line.Split(' ');
-                    if (arrLocale.Length < ((int)ELocaleType.TYPE_MAX - 1))
-                        continue;
-
-                    var localeName = arrLocale[(int)ELocaleType.NAME - 1];
-                    int idx = m_LocaleList.FindIndex(x => x.name == localeName);
-                    if (idx != -1)
+                    string currentLocale = File.ReadAllText(m_LocaleFileName).Trim();
+                    for (int i = 0; i < m_LocaleList.Count; i++)
                     {
-                        cboxLocale.SelectedIndex = idx;
-                        break;
+                        // SLocale.ToString() "ID Name" formatında döner, loca.cfg'deki değerle karşılaştırıyoruz.
+                        if (m_LocaleList[i].ToString() == currentLocale)
+                        {
+                            cboxLocale.SelectedIndex = i;
+                            break;
+                        }
                     }
                 }
+                catch { }
             }
         }
 
@@ -417,7 +430,7 @@ namespace Metin2Config
         {
             DEVMODE vDevMode = new DEVMODE();
             int i = 0;
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+#pragma warning disable CS8625
             while (EnumDisplaySettings(null, i++, ref vDevMode))
             {
                 if (vDevMode.dmPelsWidth < 800 && vDevMode.dmPelsHeight < 600)
@@ -436,7 +449,7 @@ namespace Metin2Config
                 if (index == -1)
                     m_ScreenSettingsList.Add(s);
             }
-#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
+#pragma warning restore CS8625
 
             foreach (SScreenSettings s in m_ScreenSettingsList)
                 cboxResolution.Items.Add(s.ToString());
@@ -445,62 +458,92 @@ namespace Metin2Config
                 cboxResolution.SelectedIndex = 0;
         }
 
-        private void FormConfig_Load(object sender, EventArgs e)
+        private void UpdateConfigLine(string key, string value, bool forceAdd = false)
         {
-#if DARK_MODE
-            pboxDarkMode.Show();
-#endif
-            LoadStrings();
-            SetStrings();
-            LoadLocaleList();
-            GetScreenSettings();
-            LoadSettings();
-        }
+            // Orijinal dosya yapısı: KEY [BOŞLUK] VALUE
+            string newLine = $"{key} {value}";
 
-        private void btnCANCEL_Click(object sender, EventArgs e)
-        {
-            Close();
+            if (m_KeyLineMap.ContainsKey(key))
+            {
+                int index = m_KeyLineMap[key];
+                // Var olan satırın formatını korumak yerine yenisini yazıyoruz ama
+                // gereksiz boşlukları azaltıyoruz.
+                m_FileLines[index] = newLine;
+            }
+            else
+            {
+                // Sadece zorunluysa ekle
+                if (forceAdd)
+                {
+                    m_FileLines.Add(newLine);
+                    m_KeyLineMap.Add(key, m_FileLines.Count - 1);
+                }
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            using (var configFile = new StreamWriter(m_ConfigFileName))
+            if (cboxResolution.SelectedIndex >= 0 && cboxResolution.SelectedIndex < m_ScreenSettingsList.Count)
             {
-                configFile.WriteLine($"WIDTH\t\t\t\t\t\t{m_ScreenSettingsList.ElementAt(cboxResolution.SelectedIndex).Width}");
-                configFile.WriteLine($"HEIGHT\t\t\t\t\t\t{m_ScreenSettingsList.ElementAt(cboxResolution.SelectedIndex).Height}");
-                configFile.WriteLine($"BPP\t\t\t\t\t\t\t{m_ScreenSettingsList.ElementAt(cboxResolution.SelectedIndex).BPP}");
-                configFile.WriteLine($"FREQUENCY\t\t\t\t\t{cboxFrequency.Text}");
-                configFile.WriteLine($"SOFTWARE_CURSOR\t\t\t\t{(chboxUseSoftCursor.Checked ? 1 : 0)}");
-                configFile.WriteLine($"OBJECT_CULLING\t\t\t\t1"); // default
-                configFile.WriteLine($"MUSIC_VOLUME\t\t\t\t{((double)trbarBGM.Value / trbarBGM.Maximum).ToString("F3", System.Globalization.CultureInfo.InvariantCulture)}");
-                configFile.WriteLine($"VOICE_VOLUME\t\t\t\t{tboxSFX.Text}");
-                configFile.WriteLine($"GAMMA\t\t\t\t\t\t{cboxGamma.Text}");
-                configFile.WriteLine($"IS_SAVE_ID\t\t\t\t\t0"); // default
-                configFile.WriteLine($"SAVE_ID\t\t\t\t\t\t0"); // default
-                configFile.WriteLine($"PRE_LOADING_DELAY_TIME\t\t20"); // default
-                configFile.WriteLine($"DECOMPRESSED_TEXTURE\t\t0"); // default
-                configFile.WriteLine($"NIGHT_MODE_ON\t\t\t\t{(rbtnNightOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"FOG_MODE_ON\t\t\t\t\t{(rbtnFogOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"SNOW_MODE_ON\t\t\t\t{(rbtnSnowOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"SNOW_TEXTURE_MODE\t\t\t{(rbtnSnowTextureOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"WINDOWED\t\t\t\t\t{(rbtnWindowMode.Checked ? 1 : 0)}");
-                configFile.WriteLine($"SHOW_MOBLEVEL\t\t\t\t1"); // default
-                configFile.WriteLine($"SHOW_MOBAIFLAG\t\t\t\t1"); // default
-                configFile.WriteLine($"CHAT_FILTER_DICE\t\t\t1"); // default
-                configFile.WriteLine($"USE_DEFAULT_IME\t\t\t\t{(rbtnGameIME.Checked ? 1 : 0)}");
-                configFile.WriteLine($"SHADOW_QUALITY_LEVEL\t\t{cboxShadowQuality.SelectedIndex}");
-                configFile.WriteLine($"SHADOW_TARGET_LEVEL\t\t\t{cboxTargetShadow.SelectedIndex}");
-                configFile.WriteLine($"EFFECT_LEVEL\t\t\t\t{cboxEffect.SelectedIndex}");
-                configFile.WriteLine($"PRIVATE_SHOP_LEVEL\t\t\t{cboxPrivateShop.SelectedIndex}");
-                configFile.WriteLine($"DROP_ITEM_LEVEL\t\t\t\t{cboxDropItem.SelectedIndex}");
-                configFile.WriteLine($"PET_STATUS\t\t\t\t\t{(rbtnPetOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"NPC_NAME_STATUS\t\t\t\t{(rbtnNPCNameOn.Checked ? 1 : 0)}");
-                configFile.WriteLine($"EVENT_BANNER_FLAG\t\t\t0"); // default
-#if DARK_MODE
-                configFile.WriteLine($"CONFIG_DARK_MODE\t\t\t{(m_DarkModeEnabled ? 1 : 0)}"); // default
-#endif
+                var screen = m_ScreenSettingsList.ElementAt(cboxResolution.SelectedIndex);
+                UpdateConfigLine("WIDTH", screen.Width.ToString(), true);
+                UpdateConfigLine("HEIGHT", screen.Height.ToString(), true);
+                UpdateConfigLine("BPP", screen.BPP.ToString(), true);
+                UpdateConfigLine("FREQUENCY", cboxFrequency.Text, true); // Frekans bazen olmayabilir ama ekleyelim.
             }
 
+            // Aşağıdaki ayarlar eğer dosyada varsa güncellenir, yoksa EKLENMEZ.
+            // Böylece orijinal dosyada olmayan ayarlar (kullanıcının şikayet ettiği 33. satır sonrası)
+            // zorla dosyaya sokulmaz.
+            UpdateConfigLine("OBJECT_CULLING", "1");
+            UpdateConfigLine("MUSIC_VOLUME", ((double)trbarBGM.Value / trbarBGM.Maximum).ToString("F3", System.Globalization.CultureInfo.InvariantCulture));
+            UpdateConfigLine("VOICE_VOLUME", tboxSFX.Text);
+            UpdateConfigLine("GAMMA", cboxGamma.Text);
+            UpdateConfigLine("IS_SAVE_ID", "0");
+            UpdateConfigLine("SAVE_ID", "0");
+            UpdateConfigLine("PRE_LOADING_DELAY_TIME", "20");
+            UpdateConfigLine("DECOMPRESSED_TEXTURE", "0");
+
+            // Bu ayarlar Config Tool'un temel işlevi, bunlar yoksa eklenebilir ama
+            // yine de kullanıcının "bizimki eklemiş" şikayetine binaen
+            // sadece varsa güncelle diyelim. Eğer çok gerekirse true yaparız.
+            // Ancak Windowed, IME ve SoftCursor genellikle vardır. Yoksa da varsayılan çalışır.
+            UpdateConfigLine("WINDOWED", (rbtnWindowMode.Checked ? "1" : "0"), true); 
+            UpdateConfigLine("USE_DEFAULT_IME", (rbtnExternalIME.Checked ? "1" : "0"), true);
+            UpdateConfigLine("SOFTWARE_CURSOR", (chboxUseSoftCursor.Checked ? "1" : "0"), true); 
+
+            // Grafik ayarlarını zorunlu kaydet (forceAdd = true), yoksa ayar değişmez.
+            UpdateConfigLine("VISIBILITY", (cboxFog.SelectedIndex + 1).ToString(), true);
+            UpdateConfigLine("SHADOW_LEVEL", cboxShadow.SelectedIndex.ToString(), true);
+            
+            // TNL: 0:Auto, 1:CPU, 2:GPU (Sırayla index ile aynı)
+            UpdateConfigLine("SOFTWARE_TILING", cboxTNL.SelectedIndex.ToString(), true);
+
+            // Antialiasing: Yok(0), 2x(1), 4x(2), 8x(3) (Index ile aynı)
+            UpdateConfigLine("ANTIALIASING_LEVEL", cboxAntiAlias.SelectedIndex.ToString(), true);
+            
+            // Eğer dosyada TNL_MODE gibi alternatif isimler varsa onları da güncel tutalım
+            if (m_KeyLineMap.ContainsKey("TNL_MODE")) UpdateConfigLine("TNL_MODE", cboxTNL.SelectedIndex.ToString());
+            if (m_KeyLineMap.ContainsKey("TNL")) UpdateConfigLine("TNL", cboxTNL.SelectedIndex.ToString());
+            if (m_KeyLineMap.ContainsKey("FOG")) UpdateConfigLine("FOG", (cboxFog.SelectedIndex + 1).ToString());
+
+            // Dil ayarını LANGUAGE tr olarak game1.cfg'ye ekleyelim (Zorunlu)
+            if (cboxLocale.SelectedIndex != -1 && cboxLocale.SelectedIndex < m_LocaleList.Count)
+            {
+                var locale = m_LocaleList.ElementAt(cboxLocale.SelectedIndex);
+                UpdateConfigLine("LANGUAGE", locale.code, true);
+            }
+
+            try
+            {
+                File.WriteAllLines(m_ConfigFileName, m_FileLines);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ayarlar kaydedilemedi: " + ex.Message);
+            }            
+
+            // Save Locale
             if (cboxLocale.SelectedIndex != -1 && cboxLocale.SelectedIndex < m_LocaleList.Count)
             {
                 var locale = m_LocaleList.ElementAt(cboxLocale.SelectedIndex);
@@ -508,40 +551,7 @@ namespace Metin2Config
                     localeFile.Write(locale.ToString());
             }
 
-            btnCANCEL.PerformClick();
-        }
-
-        private void ChangeColors(Control parent)
-        {
-            foreach (Control c in parent.Controls)
-            {
-                if (c is GroupBox || c is CheckBox)
-                    c.ForeColor = m_DarkModeEnabled ? SystemColors.ControlText : Color.White;
-
-                ChangeColors(c);
-            }
-        }
-
-        private void pboxDarkMode_Click(object sender, EventArgs e)
-        {
-            if (m_DarkModeEnabled)
-            {
-                BackColor = SystemColors.Control;
-                pboxDarkMode.Image = global::Metin2Config.Properties.Resources.night_off;
-            }
-            else
-            {
-                BackColor = DarkBackColor;
-                pboxDarkMode.Image = global::Metin2Config.Properties.Resources.night_on;
-            }
-
-            ChangeColors(this);
-            m_DarkModeEnabled = !m_DarkModeEnabled;
-        }
-
-        private void ShowSlowWarning(object sender, EventArgs e)
-        {
-            MessageBox.Show(GetString("CONFIG_STRING_SPEEDLOW"), GetString("CONFIG_STRING_NOTIC"));
+            Application.Exit();
         }
 
         private void trbarBGM_Scroll(object sender, EventArgs e)
@@ -562,11 +572,31 @@ namespace Metin2Config
                 return;
 
             var Screen = m_ScreenSettingsList.ElementAt(cboxResolution.SelectedIndex);
+            
+            // Orijinal Metin2 sadece 60 ve 75 değerlerini gösterir.
+            // Donanımdan gelse de gelmese de bu ikisini ekliyoruz (Uyumluluk için).
+            if (!Screen.FrequencyList.Contains(60)) Screen.FrequencyList.Add(60);
+            if (!Screen.FrequencyList.Contains(75)) Screen.FrequencyList.Add(75);
+
+            Screen.FrequencyList.Sort();
             foreach (var frequency in Screen.FrequencyList)
                 cboxFrequency.Items.Add(frequency);
 
             if (cboxFrequency.Items.Count > 0)
                 cboxFrequency.SelectedIndex = 0;
+        }
+
+        private void btnCANCEL_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void FormConfig_Load(object sender, EventArgs e)
+        {
+            SetStrings();
+            LoadLocaleList();
+            GetScreenSettings();
+            LoadSettings();
         }
     }
 }
