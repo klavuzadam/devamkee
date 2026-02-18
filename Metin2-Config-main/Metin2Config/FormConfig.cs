@@ -312,8 +312,9 @@ namespace Metin2Config
                                 break;
 
                             case "WINDOWED":
+                                // 1 = Pencere, 0 veya 2 = Tam Ekran (2 genelde daha stabildir)
                                 rbtnWindowMode.Checked = (Value == "1");
-                                rbtnFullscreen.Checked = (Value == "0");
+                                rbtnFullscreen.Checked = (Value == "0" || Value == "2");
                                 break;
                                 
                             case "USE_DEFAULT_IME":
@@ -508,7 +509,8 @@ namespace Metin2Config
             // yine de kullanıcının "bizimki eklemiş" şikayetine binaen
             // sadece varsa güncelle diyelim. Eğer çok gerekirse true yaparız.
             // Ancak Windowed, IME ve SoftCursor genellikle vardır. Yoksa da varsayılan çalışır.
-            UpdateConfigLine("WINDOWED", (rbtnWindowMode.Checked ? "1" : "0"), true); 
+            // Tam Ekran seçildiğinde bozmaması için kullanıcının çalışan ayarı olan '2'yi yazıyoruz.
+            UpdateConfigLine("WINDOWED", (rbtnWindowMode.Checked ? "1" : "2"), true); 
             UpdateConfigLine("USE_DEFAULT_IME", (rbtnExternalIME.Checked ? "1" : "0"), true);
             UpdateConfigLine("SOFTWARE_CURSOR", (chboxUseSoftCursor.Checked ? "1" : "0"), true); 
 
