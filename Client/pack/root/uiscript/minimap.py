@@ -173,8 +173,6 @@ window = {
 							"x": 70,
 							"y": 176,
 
-							"fontname": "Tahoma:20",
-
 							"text": "",
 						},
 

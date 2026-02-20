@@ -365,7 +365,7 @@ window = {
 			"x" : SCREEN_WIDTH/2 - 128 + 32 + 10 - 16,
 			"y" : 0 + Y_ADD_POSITION,
 
-			"width" : 320 + 11,
+			"width" : 288 + 11,
 			"height" : 37,
 
 			"children" :
@@ -391,7 +391,7 @@ window = {
 					"x" : 0,
 					"y" : 3,
 
-					"x_count" : 6,
+					"x_count" : 4,
 					"y_count" : 1,
 					"x_step" : 32,
 					"y_step" : 32,
@@ -408,15 +408,38 @@ window = {
 						{ "name" : "slot_2", "type" : "image", "x" : 35, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/2.sub", },
 						{ "name" : "slot_3", "type" : "image", "x" : 67, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/3.sub", },
 						{ "name" : "slot_4", "type" : "image", "x" : 99, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/4.sub", },
-						{ "name" : "slot_5", "type" : "image", "x" : 131, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/5.sub", },
-						{ "name" : "slot_6", "type" : "image", "x" : 163, "y" : 3, "image" : flamewindPath.GetPublic("tab_key"), },
 					),
 				},
 				{
 					"name" : "quick_slot_2",
 					"type" : "grid_table",
 
-					"start_index" : 6,
+					"start_index" : 4,
+
+					"x" : 144,
+					"y" : 3,
+
+					"x_count" : 1,
+					"y_count" : 1,
+					"x_step" : 32,
+					"y_step" : 32,
+
+					"image" : "d:/ymir work/ui/Public/Slot_Base.sub",
+					"image_r" : 1.0,
+					"image_g" : 1.0,
+					"image_b" : 1.0,
+					"image_a" : 1.0,
+
+					"children" :
+					(
+						{ "name" : "slot_5", "type" : "image", "x" : 3, "y" : 3, "image" : flamewindPath.GetPublic("tab_key"), },
+					),
+				},
+				{
+					"name" : "quick_slot_3",
+					"type" : "grid_table",
+
+					"start_index" : 5,
 
 					"x" : 192,
 					"y" : 3,
@@ -434,17 +457,17 @@ window = {
 
 					"children" :
 					(
-						{ "name" : "slot_7", "type" : "image", "x" : 3, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f1.sub", },
-						{ "name" : "slot_8", "type" : "image", "x" : 35, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f2.sub", },
-						{ "name" : "slot_9", "type" : "image", "x" : 67, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f3.sub", },
-						{ "name" : "slot_10", "type" : "image", "x" : 99, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f4.sub", },
+						{ "name" : "slot_6", "type" : "image", "x" : 3, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f1.sub", },
+						{ "name" : "slot_7", "type" : "image", "x" : 35, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f2.sub", },
+						{ "name" : "slot_8", "type" : "image", "x" : 67, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f3.sub", },
+						{ "name" : "slot_9", "type" : "image", "x" : 99, "y" : 3, "image" : "d:/ymir work/ui/game/taskbar/f4.sub", },
 					),
 				},
 				{
 					"name" : "QuickSlotBoard",
 					"type" : "window",
 
-					"x" : 160+14+128+2+16,
+					"x" : 320,
 					"y" : 0,
 					"width" : 11,
 					"height" : 37,

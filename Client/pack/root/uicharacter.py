@@ -150,6 +150,7 @@ class CharacterWindow(ui.ScriptWindow):
 		self.statusInputDialog = None
 
 		self.attributeListButton = None
+		self.supportSkillSlotDict = {}
 
 	def Show(self):
 		self.__LoadWindow()
@@ -914,6 +915,8 @@ class CharacterWindow(ui.ScriptWindow):
 			if self.PAGE_HORSE == self.curSelectedSkillGroup:
 				startSlotIndex += slotCount
 
+		supportSlotPos = 0
+
 		getSkillType=skill.GetSkillType
 		getSkillIndex=player.GetSkillIndex
 		getSkillGrade=player.GetSkillGrade
@@ -940,6 +943,8 @@ class CharacterWindow(ui.ScriptWindow):
 
 			skillGrade = getSkillGrade(slotIndex)
 			skillLevel = getSkillLevel(slotIndex)
+			if skillIndex in [123, 132]:
+				continue
 			skillType = getSkillType(skillIndex)
 
 			if player.SKILL_INDEX_RIDING == skillIndex:
@@ -950,8 +955,14 @@ class CharacterWindow(ui.ScriptWindow):
 				elif 3 == skillGrade:
 					skillLevel = 40
 
-				skillPage.SetSkillSlotNew(slotIndex, skillIndex, max(skillLevel-1, 0), skillLevel)
-				skillPage.SetSlotCount(slotIndex, skillLevel)
+				realSlotIndex = slotIndex
+				if "SUPPORT" == name:
+					realSlotIndex = 101 + supportSlotPos
+					self.supportSkillSlotDict[realSlotIndex] = slotIndex
+					supportSlotPos += 1
+
+				skillPage.SetSkillSlotNew(realSlotIndex, skillIndex, max(skillLevel-1, 0), skillLevel)
+				skillPage.SetSlotCount(realSlotIndex, skillLevel)
 
 			## ACTIVE
 			elif skill.SKILL_TYPE_ACTIVE == skillType:
@@ -978,6 +989,11 @@ class CharacterWindow(ui.ScriptWindow):
 			else:
 				if not SHOW_LIMIT_SUPPORT_SKILL_LIST or skillIndex in SHOW_LIMIT_SUPPORT_SKILL_LIST:
 					realSlotIndex = self.__GetETCSkillRealSlotIndex(slotIndex)
+					if "SUPPORT" == name:
+						realSlotIndex = 101 + supportSlotPos
+						self.supportSkillSlotDict[realSlotIndex] = slotIndex
+						supportSlotPos += 1
+
 					skillPage.SetSkillSlot(realSlotIndex, skillIndex, skillLevel)
 					skillPage.SetSlotCountNew(realSlotIndex, skillGrade, skillLevel)
 
@@ -1374,6 +1390,8 @@ class CharacterWindow(ui.ScriptWindow):
 
 	def __RealSkillSlotToSourceSlot(self, realSkillSlot):
 		if realSkillSlot > 100:
+			if self.supportSkillSlotDict.has_key(realSkillSlot):
+				return self.supportSkillSlotDict[realSkillSlot]
 			return realSkillSlot
 		if self.PAGE_HORSE == self.curSelectedSkillGroup:
 			return realSkillSlot + self.ACTIVE_PAGE_SLOT_COUNT

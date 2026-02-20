@@ -918,6 +918,8 @@ class CharacterWindow(ui.ScriptWindow):
 		skillIndex = player.GetSkillIndex(srcSlotIndex)
 		skillLevel = player.GetSkillLevel(srcSlotIndex)
 		skillGrade = player.GetSkillGrade(srcSlotIndex)
+		if skillIndex in [123, 132]:
+			return
 		skillType = skill.GetSkillType(skillIndex)
 
 		## ACTIVE
@@ -1082,6 +1084,8 @@ class CharacterWindow(ui.ScriptWindow):
 
 			skillGrade = getSkillGrade(slotIndex)
 			skillLevel = getSkillLevel(slotIndex)
+			if skillIndex in [123, 132]:
+				continue
 			skillType = getSkillType(skillIndex)
 
 			## ?? ?? ?? ??
@@ -1251,6 +1255,8 @@ class CharacterWindow(ui.ScriptWindow):
 
 		srcSlotIndex = self.__RealSkillSlotToSourceSlot(slotIndex)
 		skillIndex = player.GetSkillIndex(srcSlotIndex)
+		if skillIndex in [123, 132]:
+			return
 		skillType = skill.GetSkillType(skillIndex)
 
 		if not self.__CanUseSkillNow():
@@ -1268,6 +1274,8 @@ class CharacterWindow(ui.ScriptWindow):
 	def OnUseSkill(self, slotIndex, coolTime):
 
 		skillIndex = player.GetSkillIndex(slotIndex)
+		if skillIndex in [123, 132]:
+			return
 		skillType = skill.GetSkillType(skillIndex)
 
 		## ACTIVE

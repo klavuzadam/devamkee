@@ -456,7 +456,7 @@ bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, DWORD dwProb)
 
 	if (FN_should_check_exp(this))
 	{
-		need_exp = 20000;
+		need_exp = 1;
 
 		if ( GetExp() < need_exp )
 		{
@@ -2729,6 +2729,9 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 	if (GetSkillLevel(dwVnum) == 0 && dwVnum != SKILL_SPRINT)
 		return false;
 
+	if (dwVnum == SKILL_CREATE)
+		return false;
+
 	// NO_GRANDMASTER
 	if (GetSkillMasterType(dwVnum) < SKILL_GRAND_MASTER)
 		bUseGrandMaster = false;
@@ -2774,6 +2777,8 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 	}
 
 	if (dwVnum == SKILL_SPRINT) {
+		return false;
+
 		if (!IsSprint()) {
 
 			if (!HasPlayerData())

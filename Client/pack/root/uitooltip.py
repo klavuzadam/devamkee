@@ -2540,7 +2540,7 @@ class SkillToolTip(ToolTip):
 
 	def SetSkill(self, skillIndex, skillLevel = -1):
 
-		if 0 == skillIndex:
+		if 0 == skillIndex or skillIndex in [123, 132]:
 			return
 
 		if skill.SKILL_TYPE_GUILD == skill.GetSkillType(skillIndex):
@@ -2625,7 +2625,10 @@ class SkillToolTip(ToolTip):
 				self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel+1), self.NEGATIVE_COLOR)
 				self.__AppendSummonDescription(skillLevel+1, self.NEGATIVE_COLOR)
 
-		elif skill.SKILL_TYPE_GUILD == skill.GetSkillType(skillIndex):
+		if skillIndex in [123, 132]:
+			return
+
+		if skill.SKILL_TYPE_GUILD == skill.GetSkillType(skillIndex):
 
 			if self.SKILL_TOOL_TIP_WIDTH != self.toolTipWidth:
 				self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH

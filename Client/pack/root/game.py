@@ -519,15 +519,14 @@ class GameWindow(ui.ScriptWindow):
 		onPressKeyDict[app.DIK_2]	= lambda : self.__PressNumKey(2)
 		onPressKeyDict[app.DIK_3]	= lambda : self.__PressNumKey(3)
 		onPressKeyDict[app.DIK_4]	= lambda : self.__PressNumKey(4)
-		onPressKeyDict[app.DIK_5]	= lambda : self.__PressNumKey(5)
 		onPressKeyDict[app.DIK_6]	= lambda : self.__PressNumKey(6)
 		onPressKeyDict[app.DIK_7]	= lambda : self.__PressNumKey(7)
 		onPressKeyDict[app.DIK_8]	= lambda : self.__PressNumKey(8)
 		onPressKeyDict[app.DIK_9]	= lambda : self.__PressNumKey(9)
-		onPressKeyDict[app.DIK_F1]	= lambda : self.__PressQuickSlot(6)
-		onPressKeyDict[app.DIK_F2]	= lambda : self.__PressQuickSlot(7)
-		onPressKeyDict[app.DIK_F3]	= lambda : self.__PressQuickSlot(8)
-		onPressKeyDict[app.DIK_F4]	= lambda : self.__PressQuickSlot(9)
+		onPressKeyDict[app.DIK_F1]	= lambda : self.__PressQuickSlot(5)
+		onPressKeyDict[app.DIK_F2]	= lambda : self.__PressQuickSlot(6)
+		onPressKeyDict[app.DIK_F3]	= lambda : self.__PressQuickSlot(7)
+		onPressKeyDict[app.DIK_F4]	= lambda : self.__PressQuickSlot(8)
 
 		if app.ENABLE_CINEMACHINE:
 			# onPressKeyDict[app.DIK_F5] = lambda: self.interface.potionRechargeDialog.Open()
@@ -654,7 +653,7 @@ class GameWindow(ui.ScriptWindow):
 					chrmgr.SetEmoticon(-1,int(num)-1)
 					net.SendEmoticon(int(num)-1)
 		else:
-			if num >= 1 and num <= 5:
+			if num >= 1 and num <= 4:
 				self.pressNumber(num-1)
 
 	def __ClickBKey(self):
@@ -723,13 +722,18 @@ class GameWindow(ui.ScriptWindow):
 			self.__HideUserInterface()
 			return
 
-		self.__PressQuickSlot(5)
+		self.__PressQuickSlot(4)
 		return
 
 	def __ToggleSprint(self):
 		slotIndex = 105 # sprint slot index
 		skillIndex = player.GetSkillIndex(slotIndex)
-		if skillIndex == 132 and skill.CanUseSkill(skillIndex):
+
+		# Skill 132 (Sprint) has been removed, skip checking to prevent syserr
+		if skillIndex == 132:
+			return
+
+		if skill.CanUseSkill(skillIndex):
 			player.ClickSkillSlot(slotIndex)
 
 	def __SetQuickSlotMode(self):
@@ -1338,11 +1342,18 @@ class GameWindow(ui.ScriptWindow):
 		self.OnRecvWhisper(chat.WHISPER_TYPE_SYSTEM, name, line)
 
 	def OnRecvWhisperError(self, mode, name, line):
-		msg = line
 		if localeInfo.WHISPER_ERROR.has_key(mode):
-			msg = localeInfo.WHISPER_ERROR[mode](name)
+			msg = localeInfo.WHISPER_ERROR[mode]
+			if callable(msg):
+				msg = msg(name)
+			else:
+				try:
+					msg = msg % name
+				except:
+					pass
 		else:
 			msg = "Whisper Unknown Error(mode=%d, name=%s)" % (mode, name)
+
 		self.OnRecvWhisper(chat.WHISPER_TYPE_SYSTEM, name, msg)
 
 	def RecvWhisper(self, name):

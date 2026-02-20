@@ -348,6 +348,7 @@ class MiniMap(ui.ScriptWindow):
 
 	def __Initialize(self):
 		self.positionInfo = 0
+		self.FPSInfo = 0
 		self.observerCount = 0
 
 		self.OpenWindow = 0
@@ -430,7 +431,6 @@ class MiniMap(ui.ScriptWindow):
 			self.observerCount = self.GetChild("ObserverCount")
 			self.serverInfo = self.GetChild("ServerInfo")
 			self.FPSInfo = self.GetChild("FPSInfo")
-			self.FPSInfo.Hide()
 
 			self.spyInfo = self.GetChild("SpyInfo")
 			self.spyInfo.Hide()
@@ -530,6 +530,10 @@ class MiniMap(ui.ScriptWindow):
 		miniMap.Update(x, y)
 
 		self.positionInfo.SetText("(%.0f, %.0f)" % (x/100, y/100))
+
+		if self.FPSInfo:
+			nRenderFPS = app.GetRenderFPS()
+			self.FPSInfo.SetText(uiScriptLocale.FPS_PERFORMANS + " " + str(nRenderFPS))
 
 		if self.tooltipInfo:
 			if True == self.MiniMapWindow.IsIn():

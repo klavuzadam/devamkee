@@ -321,8 +321,10 @@ class TaskBar(ui.ScriptWindow):
 			skillIndex = player.GetSkillIndex(skillSlotNumber)
 			skillGrade = player.GetSkillGrade(skillSlotNumber)
 			skillLevel = player.GetSkillLevel(skillSlotNumber)
+			if skillIndex in [123, 132]:
+				self.ClearSlot(slotNumber)
+				return
 			skillType = skill.GetSkillType(skillIndex)
-
 			self.skillIndex = skillIndex
 			if 0 == self.skillIndex:
 				self.ClearSlot(slotNumber)
@@ -428,6 +430,7 @@ class TaskBar(ui.ScriptWindow):
 		self.quickslot = []
 		self.quickslot.append(self.GetChild("quick_slot_1"))
 		self.quickslot.append(self.GetChild("quick_slot_2"))
+		self.quickslot.append(self.GetChild("quick_slot_3"))
 		for slot in self.quickslot:
 			slot.SetSlotStyle(wndMgr.SLOT_STYLE_NONE)
 			slot.SetSelectEmptySlotEvent(ui.__mem_func__(self.SelectEmptyQuickSlot))
@@ -794,6 +797,9 @@ class TaskBar(ui.ScriptWindow):
 						slot.ClearSlot(slotNumber)
 						continue
 
+					if skillIndex in [123, 132]:
+						slot.ClearSlot(slotNumber)
+						continue
 					skillType = skill.GetSkillType(skillIndex)
 					if skill.SKILL_TYPE_GUILD == skillType:
 						import guild
@@ -911,7 +917,7 @@ class TaskBar(ui.ScriptWindow):
 		## Quick Slot
 		for slotWindow in self.quickslot:
 
-			for i in xrange(4):
+			for i in xrange(slotWindow.x_width):
 
 				(Type, Position) = player.GetLocalQuickSlot(slotIndex)
 
@@ -957,6 +963,8 @@ class TaskBar(ui.ScriptWindow):
 		elif player.SLOT_TYPE_SKILL == Type:
 
 			skillIndex = player.GetSkillIndex(Position)
+			if skillIndex in [123, 132]:
+				return
 			skillType = skill.GetSkillType(skillIndex)
 
 			if skill.SKILL_TYPE_GUILD == skillType:

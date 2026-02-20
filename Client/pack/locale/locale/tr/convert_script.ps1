@@ -1,0 +1,1 @@
+ = " C:/Users/Yeni/Desktop/DİL/Client/pack/locale/locale/tr/skilldesc.txt\; = Get-Content -Path ; [IO.File]::WriteAllLines(, , [Text.Encoding]::GetEncoding(1254))
