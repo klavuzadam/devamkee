@@ -96,6 +96,9 @@ ATTRIBUTE_LIST = {
 			player.POINT_SP_REGEN,
 			player.POINT_ST_REGEN,
 			player.POINT_SKILL_DURATION,
+			player.POINT_EXP_DOUBLE_BONUS,
+			player.POINT_ITEM_DROP_BONUS,
+			player.POINT_GOLD_DOUBLE_BONUS,
 		],
 	},
 }
@@ -146,6 +149,11 @@ class AttributeListWindow(ui.ScriptWindow):
 
 		def RefreshStatus(self):
 			val = player.GetStatus(self.attr_index)
+			if self.attr_index == player.POINT_EXP_DOUBLE_BONUS:
+				val += player.GetStatus(player.POINT_MALL_EXPBONUS)
+				val += player.GetStatus(player.POINT_PC_BANG_EXP_BONUS)
+			elif self.attr_index == player.POINT_ITEM_DROP_BONUS:
+				val += player.GetStatus(player.POINT_MALL_ITEMBONUS)
 			self.SetValue(val)
 
 	def __init__(self):

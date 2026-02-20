@@ -213,13 +213,16 @@ window = {
 
 					"horizontal_align" : "right",
 
-					"width" : 230,
-					"height" : 75,
+					"width" : 250,
+					"height" : 130,
 					"children" : (
-						{ "type" : "text", "x" : 12, "y" : 8, "text" : uiScriptLocale.GAMEMASTER_WHIPSER_TITLE, "bold":True, },
-						{ "type" : "text", "x" : 16, "y" : 23, "text" : uiScriptLocale.GAMEMASTER_WHIPSER_TIP1, },
-						{ "type" : "text", "x" : 16, "y" : 38, "text" : uiScriptLocale.GAMEMASTER_WHIPSER_TIP2, },
-						{ "type" : "text", "x" : 16, "y" : 53, "text" : uiScriptLocale.GAMEMASTER_WHIPSER_TIP3, },
+						{ "type" : "text", "x" : 12, "y" : 8, "text" : "Yetkililer ile Konu\xfeurken Bilmeniz Gerekenler.", "bold":True, "color":0xffffa200, },
+						{ "type" : "text", "x" : 16, "y" : 25, "text" : "- Hesap ID ve \xfeifrenizi asla payla\xfemay\xfdn\xfdz.", },
+						{ "type" : "text", "x" : 16, "y" : 40, "text" : "- \xddtem veya yang teslim etmeyiniz.", },
+						{ "type" : "text", "x" : 16, "y" : 55, "text" : "- Ki\xfeisel veya \xf6zel bilgilerinizi payla\xfemay\xfdn\xfdz.", },
+						{ "type" : "text", "x" : 16, "y" : 70, "text" : "- Konu\xfemalar\xfdn\xfdzda k\xfdsa ve net olunuz.", },
+						{ "type" : "text", "x" : 16, "y" : 85, "text" : "- Yan\xfdt i\xe7in sab\xfdrla bekleyiniz.", },
+						{ "type" : "text", "x" : 16, "y" : 100, "text" : "- Farkl\xfd bir yetkili talep etme hakk\xfdn\xfdz vard\xfdr.", },
 					),
 				},
 			),

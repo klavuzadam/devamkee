@@ -419,7 +419,7 @@ BYTE CHARACTER::GetShopUnlockedProgress()
 
 bool CHARACTER::CanOpenShop()
 {
-	return GetLevel() >= 15 && GetSpecialFlag(PLAYER_STATS_MONSTER_FLAG) >= 800;
+	return true;
 }
 
 // Files shared by GameCore.top

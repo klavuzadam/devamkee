@@ -1148,6 +1148,14 @@ class EditLine(TextLine):
 			return False
 		if app.DIK_F4 == key:
 			return False
+		if app.DIK_F5 == key:
+			return False
+		if app.DIK_F6 == key:
+			return False
+		if app.DIK_F7 == key:
+			return False
+		if app.DIK_F8 == key:
+			return False
 		if app.DIK_LALT == key:
 			return False
 		if app.DIK_SYSRQ == key:
@@ -1168,6 +1176,14 @@ class EditLine(TextLine):
 		if app.DIK_F3 == key:
 			return False
 		if app.DIK_F4 == key:
+			return False
+		if app.DIK_F5 == key:
+			return False
+		if app.DIK_F6 == key:
+			return False
+		if app.DIK_F7 == key:
+			return False
+		if app.DIK_F8 == key:
 			return False
 		if app.DIK_LALT == key:
 			return False

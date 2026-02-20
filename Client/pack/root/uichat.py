@@ -164,12 +164,9 @@ class ChatLine(ui.EditLine):
 			self.SetEndPosition()
 
 		elif chat.CHAT_TYPE_SHOUT == self.GetChatMode():
-			self.SetChatMode(chat.CHAT_TYPE_TRADE)
-			self.SetText("@")
-
-		elif chat.CHAT_TYPE_TRADE == self.GetChatMode():
 			self.SetChatMode(chat.CHAT_TYPE_TALKING)
 			self.SetText("")
+			self.SetEndPosition()
 
 		self.__CheckChatMark()
 
@@ -209,9 +206,6 @@ class ChatLine(ui.EditLine):
 			self.SetEndPosition()
 		elif chat.CHAT_TYPE_SHOUT == self.GetChatMode():
 			self.SetText("!")
-			self.SetEndPosition()
-		elif chat.CHAT_TYPE_TRADE == self.GetChatMode():
-			self.SetText("@")
 			self.SetEndPosition()
 		else:
 			self.__ClearChat()
@@ -310,9 +304,6 @@ class ChatLine(ui.EditLine):
 			elif '!' == text[0]:
 				self.overTextLine.SetText("!")
 				self.overTextLine.Show()
-			elif '@' == text[0]:
-				self.overTextLine.SetText("@")
-				self.overTextLine.Show()
 
 	def OnIMEKeyDown(self, key):
 		# LAST_SENTENCE_STACK
@@ -366,14 +357,17 @@ class ChatLine(ui.EditLine):
 		textSpaceCount=text.count(' ')
 
 		if (textLen > 0) and (textLen != textSpaceCount):
+			if '/' == text[0] and not constInfo.IS_GAMEMASTER:
+				self.__ClearChat()
+				self.eventReturn()
+				return True
+
 			if '#' == text[0]:
 				self.__SendPartyChatPacket(text)
 			elif '%' == text[0]:
 				self.__SendGuildChatPacket(text)
 			elif '!' == text[0]:
 				self.__SendShoutChatPacket(text)
-			elif '@' == text[0]:
-				self.__SendTradeChatPacket(text)
 			else:
 				self.__SendTalkingChatPacket(text)
 		else:
@@ -873,14 +867,13 @@ class ChatWindow(ui.Window):
 class ChatLogWindow(ui.Window):
 
 	BLOCK_WIDTH = 32
-	CHAT_MODE_NAME = [ localeInfo.CHAT_NORMAL, localeInfo.CHAT_PARTY, localeInfo.CHAT_GUILD, localeInfo.CHAT_SHOUT, localeInfo.CHAT_INFORMATION, localeInfo.CHAT_NOTICE, localeInfo.CHAT_TRADE, ]
+	CHAT_MODE_NAME = [ localeInfo.CHAT_NORMAL, localeInfo.CHAT_PARTY, localeInfo.CHAT_GUILD, localeInfo.CHAT_SHOUT, localeInfo.CHAT_INFORMATION, localeInfo.CHAT_NOTICE, ]
 	CHAT_MODE_INDEX = [ chat.CHAT_TYPE_TALKING,
 						chat.CHAT_TYPE_PARTY,
 						chat.CHAT_TYPE_GUILD,
 						chat.CHAT_TYPE_SHOUT,
 						chat.CHAT_TYPE_INFO,
-						chat.CHAT_TYPE_NOTICE,
-						chat.CHAT_TYPE_TRADE, ]
+						chat.CHAT_TYPE_NOTICE, ]
 
 	if app.ENABLE_DICE_SYSTEM:
 		CHAT_MODE_NAME.append(localeInfo.CHAT_DICE_INFO)

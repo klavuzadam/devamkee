@@ -434,6 +434,17 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 		{
 
 			BYTE bType = WHISPER_TYPE_NORMAL;
+			if (ch->IsGM())
+			{
+				switch (ch->GetGMLevel())
+				{
+				case GM_LOW_WIZARD: bType = WHISPER_TYPE_STAJYER; break;
+				case GM_WIZARD: bType = WHISPER_TYPE_DESTEK; break;
+				case GM_HIGH_WIZARD: bType = WHISPER_TYPE_GM_RANK; break;
+				case GM_GOD: bType = WHISPER_TYPE_SGM; break;
+				case GM_IMPLEMENTOR: bType = WHISPER_TYPE_ADMIN; break;
+				}
+			}
 
 			char buf[CHAT_MAX_LEN + 1];
 			strlcpy(buf, data + sizeof(TPacketCGWhisper), MIN(iExtraLen + 1, sizeof(buf)));
@@ -518,10 +529,11 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 			}
 #endif
 
-			if (ch->IsGM())
-				bType = (bType & 0xF0) | WHISPER_TYPE_GM;
-			else if (ch->IsTutor())
-				bType = (bType & 0xF0) | WHISPER_TYPE_TUTOR;
+// GM rank check handled above
+	// if (ch->IsGM())
+	// 	bType = (bType & 0xF0) | WHISPER_TYPE_GM;
+	// else if (ch->IsTutor())
+	// 	bType = (bType & 0xF0) | WHISPER_TYPE_TUTOR;
 
 			if (buflen > 0)
 			{
@@ -739,9 +751,9 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 	}
 #endif
 
-	if (ch->GetLevel() < 5)
+	if (ch->GetLevel() < 1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need a minimum level of %d to be able to talk."), 5);
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need a minimum level of %d to be able to talk."), 1);
 		return (iExtraLen);
 	}
 
@@ -782,26 +794,13 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 	char chatbuf[CHAT_MAX_LEN + 1];
 	int len = 0;
 
-	if (ch->GetGMLevel() < GM_WIZARD)
+	if (ch->GetGMLevel() < GM_LOW_WIZARD)
 	{
-		if (CHAT_TYPE_SHOUT == pinfo->type || CHAT_TYPE_TRADE == pinfo->type)
+		if (CHAT_TYPE_SHOUT == pinfo->type)
 		{
 			const char* color_by_empire[EMPIRE_MAX_NUM] = { "", "ff5959", "ffdb3b", "4590ff" };
-
-			std::string message_format = "[|Hmsg:%s,%d|h%s|h|r]: %s";
-			if (pinfo->type == CHAT_TYPE_SHOUT)
-			{
-				std::string message_format = "[|Hmsg:%s,%d|h%s|h|r]: %s";
-				len = snprintf(chatbuf, sizeof(chatbuf), message_format.c_str(), ch->GetName(), ch->GetEmpire(), ch->GetName(), buf);
-			}
-			else if (CHAT_TYPE_TRADE == pinfo->type)
-			{
-				std::string message_format = "[|cff%s|Hmsg:%s,%d|h%s|h|r]: %s";
-				//message_format = "*|r " + message_format;
-				len = snprintf(chatbuf, sizeof(chatbuf), message_format.c_str(), color_by_empire[ch->GetEmpire()], ch->GetName(), ch->GetEmpire(), ch->GetName(), buf);
-			}
-
-
+			std::string message_format = "|cff%s[|Hmsg:%s,%d|h%s|h]|r: %s";
+			len = snprintf(chatbuf, sizeof(chatbuf), message_format.c_str(), color_by_empire[ch->GetEmpire()], ch->GetName(), ch->GetEmpire(), ch->GetName(), buf);
 		}
 		else
 			len = snprintf(chatbuf, sizeof(chatbuf), "%s : %s", ch->GetName(), buf);
@@ -809,19 +808,26 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 	else
 	{
 		// GM chat
-		len = snprintf(chatbuf, sizeof(chatbuf), "|cffffb514[Mt2009]|r %s : %s", ch->GetName(), buf);
+		const char* gm_prefixes[] = { "[STAJYER]", "[DESTEK]", "[GM]", "[SGM]", "[ADMIN]" };
+		BYTE gm_level = ch->GetGMLevel();
+		const char* prefix = gm_prefixes[4]; // Default to ADMIN
+		
+		if (gm_level == GM_LOW_WIZARD) prefix = gm_prefixes[0];
+		else if (gm_level == GM_WIZARD) prefix = gm_prefixes[1];
+		else if (gm_level == GM_HIGH_WIZARD) prefix = gm_prefixes[2];
+		else if (gm_level == GM_GOD) prefix = gm_prefixes[3];
+		else if (gm_level == GM_IMPLEMENTOR) prefix = gm_prefixes[4];
+
+		len = snprintf(chatbuf, sizeof(chatbuf), "|cffffb514%s|r %s : %s", prefix, ch->GetName(), buf);
 	}
 	
 
 	if (len < 0 || len >= (int) sizeof(chatbuf))
 		len = sizeof(chatbuf) - 1;
 
-	if (pinfo->type == CHAT_TYPE_SHOUT || pinfo->type == CHAT_TYPE_TRADE)
+	if (pinfo->type == CHAT_TYPE_SHOUT)
 	{
-
 		int level_limit = g_iShoutLimitLevel;
-		if (pinfo->type == CHAT_TYPE_TRADE)
-			level_limit = 20;
 
 		if (ch->GetLevel() < level_limit)
 		{

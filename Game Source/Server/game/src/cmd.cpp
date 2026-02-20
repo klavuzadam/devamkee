@@ -307,10 +307,10 @@ struct command_info cmd_info[] =
 	{ "war",		do_war,			0,			POS_DEAD,	GM_PLAYER	},
 	{ "warp",		do_warp,		0,			POS_DEAD,	GM_LOW_WIZARD	},
 	{ "user",		do_user,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "notice",		do_notice,		0,			POS_DEAD,	GM_WIZARD	},
+	{ "notice",		do_notice,		0,			POS_DEAD,	GM_GOD		},
 	{ "gm_notice",	do_gm_notice,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "notice_map",	do_map_notice,	0,			POS_DEAD,	GM_WIZARD	},
-	{ "big_notice",	do_big_notice,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "notice_map",	do_map_notice,	0,			POS_DEAD,	GM_GOD		},
+	{ "big_notice",	do_big_notice,	0,			POS_DEAD,	GM_GOD		},
 #ifdef ENABLE_FULL_NOTICE
 	{ "big_notice_map",	do_map_big_notice,	0,	POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "notice_test",	do_notice_test,		0,	POS_DEAD,	GM_HIGH_WIZARD	},
@@ -322,14 +322,14 @@ struct command_info cmd_info[] =
 	{ "dc",		do_disconnect,		0,			POS_DEAD,	GM_WIZARD	},
 	{ "transfer",	do_transfer,		0,			POS_DEAD,	GM_WIZARD	},
 	{ "goto",		do_goto,		0,			POS_DEAD,	GM_LOW_WIZARD	},
-	{ "level",		do_level,		0,			POS_DEAD,	GM_WIZARD	},
+	{ "level",		do_level,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "eventflag",	do_event_flag,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "geteventflag",	do_get_event_flag,	0,			POS_DEAD,	GM_WIZARD	},
 
-	{ "item",		do_item,		0,			POS_DEAD,	GM_GOD		},
+	{ "item",		do_item,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 
-	{ "mob",		do_mob,			0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "mob_ld",		do_mob_ld,			0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "mob",		do_mob,			0,			POS_DEAD,	GM_GOD		},
+	{ "mob_ld",		do_mob_ld,			0,			POS_DEAD,	GM_GOD		},
 	{ "ma",		do_mob_aggresive,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "mc",		do_mob_coward,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "mm",		do_mob_map,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
@@ -339,20 +339,21 @@ struct command_info cmd_info[] =
 	{ "grrandom",	do_group_random,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
 
 	{ "set",		do_set,			0,			POS_DEAD,	GM_IMPLEMENTOR	},
-	{ "reset",		do_reset,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "greset",		do_greset,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "advance",	do_advance,		0,			POS_DEAD,	GM_GOD		},
+	{ "reset",		do_reset,		0,			POS_DEAD,	GM_GOD		},
+	{ "greset",		do_greset,		0,			POS_DEAD,	GM_GOD		},
+	{ "advance",	do_advance,		0,			POS_DEAD,	GM_IMPLEMENTOR		},
+
 	{ "book",		do_book,		0,			POS_DEAD,	GM_IMPLEMENTOR  },
 
 	{ "console",	do_console,		0,			POS_DEAD,	GM_WIZARD	},
 
-	{ "shutdow",	do_inputall,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "shutdown",	do_shutdown,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "shutdow",	do_inputall,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
+	{ "shutdown",	do_shutdown,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 
 	{ "stat",		do_stat,		0,			POS_DEAD,	GM_PLAYER	},
 	{ "stat-",		do_stat_minus,		0,			POS_DEAD,	GM_PLAYER	},
 	{ "stat_reset",	do_stat_reset,		0,			POS_DEAD,	GM_WIZARD	},
-	{ "state",		do_state,		0,			POS_DEAD,	GM_WIZARD	},
+	{ "state",		do_state,		0,			POS_DEAD,	GM_GOD		},
 
 	// ADD_COMMAND_SLOW_STUN
 	{ "stun",		do_stun,		0,			POS_DEAD,	GM_WIZARD	},
@@ -361,8 +362,8 @@ struct command_info cmd_info[] =
 
 	{ "respawn",	do_respawn,		0,			POS_DEAD,	GM_WIZARD	},
 
-	{ "makeguild",	do_makeguild,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "deleteguild",	do_deleteguild,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "makeguild",	do_makeguild,		0,			POS_DEAD,	GM_GOD		},
+	{ "deleteguild",	do_deleteguild,		0,			POS_DEAD,	GM_GOD		},
 
 	{ "mount",		do_mount,		0,			POS_MOUNTING,	GM_PLAYER	},
 	{ "restart_here",	do_restart,		SCMD_RESTART_HERE,	POS_DEAD,	GM_PLAYER	},
@@ -398,7 +399,7 @@ struct command_info cmd_info[] =
 	{ "max_pick",	do_max_pick,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	// END_OF_REFINE_PICK
 
-	{ "invisible",	do_invisibility,	0,			POS_DEAD,	GM_WIZARD	},
+	{ "invisible",	do_invisibility,	0,			POS_DEAD,	GM_LOW_WIZARD	},
 	{ "qf",		do_qf,			0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "clear_quest",	do_clear_quest,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
 
@@ -407,15 +408,15 @@ struct command_info cmd_info[] =
 	{ "set_walk_mode",	do_set_walk_mode,	0,			POS_DEAD,	GM_PLAYER	},
 	{ "set_run_mode",	do_set_run_mode,	0,			POS_DEAD,	GM_PLAYER	},
 	{ "setjob",do_set_skill_group,	0,			POS_DEAD,	GM_IMPLEMENTOR	},
-	{ "setskill",	do_setskill,		0,			POS_DEAD,	GM_WIZARD	},
+	{ "setskill",	do_setskill,		0,			POS_DEAD,	GM_GOD		},
 	{ "setskillother",	do_setskillother,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "setskillpoint",  do_set_skill_point,	0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "reload",		do_reload,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "cooltime",	do_cooltime,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
 
-	{ "gwlist",		do_gwlist,		0,			POS_DEAD,	GM_WIZARD	},
-	{ "gwstop",		do_stop_guild_war,	0,			POS_DEAD,	GM_WIZARD	},
-	{ "gwcancel",	do_cancel_guild_war, 0,			POS_DEAD,	GM_WIZARD	},
+	{ "gwlist",		do_gwlist,		0,			POS_DEAD,	GM_GOD		},
+	{ "gwstop",		do_stop_guild_war,	0,			POS_DEAD,	GM_GOD		},
+	{ "gwcancel",	do_cancel_guild_war, 0,			POS_DEAD,	GM_GOD		},
 	{ "gstate",		do_guild_state,		0,			POS_DEAD,	GM_WIZARD	},
 
 	{ "pkmode",		do_pkmode,		0,			POS_DEAD,	GM_PLAYER	},
@@ -434,10 +435,10 @@ struct command_info cmd_info[] =
 	{ "attract_ranger",	do_attract_ranger,	0,			POS_DEAD,	GM_WIZARD	},
 	{ "pull_monster",	do_pull_monster,	0,			POS_DEAD,	GM_WIZARD	},
 	{ "setblockmode",	do_setblockmode,	0,			POS_DEAD,	GM_PLAYER	},
-	{ "polymorph",	do_polymorph,		0,			POS_DEAD,	GM_WIZARD	},
-	{ "polyitem",	do_polymorph_item,	0,			POS_DEAD,	GM_HIGH_WIZARD },
-	{ "priv_empire",	do_priv_empire,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "priv_guild",	do_priv_guild,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "polymorph",	do_polymorph,		0,			POS_DEAD,	GM_GOD		},
+	{ "polyitem",	do_polymorph_item,	0,			POS_DEAD,	GM_GOD },
+	{ "priv_empire",	do_priv_empire,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
+	{ "priv_guild",	do_priv_guild,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "mount_test",	do_mount_test,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "unmount",	do_unmount,		0,			POS_DEAD,	GM_PLAYER	},
 	{ "private",	do_private,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
@@ -448,15 +449,15 @@ struct command_info cmd_info[] =
 	{ "observer_exit",	do_observer_exit,	0,			POS_DEAD,	GM_PLAYER	},
 	{ "socketitem",	do_socket_item,		0,			POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "saveati",	do_save_attribute_to_image, 0,			POS_DEAD,	GM_IMPLEMENTOR	},
-	{ "xmas_boom",	do_xmas,		SCMD_XMAS_BOOM,		POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "xmas_snow",	do_xmas,		SCMD_XMAS_SNOW,		POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "xmas_santa",	do_xmas,		SCMD_XMAS_SANTA,	POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "xmas_boom",	do_xmas,		SCMD_XMAS_BOOM,		POS_DEAD,	GM_GOD		},
+	{ "xmas_snow",	do_xmas,		SCMD_XMAS_SNOW,		POS_DEAD,	GM_GOD		},
+	{ "xmas_santa",	do_xmas,		SCMD_XMAS_SANTA,	POS_DEAD,	GM_GOD		},
 	{ "view_equip",	do_view_equip,		0,			POS_DEAD,	GM_IMPLEMENTOR },
 	{ "jy",				do_block_chat,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
 
-	{ "block_player", do_block, 	0, POS_DEAD,		GM_HIGH_WIZARD },
-	{ "block_hwid", do_block_hwid, 	0, POS_DEAD,		GM_HIGH_WIZARD },
-	{ "block_pool", do_block_pool, 	0, POS_DEAD,		GM_WIZARD },
+	{ "block_player", do_block, 	0, POS_DEAD,		GM_GOD },
+	{ "block_hwid", do_block_hwid, 	0, POS_DEAD,		GM_GOD },
+	{ "block_pool", do_block_pool, 	0, POS_DEAD,		GM_IMPLEMENTOR },
 	{ "block_flush", do_block_flush, 	0, POS_DEAD,		GM_HIGH_WIZARD },
 
 	// BLOCK_CHAT
@@ -468,14 +469,14 @@ struct command_info cmd_info[] =
 	{ "build",		do_build,		0,		POS_DEAD,	GM_PLAYER	},
 	{ "clear_land", do_clear_land,	0,		POS_DEAD,	GM_HIGH_WIZARD	},
 
-	{ "affect_remove",	do_affect_remove,	0,			POS_DEAD,	GM_WIZARD	},
+	{ "affect_remove",	do_affect_remove,	0,			POS_DEAD,	GM_GOD		},
 
-	{ "horse_state",	do_horse_state,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "horse_level",	do_horse_level,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "horse_ride",	do_horse_ride,		0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "horse_summon",	do_horse_summon,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "horse_unsummon",	do_horse_unsummon,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
-	{ "horse_set_stat", do_horse_set_stat,	0,			POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "horse_state",	do_horse_state,		0,			POS_DEAD,	GM_GOD		},
+	{ "horse_level",	do_horse_level,		0,			POS_DEAD,	GM_GOD		},
+	{ "horse_ride",	do_horse_ride,		0,			POS_DEAD,	GM_GOD		},
+	{ "horse_summon",	do_horse_summon,	0,			POS_DEAD,	GM_GOD		},
+	{ "horse_unsummon",	do_horse_unsummon,	0,			POS_DEAD,	GM_GOD		},
+	{ "horse_set_stat", do_horse_set_stat,	0,			POS_DEAD,	GM_GOD		},
 
 	{ "emotion_allow",	do_emotion_allow,	0,			POS_FIGHTING,	GM_PLAYER	},
 	{ "kiss",		do_emotion,		0,			POS_FIGHTING,	GM_PLAYER	},
@@ -522,13 +523,13 @@ struct command_info cmd_info[] =
 	{ "str+",			do_stat_plus_amount,	POINT_ST,	POS_DEAD,	GM_PLAYER },
 	{ "dex+",			do_stat_plus_amount,	POINT_DX,	POS_DEAD,	GM_PLAYER },
 
-	{ "break_marriage",	do_break_marriage,		0,			POS_DEAD,	GM_WIZARD	},
+	{ "break_marriage",	do_break_marriage,		0,			POS_DEAD,	GM_GOD		},
 
 	{ "show_quiz",			do_oxevent_show_quiz,	0,	POS_DEAD,	GM_WIZARD	},
 	{ "log_oxevent",		do_oxevent_log,			0,	POS_DEAD,	GM_WIZARD	},
 	{ "get_oxevent_att",	do_oxevent_get_attender,0,	POS_DEAD,	GM_WIZARD	},
 
-	{ "effect",				do_effect,				0,	POS_DEAD,	GM_WIZARD	},
+	{ "effect",				do_effect,				0,	POS_DEAD,	GM_GOD		},
 
 	{ "threeway_info",		do_threeway_war_info,	0,	POS_DEAD,	GM_WIZARD},
 	{ "threeway_myinfo",	do_threeway_war_myinfo, 0,	POS_DEAD,	GM_WIZARD},
@@ -542,9 +543,9 @@ struct command_info cmd_info[] =
 	{ "setmonarch",			do_setmonarch,			0, 	POS_DEAD,	GM_WIZARD},
 	{ "rmmonarch",			do_rmmonarch,			0, 	POS_DEAD, 	GM_WIZARD},
 	{ "hair",				do_hair,				0,	POS_DEAD,	GM_PLAYER	},
-	{ "inventory",			do_inventory,			0,	POS_DEAD,	GM_WIZARD	},
+	{ "inventory",			do_inventory,			0,	POS_DEAD,	GM_GOD		},
 	{ "cube",				do_cube,				0,	POS_DEAD,	GM_IMPLEMENTOR },
-	{ "siege",				do_siege,				0,	POS_DEAD,	GM_WIZARD	},
+	{ "siege",				do_siege,				0,	POS_DEAD,	GM_GOD		},
 	{ "temp",				do_temp,				0,	POS_DEAD,	GM_IMPLEMENTOR	},
 	{ "frog",				do_frog,				0,	POS_DEAD,	GM_HIGH_WIZARD	},
 	{ "check_mmoney",		do_check_monarch_money,	0,	POS_DEAD,	GM_IMPLEMENTOR	},
@@ -556,11 +557,11 @@ struct command_info cmd_info[] =
 
 	{ "eclipse",			do_eclipse,				0,	POS_DEAD,	GM_HIGH_WIZARD	},
 
-	{ "eventhelper",		do_event_helper,		0,	POS_DEAD,	GM_HIGH_WIZARD	},
+	{ "eventhelper",		do_event_helper,		0,	POS_DEAD,	GM_GOD		},
 
 	{ "in_game_mall",		do_in_game_mall,		0,	POS_DEAD,	GM_PLAYER	},
 
-	{ "get_mob_count",		do_get_mob_count,		0,	POS_DEAD,	GM_WIZARD	},
+	{ "get_mob_count",		do_get_mob_count,		0,	POS_DEAD,	GM_GOD		},
 
 	{ "dice",				do_dice,				0,	POS_DEAD,	GM_PLAYER		},
 	{ "special_item",			do_special_item,	0,	POS_DEAD,	GM_IMPLEMENTOR		},
@@ -569,8 +570,8 @@ struct command_info cmd_info[] =
 
 	{ "ride",				do_ride,				0,	POS_DEAD,	GM_PLAYER	},
 
-	{ "item_id_list",	do_get_item_id_list,	0,	POS_DEAD,	GM_WIZARD	},
-	{ "set_socket",		do_set_socket,			0,	POS_DEAD,	GM_WIZARD	},
+	{ "item_id_list",	do_get_item_id_list,	0,	POS_DEAD,	GM_GOD		},
+	{ "set_socket",		do_set_socket,			0,	POS_DEAD,	GM_GOD		},
 
 	{ "costume",			do_costume, 			0,	POS_DEAD,	GM_PLAYER	},
 

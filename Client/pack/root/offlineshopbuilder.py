@@ -80,25 +80,12 @@ SHOP_TIME_OPTIONS = [
 		"cost": 0
 	},
 	{
-		"time" : 8,
-		"cost" : 6000
+		"time" : 168,
+		"cost" : 0
 	},
 	{
-		"time": 12,
-		"cost": 10000
-	},
-	{
-		"time": 24,
-		"cost": 20000
-	},
-	{
-		"time": 48,
-		"cost": 40000,
-		"isSpecial": True,
-	},
-	{
-		"time": 72,
-		"cost": 60000,
+		"time": 360,
+		"cost": 0,
 		"isSpecial" : True,
 	},
 ]

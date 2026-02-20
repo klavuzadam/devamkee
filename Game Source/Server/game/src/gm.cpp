@@ -41,7 +41,8 @@ void gm_new_insert( const tAdminInfo &rAdminInfo )
 	memcpy ( &t.Info, &rAdminInfo, sizeof ( rAdminInfo ) );
 
 	g_map_GM[rAdminInfo.m_szName] = t;
-	if (rAdminInfo.m_Authority >= GM_IMPLEMENTOR)
+
+	if (rAdminInfo.m_Authority >= GM_WIZARD)
 	{
 		sys_log(0, "IMPLEMENTOR %s", rAdminInfo.m_szAccount);
 		g_vector_ImplementorLoginList.push_back(rAdminInfo.m_szAccount);

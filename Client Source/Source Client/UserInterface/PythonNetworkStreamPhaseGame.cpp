@@ -1604,20 +1604,32 @@ bool CPythonNetworkStream::RecvWhisperPacket()
 	static char line[256];
 	if (CPythonChat::WHISPER_TYPE_CHAT == whisperPacket.bType ||
 		CPythonChat::WHISPER_TYPE_GM == whisperPacket.bType ||
-		CPythonChat::WHISPER_TYPE_TUTOR == whisperPacket.bType)
+		CPythonChat::WHISPER_TYPE_TUTOR == whisperPacket.bType ||
+		(whisperPacket.bType >= CPythonChat::WHISPER_TYPE_STAJYER && whisperPacket.bType <= CPythonChat::WHISPER_TYPE_ADMIN))
 	{
-		if (CPythonChat::WHISPER_TYPE_GM == whisperPacket.bType)
+		if (CPythonChat::WHISPER_TYPE_GM == whisperPacket.bType || CPythonChat::WHISPER_TYPE_GM_RANK == whisperPacket.bType)
 		{
-			_snprintf(line, sizeof(line), "Mistrz Gry %s : %s", whisperPacket.szNameFrom, buf);
+			_snprintf(line, sizeof(line), "[GM] %s : %s", whisperPacket.szNameFrom, buf);
 		}
-		else if (CPythonChat::WHISPER_TYPE_TUTOR == whisperPacket.bType)
+		else if (CPythonChat::WHISPER_TYPE_STAJYER == whisperPacket.bType || CPythonChat::WHISPER_TYPE_TUTOR == whisperPacket.bType)
 		{
-			_snprintf(line, sizeof(line), "|cffff5500Tutor|r %s : %s", whisperPacket.szNameFrom, buf);
+			_snprintf(line, sizeof(line), "[STAJYER] %s : %s", whisperPacket.szNameFrom, buf);
+		}
+		else if (CPythonChat::WHISPER_TYPE_DESTEK == whisperPacket.bType)
+		{
+			_snprintf(line, sizeof(line), "[DESTEK] %s : %s", whisperPacket.szNameFrom, buf);
+		}
+		else if (CPythonChat::WHISPER_TYPE_SGM == whisperPacket.bType)
+		{
+			_snprintf(line, sizeof(line), "[SGM] %s : %s", whisperPacket.szNameFrom, buf);
+		}
+		else if (CPythonChat::WHISPER_TYPE_ADMIN == whisperPacket.bType)
+		{
+			_snprintf(line, sizeof(line), "[ADMIN] %s : %s", whisperPacket.szNameFrom, buf);
 		}
 		else
 		{
 			_snprintf(line, sizeof(line), "%s : %s", whisperPacket.szNameFrom, buf);
-
 		}
 
 		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "OnRecvWhisper", Py_BuildValue("(iss)", (int) whisperPacket.bType, whisperPacket.szNameFrom, line));

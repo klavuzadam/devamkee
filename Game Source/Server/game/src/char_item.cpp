@@ -2192,6 +2192,8 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 										break;
 								}
 							}
+							
+							PointChange(apply_type, 0);
 
 							if (GetDungeon())
 								GetDungeon()->UsePotion(this);
@@ -2211,6 +2213,7 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							else
 							{
 								AddAffect(AFFECT_EXP_BONUS_EURO_FREE, item->GetValue(1), item->GetValue(2), 0, item->GetValue(3), 0, false, true, item->GetVnum());
+								PointChange(item->GetValue(1), 0);
 								item->SetCount(item->GetCount() - 1);
 							}
 						}
@@ -7104,15 +7107,9 @@ bool CHARACTER::IsEquipUniqueItem(DWORD dwItemVnum) const
 // CHECK_UNIQUE_GROUP
 bool CHARACTER::IsEquipUniqueGroup(DWORD dwGroupVnum) const
 {
+	for (int i = 0; i < WEAR_MAX_NUM; ++i)
 	{
-		LPITEM u = GetWear(WEAR_UNIQUE1);
-
-		if (u && u->GetSpecialGroup() == (int) dwGroupVnum)
-			return true;
-	}
-
-	{
-		LPITEM u = GetWear(WEAR_UNIQUE2);
+		LPITEM u = GetWear(i);
 
 		if (u && u->GetSpecialGroup() == (int) dwGroupVnum)
 			return true;

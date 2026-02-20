@@ -1321,7 +1321,7 @@ class GameWindow(ui.ScriptWindow):
 
 	## Chat
 	def OnRecvWhisper(self, mode, name, line):
-		if mode == chat.WHISPER_TYPE_GM:
+		if mode == chat.WHISPER_TYPE_GM or (mode >= 11 and mode <= 15):
 			self.interface.RegisterGameMasterName(name)
 		elif mode == chat.WHISPER_TYPE_MYSHOP:
 			current_timestamp = time.time()

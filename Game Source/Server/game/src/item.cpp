@@ -678,7 +678,7 @@ void CItem::ModifyPoints(bool bAdd)
 						if (m_pOwner->IsUtilityPoint(point.bType))
 							continue;
 
-						m_pOwner->PointChange(point.bType, bAdd ? p->aApplies[i].lValue : -p->aApplies[i].lValue);
+						m_pOwner->PointChange(aiApplyToPoint[point.bType], bAdd ? p->aApplies[i].lValue : -p->aApplies[i].lValue);
 					}
 				}
 			}
@@ -701,10 +701,10 @@ void CItem::ModifyPoints(bool bAdd)
 			{
 				// basic defense value from armor
 				auto lDefGrade = CalcAcceBonus(pkItemAbsorbed->alValues[1] + (pkItemAbsorbed->alValues[5] * 2));
-				m_pOwner->PointChange(APPLY_DEF_GRADE_BONUS, bAdd ? lDefGrade : -lDefGrade);
+				m_pOwner->PointChange(aiApplyToPoint[APPLY_DEF_GRADE_BONUS], bAdd ? lDefGrade : -lDefGrade);
 				// basic magic defense value from armor
 				auto lDefMagicBonus = CalcAcceBonus(pkItemAbsorbed->alValues[0]);
-				m_pOwner->PointChange(APPLY_MAGIC_DEF_GRADE, bAdd ? lDefMagicBonus : -lDefMagicBonus);
+				m_pOwner->PointChange(aiApplyToPoint[APPLY_MAGIC_DEF_GRADE], bAdd ? lDefMagicBonus : -lDefMagicBonus);
 			}
 			else if (pkItemAbsorbed->bType == ITEM_WEAPON)
 			{
@@ -714,7 +714,7 @@ void CItem::ModifyPoints(bool bAdd)
 					auto lAttGrade = CalcAcceBonus(pkItemAbsorbed->alValues[4] + pkItemAbsorbed->alValues[5]);
 					if (pkItemAbsorbed->alValues[3] > pkItemAbsorbed->alValues[4])
 						lAttGrade = CalcAcceBonus(pkItemAbsorbed->alValues[3] + pkItemAbsorbed->alValues[5]);
-					m_pOwner->PointChange(APPLY_ATT_GRADE_BONUS, bAdd ? lAttGrade : -lAttGrade);
+					m_pOwner->PointChange(aiApplyToPoint[APPLY_ATT_GRADE_BONUS], bAdd ? lAttGrade : -lAttGrade);
 				}
 				// basic magic attack value from weapon
 				if (pkItemAbsorbed->alValues[1] + pkItemAbsorbed->alValues[2] > 0)
@@ -722,7 +722,7 @@ void CItem::ModifyPoints(bool bAdd)
 					long lAttMagicGrade = CalcAcceBonus(pkItemAbsorbed->alValues[2] + pkItemAbsorbed->alValues[5]);
 					if (pkItemAbsorbed->alValues[1] > pkItemAbsorbed->alValues[2])
 						lAttMagicGrade = CalcAcceBonus(pkItemAbsorbed->alValues[1] + pkItemAbsorbed->alValues[5]);
-					m_pOwner->PointChange(APPLY_MAGIC_ATT_GRADE, bAdd ? lAttMagicGrade : -lAttMagicGrade);
+					m_pOwner->PointChange(aiApplyToPoint[APPLY_MAGIC_ATT_GRADE], bAdd ? lAttMagicGrade : -lAttMagicGrade);
 				}
 			}
 		}
@@ -742,7 +742,7 @@ void CItem::ModifyPoints(bool bAdd)
 		if (0 != accessoryGrade && i < ITEM_APPLY_MAX_NUM) // @fixme170
 			value += MAX(accessoryGrade, value * aiAccessorySocketEffectivePct[accessoryGrade] / 100);
 
-		m_pOwner->PointChange(apply.bType, bAdd ? value : -value);
+		m_pOwner->PointChange(aiApplyToPoint[apply.bType], bAdd ? value : -value);
 	}
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
@@ -757,12 +757,12 @@ void CItem::ModifyPoints(bool bAdd)
 					continue;
 				int value = CalcAcceBonus(pkItemAbsorbed->aApplies[i].lValue);
 				if (pkItemAbsorbed->aApplies[i].bType == APPLY_SKILL)
-					m_pOwner->PointChange(pkItemAbsorbed->aApplies[i].bType, bAdd ? value : value ^ 0x00800000);
+					m_pOwner->PointChange(aiApplyToPoint[pkItemAbsorbed->aApplies[i].bType], bAdd ? value : value ^ 0x00800000);
 				else
 				{
 					if (0 != accessoryGrade && i < ITEM_APPLY_MAX_NUM) // @fixme170
 						value += MAX(accessoryGrade, value * aiAccessorySocketEffectivePct[accessoryGrade] / 100);
-					m_pOwner->PointChange(pkItemAbsorbed->aApplies[i].bType, bAdd ? value : -value);
+					m_pOwner->PointChange(aiApplyToPoint[pkItemAbsorbed->aApplies[i].bType], bAdd ? value : -value);
 				}
 			}
 		}
@@ -790,7 +790,7 @@ void CItem::ModifyPoints(bool bAdd)
 				if (m_pOwner->IsUtilityPoint(ia.bType))
 					continue;
 
-				m_pOwner->PointChange(ia.bType, bAdd ? value : -value);
+				m_pOwner->PointChange(aiApplyToPoint[ia.bType], bAdd ? value : -value);
 			}
 		}
 	}

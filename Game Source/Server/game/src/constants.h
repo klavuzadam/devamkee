@@ -3,6 +3,10 @@
 
 #include "../../common/tables.h"
 
+#ifndef APPLY_MAX_NUM
+#define APPLY_MAX_NUM 256
+#endif
+
 enum EMonsterChatState
 {
 	MONSTER_CHAT_WAIT,
@@ -199,7 +203,5 @@ bool IsMiniBoss(DWORD race);
 int Is100PercentGoldDropByRace(DWORD mobRace);
 
 bool IsShootSkill(DWORD dwSkillVnum);
+extern const int aiApplyToPoint[APPLY_MAX_NUM];
 #endif
-//martysama0134's 4e4e75d8b719b9240e033009cf4d7b0f
-
-// Files shared by GameCore.top

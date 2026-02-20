@@ -1808,9 +1808,9 @@ void CHARACTER::SetPlayerProto(const TPlayerTable * t)
 #endif
 	{
 #ifdef ENABLE_GM_FLAG_FOR_LOW_WIZARD
-		if (GetGMLevel() > GM_LOW_WIZARD)
+		if (GetGMLevel() >= GM_LOW_WIZARD)
 #else
-		if (GetGMLevel() > GM_LOW_WIZARD)
+		if (GetGMLevel() >= GM_LOW_WIZARD)
 #endif
 		{
 			m_afAffectFlag.Set(AFF_YMIR);
@@ -2499,6 +2499,31 @@ void CHARACTER::ComputePoints()
 	if (GetSP() > GetMaxSP())
 		PointChange(POINT_SP, GetMaxSP() - GetSP());
 
+	// Sync bonuses to client points for UI display (Aggregated: Items + Premium + Others)
+	if (IsPC())
+	{
+		// Item Drop
+		if (GetPremiumRemainSeconds(PREMIUM_ITEM) > 0)
+			PointChange(POINT_ITEM_DROP_BONUS, 100);
+		
+		if (IsEquipUniqueItem(UNIQUE_ITEM_DOUBLE_ITEM) || IsEquipUniqueItem(UNIQUE_ITEM_DOUBLE_ITEM_BOSS_METIN_ONLY) || IsEquipUniqueGroup(UNIQUE_GROUP_DOUBLE_ITEM))
+			PointChange(POINT_ITEM_DROP_BONUS, 100);
+
+		// EXP
+		if (GetPremiumRemainSeconds(PREMIUM_EXP) > 0)
+			PointChange(POINT_EXP_DOUBLE_BONUS, 50);
+		
+		if (IsEquipUniqueItem(UNIQUE_ITEM_DOUBLE_EXP) || IsEquipUniqueGroup(UNIQUE_GROUP_RING_OF_EXP))
+			PointChange(POINT_EXP_DOUBLE_BONUS, 50);
+
+		// Gold Drop
+		if (GetPremiumRemainSeconds(PREMIUM_GOLD) > 0)
+			PointChange(POINT_GOLD_DOUBLE_BONUS, 100);
+		
+		if (IsEquipUniqueGroup(UNIQUE_GROUP_LUCKY_GOLD))
+			PointChange(POINT_GOLD_DOUBLE_BONUS, 100);
+	}
+
 	ComputeSkillPoints();
 
 	RefreshAffect();
@@ -2518,6 +2543,8 @@ void CHARACTER::ComputePoints()
 	}
 #endif
 	UpdatePacket();
+	if (GetSectree())
+		PointsPacket();
 }
 
 void CHARACTER::ResetPlayTime(DWORD dwTimeRemain)
@@ -3833,12 +3860,6 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 		case POINT_GOLD_DOUBLE_BONUS:	// 72
 		case POINT_ITEM_DROP_BONUS:	// 73
 		case POINT_POTION_BONUS:	// 74
-			if (GetPoint(type) + amount > 100)
-			{
-				sys_err("BONUS exceeded over 100!! point type: %d name: %s amount %d", type, GetName(), amount);
-				amount = 100 - GetPoint(type);
-			}
-
 			SetPoint(type, GetPoint(type) + amount);
 			val = GetPoint(type);
 			break;
@@ -5258,7 +5279,7 @@ BOOL CHARACTER::IsGM() const
 	if (!IsPC())
 		return false;
 
-	if (m_pointsInstant.gm_level > GM_LOW_WIZARD)
+	if (m_pointsInstant.gm_level >= GM_LOW_WIZARD)
 		return true;
 	if (test_server)
 		return true;

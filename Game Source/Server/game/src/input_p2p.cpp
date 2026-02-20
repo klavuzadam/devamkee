@@ -233,7 +233,7 @@ struct FuncShout
 		if (!d)
 			return;
 
-		if (!d->GetCharacter() || (m_bChatType == CHAT_TYPE_SHOUT && d->GetCharacter()->GetGMLevel() == GM_PLAYER && d->GetEmpire() != m_bEmpire))
+		if (!d->GetCharacter())
 			return;
 
 		d->GetCharacter()->ChatPacket(m_bChatType, "%s", m_str);

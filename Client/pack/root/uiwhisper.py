@@ -7,7 +7,9 @@ import localeInfo
 import ime
 import chr
 import constInfo
+import constInfo
 import messenger
+import flamewindPath
 
 class WhisperButton(ui.Button):
 	def __init__(self):
@@ -327,10 +329,9 @@ class WhisperDialog(ui.ScriptWindow):
 		self.gameMasterTipBoard.Hide()
 
 	def SetGameMasterLook(self):
-		return
-		print "SetGameMasterLook"
 		self.ignoreButton.Hide()
 		self.gamemasterMark.Show()
+		self.gamemasterMark.LoadImage(flamewindPath.GetPublic("whisper_gm"))
 		self.gameMasterTipBoard.Show()
 		self.reportViolentWhisperButton.Hide()
 

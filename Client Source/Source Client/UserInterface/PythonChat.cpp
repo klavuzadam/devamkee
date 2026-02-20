@@ -737,6 +737,11 @@ void CWhisper::AppendChat(int iType, const char * c_szChat)
 			pChatLine->Instance.SetColor(D3DXCOLOR(1.0f, 0.785f, 0.785f, 1.0f));
 			break;
 		case CPythonChat::WHISPER_TYPE_GM:
+		case CPythonChat::WHISPER_TYPE_STAJYER:
+		case CPythonChat::WHISPER_TYPE_DESTEK:
+		case CPythonChat::WHISPER_TYPE_GM_RANK:
+		case CPythonChat::WHISPER_TYPE_SGM:
+		case CPythonChat::WHISPER_TYPE_ADMIN:
 			pChatLine->Instance.SetColor(D3DXCOLOR(1.0f, 0.632f, 0.0f, 1.0f));
 			break;
 		case CPythonChat::WHISPER_TYPE_CHAT:

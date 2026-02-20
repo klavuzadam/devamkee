@@ -74,6 +74,11 @@ class CPythonChat : public CSingleton<CPythonChat>, public IAbstractChat
 			WHISPER_TYPE_ERROR              = 4,
 			WHISPER_TYPE_GM                 = 5,
 			WHISPER_TYPE_TUTOR				= 10,
+			WHISPER_TYPE_STAJYER            = 11,
+			WHISPER_TYPE_DESTEK             = 12,
+			WHISPER_TYPE_GM_RANK            = 13,
+			WHISPER_TYPE_SGM                = 14,
+			WHISPER_TYPE_ADMIN              = 15,
 			WHISPER_TYPE_SYSTEM             = 0xFF
 		};
 

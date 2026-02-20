@@ -2040,6 +2040,11 @@ class Interface(object):
 		img_by_type_dict = {
 			chat.WHISPER_TYPE_NORMAL: (None, "d:/ymir work/ui/game/windows/btn_mail_up.sub"),
 			chat.WHISPER_TYPE_GM: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
+			11: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
+			12: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
+			13: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
+			14: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
+			15: (0xffffa200, flamewindPath.GetPublic("whisper_gm")),
 			chat.WHISPER_TYPE_MYSHOP: (0xffffc2d2, flamewindPath.GetPublic("whisper_shop")),
 		}
 

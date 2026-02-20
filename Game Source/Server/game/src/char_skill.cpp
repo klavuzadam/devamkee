@@ -2318,9 +2318,9 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 
 		if (this != pkVictim)
 		{
-			int percent1 = 75;
-			int percent2 = 75;
-			int percent3 = 75;
+			int percent1 = 100;
+			int percent2 = 100;
+			int percent3 = 100;
 
 			if (pkSk->dwVnum == SKILL_CURE)
 			{

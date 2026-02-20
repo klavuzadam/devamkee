@@ -10,7 +10,7 @@ GccMinorEGT8 := $(shell expr $(GccMinorVersion) \>= 8)
 
 INCDIR =
 LIBDIR =
-BINDIR = ..
+BINDIR = /usr/home/mt2/share
 OBJDIR = .obj
 $(shell if [ ! -d $(OBJDIR) ]; then mkdir $(OBJDIR); fi)
 
@@ -144,7 +144,7 @@ endif
 # PROJECT_OBJ_FILES END
 
 # Target Paths
-MAIN_TARGET = $(BINDIR)/game_r$(GAME_VERSION)
+MAIN_TARGET = $(BINDIR)/game
 
 default: $(MAIN_TARGET)
 

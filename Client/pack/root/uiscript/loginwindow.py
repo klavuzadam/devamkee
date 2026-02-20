@@ -77,10 +77,10 @@ window = {
 			"type" : "window",
 
 			"x" : 238,
-			"y" : 355,
+			"y" : 530,
 
 			"width" : 208,
-			"height" : 105,
+			"height" : 280,
 			"horizontal_align" : "right",
 			"vertical_align" : "bottom",
 		},

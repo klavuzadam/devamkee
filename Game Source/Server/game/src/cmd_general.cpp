@@ -250,6 +250,12 @@ void Shutdown(int iSec)
 
 ACMD(do_shutdown)
 {
+	if (ch && ch->GetGMLevel() < GM_IMPLEMENTOR)
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, "Yetkiniz bu komutu kullanmaya yetmiyor.");
+		return;
+	}
+
 	sys_err("Accept shutdown command from %s.", (ch) ? ch->GetName() : "NONAME");
 
 	TPacketGGShutdown p;
@@ -665,10 +671,6 @@ ACMD(do_stat_minus)
 	}
 	else
 		return;
-
-	ch->PointChange(POINT_STAT, +1);
-	ch->PointChange(POINT_STAT_RESET_COUNT, -1);
-	ch->ComputePoints();
 }
 
 ACMD(do_stat)

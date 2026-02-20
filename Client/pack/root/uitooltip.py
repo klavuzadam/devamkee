@@ -1425,17 +1425,7 @@ class ItemToolTip(ToolTip):
 				self.AppendMallItemLastTime(metinSlot[0])
 
 			if itemVnum == 50200: # tobol
-				self.AppendSpace(5)
-				isLevel = player.GetStatus(player.LEVEL) >= 15
-				mobCount = special_flags.GetFlag("stat_monster")
-				isMob = mobCount >= 800
-
-				self.AppendTextLine(localeInfo.TOOLTIP_OPEN_SHOP_REQ_LEVEL, color=self.POSITIVE_COLOR if isLevel else self.NEGATIVE_COLOR)
-
-				mob_text = localeInfo.TOOLTIP_OPEN_SHOP_REQ_MONSTER
-				if not isMob:
-					mob_text += " (%d)" % mobCount
-				self.AppendTextLine(mob_text, color=self.POSITIVE_COLOR if isMob else self.NEGATIVE_COLOR)
+				pass
 
 			if 27989 == itemVnum or 76006 == itemVnum:
 				if 0 != metinSlot:
@@ -1639,7 +1629,10 @@ class ItemToolTip(ToolTip):
 			self.ResizeToolTip()
 
 	def __SetSkillBookToolTip(self, skillIndex, bookName, skillGrade):
-		skillName = skill.GetSkillName(skillIndex)
+		try:
+			skillName = skill.GetSkillName(skillIndex)
+		except:
+			return
 
 		if not skillName:
 			return
@@ -2825,7 +2818,7 @@ class SkillToolTip(ToolTip):
 					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel), self.NORMAL_COLOR)
 				self.AppendSkillLevelDescriptionNew(skillIndex, skillCurrentPercentage, self.__GetRealSkillLevel(skillLevel, skillGrade), self.ENABLE_COLOR)
 			else:
-				print "nara"
+				print("nara")
 		## Next Level
 		if skillGrade != skill.SKILL_GRADE_COUNT:
 			if skillLevel < skillMaxLevelEnd:
